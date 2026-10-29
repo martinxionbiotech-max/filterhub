@@ -1,0 +1,138 @@
+---
+import { site, nav, complianceLinks, organizationSchema } from '../data/site';
+import Header from '../components/Header.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  breadcrumbs?: { label: string; href: string }[];
+}
+
+const { title, description, breadcrumbs = [] } = Astro.props;
+
+const canonical = new URL(Astro.url.pathname, site.siteUrl).toString();
+const ogImage = `${site.siteUrl}/images/og-default.svg`;
+
+const breadcrumbSchema = breadcrumbs.length
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: site.siteUrl + '/' },
+        ...breadcrumbs.map((b, i) => ({
+          '@type': 'ListItem',
+          position: i + 2,
+          name: b.label,
+          item: new URL(b.href, site.siteUrl).toString(),
+        })),
+      ],
+    }
+  : null;
+
+const webPageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  '@id': canonical,
+  url: canonical,
+  name: title,
+  description,
+  isPartOf: { '@id': `${site.siteUrl}/#website` },
+  publisher: { '@id': `${site.siteUrl}/#organization` },
+};
+
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  '@id': `${site.siteUrl}/#website`,
+  url: site.siteUrl,
+  name: site.brand,
+  publisher: { '@id': `${site.siteUrl}/#organization` },
+};
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title} — {site.brand}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta name="generator" content={Astro.generator} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(webPageSchema)} />
+    {breadcrumbSchema && (
+      <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+    )}
+    <style is:global>
+      :root {
+        --ink: #1a2333;
+        --muted: #5b6678;
+        --accent: #0b6e4f;
+        --line: #e3e8ef;
+        --bg: #f7f9fb;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+        color: var(--ink);
+        background: #fff;
+        line-height: 1.6;
+      }
+      a { color: var(--accent); text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      .wrap { max-width: 1080px; margin: 0 auto; padding: 0 1.25rem; }
+      .eyebrow {
+        text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.78rem;
+        color: var(--accent); font-weight: 600;
+      }
+      .lede { font-size: 1.1rem; color: var(--muted); }
+      .card {
+        border: 1px solid var(--line); border-radius: 10px; padding: 1rem 1.15rem;
+        background: var(--bg);
+      }
+      .grid { display: grid; gap: 1rem; }
+      .muted { color: var(--muted); }
+      .notice {
+        border-left: 3px solid var(--accent); background: #eef6f1;
+        padding: 0.6rem 0.9rem; border-radius: 0 6px 6px 0; font-size: 0.92rem;
+      }
+      code {
+        background: #eef1f5; padding: 0.1rem 0.35rem; border-radius: 4px;
+        font-size: 0.9em;
+      }
+      h1 { line-height: 1.2; }
+      .breadcrumb { font-size: 0.85rem; color: var(--muted); margin: 1rem 0 0; }
+    </style>
+  </head>
+  <body>
+    <Header />
+    <slot />
+    <footer style="margin-top:3rem;border-top:1px solid var(--line);padding:2rem 0;background:var(--bg);">
+      <div class="wrap">
+        <p class="muted" style="font-size:0.9rem;">
+          &copy; {new Date().getFullYear()} {site.brand}. {site.disclosure}
+        </p>
+        <nav aria-label="Legal">
+          <ul style="list-style:none;display:flex;gap:1rem;padding:0;flex-wrap:wrap;">
+            {complianceLinks.map((l) => (
+              <li><a href={l.href}>{l.label}</a></li>
+            ))}
+          </ul>
+        </nav>
+        <p class="muted" style="font-size:0.82rem;">
+          Domain {site.domain} is a placeholder. Data subsite:{' '}
+          <a href={site.dataSubsiteUrl} rel="noopener" target="_blank">{site.dataSubsiteUrl.replace('https://', '')}</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

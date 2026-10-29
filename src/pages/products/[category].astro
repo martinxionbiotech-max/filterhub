@@ -1,0 +1,53 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { categories, type Category } from '../../data/categories';
+import { site } from '../../data/site';
+
+export function getStaticPaths() {
+  return categories.map((c) => ({ params: { category: c.slug }, props: { category: c } }));
+}
+
+const { category } = Astro.props as { category: Category };
+const breadcrumbs = [
+  { label: 'Products', href: '/products/' },
+  { label: category.name, href: `/products/${category.slug}/` },
+];
+---
+
+<BaseLayout
+  title={category.name}
+  description={category.summary}
+  breadcrumbs={breadcrumbs}
+>
+  <main class="wrap" style="padding-top:2rem;">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a> / <a href="/products/">Products</a> / {category.name}
+    </nav>
+    <h1>{category.name}</h1>
+    <p class="muted" style="margin-top:-0.5rem;">{category.nameZh} · {category.grades}</p>
+
+    {category.subcategories.length > 0 && (
+      <p style="margin-top:1rem;">
+        <strong>Sub-categories:</strong> {category.subcategories.join(' · ')}
+      </p>
+    )}
+
+    <h2>What it is</h2>
+    <p>{category.directAnswer}</p>
+
+    <h2>Technical depth</h2>
+    <p>{category.technicalDepth}</p>
+
+    <h2>Selection guidance</h2>
+    <ul>
+      {category.selection.map((s) => <li>{s}</li>)}
+    </ul>
+
+    <p class="notice" style="margin-top:1.5rem;">
+      Per-model dimensions, pressure drop, dust-holding capacity and other unpublished fields are
+      marked <code>pending</code> in the{' '}
+      <a href={`${site.dataSubsiteUrl}/products/${category.slug}/`} rel="noopener" target="_blank">data subsite</a>{' '}
+      rather than estimated.
+    </p>
+  </main>
+</BaseLayout>

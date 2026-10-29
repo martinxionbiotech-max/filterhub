@@ -1,0 +1,49 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { guides, type Guide } from '../../data/guides';
+
+export function getStaticPaths() {
+  return guides.map((g) => ({ params: { slug: g.slug }, props: { guide: g } }));
+}
+
+const { guide } = Astro.props as { guide: Guide };
+
+const breadcrumbs = [
+  { label: 'Buyer Guides', href: '/guides/' },
+  { label: guide.title, href: `/guides/${guide.slug}/` },
+];
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: guide.title,
+  description: guide.description,
+  mainEntityOfPage: `https://chinafilterhub.com/guides/${guide.slug}/`,
+  publisher: { '@id': 'https://chinafilterhub.com/#organization' },
+  inLanguage: 'en',
+};
+---
+
+<BaseLayout title={guide.title} description={guide.description} breadcrumbs={breadcrumbs}>
+  <main class="wrap" style="padding-top:2rem;max-width:760px;">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a> / <a href="/guides/">Buyer Guides</a> / {guide.title}
+    </nav>
+    <h1>{guide.title}</h1>
+    <p class="lede">{guide.directAnswer}</p>
+
+    {guide.sections.map((s) => (
+      <section>
+        <h2>{s.heading}</h2>
+        <p>{s.body}</p>
+      </section>
+    ))}
+
+    <h2>Sources</h2>
+    <ul>
+      {guide.sources.map((s) => <li>{s}</li>)}
+    </ul>
+
+    <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  </main>
+</BaseLayout>

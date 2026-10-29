@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { site } from '../data/site';
+---
+
+<BaseLayout
+  title="Contact"
+  description="Contact Qinghe Air Filter for filter inquiries, OEM and private-label requests."
+  breadcrumbs={[{ label: 'Contact', href: '/contact/' }]}
+>
+  <main class="wrap" style="padding-top:2rem;max-width:720px;">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> / Contact</nav>
+    <h1>Contact</h1>
+
+    <p class="lede">
+      Send an inquiry with the SKU or OE number, or a drawing and target quantity. MOQ and lead
+      time are quoted per line; indicative pricing is confirmed on quotation.
+    </p>
+
+    <ul>
+      <li>Email: <code>{site.entity.email}</code></li>
+      <li>Phone / WhatsApp: <code>{site.entity.phone}</code></li>
+      <li>Address: <code>{site.entity.address}</code></li>
+    </ul>
+
+    <p class="notice">
+      All contact channels are provisional pending domain and entity verification.
+    </p>
+  </main>
+</BaseLayout>

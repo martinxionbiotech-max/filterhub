@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { guides } from '../../data/guides';
+---
+
+<BaseLayout
+  title="Buyer Guides"
+  description="Practical procurement guides for filter selection and cleanroom sourcing, drawn from a consolidated filter catalogue."
+  breadcrumbs={[{ label: 'Buyer Guides', href: '/guides/' }]}
+>
+  <main class="wrap" style="padding-top:2rem;">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> / Buyer Guides</nav>
+    <h1>Buyer Guides</h1>
+    <p class="lede">
+      Procurement guides that walk through selection criteria, efficiency-grade frameworks and
+      what to verify before ordering.
+    </p>
+    <div class="grid" style="grid-template-columns:repeat(auto-fill,minmax(320px,1fr));margin-top:1.5rem;">
+      {guides.map((g) => (
+        <a class="card" href={`/guides/${g.slug}/`} style="color:var(--ink);">
+          <p class="eyebrow" style="margin:0 0 0.3rem;">{g.pillar}</p>
+          <strong>{g.title}</strong>
+          <p class="muted" style="margin:0.4rem 0 0;font-size:0.92rem;">{g.description}</p>
+        </a>
+      ))}
+    </div>
+  </main>
+</BaseLayout>

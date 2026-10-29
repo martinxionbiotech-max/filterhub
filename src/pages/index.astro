@@ -1,0 +1,61 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { site } from '../data/site';
+import { categories } from '../data/categories';
+---
+
+<BaseLayout
+  title="Air, oil, fuel, hydraulic and cleanroom filtration"
+  description="Qinghe Air Filter consolidates a full-span filter catalogue — engine intake, oil, fuel, hydraulic, HVAC, HEPA/ULPA, activated carbon and cleanroom equipment — under one sourcing relationship."
+>
+  <main class="wrap" style="padding-top:2rem;">
+    <section style="max-width:760px;">
+      <p class="eyebrow">Filter manufacturer &amp; exporter</p>
+      <h1>Air, oil, fuel, hydraulic and cleanroom filtration — one Qinghe-based manufacturing partner</h1>
+      <p class="lede">
+        Qinghe Air Filter consolidates a full-span filter catalogue under a single sourcing
+        relationship. Engine intake air, cabin, oil, fuel, hydraulic and transmission filters sit
+        alongside HVAC, HEPA/ULPA, activated-carbon and cleanroom-grade equipment, so a buyer
+        carrying several categories no longer has to split orders across multiple suppliers.
+      </p>
+      <p class="notice">
+        Entity disclosure: the operating legal entity, registration details, factory address and
+        contact channels are marked provisional pending business-licence verification. See the{' '}
+        <a href="/company/">company page</a>.
+      </p>
+    </section>
+
+    <section style="margin-top:2.5rem;">
+      <h2>Category entry</h2>
+      <div class="grid" style="grid-template-columns:repeat(auto-fill,minmax(300px,1fr));">
+        {categories.map((c) => (
+          <a class="card" href={`/products/${c.slug}/`} style="color:var(--ink);">
+            <strong>{c.name}</strong>
+            <p class="muted" style="margin:0.4rem 0 0;font-size:0.92rem;">{c.summary}</p>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <section style="margin-top:2.5rem;max-width:760px;">
+      <h2>Five questions</h2>
+      <div class="grid">
+        <div class="card"><strong>Who are you?</strong><p class="muted" style="margin:0.4rem 0 0;">A filter manufacturer and exporter positioned in the Qinghe filter industry cluster of Hebei province. Entity and registration details are disclosed on the company page and remain provisional until verification.</p></div>
+        <div class="card"><strong>What do you make?</strong><p class="muted" style="margin:0.4rem 0 0;">Thirteen product categories spanning engine filtration, HVAC/cleanroom air filtration and liquid/metal cartridges, mapped to a recognised efficiency-grade framework.</p></div>
+        <div class="card"><strong>Why choose you?</strong><p class="muted" style="margin:0.4rem 0 0;">A consolidated catalogue reduces supplier count. Specifications are comparable across the range, with custom sizing and OEM/private-label support.</p></div>
+        <div class="card"><strong>How do you guarantee quality?</strong><p class="muted" style="margin:0.4rem 0 0;">Every specification carries a per-field data-status label (verified / catalog-confirmed / reference / pending). The data subsite holds the machine-readable record.</p></div>
+        <div class="card"><strong>How do we start?</strong><p class="muted" style="margin:0.4rem 0 0;">Send an inquiry with the SKU or OE number, or a drawing and target quantity. MOQ and lead time are quoted per line; indicative pricing is confirmed on quotation.</p></div>
+      </div>
+    </section>
+
+    <section style="margin-top:2.5rem;max-width:760px;">
+      <h2>Strength</h2>
+      <ul>
+        <li><strong>Consolidated range</strong> — one relationship across engine, HVAC, cleanroom and liquid filtration.</li>
+        <li><strong>Grade-standardised</strong> — every air-filtration category is anchored to a recognised efficiency class.</li>
+        <li><strong>Traceable data</strong> — each specification field carries a source and a data-status tag; unconfirmed fields stay marked pending, not guessed.</li>
+        <li><strong>Custom and OEM</strong> — standard and custom sizes, with OEM/ODM support.</li>
+      </ul>
+    </section>
+  </main>
+</BaseLayout>

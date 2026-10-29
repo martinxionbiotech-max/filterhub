@@ -1,0 +1,34 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { categories } from '../../data/categories';
+
+const breadcrumbs = [{ label: 'Products', href: '/products/' }];
+---
+
+<BaseLayout
+  title="Product Centre"
+  description="Thirteen filter categories across engine filtration, HVAC/cleanroom air filtration and liquid/metal cartridges, mapped to a single efficiency-grade framework."
+  breadcrumbs={breadcrumbs}
+>
+  <main class="wrap" style="padding-top:2rem;">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> / Products</nav>
+    <h1>Product Centre</h1>
+    <p class="lede">
+      Thirteen categories organised as a category-to-SKU tree. Each category is anchored to a
+      recognised efficiency-grade framework so specifications stay comparable across the range.
+    </p>
+    <div class="grid" style="grid-template-columns:repeat(auto-fill,minmax(320px,1fr));margin-top:1.5rem;">
+      {categories.map((c) => (
+        <a class="card" href={`/products/${c.slug}/`} style="color:var(--ink);">
+          <strong>{c.name}</strong>
+          <p class="muted" style="margin:0.35rem 0 0;font-size:0.92rem;">{c.summary}</p>
+          {c.subcategories.length > 0 && (
+            <p class="muted" style="margin:0.5rem 0 0;font-size:0.85rem;">
+              {c.subcategories.join(' · ')}
+            </p>
+          )}
+        </a>
+      ))}
+    </div>
+  </main>
+</BaseLayout>

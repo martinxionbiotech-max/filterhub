@@ -1,3 +1,10 @@
 # 原始 HTML 快照体积过大（179MB），仅保留在本地磁盘作为证据，
 # 不提交到 git。逐页文字（text/）与 manifest.json 已提交作为可追溯证据。
 crawls/*/html/
+
+# Node / Astro build output
+node_modules/
+dist/
+.astro/
+.DS_Store
+*.log

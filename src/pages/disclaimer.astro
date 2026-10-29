@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Disclaimer"
+  description="Disclaimer for the Qinghe Air Filter website."
+  breadcrumbs={[{ label: 'Disclaimer', href: '/disclaimer/' }]}
+>
+  <main class="wrap" style="padding-top:2rem;max-width:760px;">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> / Disclaimer</nav>
+    <h1>Disclaimer</h1>
+    <p>
+      Specifications on this site are compiled from multiple manufacturer catalogues and standards
+      references. Fields not independently verified are labelled <code>pending</code>; legal-entity
+      fields are <code>provisional</code> pending business-licence verification. No certification,
+      customer reference or factory figure is presented without a traceable source.
+    </p>
+    <p>
+      Cross-reference part numbers link a filter to an OE number and do not by themselves confirm a
+      dimensional match. Confirm specifications against the OE drawing before ordering.
+    </p>
+  </main>
+</BaseLayout>

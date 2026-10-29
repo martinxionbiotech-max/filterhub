@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Terms of Service"
+  description="Terms of service for the Qinghe Air Filter website."
+  breadcrumbs={[{ label: 'Terms of Service', href: '/terms/' }]}
+>
+  <main class="wrap" style="padding-top:2rem;max-width:760px;">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> / Terms of Service</nav>
+    <h1>Terms of Service</h1>
+    <p>
+      This website provides catalogue and specification information for sourcing purposes. Content
+      is provided as-is; specifications carry per-field data-status labels and are not a contractual
+      offer. Orders are confirmed separately in writing.
+    </p>
+    <p>
+      Brand, entity and domain details are provisional pending business-licence verification.
+    </p>
+  </main>
+</BaseLayout>
