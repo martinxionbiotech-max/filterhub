@@ -2,23 +2,23 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { categories, type Category } from '../../data/categories';
 import { site } from '../../data/site';
+import { productsByCategory, skuSlug, codeFromSlug } from '../../data/products';
 
 export function getStaticPaths() {
   return categories.map((c) => ({ params: { category: c.slug }, props: { category: c } }));
 }
 
 const { category } = Astro.props as { category: Category };
+// Map category slug (kebab-case) back to the dataset category code (snake_case).
+const code = codeFromSlug(category.slug);
+const skus = productsByCategory(code);
 const breadcrumbs = [
   { label: 'Products', href: '/products/' },
   { label: category.name, href: `/products/${category.slug}/` },
 ];
 ---
 
-<BaseLayout
-  title={category.name}
-  description={category.summary}
-  breadcrumbs={breadcrumbs}
->
+<BaseLayout title={category.name} description={category.summary} breadcrumbs={breadcrumbs}>
   <main class="wrap" style="padding-top:2rem;">
     <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="/">Home</a> / <a href="/products/">Products</a> / {category.name}
@@ -32,6 +32,9 @@ const breadcrumbs = [
       </p>
     )}
 
+    <h2>Positioning</h2>
+    <p>{category.positioning}</p>
+
     <h2>What it is</h2>
     <p>{category.directAnswer}</p>
 
@@ -42,6 +45,27 @@ const breadcrumbs = [
     <ul>
       {category.selection.map((s) => <li>{s}</li>)}
     </ul>
+
+    <h2>Procurement notes</h2>
+    <ul>
+      {category.procurement.map((p) => <li>{p}</li>)}
+    </ul>
+
+    {skus.length > 0 && (
+      <section style="margin-top:2rem;">
+        <h2>SKUs in this category ({skus.length})</h2>
+        <ul>
+          {skus.map((p) => (
+            <li>
+              <a href={`/products/${category.slug}/${skuSlug(p.sku)}/`}>
+                <code>{p.sku}</code> — {p.name}
+              </a>
+              {p.efficiency_class && <span class="muted"> · {p.efficiency_class}</span>}
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
 
     <p class="notice" style="margin-top:1.5rem;">
       Per-model dimensions, pressure drop, dust-holding capacity and other unpublished fields are

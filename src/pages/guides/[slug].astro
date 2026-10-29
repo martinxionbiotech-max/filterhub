@@ -39,6 +39,20 @@ const articleSchema = {
       </section>
     ))}
 
+    {guide.related.length > 0 && (
+      <section style="margin-top:2rem;">
+        <h2>Related guides</h2>
+        <ul>
+          {guide.related.map((slug) => {
+            const g = guides.find((x) => x.slug === slug);
+            return g ? (
+              <li><a href={`/guides/${g.slug}/`}>{g.title}</a></li>
+            ) : null;
+          })}
+        </ul>
+      </section>
+    )}
+
     <h2>Sources</h2>
     <ul>
       {guide.sources.map((s) => <li>{s}</li>)}

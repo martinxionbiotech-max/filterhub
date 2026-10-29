@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { site } from '../data/site';
 import { categories } from '../data/categories';
+import { categoryCount, totalProducts, coveredCategories } from '../data/products';
 ---
 
 <BaseLayout
@@ -27,11 +28,18 @@ import { categories } from '../data/categories';
 
     <section style="margin-top:2.5rem;">
       <h2>Category entry</h2>
+      <p class="muted" style="margin-top:-0.5rem;">
+        {totalProducts} SKUs across {coveredCategories} of 13 categories, drawn from the
+        consolidated catalogue and machine-readable in the data subsite.
+      </p>
       <div class="grid" style="grid-template-columns:repeat(auto-fill,minmax(300px,1fr));">
         {categories.map((c) => (
           <a class="card" href={`/products/${c.slug}/`} style="color:var(--ink);">
             <strong>{c.name}</strong>
             <p class="muted" style="margin:0.4rem 0 0;font-size:0.92rem;">{c.summary}</p>
+            <p class="muted" style="margin:0.5rem 0 0;font-size:0.85rem;">
+              {categoryCount(c.slug)} SKU{categoryCount(c.slug) === 1 ? '' : 's'}
+            </p>
           </a>
         ))}
       </div>

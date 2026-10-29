@@ -1,0 +1,214 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { site } from '../../../data/site';
+import {
+  products,
+  productsMeta,
+  categorySlug,
+  categoryName,
+  skuSlug,
+  type Product,
+} from '../../../data/products';
+
+export function getStaticPaths() {
+  return products.map((p) => ({
+    params: { category: categorySlug(p.category), slug: skuSlug(p.sku) },
+    props: { product: p },
+  }));
+}
+
+const { product } = Astro.props as { product: Product };
+const catSlug = categorySlug(product.category);
+const catName = categoryName(product.category);
+
+const breadcrumbs = [
+  { label: 'Products', href: '/products/' },
+  { label: catName, href: `/products/${catSlug}/` },
+  { label: product.sku, href: `/products/${catSlug}/${skuSlug(product.sku)}/` },
+];
+
+// Confirmed spec entries only (drop any whose data_status is pending).
+const confirmedSpec = product.spec.filter((s) => s.data_status !== 'pending');
+const confirmedMaterial = product.material.filter((m) => m.data_status !== 'pending');
+const confirmedMedia = product.filter_media.filter((m) => m.data_status !== 'pending');
+
+// Six-block structure (carfilterspro audit paradigm):
+// 1. Identity + inquiry · 2. Core params (confirmed only) · 3. OE cross-reference
+// 4. Quality documents (real items only) · 5. OEM terms · 6. Related resources
+const productSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  '@id': `https://chinafilterhub.com/products/${catSlug}/${skuSlug(product.sku)}/#product`,
+  name: product.name,
+  sku: product.sku,
+  category: catName,
+  description: product.description || undefined,
+  brand: { '@type': 'Brand', name: site.brand },
+  url: `https://chinafilterhub.com/products/${catSlug}/${skuSlug(product.sku)}/`,
+  offers: {
+    '@type': 'AggregateOffer',
+    priceCurrency: 'USD',
+    availability: 'https://schema.org/InStock',
+    offerCount: 1,
+    // Price on quotation — no fabricated price. Omit lowPrice/highPrice.
+  },
+};
+---
+
+<BaseLayout title={product.name} description={product.description || product.name} breadcrumbs={breadcrumbs}>
+  <main class="wrap" style="padding-top:2rem;max-width:820px;">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a> / <a href="/products/">Products</a> /{' '}
+      <a href={`/products/${catSlug}/`}>{catName}</a> / {product.sku}
+    </nav>
+
+    {/* 1. Identity + inquiry */}
+    <section>
+      <h1>{product.name}</h1>
+      <p class="muted" style="margin-top:-0.4rem;">
+        SKU <code>{product.sku}</code> · <a href={`/products/${catSlug}/`}>{catName}</a> ·{' '}
+        source: <code>{product.company}</code>
+      </p>
+      {product.description && <p class="lede">{product.description}</p>}
+      <p class="notice">
+        This is a catalogue reference entry, not a verified fitment. Request a quotation with the
+        SKU or OE number and confirm the spec sheet before ordering.
+      </p>
+      <p style="margin-top:1rem;">
+        <a class="card" href="/contact/" style="display:inline-block;font-weight:600;color:var(--ink);">
+          Request quotation for {product.sku} →
+        </a>
+      </p>
+    </section>
+
+    {/* 2. Core parameters — confirmed fields only */}
+    <section style="margin-top:2rem;">
+      <h2>Core parameters</h2>
+      {confirmedSpec.length > 0 ? (
+        <table style="width:100%;border-collapse:collapse;">
+          <thead>
+            <tr style="text-align:left;border-bottom:1px solid var(--line);">
+              <th style="padding:0.4rem;">Parameter</th>
+              <th style="padding:0.4rem;">Value</th>
+              <th style="padding:0.4rem;">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            {confirmedSpec.map((s) => (
+              <tr style="border-bottom:1px solid var(--line);">
+                <td style="padding:0.4rem;"><code>{s.spec_key}</code></td>
+                <td style="padding:0.4rem;">{s.spec_value}{s.unit ? ` ${s.unit}` : ''}</td>
+                <td style="padding:0.4rem;"><code>{s.data_status}</code></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      ) : (
+        <p class="muted">
+          No confirmed technical parameters are published for this SKU in the source catalogue.
+          Fields left blank are marked <code>pending</code> rather than estimated.
+        </p>
+      )}
+      {product.efficiency_class && (
+        <p style="margin-top:0.75rem;">
+          Efficiency class (source-labelled): <code>{product.efficiency_class}</code>
+        </p>
+      )}
+      {confirmedMedia.length > 0 && (
+        <p style="margin-top:0.75rem;">
+          Filter media: {confirmedMedia.map((m) => (m.efficiency_class ? `${m.type} (${m.efficiency_class})` : m.type)).join(' · ')}
+        </p>
+      )}
+      {confirmedMaterial.length > 0 && (
+        <p style="margin-top:0.5rem;">
+          Material / construction:{' '}
+          {confirmedMaterial.map((m) => `${m.part}: ${m.material_value}`).join(' · ')}
+        </p>
+      )}
+    </section>
+
+    {/* 3. OE cross-reference */}
+    <section style="margin-top:2rem;">
+      <h2>OE cross-reference</h2>
+      {product.oe_reference.length > 0 ? (
+        <table style="width:100%;border-collapse:collapse;">
+          <thead>
+            <tr style="text-align:left;border-bottom:1px solid var(--line);">
+              <th style="padding:0.4rem;">OE number</th>
+              <th style="padding:0.4rem;">Brand</th>
+              <th style="padding:0.4rem;">Equipment</th>
+            </tr>
+          </thead>
+          <tbody>
+            {product.oe_reference.map((o) => (
+              <tr style="border-bottom:1px solid var(--line);">
+                <td style="padding:0.4rem;"><code>{o.oe_number}</code></td>
+                <td style="padding:0.4rem;">{o.brand ?? '—'}</td>
+                <td style="padding:0.4rem;">{o.equipment_type ?? '—'}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      ) : (
+        <p class="muted">No OE cross-reference published for this SKU.</p>
+      )}
+      <p class="muted" style="font-size:0.85rem;margin-top:0.5rem;">
+        A cross-reference links a part to an OE number; it does not by itself confirm the
+        dimensional match. Verify against the OE drawing before bulk ordering.
+      </p>
+    </section>
+
+    {/* 4. Quality documents — real items only */}
+    <section style="margin-top:2rem;">
+      <h2>Quality documents</h2>
+      <p class="muted">
+        No per-SKU quality certificates (leakage-test report, media-efficiency test) are published
+        for this entry in the source catalogue. Any certification claim is omitted rather than
+        assumed — request the applicable test report at inquiry.
+      </p>
+    </section>
+
+    {/* 5. OEM terms */}
+    <section style="margin-top:2rem;">
+      <h2>OEM / private-label terms</h2>
+      {product.moq.moq_value !== null ? (
+        <p>
+          Published MOQ: <code>{product.moq.moq_value} {product.moq.moq_unit}</code>{' '}
+          <span class="muted">({product.moq.data_status})</span>
+        </p>
+      ) : (
+        <p class="muted">MOQ not published for this SKU — quoted per line at inquiry.</p>
+      )}
+      <p class="muted">
+        Custom sizing and private-label packaging are available under OEM/ODM terms; confirm
+        dimensions, marking and packaging with the supplier.{' '}
+        <a href="/oem/">See the OEM process</a>.
+      </p>
+    </section>
+
+    {/* 6. Related resources */}
+    <section style="margin-top:2rem;">
+      <h2>Related resources</h2>
+      <ul>
+        <li>
+          Source page:{' '}
+          <a href={product.source_url} rel="noopener" target="_blank">{product.source_url}</a>
+        </li>
+        <li>
+          Machine-readable record:{' '}
+          <a href={`${site.dataSubsiteUrl}/products/${skuSlug(product.sku)}/`} rel="noopener" target="_blank">
+            data subsite SKU page
+          </a>
+        </li>
+        <li>
+          Category overview: <a href={`/products/${catSlug}/`}>{catName}</a>
+        </li>
+        <li>
+          <a href="/guides/">Buyer guides</a> for selection and sourcing.
+        </li>
+      </ul>
+    </section>
+
+    <script type="application/ld+json" set:html={JSON.stringify(productSchema)} />
+  </main>
+</BaseLayout>
