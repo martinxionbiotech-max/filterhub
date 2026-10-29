@@ -1,0 +1,1011 @@
+{
+  "site": "https://www.klcintl.com/",
+  "host": "www.klcintl.com",
+  "origin": "https://www.klcintl.com",
+  "crawlDate": "2026-10-29T11:19:16.919Z",
+  "pagesVisited": 250,
+  "pagesFailed": 0,
+  "failed": [],
+  "pages": [
+    {
+      "url": "https://www.klcintl.com/",
+      "file": "https___www_klcintl_com__580899491"
+    },
+    {
+      "url": "https://www.klcintl.com/v-bank-air-filter",
+      "file": "https___www_klcintl_com_v_bank_air_filter_1241073166"
+    },
+    {
+      "url": "https://www.klcintl.com/mini-pleat-hepa-filter",
+      "file": "https___www_klcintl_com_mini_pleat_hepa_filter_1558374285"
+    },
+    {
+      "url": "https://www.klcintl.com/disposable-hooded-terminal-filter",
+      "file": "https___www_klcintl_com_disposable_hooded_terminal_filter_1347602849"
+    },
+    {
+      "url": "https://www.klcintl.com/laminar-flow-cabinet",
+      "file": "https___www_klcintl_com_laminar_flow_cabinet_533180827"
+    },
+    {
+      "url": "https://www.klcintl.com/pocket-air-filter",
+      "file": "https___www_klcintl_com_pocket_air_filter_147823023"
+    },
+    {
+      "url": "https://www.klcintl.com/high-heat-resistance-primary-filter",
+      "file": "https___www_klcintl_com_high_heat_resistance_primary_filter_703156258"
+    },
+    {
+      "url": "https://www.klcintl.com/custom-fresh-air-cabinet",
+      "file": "https___www_klcintl_com_custom_fresh_air_cabinet_1798056707"
+    },
+    {
+      "url": "https://www.klcintl.com/replaceable-hooded-terminal-filter",
+      "file": "https___www_klcintl_com_replaceable_hooded_terminal_filter_617222489"
+    },
+    {
+      "url": "https://www.klcintl.com/air-filter-489",
+      "file": "https___www_klcintl_com_air_filter_489_2041489446"
+    },
+    {
+      "url": "https://www.klcintl.com/mini-pleat-filter",
+      "file": "https___www_klcintl_com_mini_pleat_filter_1035299836"
+    },
+    {
+      "url": "https://www.klcintl.com/separator-filter",
+      "file": "https___www_klcintl_com_separator_filter_953719805"
+    },
+    {
+      "url": "https://www.klcintl.com/v-bank-filter",
+      "file": "https___www_klcintl_com_v_bank_filter_308466575"
+    },
+    {
+      "url": "https://www.klcintl.com/pocket-filter",
+      "file": "https___www_klcintl_com_pocket_filter_123935180"
+    },
+    {
+      "url": "https://www.klcintl.com/electrostatic-filter",
+      "file": "https___www_klcintl_com_electrostatic_filter_456508850"
+    },
+    {
+      "url": "https://www.klcintl.com/panel-filter-368",
+      "file": "https___www_klcintl_com_panel_filter_368_1437110676"
+    },
+    {
+      "url": "https://www.klcintl.com/activated-carbon-filter",
+      "file": "https___www_klcintl_com_activated_carbon_filter_1992938201"
+    },
+    {
+      "url": "https://www.klcintl.com/pleated-filter",
+      "file": "https___www_klcintl_com_pleated_filter_2097656173"
+    },
+    {
+      "url": "https://www.klcintl.com/hepa-air-filter-with-hood",
+      "file": "https___www_klcintl_com_hepa_air_filter_with_hood_1624940365"
+    },
+    {
+      "url": "https://www.klcintl.com/high-temperature-filter",
+      "file": "https___www_klcintl_com_high_temperature_filter_1465116153"
+    },
+    {
+      "url": "https://www.klcintl.com/filter-material",
+      "file": "https___www_klcintl_com_filter_material_380258599"
+    },
+    {
+      "url": "https://www.klcintl.com/other-filters",
+      "file": "https___www_klcintl_com_other_filters_223558533"
+    },
+    {
+      "url": "https://www.klcintl.com/cleanroom-equipment",
+      "file": "https___www_klcintl_com_cleanroom_equipment_1257382434"
+    },
+    {
+      "url": "https://www.klcintl.com/fan-filter-unit-ffu",
+      "file": "https___www_klcintl_com_fan_filter_unit_ffu_800192412"
+    },
+    {
+      "url": "https://www.klcintl.com/clean-bench-laminar-flow-cabinet",
+      "file": "https___www_klcintl_com_clean_bench_laminar_flow_cabinet_1413906788"
+    },
+    {
+      "url": "https://www.klcintl.com/clean-booth-modular-clean-room",
+      "file": "https___www_klcintl_com_clean_booth_modular_clean_room_1899595168"
+    },
+    {
+      "url": "https://www.klcintl.com/pass-box",
+      "file": "https___www_klcintl_com_pass_box_425171534"
+    },
+    {
+      "url": "https://www.klcintl.com/air-shower",
+      "file": "https___www_klcintl_com_air_shower_923924176"
+    },
+    {
+      "url": "https://www.klcintl.com/hepa-filter-box-terminal-hepa-module",
+      "file": "https___www_klcintl_com_hepa_filter_box_terminal_hepa_module_1713231381"
+    },
+    {
+      "url": "https://www.klcintl.com/weighing-booth-dispensing-booth",
+      "file": "https___www_klcintl_com_weighing_booth_dispensing_booth_484447746"
+    },
+    {
+      "url": "https://www.klcintl.com/laminar-flow-ceiling",
+      "file": "https___www_klcintl_com_laminar_flow_ceiling_654246912"
+    },
+    {
+      "url": "https://www.klcintl.com/fresh-air-cabinet",
+      "file": "https___www_klcintl_com_fresh_air_cabinet_702984819"
+    },
+    {
+      "url": "https://www.klcintl.com/biosafety-cabinet-biologicall-safety-cabinet",
+      "file": "https___www_klcintl_com_biosafety_cabinet_biologicall_safety_cabinet_1011605866"
+    },
+    {
+      "url": "https://www.klcintl.com/clean-wardrobe-clean-room-garment-cabinet",
+      "file": "https___www_klcintl_com_clean_wardrobe_clean_room_garment_cabinet_713739331"
+    },
+    {
+      "url": "https://www.klcintl.com/cleanroom-self-clean-device",
+      "file": "https___www_klcintl_com_cleanroom_self_clean_device_1777063887"
+    },
+    {
+      "url": "https://www.klcintl.com/cleanroom-hand-cleaner",
+      "file": "https___www_klcintl_com_cleanroom_hand_cleaner_2025675708"
+    },
+    {
+      "url": "https://www.klcintl.com/cleanroom-door",
+      "file": "https___www_klcintl_com_cleanroom_door_181511526"
+    },
+    {
+      "url": "https://www.klcintl.com/company",
+      "file": "https___www_klcintl_com_company_1873363846"
+    },
+    {
+      "url": "https://www.klcintl.com/production",
+      "file": "https___www_klcintl_com_production_2023494556"
+    },
+    {
+      "url": "https://www.klcintl.com/certificate",
+      "file": "https___www_klcintl_com_certificate_1747221268"
+    },
+    {
+      "url": "https://www.klcintl.com/our-team-678",
+      "file": "https___www_klcintl_com_our_team_678_1554207147"
+    },
+    {
+      "url": "https://www.klcintl.com/showroom",
+      "file": "https___www_klcintl_com_showroom_1977871109"
+    },
+    {
+      "url": "https://www.klcintl.com/video",
+      "file": "https___www_klcintl_com_video_524906424"
+    },
+    {
+      "url": "https://www.klcintl.com/applications",
+      "file": "https___www_klcintl_com_applications_1128359098"
+    },
+    {
+      "url": "https://www.klcintl.com/biopharmaceutical",
+      "file": "https___www_klcintl_com_biopharmaceutical_1201575416"
+    },
+    {
+      "url": "https://www.klcintl.com/semiconductor",
+      "file": "https___www_klcintl_com_semiconductor_1441173322"
+    },
+    {
+      "url": "https://www.klcintl.com/livestock",
+      "file": "https___www_klcintl_com_livestock_1728933479"
+    },
+    {
+      "url": "https://www.klcintl.com/food-and-beverage",
+      "file": "https___www_klcintl_com_food_and_beverage_1188179073"
+    },
+    {
+      "url": "https://www.klcintl.com/power-plant",
+      "file": "https___www_klcintl_com_power_plant_855697120"
+    },
+    {
+      "url": "https://www.klcintl.com/hvac-systems",
+      "file": "https___www_klcintl_com_hvac_systems_130616106"
+    },
+    {
+      "url": "https://www.klcintl.com/news",
+      "file": "https___www_klcintl_com_news_1402164214"
+    },
+    {
+      "url": "https://www.klcintl.com/contact-us",
+      "file": "https___www_klcintl_com_contact_us_410305102"
+    },
+    {
+      "url": "https://www.klcintl.com/products",
+      "file": "https___www_klcintl_com_products_1651265799"
+    },
+    {
+      "url": "https://www.klcintl.com/pro1",
+      "file": "https___www_klcintl_com_pro1_1402235975"
+    },
+    {
+      "url": "https://www.klcintl.com/pro2",
+      "file": "https___www_klcintl_com_pro2_1402235976"
+    },
+    {
+      "url": "https://www.klcintl.com/pro3",
+      "file": "https___www_klcintl_com_pro3_1402235977"
+    },
+    {
+      "url": "https://www.klcintl.com/pro4",
+      "file": "https___www_klcintl_com_pro4_1402235978"
+    },
+    {
+      "url": "https://www.klcintl.com/high-efficiency-low-pressure-drop-mini-pleat-filter-hepa-ulpa",
+      "file": "https___www_klcintl_com_high_efficiency_low_pressure_drop_mini_pleat_filter_hepa_748868466"
+    },
+    {
+      "url": "https://www.klcintl.com/100-humidity-resistance-endless-gasket-separator-filter",
+      "file": "https___www_klcintl_com_100_humidity_resistance_endless_gasket_separator_filter_850677978"
+    },
+    {
+      "url": "https://www.klcintl.com/m5m6f7f8f9-long-life-span-synthetic-fiber-pocket-filter",
+      "file": "https___www_klcintl_com_m5m6f7f8f9_long_life_span_synthetic_fiber_pocket_filter_1410686458"
+    },
+    {
+      "url": "https://www.klcintl.com/industrial-electrostatic-precipitator-filter-for-esp-air-cleaner",
+      "file": "https___www_klcintl_com_industrial_electrostatic_precipitator_filter_for_esp_air_1302116496"
+    },
+    {
+      "url": "https://www.klcintl.com/synthetic-fiber-primary-pleated-air-filter-for-industrial",
+      "file": "https___www_klcintl_com_synthetic_fiber_primary_pleated_air_filter_for_industria_100009574"
+    },
+    {
+      "url": "https://www.klcintl.com/odor-removal-activated-carbon-pleated-air-filter",
+      "file": "https___www_klcintl_com_odor_removal_activated_carbon_pleated_air_filter_876485566"
+    },
+    {
+      "url": "https://www.klcintl.com/washable-g1-g2-g3-g4-synthetic-fiber-panel-filter",
+      "file": "https___www_klcintl_com_washable_g1_g2_g3_g4_synthetic_fiber_panel_filter_1366416839"
+    },
+    {
+      "url": "https://www.klcintl.com/aluminum-wave-stainless-steel-wave-metal-mesh-air-filter",
+      "file": "https___www_klcintl_com_aluminum_wave_stainless_steel_wave_metal_mesh_air_filter_1523617692"
+    },
+    {
+      "url": "https://www.klcintl.com/clean-room-acec-ordinary-ffufan-filter-unit",
+      "file": "https___www_klcintl_com_clean_room_acec_ordinary_ffufan_filter_unit_1438194963"
+    },
+    {
+      "url": "https://www.klcintl.com/general-hepa-filter-box-terminal-hepa-module",
+      "file": "https___www_klcintl_com_general_hepa_filter_box_terminal_hepa_module_61466406"
+    },
+    {
+      "url": "https://www.klcintl.com/class-100-iso-5-vertical-flow-clean-bench-with-lifting-door",
+      "file": "https___www_klcintl_com_class_100_iso_5_vertical_flow_clean_bench_with_lifting_d_1776956658"
+    },
+    {
+      "url": "https://www.klcintl.com/tempered-glass-interlocking-system-general-pass-box",
+      "file": "https___www_klcintl_com_tempered_glass_interlocking_system_general_pass_box_503959579"
+    },
+    {
+      "url": "https://www.klcintl.com/modular-clean-room-clean-booth-manufacturers",
+      "file": "https___www_klcintl_com_modular_clean_room_clean_booth_manufacturers_755576831"
+    },
+    {
+      "url": "https://www.klcintl.com/cleanroom-laminar-air-flow-ceiling-operating-room-ceiling-system",
+      "file": "https___www_klcintl_com_cleanroom_laminar_air_flow_ceiling_operating_room_ceilin_1417619908"
+    },
+    {
+      "url": "https://www.klcintl.com/hvac-system-air-handling-unit-ahu-air-handling-machine",
+      "file": "https___www_klcintl_com_hvac_system_air_handling_unit_ahu_air_handling_machine_1994769975"
+    },
+    {
+      "url": "https://www.klcintl.com/three-sides-stainless-steel-nozzles-general-air-shower",
+      "file": "https___www_klcintl_com_three_sides_stainless_steel_nozzles_general_air_shower_351885018"
+    },
+    {
+      "url": "https://www.klcintl.com/livestock-barn-filtration-calculator-sizing-filters-by-barn-volume-stocking-density-and-air-changes",
+      "file": "https___www_klcintl_com_livestock_barn_filtration_calculator_sizing_filters_by_b_1588638866"
+    },
+    {
+      "url": "https://www.klcintl.com/sterile-packaging-air-filtration-how-ffu-and-laminar-flow-protect-aseptic-filling-and-packaging-lines",
+      "file": "https___www_klcintl_com_sterile_packaging_air_filtration_how_ffu_and_laminar_flo_1065306456"
+    },
+    {
+      "url": "https://www.klcintl.com/iaq-monitoring-smart-filtration-how-sensor-synced-filters-optimize-indoor-air-quality-and-cut-energy-costs",
+      "file": "https___www_klcintl_com_iaq_monitoring_smart_filtration_how_sensor_synced_filter_56019993"
+    },
+    {
+      "url": "https://www.klcintl.com/sitemap",
+      "file": "https___www_klcintl_com_sitemap_723833678"
+    },
+    {
+      "url": "https://www.klcintl.com/blogs",
+      "file": "https___www_klcintl_com_blogs_506536014"
+    },
+    {
+      "url": "https://www.klcintl.com/privacy-policy",
+      "file": "https___www_klcintl_com_privacy_policy_1232839558"
+    },
+    {
+      "url": "https://www.klcintl.com/sitemap.xml",
+      "file": "https___www_klcintl_com_sitemap_xml_1699232987"
+    },
+    {
+      "url": "https://www.klcintl.com/medium-sub-hepa-v-bank-filter-in-plastic-frame",
+      "file": "https___www_klcintl_com_medium_sub_hepa_v_bank_filter_in_plastic_frame_382051216"
+    },
+    {
+      "url": "https://www.klcintl.com/plastic-frame-v-bank-filter",
+      "file": "https___www_klcintl_com_plastic_frame_v_bank_filter_1071801918"
+    },
+    {
+      "url": "https://www.klcintl.com/mini-pleat-v-bank-filter",
+      "file": "https___www_klcintl_com_mini_pleat_v_bank_filter_1006598066"
+    },
+    {
+      "url": "https://www.klcintl.com/v-bank-compact-filter",
+      "file": "https___www_klcintl_com_v_bank_compact_filter_18005625"
+    },
+    {
+      "url": "https://www.klcintl.com/glassfiber-v-bank-filter",
+      "file": "https___www_klcintl_com_glassfiber_v_bank_filter_1144080088"
+    },
+    {
+      "url": "https://www.klcintl.com/medium-v-bank-filter",
+      "file": "https___www_klcintl_com_medium_v_bank_filter_943097827"
+    },
+    {
+      "url": "https://www.klcintl.com/big-flitration-area-v-bank-air-filter-in-metal-frame",
+      "file": "https___www_klcintl_com_big_flitration_area_v_bank_air_filter_in_metal_frame_925456654"
+    },
+    {
+      "url": "https://www.klcintl.com/v-bank-filter-986",
+      "file": "https___www_klcintl_com_v_bank_filter_986_1229601351"
+    },
+    {
+      "url": "https://www.klcintl.com/4v-hepa-filter",
+      "file": "https___www_klcintl_com_4v_hepa_filter_412026191"
+    },
+    {
+      "url": "https://www.klcintl.com/v-bank-filters-metal-frame",
+      "file": "https___www_klcintl_com_v_bank_filters_metal_frame_915312226"
+    },
+    {
+      "url": "https://www.klcintl.com/v-bank-hepa-filter",
+      "file": "https___www_klcintl_com_v_bank_hepa_filter_1888515264"
+    },
+    {
+      "url": "https://www.klcintl.com/iso5-iso6-iso7-modular-clean-room",
+      "file": "https___www_klcintl_com_iso5_iso6_iso7_modular_clean_room_808074629"
+    },
+    {
+      "url": "https://www.klcintl.com/klc-mini-pleat-filter",
+      "file": "https___www_klcintl_com_klc_mini_pleat_filter_1305403281"
+    },
+    {
+      "url": "https://www.klcintl.com/hepa-panel-filter",
+      "file": "https___www_klcintl_com_hepa_panel_filter_196003549"
+    },
+    {
+      "url": "https://www.klcintl.com/hvac-hepa-filters-676",
+      "file": "https___www_klcintl_com_hvac_hepa_filters_676_784887586"
+    },
+    {
+      "url": "https://www.klcintl.com/mini-pleat-ulpa-filter",
+      "file": "https___www_klcintl_com_mini_pleat_ulpa_filter_524532711"
+    },
+    {
+      "url": "https://www.klcintl.com/hepa-air-filter-774",
+      "file": "https___www_klcintl_com_hepa_air_filter_774_1329984094"
+    },
+    {
+      "url": "https://www.klcintl.com/e10-e11-e12-h13-h14-disposable-hooded-terminal-filter",
+      "file": "https___www_klcintl_com_e10_e11_e12_h13_h14_disposable_hooded_terminal_filter_733690564"
+    },
+    {
+      "url": "https://www.klcintl.com/disposable-hepa-filter-with-hood",
+      "file": "https___www_klcintl_com_disposable_hepa_filter_with_hood_1847960605"
+    },
+    {
+      "url": "https://www.klcintl.com/hepa-filter-with-hood",
+      "file": "https___www_klcintl_com_hepa_filter_with_hood_422359850"
+    },
+    {
+      "url": "https://www.klcintl.com/hepaulpa-filter-terminal-module",
+      "file": "https___www_klcintl_com_hepaulpa_filter_terminal_module_888192956"
+    },
+    {
+      "url": "https://www.klcintl.com/filter-terminal-module",
+      "file": "https___www_klcintl_com_filter_terminal_module_201868053"
+    },
+    {
+      "url": "https://www.klcintl.com/hooded-terminal-filter",
+      "file": "https___www_klcintl_com_hooded_terminal_filter_1286907078"
+    },
+    {
+      "url": "https://www.klcintl.com/laminar-air-flow",
+      "file": "https___www_klcintl_com_laminar_air_flow_1399398835"
+    },
+    {
+      "url": "https://www.klcintl.com/laminarflow-for-tissue-culture",
+      "file": "https___www_klcintl_com_laminarflow_for_tissue_culture_1369795778"
+    },
+    {
+      "url": "https://www.klcintl.com/laminar-flow-hood",
+      "file": "https___www_klcintl_com_laminar_flow_hood_321103033"
+    },
+    {
+      "url": "https://www.klcintl.com/vertical-clean-bench",
+      "file": "https___www_klcintl_com_vertical_clean_bench_2045435128"
+    },
+    {
+      "url": "https://www.klcintl.com/vertical-flow-hood",
+      "file": "https___www_klcintl_com_vertical_flow_hood_648470361"
+    },
+    {
+      "url": "https://www.klcintl.com/new-design-horizontal-clean-bench",
+      "file": "https___www_klcintl_com_new_design_horizontal_clean_bench_1188434750"
+    },
+    {
+      "url": "https://www.klcintl.com/horizontal-clean-bench",
+      "file": "https___www_klcintl_com_horizontal_clean_bench_1038077978"
+    },
+    {
+      "url": "https://www.klcintl.com/klc-clean-bench",
+      "file": "https___www_klcintl_com_klc_clean_bench_1365704066"
+    },
+    {
+      "url": "https://www.klcintl.com/laminar-clean-bench",
+      "file": "https___www_klcintl_com_laminar_clean_bench_1797563530"
+    },
+    {
+      "url": "https://www.klcintl.com/clean-bench-for-lab",
+      "file": "https___www_klcintl_com_clean_bench_for_lab_850508773"
+    },
+    {
+      "url": "https://www.klcintl.com/air-clean-bench",
+      "file": "https___www_klcintl_com_air_clean_bench_2145722202"
+    },
+    {
+      "url": "https://www.klcintl.com/washable-g3-g4-synthetic-fiber-pocket-pre-filter",
+      "file": "https___www_klcintl_com_washable_g3_g4_synthetic_fiber_pocket_pre_filter_1527649280"
+    },
+    {
+      "url": "https://www.klcintl.com/pre-filter",
+      "file": "https___www_klcintl_com_pre_filter_216926011"
+    },
+    {
+      "url": "https://www.klcintl.com/pre-filter-ahu",
+      "file": "https___www_klcintl_com_pre_filter_ahu_1270612954"
+    },
+    {
+      "url": "https://www.klcintl.com/pocket-bag-air-filters",
+      "file": "https___www_klcintl_com_pocket_bag_air_filters_1498835039"
+    },
+    {
+      "url": "https://www.klcintl.com/bag-filter",
+      "file": "https___www_klcintl_com_bag_filter_1908096064"
+    },
+    {
+      "url": "https://www.klcintl.com/ahu-bag-filter",
+      "file": "https___www_klcintl_com_ahu_bag_filter_2097849407"
+    },
+    {
+      "url": "https://www.klcintl.com/glass-fiber-medium-efficiency-pocket-filter",
+      "file": "https___www_klcintl_com_glass_fiber_medium_efficiency_pocket_filter_860101234"
+    },
+    {
+      "url": "https://www.klcintl.com/glass-fiber-pocket-filter",
+      "file": "https___www_klcintl_com_glass_fiber_pocket_filter_1242382502"
+    },
+    {
+      "url": "https://www.klcintl.com/bag-filter-manufacturer",
+      "file": "https___www_klcintl_com_bag_filter_manufacturer_1899127618"
+    },
+    {
+      "url": "https://www.klcintl.com/pocket-filter-manufacturer",
+      "file": "https___www_klcintl_com_pocket_filter_manufacturer_1854962226"
+    },
+    {
+      "url": "https://www.klcintl.com/pocket-filter-supplier",
+      "file": "https___www_klcintl_com_pocket_filter_supplier_460499117"
+    },
+    {
+      "url": "https://www.klcintl.com/air-conditioner-filter",
+      "file": "https___www_klcintl_com_air_conditioner_filter_1530859939"
+    },
+    {
+      "url": "https://www.klcintl.com/g3-high-heat-resistance-pleated-primary-filter",
+      "file": "https___www_klcintl_com_g3_high_heat_resistance_pleated_primary_filter_46760953"
+    },
+    {
+      "url": "https://www.klcintl.com/high-temperature-filter-manufacturer",
+      "file": "https___www_klcintl_com_high_temperature_filter_manufacturer_179855579"
+    },
+    {
+      "url": "https://www.klcintl.com/high-heat-resistance-pleated-filter",
+      "file": "https___www_klcintl_com_high_heat_resistance_pleated_filter_1915140471"
+    },
+    {
+      "url": "https://www.klcintl.com/g3-pleated-filter",
+      "file": "https___www_klcintl_com_g3_pleated_filter_1013273352"
+    },
+    {
+      "url": "https://www.klcintl.com/high-temperature-pleated-filter",
+      "file": "https___www_klcintl_com_high_temperature_pleated_filter_2060960139"
+    },
+    {
+      "url": "https://www.klcintl.com/terminal-air-filtration-equipment-ventilation-fan",
+      "file": "https___www_klcintl_com_terminal_air_filtration_equipment_ventilation_fan_1766347530"
+    },
+    {
+      "url": "https://www.klcintl.com/ventilation-fan",
+      "file": "https___www_klcintl_com_ventilation_fan_177026464"
+    },
+    {
+      "url": "https://www.klcintl.com/terminal-air-filtration-equipment",
+      "file": "https___www_klcintl_com_terminal_air_filtration_equipment_1094653408"
+    },
+    {
+      "url": "https://www.klcintl.com/fresh-air-handling-units",
+      "file": "https___www_klcintl_com_fresh_air_handling_units_1255311348"
+    },
+    {
+      "url": "https://www.klcintl.com/fresh-air-unit",
+      "file": "https___www_klcintl_com_fresh_air_unit_379451209"
+    },
+    {
+      "url": "https://www.klcintl.com/fresh-air-unit-manufacturer",
+      "file": "https___www_klcintl_com_fresh_air_unit_manufacturer_770715605"
+    },
+    {
+      "url": "https://www.klcintl.com/dop-replaceable-hooded-terminal-filter-for-cleanroom",
+      "file": "https___www_klcintl_com_dop_replaceable_hooded_terminal_filter_for_cleanroom_1131589836"
+    },
+    {
+      "url": "https://www.klcintl.com/terminal-hepa-filter",
+      "file": "https___www_klcintl_com_terminal_hepa_filter_552930359"
+    },
+    {
+      "url": "https://www.klcintl.com/dop-replaceable-hooded-terminal-filter",
+      "file": "https___www_klcintl_com_dop_replaceable_hooded_terminal_filter_1808225951"
+    },
+    {
+      "url": "https://www.klcintl.com/dop-terminal-filter",
+      "file": "https___www_klcintl_com_dop_terminal_filter_547493922"
+    },
+    {
+      "url": "https://www.klcintl.com/hepa-terminal-hood-filter",
+      "file": "https___www_klcintl_com_hepa_terminal_hood_filter_391102732"
+    },
+    {
+      "url": "https://www.klcintl.com/dop-hepa-filter-with-hood",
+      "file": "https___www_klcintl_com_dop_hepa_filter_with_hood_322982366"
+    },
+    {
+      "url": "https://www.klcintl.com/hepa-knife-edge-mini-pleat-filter",
+      "file": "https___www_klcintl_com_hepa_knife_edge_mini_pleat_filter_1440032723"
+    },
+    {
+      "url": "https://www.klcintl.com/knife-edge-mini-pleat-filter",
+      "file": "https___www_klcintl_com_knife_edge_mini_pleat_filter_823474054"
+    },
+    {
+      "url": "https://www.klcintl.com/knife-egde-frame-filter",
+      "file": "https___www_klcintl_com_knife_egde_frame_filter_774232681"
+    },
+    {
+      "url": "https://www.klcintl.com/high-performance-filter-knife-edge",
+      "file": "https___www_klcintl_com_high_performance_filter_knife_edge_899426315"
+    },
+    {
+      "url": "https://www.klcintl.com/knife-edge-hepa-filter",
+      "file": "https___www_klcintl_com_knife_edge_hepa_filter_1777904910"
+    },
+    {
+      "url": "https://www.klcintl.com/knife-edge-pleated-filter",
+      "file": "https___www_klcintl_com_knife_edge_pleated_filter_1183700399"
+    },
+    {
+      "url": "https://www.klcintl.com/wholesale-knife-edge-filter",
+      "file": "https___www_klcintl_com_wholesale_knife_edge_filter_1456152498"
+    },
+    {
+      "url": "https://www.klcintl.com/separator-hepa-filter",
+      "file": "https___www_klcintl_com_separator_hepa_filter_1776808756"
+    },
+    {
+      "url": "https://www.klcintl.com/deep-pleat-hepa-filter",
+      "file": "https___www_klcintl_com_deep_pleat_hepa_filter_821941704"
+    },
+    {
+      "url": "https://www.klcintl.com/separator-box-type-filter",
+      "file": "https___www_klcintl_com_separator_box_type_filter_320535614"
+    },
+    {
+      "url": "https://www.klcintl.com/box-type-hepa-filter",
+      "file": "https___www_klcintl_com_box_type_hepa_filter_1398881097"
+    },
+    {
+      "url": "https://www.klcintl.com/high-capacity-hepa-filter",
+      "file": "https___www_klcintl_com_high_capacity_hepa_filter_1471626260"
+    },
+    {
+      "url": "https://www.klcintl.com/replacement-hepa-filter",
+      "file": "https___www_klcintl_com_replacement_hepa_filter_1173537081"
+    },
+    {
+      "url": "https://www.klcintl.com/excellent-sealing-gel-type-mini-pleat-hepa-ulpa-filter",
+      "file": "https___www_klcintl_com_excellent_sealing_gel_type_mini_pleat_hepa_ulpa_filter_402531405"
+    },
+    {
+      "url": "https://www.klcintl.com/h14-hepa-filter",
+      "file": "https___www_klcintl_com_h14_hepa_filter_1433820978"
+    },
+    {
+      "url": "https://www.klcintl.com/gel-seal-hepa-filter",
+      "file": "https___www_klcintl_com_gel_seal_hepa_filter_51629463"
+    },
+    {
+      "url": "https://www.klcintl.com/24x24-hepa-filter",
+      "file": "https___www_klcintl_com_24x24_hepa_filter_404254495"
+    },
+    {
+      "url": "https://www.klcintl.com/laminar-hepa-filter",
+      "file": "https___www_klcintl_com_laminar_hepa_filter_138417835"
+    },
+    {
+      "url": "https://www.klcintl.com/hepa-filter-for-sale",
+      "file": "https___www_klcintl_com_hepa_filter_for_sale_845750140"
+    },
+    {
+      "url": "https://www.klcintl.com/good-sealing-hepa-filter",
+      "file": "https___www_klcintl_com_good_sealing_hepa_filter_1136463362"
+    },
+    {
+      "url": "https://www.klcintl.com/mediumsub-hepa-cardboard-frame-mini-pleat-filter",
+      "file": "https___www_klcintl_com_mediumsub_hepa_cardboard_frame_mini_pleat_filter_53444466"
+    },
+    {
+      "url": "https://www.klcintl.com/cardboard-panel-filter",
+      "file": "https___www_klcintl_com_cardboard_panel_filter_158697381"
+    },
+    {
+      "url": "https://www.klcintl.com/cardboard-mini-pleat-filter",
+      "file": "https___www_klcintl_com_cardboard_mini_pleat_filter_1875200123"
+    },
+    {
+      "url": "https://www.klcintl.com/cardboard-frame-filter",
+      "file": "https___www_klcintl_com_cardboard_frame_filter_267755310"
+    },
+    {
+      "url": "https://www.klcintl.com/hvac-air-flter",
+      "file": "https___www_klcintl_com_hvac_air_flter_1597001506"
+    },
+    {
+      "url": "https://www.klcintl.com/cardboard-frame-hepa-filter",
+      "file": "https___www_klcintl_com_cardboard_frame_hepa_filter_284014941"
+    },
+    {
+      "url": "https://www.klcintl.com/cardboard-frame-pleated-filter",
+      "file": "https___www_klcintl_com_cardboard_frame_pleated_filter_1215714148"
+    },
+    {
+      "url": "https://www.klcintl.com/260-350-high-temperature-separator-filter",
+      "file": "https___www_klcintl_com_260_350_high_temperature_separator_filter_657009921"
+    },
+    {
+      "url": "https://www.klcintl.com/high-heat-resistance-filter",
+      "file": "https___www_klcintl_com_high_heat_resistance_filter_150030583"
+    },
+    {
+      "url": "https://www.klcintl.com/high-temperature-hepa-filter",
+      "file": "https___www_klcintl_com_high_temperature_hepa_filter_106714262"
+    },
+    {
+      "url": "https://www.klcintl.com/high-temperature-filters",
+      "file": "https___www_klcintl_com_high_temperature_filters_1826039398"
+    },
+    {
+      "url": "https://www.klcintl.com/high-temperature-air-filter",
+      "file": "https___www_klcintl_com_high_temperature_air_filter_502564700"
+    },
+    {
+      "url": "https://www.klcintl.com/heat-resistant-filter",
+      "file": "https___www_klcintl_com_heat_resistant_filter_2070384382"
+    },
+    {
+      "url": "https://www.klcintl.com/350-high-temperature-filter",
+      "file": "https___www_klcintl_com_350_high_temperature_filter_574601402"
+    },
+    {
+      "url": "https://www.klcintl.com/electrostatic-air-filter",
+      "file": "https___www_klcintl_com_electrostatic_air_filter_1529960143"
+    },
+    {
+      "url": "https://www.klcintl.com/electrostatic-air-cleaner",
+      "file": "https___www_klcintl_com_electrostatic_air_cleaner_1527197213"
+    },
+    {
+      "url": "https://www.klcintl.com/electrostatic-filter-for-air-purification",
+      "file": "https___www_klcintl_com_electrostatic_filter_for_air_purification_675628087"
+    },
+    {
+      "url": "https://www.klcintl.com/electrostatic-precipitator-filter",
+      "file": "https___www_klcintl_com_electrostatic_precipitator_filter_595356359"
+    },
+    {
+      "url": "https://www.klcintl.com/electrostatic-filter-for-esp-air-cleaner",
+      "file": "https___www_klcintl_com_electrostatic_filter_for_esp_air_cleaner_1200210021"
+    },
+    {
+      "url": "https://www.klcintl.com/esp-filter-for-ahu",
+      "file": "https___www_klcintl_com_esp_filter_for_ahu_1610867811"
+    },
+    {
+      "url": "https://www.klcintl.com/synthetic-fiber-pleated-air-filter",
+      "file": "https___www_klcintl_com_synthetic_fiber_pleated_air_filter_166917849"
+    },
+    {
+      "url": "https://www.klcintl.com/pleated-air-filter-manufacturer",
+      "file": "https___www_klcintl_com_pleated_air_filter_manufacturer_508535214"
+    },
+    {
+      "url": "https://www.klcintl.com/primary-pleated-air-filter",
+      "file": "https___www_klcintl_com_primary_pleated_air_filter_879752059"
+    },
+    {
+      "url": "https://www.klcintl.com/merv-8-pleated-filter",
+      "file": "https___www_klcintl_com_merv_8_pleated_filter_1278612301"
+    },
+    {
+      "url": "https://www.klcintl.com/washable-pre-air-filters",
+      "file": "https___www_klcintl_com_washable_pre_air_filters_2140767901"
+    },
+    {
+      "url": "https://www.klcintl.com/g4-primary-air-filter",
+      "file": "https___www_klcintl_com_g4_primary_air_filter_1773387677"
+    },
+    {
+      "url": "https://www.klcintl.com/air-filter-489_p2",
+      "file": "https___www_klcintl_com_air_filter_489_p2_1275269243"
+    },
+    {
+      "url": "https://www.klcintl.com/air-filter-489_p3",
+      "file": "https___www_klcintl_com_air_filter_489_p3_1275269244"
+    },
+    {
+      "url": "https://www.klcintl.com/air-filter-489_p4",
+      "file": "https___www_klcintl_com_air_filter_489_p4_1275269245"
+    },
+    {
+      "url": "https://www.klcintl.com/air-filter-489_p5",
+      "file": "https___www_klcintl_com_air_filter_489_p5_1275269246"
+    },
+    {
+      "url": "https://www.klcintl.com/air-filter-489_p6",
+      "file": "https___www_klcintl_com_air_filter_489_p6_1275269247"
+    },
+    {
+      "url": "https://www.klcintl.com/cylinder-filter",
+      "file": "https___www_klcintl_com_cylinder_filter_619717708"
+    },
+    {
+      "url": "https://www.klcintl.com/industrial-hepa-filter",
+      "file": "https___www_klcintl_com_industrial_hepa_filter_1627839610"
+    },
+    {
+      "url": "https://www.klcintl.com/inudstrial-cylindrical-filter",
+      "file": "https___www_klcintl_com_inudstrial_cylindrical_filter_402841718"
+    },
+    {
+      "url": "https://www.klcintl.com/replacement-industrial-air-filter",
+      "file": "https___www_klcintl_com_replacement_industrial_air_filter_1686669681"
+    },
+    {
+      "url": "https://www.klcintl.com/cylindrical-air-filter",
+      "file": "https___www_klcintl_com_cylindrical_air_filter_653255555"
+    },
+    {
+      "url": "https://www.klcintl.com/h14-u15-dop-hepa-filter-with-hood-for-ducted-filter-modules",
+      "file": "https___www_klcintl_com_h14_u15_dop_hepa_filter_with_hood_for_ducted_filter_modu_73864199"
+    },
+    {
+      "url": "https://www.klcintl.com/dop-hepa-filter",
+      "file": "https___www_klcintl_com_dop_hepa_filter_2005593876"
+    },
+    {
+      "url": "https://www.klcintl.com/ceiling-filter-module",
+      "file": "https___www_klcintl_com_ceiling_filter_module_1223083662"
+    },
+    {
+      "url": "https://www.klcintl.com/hepa-filter-module",
+      "file": "https___www_klcintl_com_hepa_filter_module_1365068187"
+    },
+    {
+      "url": "https://www.klcintl.com/dop-efficiency-filter",
+      "file": "https___www_klcintl_com_dop_efficiency_filter_212371951"
+    },
+    {
+      "url": "https://www.klcintl.com/terminal-hepa-filter-module",
+      "file": "https___www_klcintl_com_terminal_hepa_filter_module_1541273840"
+    },
+    {
+      "url": "https://www.klcintl.com/h13-h14-high-efficiency-replaceable-hepa-filter-with-hood",
+      "file": "https___www_klcintl_com_h13_h14_high_efficiency_replaceable_hepa_filter_with_hoo_1344243635"
+    },
+    {
+      "url": "https://www.klcintl.com/ducted-filter-module",
+      "file": "https___www_klcintl_com_ducted_filter_module_1937572248"
+    },
+    {
+      "url": "https://www.klcintl.com/hepa-ceiling-module",
+      "file": "https___www_klcintl_com_hepa_ceiling_module_729336328"
+    },
+    {
+      "url": "https://www.klcintl.com/hepa-filter-ceiling-module",
+      "file": "https___www_klcintl_com_hepa_filter_ceiling_module_186319989"
+    },
+    {
+      "url": "https://www.klcintl.com/ducted-terminal-module",
+      "file": "https___www_klcintl_com_ducted_terminal_module_266527660"
+    },
+    {
+      "url": "https://www.klcintl.com/replaceable-hepa-filter-with-hood",
+      "file": "https___www_klcintl_com_replaceable_hepa_filter_with_hood_1040237269"
+    },
+    {
+      "url": "https://www.klcintl.com/ptfe-ulpahepasub-hepa-mini-pleat-filter-hvac-air-filter",
+      "file": "https___www_klcintl_com_ptfe_ulpahepasub_hepa_mini_pleat_filter_hvac_air_filter_1601896213"
+    },
+    {
+      "url": "https://www.klcintl.com/ptfe-air-filter",
+      "file": "https___www_klcintl_com_ptfe_air_filter_1007346338"
+    },
+    {
+      "url": "https://www.klcintl.com/ptfe-mini-pleat-filter",
+      "file": "https___www_klcintl_com_ptfe_mini_pleat_filter_619219224"
+    },
+    {
+      "url": "https://www.klcintl.com/ptfe-hepa-filter",
+      "file": "https___www_klcintl_com_ptfe_hepa_filter_1424924144"
+    },
+    {
+      "url": "https://www.klcintl.com/ptfe-ulpa-filter",
+      "file": "https___www_klcintl_com_ptfe_ulpa_filter_391082570"
+    },
+    {
+      "url": "https://www.klcintl.com/industrial-mini-pleated-air-filter",
+      "file": "https___www_klcintl_com_industrial_mini_pleated_air_filter_501501106"
+    },
+    {
+      "url": "https://www.klcintl.com/deep-pleat-high-capacity-separator-filter-box-type-hepa-filter",
+      "file": "https___www_klcintl_com_deep_pleat_high_capacity_separator_filter_box_type_hepa__234701956"
+    },
+    {
+      "url": "https://www.klcintl.com/high-capacity-separator-filter",
+      "file": "https___www_klcintl_com_high_capacity_separator_filter_1064672011"
+    },
+    {
+      "url": "https://www.klcintl.com/large-air-flow-separator-filter",
+      "file": "https___www_klcintl_com_large_air_flow_separator_filter_1968316729"
+    },
+    {
+      "url": "https://www.klcintl.com/hepa-filter-box",
+      "file": "https___www_klcintl_com_hepa_filter_box_1681397874"
+    },
+    {
+      "url": "https://www.klcintl.com/industrial-separator-air-filter",
+      "file": "https___www_klcintl_com_industrial_separator_air_filter_911609580"
+    },
+    {
+      "url": "https://www.klcintl.com/odor-removal-activated-carbon-v-bank-w-type-filter",
+      "file": "https___www_klcintl_com_odor_removal_activated_carbon_v_bank_w_type_filter_1446881420"
+    },
+    {
+      "url": "https://www.klcintl.com/activated-carbon-air-filter",
+      "file": "https___www_klcintl_com_activated_carbon_air_filter_2065103812"
+    },
+    {
+      "url": "https://www.klcintl.com/activated-carbon-v-bank-filter",
+      "file": "https___www_klcintl_com_activated_carbon_v_bank_filter_1370562257"
+    },
+    {
+      "url": "https://www.klcintl.com/activated-charcoal-filter",
+      "file": "https___www_klcintl_com_activated_charcoal_filter_754196967"
+    },
+    {
+      "url": "https://www.klcintl.com/v-bank-air-filter-24x24x12",
+      "file": "https___www_klcintl_com_v_bank_air_filter_24x24x12_1723059236"
+    },
+    {
+      "url": "https://www.klcintl.com/v-compact-filter",
+      "file": "https___www_klcintl_com_v_compact_filter_1530078148"
+    },
+    {
+      "url": "https://www.klcintl.com/v-bank-charcoal-filter",
+      "file": "https___www_klcintl_com_v_bank_charcoal_filter_896834849"
+    },
+    {
+      "url": "https://www.klcintl.com/honeycomb-activated-carbon-v-type-filter-activated-charcoal-filter",
+      "file": "https___www_klcintl_com_honeycomb_activated_carbon_v_type_filter_activated_charc_1266472531"
+    },
+    {
+      "url": "https://www.klcintl.com/honeycomb-activated-carbon-filter",
+      "file": "https___www_klcintl_com_honeycomb_activated_carbon_filter_432723832"
+    },
+    {
+      "url": "https://www.klcintl.com/activated-carbon-v-bank-filter-1",
+      "file": "https___www_klcintl_com_activated_carbon_v_bank_filter_1_1444629451"
+    },
+    {
+      "url": "https://www.klcintl.com/industrial-activated-charcoal-filter",
+      "file": "https___www_klcintl_com_industrial_activated_charcoal_filter_959650347"
+    },
+    {
+      "url": "https://www.klcintl.com/hvac-filtration",
+      "file": "https___www_klcintl_com_hvac_filtration_1895287224"
+    },
+    {
+      "url": "https://www.klcintl.com/hvac-air-filters",
+      "file": "https___www_klcintl_com_hvac_air_filters_1507960194"
+    },
+    {
+      "url": "https://www.klcintl.com/chemical-v-bank-filter",
+      "file": "https___www_klcintl_com_chemical_v_bank_filter_1203112646"
+    },
+    {
+      "url": "https://www.klcintl.com/hvac-activated-carbon-pocket-filter-bag-filter-for-air-conditioner",
+      "file": "https___www_klcintl_com_hvac_activated_carbon_pocket_filter_bag_filter_for_air_c_269367303"
+    },
+    {
+      "url": "https://www.klcintl.com/activated-carbon-pocket-filter",
+      "file": "https___www_klcintl_com_activated_carbon_pocket_filter_1186030862"
+    },
+    {
+      "url": "https://www.klcintl.com/activated-carbon-bag-filter",
+      "file": "https___www_klcintl_com_activated_carbon_bag_filter_1617039294"
+    },
+    {
+      "url": "https://www.klcintl.com/charcoal-air-filter",
+      "file": "https___www_klcintl_com_charcoal_air_filter_2065972808"
+    },
+    {
+      "url": "https://www.klcintl.com/activated-carbon-air-cleaner",
+      "file": "https___www_klcintl_com_activated_carbon_air_cleaner_2117612658"
+    },
+    {
+      "url": "https://www.klcintl.com/activated-charcoal-air-filter",
+      "file": "https___www_klcintl_com_activated_charcoal_air_filter_1900843140"
+    },
+    {
+      "url": "https://www.klcintl.com/hvac-system-air-filtration-filters-plastic-frame-pocket-filter",
+      "file": "https___www_klcintl_com_hvac_system_air_filtration_filters_plastic_frame_pocket__10896584"
+    },
+    {
+      "url": "https://www.klcintl.com/air-filtration-filters",
+      "file": "https___www_klcintl_com_air_filtration_filters_1418420222"
+    },
+    {
+      "url": "https://www.klcintl.com/air-filters",
+      "file": "https___www_klcintl_com_air_filters_1498722315"
+    },
+    {
+      "url": "https://www.klcintl.com/air-filtration",
+      "file": "https___www_klcintl_com_air_filtration_1894830892"
+    },
+    {
+      "url": "https://www.klcintl.com/plastic-frame-pocket-filter",
+      "file": "https___www_klcintl_com_plastic_frame_pocket_filter_1256333313"
+    },
+    {
+      "url": "https://www.klcintl.com/filter",
+      "file": "https___www_klcintl_com_filter_1365583909"
+    },
+    {
+      "url": "https://www.klcintl.com/pocket-filter-1",
+      "file": "https___www_klcintl_com_pocket_filter_1_1157374864"
+    },
+    {
+      "url": "https://www.klcintl.com/air-handler-hvac-air-filter-holding-frame-clips",
+      "file": "https___www_klcintl_com_air_handler_hvac_air_filter_holding_frame_clips_1270418683"
+    }
+  ]
+}

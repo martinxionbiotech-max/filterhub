@@ -1,0 +1,456 @@
+{
+  "site": "https://www.cleanroom-ffu.com/",
+  "host": "www.cleanroom-ffu.com",
+  "origin": "https://www.cleanroom-ffu.com",
+  "crawlDate": "2026-10-29T11:12:47.246Z",
+  "method": "curl-fallback (Playwright & node-fetch blocked by WAF)",
+  "pagesVisited": 111,
+  "pagesFailed": 0,
+  "failed": [],
+  "pages": [
+    {
+      "url": "https://www.cleanroom-ffu.com/",
+      "file": "https___www_cleanroom_ffu_com__1951523254"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/3173-2/",
+      "file": "https___www_cleanroom_ffu_com_3173_2__508619590"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/3rd-party-hepa-filter/",
+      "file": "https___www_cleanroom_ffu_com_3rd_party_hepa_filter__1191527811"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/95-dop-air-filters/",
+      "file": "https___www_cleanroom_ffu_com_95_dop_air_filters__258911910"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/about-us/",
+      "file": "https___www_cleanroom_ffu_com_about_us__1081705957"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/activated-carbon-pocket-filter/",
+      "file": "https___www_cleanroom_ffu_com_activated_carbon_pocket_filter__1994132334"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/air-filter-for-3d-printer/",
+      "file": "https___www_cleanroom_ffu_com_air_filter_for_3d_printer__364818991"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/air-filter-for-nail-vacuum-cleaner/",
+      "file": "https___www_cleanroom_ffu_com_air_filter_for_nail_vacuum_cleaner__1983970522"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/air-filter-max-temp/",
+      "file": "https___www_cleanroom_ffu_com_air_filter_max_temp__1493041654"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/air-filter-replacement-services-to-pharmaceutical/",
+      "file": "https___www_cleanroom_ffu_com_air_filter_replacement_services_to_pharmaceutical__1987924910"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/air-filters-improve-air-pollution-caused-by-industry/",
+      "file": "https___www_cleanroom_ffu_com_air_filters_improve_air_pollution_caused_by_indust_1342215815"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/air-purifier-filter-manufacturer/",
+      "file": "https___www_cleanroom_ffu_com_air_purifier_filter_manufacturer__399345103"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/air-shower-for-cleanroom-manufacturer/",
+      "file": "https___www_cleanroom_ffu_com_air_shower_for_cleanroom_manufacturer__72927289"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/aluminum-flexible-duct/",
+      "file": "https___www_cleanroom_ffu_com_aluminum_flexible_duct__138741470"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/biological-safety-cabinet-manufacturer/",
+      "file": "https___www_cleanroom_ffu_com_biological_safety_cabinet_manufacturer__1808351460"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/buy-air-purifier-filters-in-bulk/",
+      "file": "https___www_cleanroom_ffu_com_buy_air_purifier_filters_in_bulk__703270792"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/buy-some-pleated-air-filter/",
+      "file": "https___www_cleanroom_ffu_com_buy_some_pleated_air_filter__1816524966"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/cabin-air-filter-wholesale/",
+      "file": "https___www_cleanroom_ffu_com_cabin_air_filter_wholesale__147247817"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/can-hepa-filters-be-washed-and-reused/",
+      "file": "https___www_cleanroom_ffu_com_can_hepa_filters_be_washed_and_reused__704854042"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/carbon-panel-filter/",
+      "file": "https___www_cleanroom_ffu_com_carbon_panel_filter__882826428"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/carbon-pleated-air-filter/",
+      "file": "https___www_cleanroom_ffu_com_carbon_pleated_air_filter__499748168"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/carbon-v-bank/",
+      "file": "https___www_cleanroom_ffu_com_carbon_v_bank__1974143950"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/cardboard-frame-pre-air-filter/",
+      "file": "https___www_cleanroom_ffu_com_cardboard_frame_pre_air_filter__1220320381"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/category/cleanroom-filter/",
+      "file": "https___www_cleanroom_ffu_com_category_cleanroom_filter__93672691"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/category/custom-filter/",
+      "file": "https___www_cleanroom_ffu_com_category_custom_filter__240972778"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/category/high-temperature-filters/",
+      "file": "https___www_cleanroom_ffu_com_category_high_temperature_filters__2131193475"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/category/news/",
+      "file": "https___www_cleanroom_ffu_com_category_news__321403231"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/category/rfq/",
+      "file": "https___www_cleanroom_ffu_com_category_rfq__1790867341"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/category/tio2/",
+      "file": "https___www_cleanroom_ffu_com_category_tio2__315752644"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/category/v-bank/",
+      "file": "https___www_cleanroom_ffu_com_category_v_bank__1551103745"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/clean-booth-manufacturer/",
+      "file": "https___www_cleanroom_ffu_com_clean_booth_manufacturer__1633816019"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/cleanroom-filter/",
+      "file": "https___www_cleanroom_ffu_com_cleanroom_filter__2008379752"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/cleanroom-hepa-filter/",
+      "file": "https___www_cleanroom_ffu_com_cleanroom_hepa_filter__712344151"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/cleanroom-pass-box-manufacturer/",
+      "file": "https___www_cleanroom_ffu_com_cleanroom_pass_box_manufacturer__867942849"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/contact/",
+      "file": "https___www_cleanroom_ffu_com_contact__4903995"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/custom-activated-carbon-filter/",
+      "file": "https___www_cleanroom_ffu_com_custom_activated_carbon_filter__295445817"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/custom-air-filter-for-ahu-air-handling-unit/",
+      "file": "https___www_cleanroom_ffu_com_custom_air_filter_for_ahu_air_handling_unit__1030843061"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/custom-cylinder-hepa-filter/",
+      "file": "https___www_cleanroom_ffu_com_custom_cylinder_hepa_filter__1542554761"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/custom-hepa-filter/",
+      "file": "https___www_cleanroom_ffu_com_custom_hepa_filter__1489819650"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/custom-round-hepa-carbon-filter/",
+      "file": "https___www_cleanroom_ffu_com_custom_round_hepa_carbon_filter__1652618993"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/custom-ventilation-air-filters/",
+      "file": "https___www_cleanroom_ffu_com_custom_ventilation_air_filters__1282357645"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/customized-air-filters/",
+      "file": "https___www_cleanroom_ffu_com_customized_air_filters__1272613901"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/cut-fit-air-filter/",
+      "file": "https___www_cleanroom_ffu_com_cut_fit_air_filter__275331209"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/diy-air-purifier/",
+      "file": "https___www_cleanroom_ffu_com_diy_air_purifier__683809489"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/ducted-terminal-air-filter-diffuser-module/",
+      "file": "https___www_cleanroom_ffu_com_ducted_terminal_air_filter_diffuser_module__316852253"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/eawayfilter-factory/",
+      "file": "https___www_cleanroom_ffu_com_eawayfilter_factory__1485262691"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/emergency-eyewash/",
+      "file": "https___www_cleanroom_ffu_com_emergency_eyewash__1416593105"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/explosion-proof-air-shower/",
+      "file": "https___www_cleanroom_ffu_com_explosion_proof_air_shower__1949363275"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/fan-filter-unit/",
+      "file": "https___www_cleanroom_ffu_com_fan_filter_unit__2083054278"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/flat-pre-air-filter-f5/",
+      "file": "https___www_cleanroom_ffu_com_flat_pre_air_filter_f5__1437605590"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/flexible-silencer-duct/",
+      "file": "https___www_cleanroom_ffu_com_flexible_silencer_duct__2087561571"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/fresh-air-system-filter/",
+      "file": "https___www_cleanroom_ffu_com_fresh_air_system_filter__779062193"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/gel-hepa-filter/",
+      "file": "https___www_cleanroom_ffu_com_gel_hepa_filter__1087839635"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/gel-type-hepa-modular/",
+      "file": "https___www_cleanroom_ffu_com_gel_type_hepa_modular__673207706"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/hardwall-cleanroom/",
+      "file": "https___www_cleanroom_ffu_com_hardwall_cleanroom__245429293"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/hepa-filter-cassette/",
+      "file": "https___www_cleanroom_ffu_com_hepa_filter_cassette__154044549"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/hepa-filter-for-3d-printer/",
+      "file": "https___www_cleanroom_ffu_com_hepa_filter_for_3d_printer__1467664063"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/hepa-filter-for-flow-hood/",
+      "file": "https___www_cleanroom_ffu_com_hepa_filter_for_flow_hood__1905816836"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/hepa-filter-media-test/",
+      "file": "https___www_cleanroom_ffu_com_hepa_filter_media_test__238355944"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/hepa-filter-prototype/",
+      "file": "https___www_cleanroom_ffu_com_hepa_filter_prototype__56433049"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/hepa-filter-replacement-guide-frequency-reasons-tips-for-home-industrial-use/",
+      "file": "https___www_cleanroom_ffu_com_hepa_filter_replacement_guide_frequency_reasons_ti_2001084288"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/hepa-filters/",
+      "file": "https___www_cleanroom_ffu_com_hepa_filters__529569571"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/high-temperature-flexible-ducting/",
+      "file": "https___www_cleanroom_ffu_com_high_temperature_flexible_ducting__1370032829"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/high-temperature-hepa-filters-in-glass-manufacturing/",
+      "file": "https___www_cleanroom_ffu_com_high_temperature_hepa_filters_in_glass_manufacturi_767623271"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/high-temperature-hepa-filters-the-unsung-heroes-of-quality-and-sustainability-in-metal-smelting-casting/",
+      "file": "https___www_cleanroom_ffu_com_high_temperature_hepa_filters_the_unsung_heroes_of_530647757"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/high-temperature-hepa-filters/",
+      "file": "https___www_cleanroom_ffu_com_high_temperature_hepa_filters__540131067"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/high-volume-multi-wedge-hepa-filter/",
+      "file": "https___www_cleanroom_ffu_com_high_volume_multi_wedge_hepa_filter__80170499"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/how-much-does-a-replacement-hepa-filter-cost/",
+      "file": "https___www_cleanroom_ffu_com_how_much_does_a_replacement_hepa_filter_cost__1973217022"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/how-to-choose-correct-air-filter-for-cleanroom/",
+      "file": "https___www_cleanroom_ffu_com_how_to_choose_correct_air_filter_for_cleanroom__335123207"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/how-to-use-photocatalytic-filters/",
+      "file": "https___www_cleanroom_ffu_com_how_to_use_photocatalytic_filters__1561437064"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/how-v-bank-air-filters-elevate-commercial-building-performance/",
+      "file": "https___www_cleanroom_ffu_com_how_v_bank_air_filters_elevate_commercial_building_286938436"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/how-v-bank-air-filters-fortify-pharmaceutical-and-biotech-critical-environments/",
+      "file": "https___www_cleanroom_ffu_com_how_v_bank_air_filters_fortify_pharmaceutical_and__794363320"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/hvac-air-diffuser-grille/",
+      "file": "https___www_cleanroom_ffu_com_hvac_air_diffuser_grille__674785931"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/hvac-air-filters/",
+      "file": "https___www_cleanroom_ffu_com_hvac_air_filters__1229885118"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/hvac-pocket-filters-manufacturer/",
+      "file": "https___www_cleanroom_ffu_com_hvac_pocket_filters_manufacturer__1407996100"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/hvac-vent-duct/",
+      "file": "https___www_cleanroom_ffu_com_hvac_vent_duct__90328996"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/insulated-aluminum-flexible-duct/",
+      "file": "https___www_cleanroom_ffu_com_insulated_aluminum_flexible_duct__830747284"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/manufacturer-of-24x24x12-hepa-filter/",
+      "file": "https___www_cleanroom_ffu_com_manufacturer_of_24x24x12_hepa_filter__8242068"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/metal-framed-pleated-filter/",
+      "file": "https___www_cleanroom_ffu_com_metal_framed_pleated_filter__2012373611"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/minimum-size-for-a-hepa-filter/",
+      "file": "https___www_cleanroom_ffu_com_minimum_size_for_a_hepa_filter__419076127"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/modular-cleanroom/",
+      "file": "https___www_cleanroom_ffu_com_modular_cleanroom__1144120548"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/mushroom-cultivation/",
+      "file": "https___www_cleanroom_ffu_com_mushroom_cultivation__1939233312"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/nylon-flexible-ducting/",
+      "file": "https___www_cleanroom_ffu_com_nylon_flexible_ducting__66934446"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/operation-room-and-icu-hepa-filter/",
+      "file": "https___www_cleanroom_ffu_com_operation_room_and_icu_hepa_filter__1845784810"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/oven-hepa-filter/",
+      "file": "https___www_cleanroom_ffu_com_oven_hepa_filter__332987521"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/painting-spray-pocket-filter/",
+      "file": "https___www_cleanroom_ffu_com_painting_spray_pocket_filter__1292977427"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/panel-hepa-filter/",
+      "file": "https___www_cleanroom_ffu_com_panel_hepa_filter__2084530679"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/pharmaceutical-cleanroom-air-filters-and-equipment/",
+      "file": "https___www_cleanroom_ffu_com_pharmaceutical_cleanroom_air_filters_and_equipment_1848331863"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/post/",
+      "file": "https___www_cleanroom_ffu_com_post__979158119"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/product-catalog/",
+      "file": "https___www_cleanroom_ffu_com_product_catalog__30419978"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/pvc-flexible-ducting/",
+      "file": "https___www_cleanroom_ffu_com_pvc_flexible_ducting__1155423893"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/replacement-hepa-filters/",
+      "file": "https___www_cleanroom_ffu_com_replacement_hepa_filters__232087906"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/rigid-cell-air-filter/",
+      "file": "https___www_cleanroom_ffu_com_rigid_cell_air_filter__2087107871"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/semi-rigid-vent-duct/",
+      "file": "https___www_cleanroom_ffu_com_semi_rigid_vent_duct__450240000"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/separator-hepa-filter-for-clean-room/",
+      "file": "https___www_cleanroom_ffu_com_separator_hepa_filter_for_clean_room__1786276088"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/smoke-air-purifier/",
+      "file": "https___www_cleanroom_ffu_com_smoke_air_purifier__1359402516"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/sole-cleaning-machine/",
+      "file": "https___www_cleanroom_ffu_com_sole_cleaning_machine__404906662"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/sus-frame-washable-pleated-air-filter-g4/",
+      "file": "https___www_cleanroom_ffu_com_sus_frame_washable_pleated_air_filter_g4__1762765756"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/sweeping-robot-air-filter/",
+      "file": "https___www_cleanroom_ffu_com_sweeping_robot_air_filter__1019851536"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/the-functions-of-an-air-shower-in-a-cleanroom/",
+      "file": "https___www_cleanroom_ffu_com_the_functions_of_an_air_shower_in_a_cleanroom__2000154291"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/tiny-hepa-filter/",
+      "file": "https___www_cleanroom_ffu_com_tiny_hepa_filter__397509809"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/tio2-photocatalytic-filter/",
+      "file": "https___www_cleanroom_ffu_com_tio2_photocatalytic_filter__1194882163"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/turnkey-cleanroom-project-solution-provider/",
+      "file": "https___www_cleanroom_ffu_com_turnkey_cleanroom_project_solution_provider__2054475800"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/v-bank-air-filters-manufacturer/",
+      "file": "https___www_cleanroom_ffu_com_v_bank_air_filters_manufacturer__1105226117"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/vertical-horizontal-laminar-flow-cabinet/",
+      "file": "https___www_cleanroom_ffu_com_vertical_horizontal_laminar_flow_cabinet__1692330417"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/vietnam-clean-room-air-filters/",
+      "file": "https___www_cleanroom_ffu_com_vietnam_clean_room_air_filters__1205394906"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/wardrobe-manufacturer/",
+      "file": "https___www_cleanroom_ffu_com_wardrobe_manufacturer__529721501"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/wash-basin-and-dryer/",
+      "file": "https___www_cleanroom_ffu_com_wash_basin_and_dryer__1378655193"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/what-air-filters-for-cleanroom-application/",
+      "file": "https___www_cleanroom_ffu_com_what_air_filters_for_cleanroom_application__1905150740"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/why-air-purifier-filters-expensive/",
+      "file": "https___www_cleanroom_ffu_com_why_air_purifier_filters_expensive__1831402201"
+    },
+    {
+      "url": "https://www.cleanroom-ffu.com/why-do-operating-rooms-need-air-filters/",
+      "file": "https___www_cleanroom_ffu_com_why_do_operating_rooms_need_air_filters__1108526522"
+    }
+  ]
+}

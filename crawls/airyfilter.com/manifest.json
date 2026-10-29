@@ -1,0 +1,1300 @@
+{
+  "site": "https://airyfilter.com/",
+  "host": "airyfilter.com",
+  "origin": "https://airyfilter.com",
+  "crawlDate": "2026-10-29T11:20:52.386Z",
+  "pagesVisited": 250,
+  "pagesFailed": 72,
+  "failed": [
+    {
+      "url": "https://airyfilter.com/industrial-stainless-steel-air-filter-price",
+      "error": "Error: page.goto: net::ERR_ABORTED at https://airyfilter.com/industrial-stainless-steel-air-filter-price\nCall log:\n  - navigating to \"https://airyfilter.com/industrial-stainless-steel-air-filter-price"
+    },
+    {
+      "url": "https://airyfilter.com/h14-hepa-filter-specifications",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/product/v-bank-hepa-filter-v-cell-filter",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/hepa-filter-sizes",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/hepa-filter-manufacturer",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/ar/industrial-hepa-filter-cost",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/hi/industrial-hepa-filter-cost",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/th/industrial-hepa-filter-cost",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/vi/industrial-hepa-filter-cost",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/fr/industrial-hepa-filter-cost",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/de/industrial-hepa-filter-cost",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/it/industrial-hepa-filter-cost",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/ja/industrial-hepa-filter-cost",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/ko/industrial-hepa-filter-cost",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/pt/industrial-hepa-filter-cost",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/ru/industrial-hepa-filter-cost",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/es/industrial-hepa-filter-cost",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/product/non-woven-pocket-filter",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/activated-carbon-air-filter-guide",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/pleated-panel-filter-specifications",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/air-filter-manufacturer",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/ar/custom-air-filter-rfq-template",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/hi/custom-air-filter-rfq-template",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/th/custom-air-filter-rfq-template",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/vi/custom-air-filter-rfq-template",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/fr/custom-air-filter-rfq-template",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/de/custom-air-filter-rfq-template",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/it/custom-air-filter-rfq-template",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/ja/custom-air-filter-rfq-template",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/ko/custom-air-filter-rfq-template",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/pt/custom-air-filter-rfq-template",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/ru/custom-air-filter-rfq-template",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/es/custom-air-filter-rfq-template",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/g4-vs-f7-vs-f9-air-filter-comparison",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/blogs/page/2",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/blogs/page/3",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/blogs/page/9",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/ar/blogs",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/hi/blogs",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/th/blogs",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/vi/blogs",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/fr/blogs",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/de/blogs",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/it/blogs",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/ja/blogs",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/ko/blogs",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/pt/blogs",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/ru/blogs",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/es/blogs",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/case/midea-group",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/case/filter-bags-helping-food-factory-improve-air-quality",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/case/precision-electronics-manufacturer",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/ar/case-studies",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/hi/case-studies",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/th/case-studies",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/vi/case-studies",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/fr/case-studies",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/de/case-studies",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/it/case-studies",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/ja/case-studies",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/ko/case-studies",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/pt/case-studies",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/ru/case-studies",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/es/case-studies",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/ar/privacy-policy-2",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/hi/privacy-policy-2",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/th/privacy-policy-2",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/vi/privacy-policy-2",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/fr/privacy-policy-2",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/de/privacy-policy-2",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/it/privacy-policy-2",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "url": "https://airyfilter.com/ja/privacy-policy-2",
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://airyfilter.com/",
+      "file": "https___airyfilter_com__1676670714"
+    },
+    {
+      "url": "https://airyfilter.com/products",
+      "file": "https___airyfilter_com_products_834499690"
+    },
+    {
+      "url": "https://airyfilter.com/applications/industrial-painting-surface-treatment",
+      "file": "https___airyfilter_com_applications_industrial_painting_surface_treatment_355635197"
+    },
+    {
+      "url": "https://airyfilter.com/applications/food-beverage-processing",
+      "file": "https___airyfilter_com_applications_food_beverage_processing_1812351832"
+    },
+    {
+      "url": "https://airyfilter.com/applications/public-transport-infrastructure",
+      "file": "https___airyfilter_com_applications_public_transport_infrastructure_1286651589"
+    },
+    {
+      "url": "https://airyfilter.com/applications/healthcare-medical-facilities",
+      "file": "https___airyfilter_com_applications_healthcare_medical_facilities_1765158711"
+    },
+    {
+      "url": "https://airyfilter.com/applications/commercial-building-air-quality",
+      "file": "https___airyfilter_com_applications_commercial_building_air_quality_1230197664"
+    },
+    {
+      "url": "https://airyfilter.com/applications/general-industrial-manufacturing",
+      "file": "https___airyfilter_com_applications_general_industrial_manufacturing_1346612821"
+    },
+    {
+      "url": "https://airyfilter.com/about-airy",
+      "file": "https___airyfilter_com_about_airy_1573857227"
+    },
+    {
+      "url": "https://airyfilter.com/manufacturing",
+      "file": "https___airyfilter_com_manufacturing_1583330808"
+    },
+    {
+      "url": "https://airyfilter.com/airy-exhibition-journey-asia-pacific-expo-2026",
+      "file": "https___airyfilter_com_airy_exhibition_journey_asia_pacific_expo_2026_1420604791"
+    },
+    {
+      "url": "https://airyfilter.com/industrial-hepa-filter-cost",
+      "file": "https___airyfilter_com_industrial_hepa_filter_cost_829762191"
+    },
+    {
+      "url": "https://airyfilter.com/custom-air-filter-rfq-template",
+      "file": "https___airyfilter_com_custom_air_filter_rfq_template_830543590"
+    },
+    {
+      "url": "https://airyfilter.com/blogs",
+      "file": "https___airyfilter_com_blogs_647860277"
+    },
+    {
+      "url": "https://airyfilter.com/case-studies",
+      "file": "https___airyfilter_com_case_studies_1454870896"
+    },
+    {
+      "url": "https://airyfilter.com/privacy-policy-2",
+      "file": "https___airyfilter_com_privacy_policy_2_959169534"
+    },
+    {
+      "url": "https://airyfilter.com/ar",
+      "file": "https___airyfilter_com_ar_667817033"
+    },
+    {
+      "url": "https://airyfilter.com/hi",
+      "file": "https___airyfilter_com_hi_667816825"
+    },
+    {
+      "url": "https://airyfilter.com/th",
+      "file": "https___airyfilter_com_th_667816454"
+    },
+    {
+      "url": "https://airyfilter.com/vi",
+      "file": "https___airyfilter_com_vi_667816391"
+    },
+    {
+      "url": "https://airyfilter.com/fr",
+      "file": "https___airyfilter_com_fr_667816878"
+    },
+    {
+      "url": "https://airyfilter.com/de",
+      "file": "https___airyfilter_com_de_667816953"
+    },
+    {
+      "url": "https://airyfilter.com/it",
+      "file": "https___airyfilter_com_it_667816783"
+    },
+    {
+      "url": "https://airyfilter.com/ja",
+      "file": "https___airyfilter_com_ja_667816771"
+    },
+    {
+      "url": "https://airyfilter.com/ko",
+      "file": "https___airyfilter_com_ko_667816726"
+    },
+    {
+      "url": "https://airyfilter.com/pt",
+      "file": "https___airyfilter_com_pt_667816566"
+    },
+    {
+      "url": "https://airyfilter.com/ru",
+      "file": "https___airyfilter_com_ru_667816503"
+    },
+    {
+      "url": "https://airyfilter.com/es",
+      "file": "https___airyfilter_com_es_667816908"
+    },
+    {
+      "url": "https://airyfilter.com/product/gel-seal-mini-pleated-hepa-filter",
+      "file": "https___airyfilter_com_product_gel_seal_mini_pleated_hepa_filter_601977126"
+    },
+    {
+      "url": "https://airyfilter.com/product/paint-mist-collection-box-filter",
+      "file": "https___airyfilter_com_product_paint_mist_collection_box_filter_1881681518"
+    },
+    {
+      "url": "https://airyfilter.com/product/columbus-filter-over-spray-filter-multi-layer-paint-filter-paper",
+      "file": "https___airyfilter_com_product_columbus_filter_over_spray_filter_multi_layer_pai_1076205848"
+    },
+    {
+      "url": "https://airyfilter.com/product/v-type-paint-filter-paper",
+      "file": "https___airyfilter_com_product_v_type_paint_filter_paper_1130005572"
+    },
+    {
+      "url": "https://airyfilter.com/product/merv-5-14-fiberglass-pocket-air-filter-for-hvac-systems",
+      "file": "https___airyfilter_com_product_merv_5_14_fiberglass_pocket_air_filter_for_hvac_s_149302268"
+    },
+    {
+      "url": "https://airyfilter.com/product/activated-carbon-panel-filter",
+      "file": "https___airyfilter_com_product_activated_carbon_panel_filter_161000287"
+    },
+    {
+      "url": "https://airyfilter.com/products/page/2",
+      "file": "https___airyfilter_com_products_page_2_1444905463"
+    },
+    {
+      "url": "https://airyfilter.com/products/page/3",
+      "file": "https___airyfilter_com_products_page_3_1444905464"
+    },
+    {
+      "url": "https://airyfilter.com/products/page/4",
+      "file": "https___airyfilter_com_products_page_4_1444905465"
+    },
+    {
+      "url": "https://airyfilter.com/products/page/5",
+      "file": "https___airyfilter_com_products_page_5_1444905466"
+    },
+    {
+      "url": "https://airyfilter.com/ar/products",
+      "file": "https___airyfilter_com_ar_products_687700804"
+    },
+    {
+      "url": "https://airyfilter.com/hi/products",
+      "file": "https___airyfilter_com_hi_products_1387163116"
+    },
+    {
+      "url": "https://airyfilter.com/th/products",
+      "file": "https___airyfilter_com_th_products_1495096793"
+    },
+    {
+      "url": "https://airyfilter.com/vi/products",
+      "file": "https___airyfilter_com_vi_products_1999647866"
+    },
+    {
+      "url": "https://airyfilter.com/fr/products",
+      "file": "https___airyfilter_com_fr_products_1082523007"
+    },
+    {
+      "url": "https://airyfilter.com/de/products",
+      "file": "https___airyfilter_com_de_products_771087980"
+    },
+    {
+      "url": "https://airyfilter.com/it/products",
+      "file": "https___airyfilter_com_it_products_1723530498"
+    },
+    {
+      "url": "https://airyfilter.com/ja/products",
+      "file": "https___airyfilter_com_ja_products_634631562"
+    },
+    {
+      "url": "https://airyfilter.com/ko/products",
+      "file": "https___airyfilter_com_ko_products_887804695"
+    },
+    {
+      "url": "https://airyfilter.com/pt/products",
+      "file": "https___airyfilter_com_pt_products_2029772873"
+    },
+    {
+      "url": "https://airyfilter.com/ru/products",
+      "file": "https___airyfilter_com_ru_products_1760643350"
+    },
+    {
+      "url": "https://airyfilter.com/es/products",
+      "file": "https___airyfilter_com_es_products_517914847"
+    },
+    {
+      "url": "https://airyfilter.com/product/dpa-paint-pocket-filter",
+      "file": "https___airyfilter_com_product_dpa_paint_pocket_filter_1836986626"
+    },
+    {
+      "url": "https://airyfilter.com/product/dpa-paint-pockets-filter-media",
+      "file": "https___airyfilter_com_product_dpa_paint_pockets_filter_media_1821918892"
+    },
+    {
+      "url": "https://airyfilter.com/product/acupuncture-cotton",
+      "file": "https___airyfilter_com_product_acupuncture_cotton_1202915011"
+    },
+    {
+      "url": "https://airyfilter.com/product/pre-panel-filter",
+      "file": "https___airyfilter_com_product_pre_panel_filter_653649295"
+    },
+    {
+      "url": "https://airyfilter.com/product/rigid-pocket-filter",
+      "file": "https___airyfilter_com_product_rigid_pocket_filter_384152967"
+    },
+    {
+      "url": "https://airyfilter.com/product/activated-carbon-pocket-filter",
+      "file": "https___airyfilter_com_product_activated_carbon_pocket_filter_568475823"
+    },
+    {
+      "url": "https://airyfilter.com/product/polyester-fiber-pocket-filter",
+      "file": "https___airyfilter_com_product_polyester_fiber_pocket_filter_2145121186"
+    },
+    {
+      "url": "https://airyfilter.com/ar/applications/industrial-painting-surface-treatment",
+      "file": "https___airyfilter_com_ar_applications_industrial_painting_surface_treatment_635889201"
+    },
+    {
+      "url": "https://airyfilter.com/hi/applications/industrial-painting-surface-treatment",
+      "file": "https___airyfilter_com_hi_applications_industrial_painting_surface_treatment_437683967"
+    },
+    {
+      "url": "https://airyfilter.com/th/applications/industrial-painting-surface-treatment",
+      "file": "https___airyfilter_com_th_applications_industrial_painting_surface_treatment_1963049300"
+    },
+    {
+      "url": "https://airyfilter.com/vi/applications/industrial-painting-surface-treatment",
+      "file": "https___airyfilter_com_vi_applications_industrial_painting_surface_treatment_749978611"
+    },
+    {
+      "url": "https://airyfilter.com/fr/applications/industrial-painting-surface-treatment",
+      "file": "https___airyfilter_com_fr_applications_industrial_painting_surface_treatment_1673621164"
+    },
+    {
+      "url": "https://airyfilter.com/de/applications/industrial-painting-surface-treatment",
+      "file": "https___airyfilter_com_de_applications_industrial_painting_surface_treatment_768169855"
+    },
+    {
+      "url": "https://airyfilter.com/it/applications/industrial-painting-surface-treatment",
+      "file": "https___airyfilter_com_it_applications_industrial_painting_surface_treatment_1616913771"
+    },
+    {
+      "url": "https://airyfilter.com/ja/applications/industrial-painting-surface-treatment",
+      "file": "https___airyfilter_com_ja_applications_industrial_painting_surface_treatment_976808183"
+    },
+    {
+      "url": "https://airyfilter.com/ko/applications/industrial-painting-surface-treatment",
+      "file": "https___airyfilter_com_ko_applications_industrial_painting_surface_treatment_723895876"
+    },
+    {
+      "url": "https://airyfilter.com/pt/applications/industrial-painting-surface-treatment",
+      "file": "https___airyfilter_com_pt_applications_industrial_painting_surface_treatment_2084222236"
+    },
+    {
+      "url": "https://airyfilter.com/ru/applications/industrial-painting-surface-treatment",
+      "file": "https___airyfilter_com_ru_applications_industrial_painting_surface_treatment_997674371"
+    },
+    {
+      "url": "https://airyfilter.com/es/applications/industrial-painting-surface-treatment",
+      "file": "https___airyfilter_com_es_applications_industrial_painting_surface_treatment_1021082162"
+    },
+    {
+      "url": "https://airyfilter.com/product/fb-panel-filter",
+      "file": "https___airyfilter_com_product_fb_panel_filter_1419592684"
+    },
+    {
+      "url": "https://airyfilter.com/product/cardboard-paper-frame-pre-filter-for-hvac",
+      "file": "https___airyfilter_com_product_cardboard_paper_frame_pre_filter_for_hvac_987461375"
+    },
+    {
+      "url": "https://airyfilter.com/ar/applications/food-beverage-processing",
+      "file": "https___airyfilter_com_ar_applications_food_beverage_processing_719991878"
+    },
+    {
+      "url": "https://airyfilter.com/hi/applications/food-beverage-processing",
+      "file": "https___airyfilter_com_hi_applications_food_beverage_processing_2075334934"
+    },
+    {
+      "url": "https://airyfilter.com/th/applications/food-beverage-processing",
+      "file": "https___airyfilter_com_th_applications_food_beverage_processing_937857975"
+    },
+    {
+      "url": "https://airyfilter.com/vi/applications/food-beverage-processing",
+      "file": "https___airyfilter_com_vi_applications_food_beverage_processing_1062618440"
+    },
+    {
+      "url": "https://airyfilter.com/fr/applications/food-beverage-processing",
+      "file": "https___airyfilter_com_fr_applications_food_beverage_processing_562042719"
+    },
+    {
+      "url": "https://airyfilter.com/de/applications/food-beverage-processing",
+      "file": "https___airyfilter_com_de_applications_food_beverage_processing_80250730"
+    },
+    {
+      "url": "https://airyfilter.com/it/applications/food-beverage-processing",
+      "file": "https___airyfilter_com_it_applications_food_beverage_processing_1977330112"
+    },
+    {
+      "url": "https://airyfilter.com/ja/applications/food-beverage-processing",
+      "file": "https___airyfilter_com_ja_applications_food_beverage_processing_504938292"
+    },
+    {
+      "url": "https://airyfilter.com/ko/applications/food-beverage-processing",
+      "file": "https___airyfilter_com_ko_applications_food_beverage_processing_923973433"
+    },
+    {
+      "url": "https://airyfilter.com/pt/applications/food-beverage-processing",
+      "file": "https___airyfilter_com_pt_applications_food_beverage_processing_676511783"
+    },
+    {
+      "url": "https://airyfilter.com/ru/applications/food-beverage-processing",
+      "file": "https___airyfilter_com_ru_applications_food_beverage_processing_1323964632"
+    },
+    {
+      "url": "https://airyfilter.com/es/applications/food-beverage-processing",
+      "file": "https___airyfilter_com_es_applications_food_beverage_processing_1348660995"
+    },
+    {
+      "url": "https://airyfilter.com/product/high-temperature-fiberglass-filter-media",
+      "file": "https___airyfilter_com_product_high_temperature_fiberglass_filter_media_1755944946"
+    },
+    {
+      "url": "https://airyfilter.com/product/flame-retardant-pre-filter-media",
+      "file": "https___airyfilter_com_product_flame_retardant_pre_filter_media_375108751"
+    },
+    {
+      "url": "https://airyfilter.com/product/ceiling-filter-roof-filter",
+      "file": "https___airyfilter_com_product_ceiling_filter_roof_filter_506169486"
+    },
+    {
+      "url": "https://airyfilter.com/product/pleated-pre-filter",
+      "file": "https___airyfilter_com_product_pleated_pre_filter_1828397082"
+    },
+    {
+      "url": "https://airyfilter.com/product/nylon-mesh-filter",
+      "file": "https___airyfilter_com_product_nylon_mesh_filter_1304099003"
+    },
+    {
+      "url": "https://airyfilter.com/product/high-temperature-synthetic-filter-media",
+      "file": "https___airyfilter_com_product_high_temperature_synthetic_filter_media_1263188875"
+    },
+    {
+      "url": "https://airyfilter.com/product/activated-carbon-filter-media",
+      "file": "https___airyfilter_com_product_activated_carbon_filter_media_890495309"
+    },
+    {
+      "url": "https://airyfilter.com/ar/applications/public-transport-infrastructure",
+      "file": "https___airyfilter_com_ar_applications_public_transport_infrastructure_1013943831"
+    },
+    {
+      "url": "https://airyfilter.com/hi/applications/public-transport-infrastructure",
+      "file": "https___airyfilter_com_hi_applications_public_transport_infrastructure_309158073"
+    },
+    {
+      "url": "https://airyfilter.com/th/applications/public-transport-infrastructure",
+      "file": "https___airyfilter_com_th_applications_public_transport_infrastructure_1244341068"
+    },
+    {
+      "url": "https://airyfilter.com/vi/applications/public-transport-infrastructure",
+      "file": "https___airyfilter_com_vi_applications_public_transport_infrastructure_1514190549"
+    },
+    {
+      "url": "https://airyfilter.com/fr/applications/public-transport-infrastructure",
+      "file": "https___airyfilter_com_fr_applications_public_transport_infrastructure_2016260772"
+    },
+    {
+      "url": "https://airyfilter.com/de/applications/public-transport-infrastructure",
+      "file": "https___airyfilter_com_de_applications_public_transport_infrastructure_835440583"
+    },
+    {
+      "url": "https://airyfilter.com/it/applications/public-transport-infrastructure",
+      "file": "https___airyfilter_com_it_applications_public_transport_infrastructure_1529863005"
+    },
+    {
+      "url": "https://airyfilter.com/ja/applications/public-transport-infrastructure",
+      "file": "https___airyfilter_com_ja_applications_public_transport_infrastructure_214597329"
+    },
+    {
+      "url": "https://airyfilter.com/ko/applications/public-transport-infrastructure",
+      "file": "https___airyfilter_com_ko_applications_public_transport_infrastructure_1496423484"
+    },
+    {
+      "url": "https://airyfilter.com/pt/applications/public-transport-infrastructure",
+      "file": "https___airyfilter_com_pt_applications_public_transport_infrastructure_1853429980"
+    },
+    {
+      "url": "https://airyfilter.com/ru/applications/public-transport-infrastructure",
+      "file": "https___airyfilter_com_ru_applications_public_transport_infrastructure_905101637"
+    },
+    {
+      "url": "https://airyfilter.com/es/applications/public-transport-infrastructure",
+      "file": "https___airyfilter_com_es_applications_public_transport_infrastructure_875580230"
+    },
+    {
+      "url": "https://airyfilter.com/product/activated-carbon-pleated-filter",
+      "file": "https___airyfilter_com_product_activated_carbon_pleated_filter_2107751560"
+    },
+    {
+      "url": "https://airyfilter.com/product/metal-mesh-filter",
+      "file": "https___airyfilter_com_product_metal_mesh_filter_1508512300"
+    },
+    {
+      "url": "https://airyfilter.com/ar/applications/healthcare-medical-facilities",
+      "file": "https___airyfilter_com_ar_applications_healthcare_medical_facilities_89871607"
+    },
+    {
+      "url": "https://airyfilter.com/hi/applications/healthcare-medical-facilities",
+      "file": "https___airyfilter_com_hi_applications_healthcare_medical_facilities_1522157625"
+    },
+    {
+      "url": "https://airyfilter.com/th/applications/healthcare-medical-facilities",
+      "file": "https___airyfilter_com_th_applications_healthcare_medical_facilities_682165018"
+    },
+    {
+      "url": "https://airyfilter.com/vi/applications/healthcare-medical-facilities",
+      "file": "https___airyfilter_com_vi_applications_healthcare_medical_facilities_813372601"
+    },
+    {
+      "url": "https://airyfilter.com/fr/applications/healthcare-medical-facilities",
+      "file": "https___airyfilter_com_fr_applications_healthcare_medical_facilities_3639410"
+    },
+    {
+      "url": "https://airyfilter.com/de/applications/healthcare-medical-facilities",
+      "file": "https___airyfilter_com_de_applications_healthcare_medical_facilities_461006663"
+    },
+    {
+      "url": "https://airyfilter.com/it/applications/healthcare-medical-facilities",
+      "file": "https___airyfilter_com_it_applications_healthcare_medical_facilities_1434685903"
+    },
+    {
+      "url": "https://airyfilter.com/ja/applications/healthcare-medical-facilities",
+      "file": "https___airyfilter_com_ja_applications_healthcare_medical_facilities_2023260739"
+    },
+    {
+      "url": "https://airyfilter.com/ko/applications/healthcare-medical-facilities",
+      "file": "https___airyfilter_com_ko_applications_healthcare_medical_facilities_1138292746"
+    },
+    {
+      "url": "https://airyfilter.com/pt/applications/healthcare-medical-facilities",
+      "file": "https___airyfilter_com_pt_applications_healthcare_medical_facilities_1880562858"
+    },
+    {
+      "url": "https://airyfilter.com/ru/applications/healthcare-medical-facilities",
+      "file": "https___airyfilter_com_ru_applications_healthcare_medical_facilities_2011770441"
+    },
+    {
+      "url": "https://airyfilter.com/es/applications/healthcare-medical-facilities",
+      "file": "https___airyfilter_com_es_applications_healthcare_medical_facilities_672407148"
+    },
+    {
+      "url": "https://airyfilter.com/ar/applications/commercial-building-air-quality",
+      "file": "https___airyfilter_com_ar_applications_commercial_building_air_quality_957489906"
+    },
+    {
+      "url": "https://airyfilter.com/hi/applications/commercial-building-air-quality",
+      "file": "https___airyfilter_com_hi_applications_commercial_building_air_quality_365611998"
+    },
+    {
+      "url": "https://airyfilter.com/th/applications/commercial-building-air-quality",
+      "file": "https___airyfilter_com_th_applications_commercial_building_air_quality_1300794993"
+    },
+    {
+      "url": "https://airyfilter.com/vi/applications/commercial-building-air-quality",
+      "file": "https___airyfilter_com_vi_applications_commercial_building_air_quality_1457736624"
+    },
+    {
+      "url": "https://airyfilter.com/fr/applications/commercial-building-air-quality",
+      "file": "https___airyfilter_com_fr_applications_commercial_building_air_quality_2072714697"
+    },
+    {
+      "url": "https://airyfilter.com/de/applications/commercial-building-air-quality",
+      "file": "https___airyfilter_com_de_applications_commercial_building_air_quality_778986658"
+    },
+    {
+      "url": "https://airyfilter.com/it/applications/commercial-building-air-quality",
+      "file": "https___airyfilter_com_it_applications_commercial_building_air_quality_1473409080"
+    },
+    {
+      "url": "https://airyfilter.com/ja/applications/commercial-building-air-quality",
+      "file": "https___airyfilter_com_ja_applications_commercial_building_air_quality_158143404"
+    },
+    {
+      "url": "https://airyfilter.com/ko/applications/commercial-building-air-quality",
+      "file": "https___airyfilter_com_ko_applications_commercial_building_air_quality_1552877409"
+    },
+    {
+      "url": "https://airyfilter.com/pt/applications/commercial-building-air-quality",
+      "file": "https___airyfilter_com_pt_applications_commercial_building_air_quality_1909883905"
+    },
+    {
+      "url": "https://airyfilter.com/ru/applications/commercial-building-air-quality",
+      "file": "https___airyfilter_com_ru_applications_commercial_building_air_quality_848647712"
+    },
+    {
+      "url": "https://airyfilter.com/es/applications/commercial-building-air-quality",
+      "file": "https___airyfilter_com_es_applications_commercial_building_air_quality_932034155"
+    },
+    {
+      "url": "https://airyfilter.com/ar/applications/general-industrial-manufacturing",
+      "file": "https___airyfilter_com_ar_applications_general_industrial_manufacturing_1482606915"
+    },
+    {
+      "url": "https://airyfilter.com/hi/applications/general-industrial-manufacturing",
+      "file": "https___airyfilter_com_hi_applications_general_industrial_manufacturing_878846445"
+    },
+    {
+      "url": "https://airyfilter.com/th/applications/general-industrial-manufacturing",
+      "file": "https___airyfilter_com_th_applications_general_industrial_manufacturing_195251782"
+    },
+    {
+      "url": "https://airyfilter.com/vi/applications/general-industrial-manufacturing",
+      "file": "https___airyfilter_com_vi_applications_general_industrial_manufacturing_189614011"
+    },
+    {
+      "url": "https://airyfilter.com/fr/applications/general-industrial-manufacturing",
+      "file": "https___airyfilter_com_fr_applications_general_industrial_manufacturing_2035544734"
+    },
+    {
+      "url": "https://airyfilter.com/de/applications/general-industrial-manufacturing",
+      "file": "https___airyfilter_com_de_applications_general_industrial_manufacturing_243973523"
+    },
+    {
+      "url": "https://airyfilter.com/it/applications/general-industrial-manufacturing",
+      "file": "https___airyfilter_com_it_applications_general_industrial_manufacturing_296232125"
+    },
+    {
+      "url": "https://airyfilter.com/ja/applications/general-industrial-manufacturing",
+      "file": "https___airyfilter_com_ja_applications_general_industrial_manufacturing_1822298167"
+    },
+    {
+      "url": "https://airyfilter.com/ko/applications/general-industrial-manufacturing",
+      "file": "https___airyfilter_com_ko_applications_general_industrial_manufacturing_970631478"
+    },
+    {
+      "url": "https://airyfilter.com/pt/applications/general-industrial-manufacturing",
+      "file": "https___airyfilter_com_pt_applications_general_industrial_manufacturing_1506635306"
+    },
+    {
+      "url": "https://airyfilter.com/ru/applications/general-industrial-manufacturing",
+      "file": "https___airyfilter_com_ru_applications_general_industrial_manufacturing_1891501099"
+    },
+    {
+      "url": "https://airyfilter.com/es/applications/general-industrial-manufacturing",
+      "file": "https___airyfilter_com_es_applications_general_industrial_manufacturing_1258064128"
+    },
+    {
+      "url": "https://airyfilter.com/ar/about-airy",
+      "file": "https___airyfilter_com_ar_about_airy_175315975"
+    },
+    {
+      "url": "https://airyfilter.com/hi/about-airy",
+      "file": "https___airyfilter_com_hi_about_airy_1254717751"
+    },
+    {
+      "url": "https://airyfilter.com/th/about-airy",
+      "file": "https___airyfilter_com_th_about_airy_1899766244"
+    },
+    {
+      "url": "https://airyfilter.com/vi/about-airy",
+      "file": "https___airyfilter_com_vi_about_airy_1442042949"
+    },
+    {
+      "url": "https://airyfilter.com/fr/about-airy",
+      "file": "https___airyfilter_com_fr_about_airy_1291699060"
+    },
+    {
+      "url": "https://airyfilter.com/de/about-airy",
+      "file": "https___airyfilter_com_de_about_airy_1911998903"
+    },
+    {
+      "url": "https://airyfilter.com/it/about-airy",
+      "file": "https___airyfilter_com_it_about_airy_1913742643"
+    },
+    {
+      "url": "https://airyfilter.com/ja/about-airy",
+      "file": "https___airyfilter_com_ja_about_airy_364750015"
+    },
+    {
+      "url": "https://airyfilter.com/ko/about-airy",
+      "file": "https___airyfilter_com_ko_about_airy_1149005044"
+    },
+    {
+      "url": "https://airyfilter.com/pt/about-airy",
+      "file": "https___airyfilter_com_pt_about_airy_327403604"
+    },
+    {
+      "url": "https://airyfilter.com/ru/about-airy",
+      "file": "https___airyfilter_com_ru_about_airy_130319691"
+    },
+    {
+      "url": "https://airyfilter.com/es/about-airy",
+      "file": "https___airyfilter_com_es_about_airy_869213334"
+    },
+    {
+      "url": "https://airyfilter.com/ar/manufacturing",
+      "file": "https___airyfilter_com_ar_manufacturing_363989222"
+    },
+    {
+      "url": "https://airyfilter.com/hi/manufacturing",
+      "file": "https___airyfilter_com_hi_manufacturing_402152886"
+    },
+    {
+      "url": "https://airyfilter.com/th/manufacturing",
+      "file": "https___airyfilter_com_th_manufacturing_1358125545"
+    },
+    {
+      "url": "https://airyfilter.com/vi/manufacturing",
+      "file": "https___airyfilter_com_vi_manufacturing_1844609000"
+    },
+    {
+      "url": "https://airyfilter.com/fr/manufacturing",
+      "file": "https___airyfilter_com_fr_manufacturing_2106285633"
+    },
+    {
+      "url": "https://airyfilter.com/de/manufacturing",
+      "file": "https___airyfilter_com_de_manufacturing_709049654"
+    },
+    {
+      "url": "https://airyfilter.com/it/manufacturing",
+      "file": "https___airyfilter_com_it_manufacturing_705180576"
+    },
+    {
+      "url": "https://airyfilter.com/ja/manufacturing",
+      "file": "https___airyfilter_com_ja_manufacturing_205571948"
+    },
+    {
+      "url": "https://airyfilter.com/ko/manufacturing",
+      "file": "https___airyfilter_com_ko_manufacturing_674073383"
+    },
+    {
+      "url": "https://airyfilter.com/pt/manufacturing",
+      "file": "https___airyfilter_com_pt_manufacturing_16047481"
+    },
+    {
+      "url": "https://airyfilter.com/ru/manufacturing",
+      "file": "https___airyfilter_com_ru_manufacturing_502530936"
+    },
+    {
+      "url": "https://airyfilter.com/es/manufacturing",
+      "file": "https___airyfilter_com_es_manufacturing_170595677"
+    },
+    {
+      "url": "https://airyfilter.com/v-bank-hepa-filter-guide",
+      "file": "https___airyfilter_com_v_bank_hepa_filter_guide_1893846766"
+    },
+    {
+      "url": "https://airyfilter.com/how-to-choose-the-right-air-filter-for-ahu-systems",
+      "file": "https___airyfilter_com_how_to_choose_the_right_air_filter_for_ahu_systems_273563523"
+    },
+    {
+      "url": "https://airyfilter.com/ar/airy-exhibition-journey-asia-pacific-expo-2026",
+      "file": "https___airyfilter_com_ar_airy_exhibition_journey_asia_pacific_expo_2026_1499755173"
+    },
+    {
+      "url": "https://airyfilter.com/hi/airy-exhibition-journey-asia-pacific-expo-2026",
+      "file": "https___airyfilter_com_hi_airy_exhibition_journey_asia_pacific_expo_2026_1690365301"
+    },
+    {
+      "url": "https://airyfilter.com/th/airy-exhibition-journey-asia-pacific-expo-2026",
+      "file": "https___airyfilter_com_th_airy_exhibition_journey_asia_pacific_expo_2026_1541908664"
+    },
+    {
+      "url": "https://airyfilter.com/vi/airy-exhibition-journey-asia-pacific-expo-2026",
+      "file": "https___airyfilter_com_vi_airy_exhibition_journey_asia_pacific_expo_2026_1798996327"
+    },
+    {
+      "url": "https://airyfilter.com/fr/airy-exhibition-journey-asia-pacific-expo-2026",
+      "file": "https___airyfilter_com_fr_airy_exhibition_journey_asia_pacific_expo_2026_1538551968"
+    },
+    {
+      "url": "https://airyfilter.com/de/airy-exhibition-journey-asia-pacific-expo-2026",
+      "file": "https___airyfilter_com_de_airy_exhibition_journey_asia_pacific_expo_2026_1242684661"
+    },
+    {
+      "url": "https://airyfilter.com/it/airy-exhibition-journey-asia-pacific-expo-2026",
+      "file": "https___airyfilter_com_it_airy_exhibition_journey_asia_pacific_expo_2026_377332001"
+    },
+    {
+      "url": "https://airyfilter.com/ja/airy-exhibition-journey-asia-pacific-expo-2026",
+      "file": "https___airyfilter_com_ja_airy_exhibition_journey_asia_pacific_expo_2026_872597611"
+    },
+    {
+      "url": "https://airyfilter.com/ko/airy-exhibition-journey-asia-pacific-expo-2026",
+      "file": "https___airyfilter_com_ko_airy_exhibition_journey_asia_pacific_expo_2026_191124536"
+    },
+    {
+      "url": "https://airyfilter.com/pt/airy-exhibition-journey-asia-pacific-expo-2026",
+      "file": "https___airyfilter_com_pt_airy_exhibition_journey_asia_pacific_expo_2026_323016488"
+    },
+    {
+      "url": "https://airyfilter.com/ru/airy-exhibition-journey-asia-pacific-expo-2026",
+      "file": "https___airyfilter_com_ru_airy_exhibition_journey_asia_pacific_expo_2026_1277078793"
+    },
+    {
+      "url": "https://airyfilter.com/es/airy-exhibition-journey-asia-pacific-expo-2026",
+      "file": "https___airyfilter_com_es_airy_exhibition_journey_asia_pacific_expo_2026_561211586"
+    },
+    {
+      "url": "https://airyfilter.com/industrial-stainless-steel-air-filter-price",
+      "file": "https___airyfilter_com_industrial_stainless_steel_air_filter_price_1157892490"
+    },
+    {
+      "url": "https://airyfilter.com/h14-hepa-filter-specifications",
+      "file": "https___airyfilter_com_h14_hepa_filter_specifications_1077922542"
+    },
+    {
+      "url": "https://airyfilter.com/product/v-bank-hepa-filter-v-cell-filter",
+      "file": "https___airyfilter_com_product_v_bank_hepa_filter_v_cell_filter_949406046"
+    },
+    {
+      "url": "https://airyfilter.com/hepa-filter-sizes",
+      "file": "https___airyfilter_com_hepa_filter_sizes_1775392394"
+    },
+    {
+      "url": "https://airyfilter.com/hepa-filter-manufacturer",
+      "file": "https___airyfilter_com_hepa_filter_manufacturer_2055630227"
+    },
+    {
+      "url": "https://airyfilter.com/ar/industrial-hepa-filter-cost",
+      "file": "https___airyfilter_com_ar_industrial_hepa_filter_cost_543322079"
+    },
+    {
+      "url": "https://airyfilter.com/hi/industrial-hepa-filter-cost",
+      "file": "https___airyfilter_com_hi_industrial_hepa_filter_cost_1320413009"
+    },
+    {
+      "url": "https://airyfilter.com/th/industrial-hepa-filter-cost",
+      "file": "https___airyfilter_com_th_industrial_hepa_filter_cost_1877721182"
+    },
+    {
+      "url": "https://airyfilter.com/vi/industrial-hepa-filter-cost",
+      "file": "https___airyfilter_com_vi_industrial_hepa_filter_cost_1161987231"
+    },
+    {
+      "url": "https://airyfilter.com/fr/industrial-hepa-filter-cost",
+      "file": "https___airyfilter_com_fr_industrial_hepa_filter_cost_599902714"
+    },
+    {
+      "url": "https://airyfilter.com/de/industrial-hepa-filter-cost",
+      "file": "https___airyfilter_com_de_industrial_hepa_filter_cost_156882991"
+    },
+    {
+      "url": "https://airyfilter.com/it/industrial-hepa-filter-cost",
+      "file": "https___airyfilter_com_it_industrial_hepa_filter_cost_2020054489"
+    },
+    {
+      "url": "https://airyfilter.com/ja/industrial-hepa-filter-cost",
+      "file": "https___airyfilter_com_ja_industrial_hepa_filter_cost_1747340261"
+    },
+    {
+      "url": "https://airyfilter.com/ko/industrial-hepa-filter-cost",
+      "file": "https___airyfilter_com_ko_industrial_hepa_filter_cost_1422821742"
+    },
+    {
+      "url": "https://airyfilter.com/pt/industrial-hepa-filter-cost",
+      "file": "https___airyfilter_com_pt_industrial_hepa_filter_cost_2099267378"
+    },
+    {
+      "url": "https://airyfilter.com/ru/industrial-hepa-filter-cost",
+      "file": "https___airyfilter_com_ru_industrial_hepa_filter_cost_1479965967"
+    },
+    {
+      "url": "https://airyfilter.com/es/industrial-hepa-filter-cost",
+      "file": "https___airyfilter_com_es_industrial_hepa_filter_cost_1281688284"
+    },
+    {
+      "url": "https://airyfilter.com/product/non-woven-pocket-filter",
+      "file": "https___airyfilter_com_product_non_woven_pocket_filter_542445533"
+    },
+    {
+      "url": "https://airyfilter.com/activated-carbon-air-filter-guide",
+      "file": "https___airyfilter_com_activated_carbon_air_filter_guide_1896900568"
+    },
+    {
+      "url": "https://airyfilter.com/pleated-panel-filter-specifications",
+      "file": "https___airyfilter_com_pleated_panel_filter_specifications_362230876"
+    },
+    {
+      "url": "https://airyfilter.com/air-filter-manufacturer",
+      "file": "https___airyfilter_com_air_filter_manufacturer_1263947971"
+    },
+    {
+      "url": "https://airyfilter.com/ar/custom-air-filter-rfq-template",
+      "file": "https___airyfilter_com_ar_custom_air_filter_rfq_template_1115504056"
+    },
+    {
+      "url": "https://airyfilter.com/hi/custom-air-filter-rfq-template",
+      "file": "https___airyfilter_com_hi_custom_air_filter_rfq_template_374267160"
+    },
+    {
+      "url": "https://airyfilter.com/th/custom-air-filter-rfq-template",
+      "file": "https___airyfilter_com_th_custom_air_filter_rfq_template_1201517333"
+    },
+    {
+      "url": "https://airyfilter.com/vi/custom-air-filter-rfq-template",
+      "file": "https___airyfilter_com_vi_custom_air_filter_rfq_template_880973066"
+    },
+    {
+      "url": "https://airyfilter.com/fr/custom-air-filter-rfq-template",
+      "file": "https___airyfilter_com_fr_custom_air_filter_rfq_template_1212945987"
+    },
+    {
+      "url": "https://airyfilter.com/de/custom-air-filter-rfq-template",
+      "file": "https___airyfilter_com_de_custom_air_filter_rfq_template_779013272"
+    },
+    {
+      "url": "https://airyfilter.com/it/custom-air-filter-rfq-template",
+      "file": "https___airyfilter_com_it_custom_air_filter_rfq_template_1100717438"
+    },
+    {
+      "url": "https://airyfilter.com/ja/custom-air-filter-rfq-template",
+      "file": "https___airyfilter_com_ja_custom_air_filter_rfq_template_1545692174"
+    },
+    {
+      "url": "https://airyfilter.com/ko/custom-air-filter-rfq-template",
+      "file": "https___airyfilter_com_ko_custom_air_filter_rfq_template_1806051803"
+    },
+    {
+      "url": "https://airyfilter.com/pt/custom-air-filter-rfq-template",
+      "file": "https___airyfilter_com_pt_custom_air_filter_rfq_template_1300119163"
+    },
+    {
+      "url": "https://airyfilter.com/ru/custom-air-filter-rfq-template",
+      "file": "https___airyfilter_com_ru_custom_air_filter_rfq_template_912357734"
+    },
+    {
+      "url": "https://airyfilter.com/es/custom-air-filter-rfq-template",
+      "file": "https___airyfilter_com_es_custom_air_filter_rfq_template_1039372901"
+    },
+    {
+      "url": "https://airyfilter.com/g4-vs-f7-vs-f9-air-filter-comparison",
+      "file": "https___airyfilter_com_g4_vs_f7_vs_f9_air_filter_comparison_1391970763"
+    },
+    {
+      "url": "https://airyfilter.com/blogs/page/2",
+      "file": "https___airyfilter_com_blogs_page_2_1320409226"
+    },
+    {
+      "url": "https://airyfilter.com/blogs/page/3",
+      "file": "https___airyfilter_com_blogs_page_3_1320409225"
+    },
+    {
+      "url": "https://airyfilter.com/blogs/page/9",
+      "file": "https___airyfilter_com_blogs_page_9_1320409219"
+    },
+    {
+      "url": "https://airyfilter.com/ar/blogs",
+      "file": "https___airyfilter_com_ar_blogs_1372221255"
+    },
+    {
+      "url": "https://airyfilter.com/hi/blogs",
+      "file": "https___airyfilter_com_hi_blogs_1455049335"
+    },
+    {
+      "url": "https://airyfilter.com/th/blogs",
+      "file": "https___airyfilter_com_th_blogs_1391301820"
+    },
+    {
+      "url": "https://airyfilter.com/vi/blogs",
+      "file": "https___airyfilter_com_vi_blogs_1469458875"
+    },
+    {
+      "url": "https://airyfilter.com/fr/blogs",
+      "file": "https___airyfilter_com_fr_blogs_1248104172"
+    },
+    {
+      "url": "https://airyfilter.com/de/blogs",
+      "file": "https___airyfilter_com_de_blogs_908596489"
+    },
+    {
+      "url": "https://airyfilter.com/it/blogs",
+      "file": "https___airyfilter_com_it_blogs_1460366899"
+    },
+    {
+      "url": "https://airyfilter.com/ja/blogs",
+      "file": "https___airyfilter_com_ja_blogs_774490817"
+    },
+    {
+      "url": "https://airyfilter.com/ko/blogs",
+      "file": "https___airyfilter_com_ko_blogs_508469164"
+    },
+    {
+      "url": "https://airyfilter.com/pt/blogs",
+      "file": "https___airyfilter_com_pt_blogs_775137356"
+    },
+    {
+      "url": "https://airyfilter.com/ru/blogs",
+      "file": "https___airyfilter_com_ru_blogs_853294411"
+    },
+    {
+      "url": "https://airyfilter.com/es/blogs",
+      "file": "https___airyfilter_com_es_blogs_2103410826"
+    },
+    {
+      "url": "https://airyfilter.com/case/midea-group",
+      "file": "https___airyfilter_com_case_midea_group_1984879869"
+    },
+    {
+      "url": "https://airyfilter.com/case/filter-bags-helping-food-factory-improve-air-quality",
+      "file": "https___airyfilter_com_case_filter_bags_helping_food_factory_improve_air_quality_2131497593"
+    },
+    {
+      "url": "https://airyfilter.com/case/precision-electronics-manufacturer",
+      "file": "https___airyfilter_com_case_precision_electronics_manufacturer_1656534449"
+    },
+    {
+      "url": "https://airyfilter.com/ar/case-studies",
+      "file": "https___airyfilter_com_ar_case_studies_168363490"
+    },
+    {
+      "url": "https://airyfilter.com/hi/case-studies",
+      "file": "https___airyfilter_com_hi_case_studies_1908615406"
+    },
+    {
+      "url": "https://airyfilter.com/th/case-studies",
+      "file": "https___airyfilter_com_th_case_studies_492304257"
+    },
+    {
+      "url": "https://airyfilter.com/vi/case-studies",
+      "file": "https___airyfilter_com_vi_case_studies_2017240736"
+    },
+    {
+      "url": "https://airyfilter.com/fr/case-studies",
+      "file": "https___airyfilter_com_fr_case_studies_883812057"
+    },
+    {
+      "url": "https://airyfilter.com/de/case-studies",
+      "file": "https___airyfilter_com_de_case_studies_1621620846"
+    },
+    {
+      "url": "https://airyfilter.com/it/case-studies",
+      "file": "https___airyfilter_com_it_case_studies_1667241176"
+    },
+    {
+      "url": "https://airyfilter.com/ja/case-studies",
+      "file": "https___airyfilter_com_ja_case_studies_855989916"
+    },
+    {
+      "url": "https://airyfilter.com/ko/case-studies",
+      "file": "https___airyfilter_com_ko_case_studies_419311729"
+    },
+    {
+      "url": "https://airyfilter.com/pt/case-studies",
+      "file": "https___airyfilter_com_pt_case_studies_295686895"
+    },
+    {
+      "url": "https://airyfilter.com/ru/case-studies",
+      "file": "https___airyfilter_com_ru_case_studies_1489735408"
+    },
+    {
+      "url": "https://airyfilter.com/es/case-studies",
+      "file": "https___airyfilter_com_es_case_studies_1398044805"
+    },
+    {
+      "url": "https://airyfilter.com/ar/privacy-policy-2",
+      "file": "https___airyfilter_com_ar_privacy_policy_2_469031508"
+    },
+    {
+      "url": "https://airyfilter.com/hi/privacy-policy-2",
+      "file": "https___airyfilter_com_hi_privacy_policy_2_763587708"
+    },
+    {
+      "url": "https://airyfilter.com/th/privacy-policy-2",
+      "file": "https___airyfilter_com_th_privacy_policy_2_1310243215"
+    },
+    {
+      "url": "https://airyfilter.com/vi/privacy-policy-2",
+      "file": "https___airyfilter_com_vi_privacy_policy_2_298707986"
+    },
+    {
+      "url": "https://airyfilter.com/fr/privacy-policy-2",
+      "file": "https___airyfilter_com_fr_privacy_policy_2_541639449"
+    },
+    {
+      "url": "https://airyfilter.com/de/privacy-policy-2",
+      "file": "https___airyfilter_com_de_privacy_policy_2_1987345404"
+    },
+    {
+      "url": "https://airyfilter.com/it/privacy-policy-2",
+      "file": "https___airyfilter_com_it_privacy_policy_2_309046426"
+    },
+    {
+      "url": "https://airyfilter.com/ja/privacy-policy-2",
+      "file": "https___airyfilter_com_ja_privacy_policy_2_1229080078"
+    }
+  ]
+}

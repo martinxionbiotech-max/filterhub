@@ -1,0 +1,1011 @@
+{
+  "site": "https://www.hbxueyuan.com/",
+  "host": "www.hbxueyuan.com",
+  "origin": "https://www.hbxueyuan.com",
+  "crawlDate": "2026-10-29T11:17:40.505Z",
+  "pagesVisited": 250,
+  "pagesFailed": 0,
+  "failed": [],
+  "pages": [
+    {
+      "url": "https://www.hbxueyuan.com/",
+      "file": "https___www_hbxueyuan_com__775972235"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/about-us.html",
+      "file": "https___www_hbxueyuan_com_about_us_html_165675792"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product.html",
+      "file": "https___www_hbxueyuan_com_product_html_985046613"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-air-filters.html",
+      "file": "https___www_hbxueyuan_com_product_list_air_filters_html_2035479207"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-lawn-mower-air-filter.html",
+      "file": "https___www_hbxueyuan_com_product_list_lawn_mower_air_filter_html_704002264"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-swimming-pools-filter.html",
+      "file": "https___www_hbxueyuan_com_product_list_swimming_pools_filter_html_839108161"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-powercore-filter.html",
+      "file": "https___www_hbxueyuan_com_product_list_powercore_filter_html_195893070"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-farm-machinery-filter.html",
+      "file": "https___www_hbxueyuan_com_product_list_farm_machinery_filter_html_938434223"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-air-compressor-filter.html",
+      "file": "https___www_hbxueyuan_com_product_list_air_compressor_filter_html_1404543742"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-heavy-machinery-filter.html",
+      "file": "https___www_hbxueyuan_com_product_list_heavy_machinery_filter_html_2093548630"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-truck-filter.html",
+      "file": "https___www_hbxueyuan_com_product_list_truck_filter_html_1771584659"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-passenger-car-filter.html",
+      "file": "https___www_hbxueyuan_com_product_list_passenger_car_filter_html_1098693073"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-cabin-air-filters.html",
+      "file": "https___www_hbxueyuan_com_product_list_cabin_air_filters_html_1656557685"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-oil-filters.html",
+      "file": "https___www_hbxueyuan_com_product_list_oil_filters_html_2078647521"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-hydraulic-filter.html",
+      "file": "https___www_hbxueyuan_com_product_list_hydraulic_filter_html_113881119"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-fuel-filters.html",
+      "file": "https___www_hbxueyuan_com_product_list_fuel_filters_html_258144273"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-urea-filter.html",
+      "file": "https___www_hbxueyuan_com_product_list_urea_filter_html_1403442733"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-control-cable.html",
+      "file": "https___www_hbxueyuan_com_product_list_control_cable_html_1154609394"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-hoodrelease-cable.html",
+      "file": "https___www_hbxueyuan_com_product_list_hoodrelease_cable_html_727723228"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-bowden-cable.html",
+      "file": "https___www_hbxueyuan_com_product_list_bowden_cable_html_118505536"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-cable-assy-parking-brake.html",
+      "file": "https___www_hbxueyuan_com_product_list_cable_assy_parking_brake_html_1251441022"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-gear-shift-cable.html",
+      "file": "https___www_hbxueyuan_com_product_list_gear_shift_cable_html_1704515617"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-speedometer-cable.html",
+      "file": "https___www_hbxueyuan_com_product_list_speedometer_cable_html_824509106"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-clutch-cable.html",
+      "file": "https___www_hbxueyuan_com_product_list_clutch_cable_html_301620438"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-accelerator-cable.html",
+      "file": "https___www_hbxueyuan_com_product_list_accelerator_cable_html_904006692"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/case.html",
+      "file": "https___www_hbxueyuan_com_case_html_1668683138"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/news.html",
+      "file": "https___www_hbxueyuan_com_news_html_2038683461"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/contact-us1.html",
+      "file": "https___www_hbxueyuan_com_contact_us1_html_1526347266"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/www.xueyuanfilter.com",
+      "file": "https___www_hbxueyuan_com_www_xueyuanfilter_com_557760730"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-fuel-filter-pp879.html",
+      "file": "https___www_hbxueyuan_com_product_fuel_filter_pp879_html_2039815674"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-fuel-filter-vg1540080311.html",
+      "file": "https___www_hbxueyuan_com_product_fuel_filter_vg1540080311_html_656014858"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-fuelfilter8159975.html",
+      "file": "https___www_hbxueyuan_com_product_fuelfilter8159975_html_1608349526"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-transmission-filter-35303-b1010.html",
+      "file": "https___www_hbxueyuan_com_product_transmission_filter_35303_b1010_html_1433220985"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-transmission-filter-35330-60070.html",
+      "file": "https___www_hbxueyuan_com_product_transmission_filter_35330_60070_html_193490718"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-transmission-filter-31728-3jx0c.html",
+      "file": "https___www_hbxueyuan_com_product_transmission_filter_31728_3jx0c_html_1364265864"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/application.html",
+      "file": "https___www_hbxueyuan_com_application_html_2087058708"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/application-xue-yuan-1.html",
+      "file": "https___www_hbxueyuan_com_application_xue_yuan_1_html_723853599"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/application-xue-yuan-2.html",
+      "file": "https___www_hbxueyuan_com_application_xue_yuan_2_html_752482750"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/application-xue-yuan.html",
+      "file": "https___www_hbxueyuan_com_application_xue_yuan_html_260304189"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/application-hebei-xue-yuan-2.html",
+      "file": "https___www_hbxueyuan_com_application_hebei_xue_yuan_2_html_1998047322"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/application-hebei-xue-yuan-1.html",
+      "file": "https___www_hbxueyuan_com_application_hebei_xue_yuan_1_html_1969418171"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/application-hebei-xue-yuan.html",
+      "file": "https___www_hbxueyuan_com_application_hebei_xue_yuan_html_768923743"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-transmission-filter-0501-217-695.html",
+      "file": "https___www_hbxueyuan_com_product_transmission_filter_0501_217_695_html_2099731218"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-transmission-filter-0-bw-398-009.html",
+      "file": "https___www_hbxueyuan_com_product_transmission_filter_0_bw_398_009_html_610174113"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-transmission-filter-31728-3jx0a.html",
+      "file": "https___www_hbxueyuan_com_product_transmission_filter_31728_3jx0a_html_1307007562"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-transmission-filter-31728-1xj0a.html",
+      "file": "https___www_hbxueyuan_com_product_transmission_filter_31728_1xj0a_html_759032344"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-transmission-filter-25420-pgh-003.html",
+      "file": "https___www_hbxueyuan_com_product_transmission_filter_25420_pgh_003_html_2056457973"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-transmission-filter-7222770095.html",
+      "file": "https___www_hbxueyuan_com_product_transmission_filter_7222770095_html_587662989"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-transmission-filter-25420-p7w-003.html",
+      "file": "https___www_hbxueyuan_com_product_transmission_filter_25420_p7w_003_html_536925290"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-transmission-filter-25420-pw4-010.html",
+      "file": "https___www_hbxueyuan_com_product_transmission_filter_25420_pw4_010_html_1505423901"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-transmission-filter-25420-pr0-030.html",
+      "file": "https___www_hbxueyuan_com_product_transmission_filter_25420_pr0_030_html_166340190"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-transmission-filter-25420-py8-j10.html",
+      "file": "https___www_hbxueyuan_com_product_transmission_filter_25420_py8_j10_html_575781215"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-transmission-filter-8973310630.html",
+      "file": "https___www_hbxueyuan_com_product_transmission_filter_8973310630_html_1984018150"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-transmission-filter-31728-aa000.html",
+      "file": "https___www_hbxueyuan_com_product_transmission_filter_31728_aa000_html_1908388268"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-transmission-filter-31728-ka061.html",
+      "file": "https___www_hbxueyuan_com_product_transmission_filter_31728_ka061_html_1001937159"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-transmission-filter-25420-639-000.html",
+      "file": "https___www_hbxueyuan_com_product_transmission_filter_25420_639_000_html_1622869587"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/about-us",
+      "file": "https___www_hbxueyuan_com_about_us_809994391"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/news-automechanika-shanghai-2023.html",
+      "file": "https___www_hbxueyuan_com_news_automechanika_shanghai_2023_html_2121312686"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/news-driving-without-car-air-filters.html",
+      "file": "https___www_hbxueyuan_com_news_driving_without_car_air_filters_html_240904204"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/sitemap.xml",
+      "file": "https___www_hbxueyuan_com_sitemap_xml_519457011"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/sitemap.html",
+      "file": "https___www_hbxueyuan_com_sitemap_html_1077171633"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/oudeautoparts",
+      "file": "https___www_hbxueyuan_com_oudeautoparts_84639265"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-fuel-filter-23401-1220.html",
+      "file": "https___www_hbxueyuan_com_product_fuel_filter_23401_1220_html_1166110010"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-fuel-filter-wdk9621.html",
+      "file": "https___www_hbxueyuan_com_product_fuel_filter_wdk9621_html_540649210"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-fuel-filter-wk929x.html",
+      "file": "https___www_hbxueyuan_com_product_fuel_filter_wk929x_html_1682863066"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-fuel-filter-23401-1441.html",
+      "file": "https___www_hbxueyuan_com_product_fuel_filter_23401_1441_html_2134567399"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-fuel-filter-fg-1035.html",
+      "file": "https___www_hbxueyuan_com_product_fuel_filter_fg_1035_html_472787187"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-fuel-filter-0007733150.html",
+      "file": "https___www_hbxueyuan_com_product_fuel_filter_0007733150_html_26222186"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-fuel-filter-fs19920.html",
+      "file": "https___www_hbxueyuan_com_product_fuel_filter_fs19920_html_206838786"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-fuel-filter-wk-950-6.html",
+      "file": "https___www_hbxueyuan_com_product_fuel_filter_wk_950_6_html_307061998"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-fuel-filter-t333152.html",
+      "file": "https___www_hbxueyuan_com_product_fuel_filter_t333152_html_129924303"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-fuel-filter-2169185.html",
+      "file": "https___www_hbxueyuan_com_product_fuel_filter_2169185_html_856447948"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-fuel-filter-ff5421.html",
+      "file": "https___www_hbxueyuan_com_product_fuel_filter_ff5421_html_2041617772"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-fuel-filter-pl270.html",
+      "file": "https___www_hbxueyuan_com_product_fuel_filter_pl270_html_1229554895"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product.html?page=2",
+      "file": "https___www_hbxueyuan_com_product_html_page_2_1387389074"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product.html?page=3",
+      "file": "https___www_hbxueyuan_com_product_html_page_3_1387389073"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product.html?page=4",
+      "file": "https___www_hbxueyuan_com_product_html_page_4_1387389072"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product.html?page=5",
+      "file": "https___www_hbxueyuan_com_product_html_page_5_1387389071"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product.html?page=6",
+      "file": "https___www_hbxueyuan_com_product_html_page_6_1387389070"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product.html?page=7",
+      "file": "https___www_hbxueyuan_com_product_html_page_7_1387389069"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product.html?page=8",
+      "file": "https___www_hbxueyuan_com_product_html_page_8_1387389068"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product.html?page=393",
+      "file": "https___www_hbxueyuan_com_product_html_page_393_1841035575"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product.html?page=394",
+      "file": "https___www_hbxueyuan_com_product_html_page_394_1841035574"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/products/automotive-air-filter-manufacturer.html",
+      "file": "https___www_hbxueyuan_com_products_automotive_air_filter_manufacturer_html_593800850"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/products/cabin-filter-manufacturer.html",
+      "file": "https___www_hbxueyuan_com_products_cabin_filter_manufacturer_html_1268114455"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/products/compressor-filter-supply.html",
+      "file": "https___www_hbxueyuan_com_products_compressor_filter_supply_html_473525853"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/products/china-hydraulic-filters.html",
+      "file": "https___www_hbxueyuan_com_products_china_hydraulic_filters_html_187296974"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/products/what-does-a-hydraulic-filter-do.html",
+      "file": "https___www_hbxueyuan_com_products_what_does_a_hydraulic_filter_do_html_573575702"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/products/truck-filter-manufacturer.html",
+      "file": "https___www_hbxueyuan_com_products_truck_filter_manufacturer_html_1754487711"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/products/how-often-to-change-cabin-air-filters.html",
+      "file": "https___www_hbxueyuan_com_products_how_often_to_change_cabin_air_filters_html_75848180"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/products/china-oil-filters-supplier.html",
+      "file": "https___www_hbxueyuan_com_products_china_oil_filters_supplier_html_1007269738"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/products/truck-filters-suppliers.html",
+      "file": "https___www_hbxueyuan_com_products_truck_filters_suppliers_html_151256974"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/products/china-oil-filter-manufacturer.html",
+      "file": "https___www_hbxueyuan_com_products_china_oil_filter_manufacturer_html_228082436"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/products/china-passenger-car-filter.html",
+      "file": "https___www_hbxueyuan_com_products_china_passenger_car_filter_html_263319967"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/products/automotive-oil-filter-manufacturer.html",
+      "file": "https___www_hbxueyuan_com_products_automotive_oil_filter_manufacturer_html_51264026"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/products/china-cabin-air-filters.html",
+      "file": "https___www_hbxueyuan_com_products_china_cabin_air_filters_html_139557403"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/products/car-oil-filter-manufacturer.html",
+      "file": "https___www_hbxueyuan_com_products_car_oil_filter_manufacturer_html_687419993"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/products/automotive-filter-manufacturer.html",
+      "file": "https___www_hbxueyuan_com_products_automotive_filter_manufacturer_html_322259381"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/products/when-changing-a-hydraulic-filter-what-should-you-do-first.html",
+      "file": "https___www_hbxueyuan_com_products_when_changing_a_hydraulic_filter_what_should__467530378"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-42n-62-15470-filter-fits-for-komatsu-loader.html",
+      "file": "https___www_hbxueyuan_com_product_42n_62_15470_filter_fits_for_komatsu_loader_ht_1082689934"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-air-filter-0313aam02161n-suitable-for-mahindra-scorpio-3rd-gen-2-2l.html",
+      "file": "https___www_hbxueyuan_com_product_air_filter_0313aam02161n_suitable_for_mahindra_858118302"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-air-filter-for-mazda-cx-3-cx-30-3-saloon-3-hatchback-axela-saloon-s801-13-3a0.html",
+      "file": "https___www_hbxueyuan_com_product_air_filter_for_mazda_cx_3_cx_30_3_saloon_3_hat_502729438"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-air-filter-fits-hyundai-i10-ac3-1-2-2019-on-g4lf-28113k7000.html",
+      "file": "https___www_hbxueyuan_com_product_air_filter_fits_hyundai_i10_ac3_1_2_2019_on_g4_1270070120"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-air-filter-for-honda-hr-v-hr-v-wagon-17220-5wa-h00.html",
+      "file": "https___www_hbxueyuan_com_product_air_filter_for_honda_hr_v_hr_v_wagon_17220_5wa_935825879"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-air-filter-28113-g6750.html",
+      "file": "https___www_hbxueyuan_com_product_air_filter_28113_g6750_html_171274591"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-air-filter-for-ssangyong-tivoli-korando-tivolan-23180-37300.html",
+      "file": "https___www_hbxueyuan_com_product_air_filter_for_ssangyong_tivoli_korando_tivola_121529449"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-crankcase-breather-filter-for-iveco-irisbus-eurotech-mh-500311355.html",
+      "file": "https___www_hbxueyuan_com_product_crankcase_breather_filter_for_iveco_irisbus_eu_1149173733"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-air-filter-8-98140266-0-for-isuzu-d-max-all-new-2-5-d-max-ii.html",
+      "file": "https___www_hbxueyuan_com_product_air_filter_8_98140266_0_for_isuzu_d_max_all_ne_1055355594"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-air-filter-for-hyundai-creta-16-21-28113-m4000.html",
+      "file": "https___www_hbxueyuan_com_product_air_filter_for_hyundai_creta_16_21_28113_m4000_1446774200"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-air-filters.html?page=2",
+      "file": "https___www_hbxueyuan_com_product_list_air_filters_html_page_2_806071004"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-air-filters.html?page=3",
+      "file": "https___www_hbxueyuan_com_product_list_air_filters_html_page_3_806071005"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-air-filters.html?page=4",
+      "file": "https___www_hbxueyuan_com_product_list_air_filters_html_page_4_806071006"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-air-filters.html?page=5",
+      "file": "https___www_hbxueyuan_com_product_list_air_filters_html_page_5_806071007"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-air-filters.html?page=6",
+      "file": "https___www_hbxueyuan_com_product_list_air_filters_html_page_6_806071008"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-air-filters.html?page=7",
+      "file": "https___www_hbxueyuan_com_product_list_air_filters_html_page_7_806071009"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-air-filters.html?page=8",
+      "file": "https___www_hbxueyuan_com_product_list_air_filters_html_page_8_806071010"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-air-filters.html?page=188",
+      "file": "https___www_hbxueyuan_com_product_list_air_filters_html_page_188_1540122395"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-air-filters.html?page=189",
+      "file": "https___www_hbxueyuan_com_product_list_air_filters_html_page_189_1540122396"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-air-filter-fits-briggs-stratton-798897-794935.html",
+      "file": "https___www_hbxueyuan_com_product_air_filter_fits_briggs_stratton_798897_794935__1350717488"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-air-filter-replaces-for-honda-17211-z0z-000.html",
+      "file": "https___www_hbxueyuan_com_product_air_filter_replaces_for_honda_17211_z0z_000_ht_1320545733"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-air-filter-fits-mtd-951-12260-751-12260.html",
+      "file": "https___www_hbxueyuan_com_product_air_filter_fits_mtd_951_12260_751_12260_html_1686293132"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-air-filter-for-kohler-2008302s-2008306s.html",
+      "file": "https___www_hbxueyuan_com_product_air_filter_for_kohler_2008302s_2008306s_html_888483643"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-air-filters-36905-740083a-for-tecumseh-raisman.html",
+      "file": "https___www_hbxueyuan_com_product_air_filters_36905_740083a_for_tecumseh_raisman_97590433"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-air-filter-cleaner-42821410300-42821410300b-for-stihl.html",
+      "file": "https___www_hbxueyuan_com_product_air_filter_cleaner_42821410300_42821410300b_fo_861018369"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-air-filter-for-kohler-14-083-01-s.html",
+      "file": "https___www_hbxueyuan_com_product_air_filter_for_kohler_14_083_01_s_html_1150771313"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-air-filter-kit-141-120-1600-1411201600-for-stihl-ms261.html",
+      "file": "https___www_hbxueyuan_com_product_air_filter_kit_141_120_1600_1411201600_for_sti_874212083"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-air-filter-for-echo-a226000410-a226000600.html",
+      "file": "https___www_hbxueyuan_com_product_air_filter_for_echo_a226000410_a226000600_html_441051812"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-air-filter-fits-briggs-and-stratton-394018-394018s.html",
+      "file": "https___www_hbxueyuan_com_product_air_filter_fits_briggs_and_stratton_394018_394_511064932"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-air-filter-for-455-460-chainsaw-537255703.html",
+      "file": "https___www_hbxueyuan_com_product_air_filter_for_455_460_chainsaw_537255703_html_215225096"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-air-filter-4203-141-0301a-for-stihl-br320.html",
+      "file": "https___www_hbxueyuan_com_product_air_filter_4203_141_0301a_for_stihl_br320_html_1951753841"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-lawn-mower-air-filter.html?page=2",
+      "file": "https___www_hbxueyuan_com_product_list_lawn_mower_air_filter_html_page_2_2040054901"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-lawn-mower-air-filter.html?page=3",
+      "file": "https___www_hbxueyuan_com_product_list_lawn_mower_air_filter_html_page_3_2040054900"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-lawn-mower-air-filter.html?page=4",
+      "file": "https___www_hbxueyuan_com_product_list_lawn_mower_air_filter_html_page_4_2040054899"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-lawn-mower-air-filter.html?page=5",
+      "file": "https___www_hbxueyuan_com_product_list_lawn_mower_air_filter_html_page_5_2040054898"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-lawn-mower-air-filter.html?page=6",
+      "file": "https___www_hbxueyuan_com_product_list_lawn_mower_air_filter_html_page_6_2040054897"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-lawn-mower-air-filter.html?page=7",
+      "file": "https___www_hbxueyuan_com_product_list_lawn_mower_air_filter_html_page_7_2040054896"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-lawn-mower-air-filter.html?page=8",
+      "file": "https___www_hbxueyuan_com_product_list_lawn_mower_air_filter_html_page_8_2040054895"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-lawn-mower-air-filter.html?page=9",
+      "file": "https___www_hbxueyuan_com_product_list_lawn_mower_air_filter_html_page_9_2040054894"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-pool-filter-4-pack-replacement-for-hayward-swim-clear-c-4025,-c4030.html",
+      "file": "https___www_hbxueyuan_com_product_pool_filter_4_pack_replacement_for_hayward_swi_1351300178"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-146397-08-14639708-1627410029-powercore-air-filter.html",
+      "file": "https___www_hbxueyuan_com_product_146397_08_14639708_1627410029_powercore_air_fi_1552549662"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-powercore-air-filter-p605960-p607955.html",
+      "file": "https___www_hbxueyuan_com_product_powercore_air_filter_p605960_p607955_html_499243090"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-powercore-truck-air-filter-p623400-pa32001-p635170.html",
+      "file": "https___www_hbxueyuan_com_product_powercore_truck_air_filter_p623400_pa32001_p63_1562080331"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-powercore-honeycomb-compressed-air-filter-p643118-p318005-re288552.html",
+      "file": "https___www_hbxueyuan_com_product_powercore_honeycomb_compressed_air_filter_p643_1305345569"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-powercore-air-filter-17801-78090-17801-78100-for-toyota-hino-truck.html",
+      "file": "https___www_hbxueyuan_com_product_powercore_air_filter_17801_78090_17801_78100_f_248412270"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-powercore-air-filter-178017810-17801-7810-for-hino-trucks.html",
+      "file": "https___www_hbxueyuan_com_product_powercore_air_filter_178017810_17801_7810_for__1363827415"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-powercore-air-filter-8-98260-8340-8982608340-for-isuzu-trucks.html",
+      "file": "https___www_hbxueyuan_com_product_powercore_air_filter_8_98260_8340_8982608340_f_1044423002"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-p608677-air-filter-primary-obround-powercore-replaces-mack-57md321m.html",
+      "file": "https___www_hbxueyuan_com_product_p608677_air_filter_primary_obround_powercore_r_1290755416"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-perkins-main-air-filter-for-400-series-engines.html",
+      "file": "https___www_hbxueyuan_com_product_perkins_main_air_filter_for_400_series_engines_1377119309"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-cummins-air-filter-part-no---3315741,-fleetguard-ah1100-cummins-vta28-g3(5).html",
+      "file": "https___www_hbxueyuan_com_product_cummins_air_filter_part_no___3315741__fleetgua_1107811125"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-p617631-air-filter,-primary-obround-powercore.html",
+      "file": "https___www_hbxueyuan_com_product_p617631_air_filter__primary_obround_powercore__611513372"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-air-filter-volvo-penta-3827589-td71a-tid71a-twd731-td730ve-twd740ve-td610-71-740.html",
+      "file": "https___www_hbxueyuan_com_product_air_filter_volvo_penta_3827589_td71a_tid71a_tw_1650513685"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-powercore-filter.html?page=2",
+      "file": "https___www_hbxueyuan_com_product_list_powercore_filter_html_page_2_531855"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-af55014-af55308-for-tractors-combines-atv-replace-222035.html",
+      "file": "https___www_hbxueyuan_com_product_af55014_af55308_for_tractors_combines_atv_repl_290594795"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-tractors-air-filter-cover-733-37833-733-37834-73337833-73337834.html",
+      "file": "https___www_hbxueyuan_com_product_tractors_air_filter_cover_733_37833_733_37834__1736102712"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-p606120-p608665-for-tractors-air-filter-for-armatrac.html",
+      "file": "https___www_hbxueyuan_com_product_p606120_p608665_for_tractors_air_filter_for_ar_1134662510"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-tractors-honeycomb-powercore-air-filter-3j080-10870-p606121-p787281.html",
+      "file": "https___www_hbxueyuan_com_product_tractors_honeycomb_powercore_air_filter_3j080__1126056708"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-farm-equipment-parts-tractor-air-filter-p619334-p547520.html",
+      "file": "https___www_hbxueyuan_com_product_farm_equipment_parts_tractor_air_filter_p61933_1407076969"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-tractor-honeycomb-powercore-air-filter-p608665-p608666.html",
+      "file": "https___www_hbxueyuan_com_product_tractor_honeycomb_powercore_air_filter_p608665_1744102640"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-tractor-air-filer-0009839000-0009839001-for-linde.html",
+      "file": "https___www_hbxueyuan_com_product_tractor_air_filer_0009839000_0009839001_for_li_1672859133"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-2116040258-tractors-engine-parts-honeycomb-air-filter.html",
+      "file": "https___www_hbxueyuan_com_product_2116040258_tractors_engine_parts_honeycomb_air_1899927887"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-air-filter-element-p032767-016-340-for-tractors-engine-parts.html",
+      "file": "https___www_hbxueyuan_com_product_air_filter_element_p032767_016_340_for_tractor_999802427"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-powercore-air-filter-al215053-al207629-for-john-deerer.html",
+      "file": "https___www_hbxueyuan_com_product_powercore_air_filter_al215053_al207629_for_joh_528764492"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-tractors-engine-honeycomb-powercore-air-filter-p621983.html",
+      "file": "https___www_hbxueyuan_com_product_tractors_engine_honeycomb_powercore_air_filter_559548319"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-farm-machinery-filter.html?page=2",
+      "file": "https___www_hbxueyuan_com_product_list_farm_machinery_filter_html_page_2_1253443826"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-farm-machinery-filter.html?page=3",
+      "file": "https___www_hbxueyuan_com_product_list_farm_machinery_filter_html_page_3_1253443827"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-farm-machinery-filter.html?page=4",
+      "file": "https___www_hbxueyuan_com_product_list_farm_machinery_filter_html_page_4_1253443828"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-air-compressor-air-filter-p778989-for-mitsubishi-l200-storm.html",
+      "file": "https___www_hbxueyuan_com_product_air_compressor_air_filter_p778989_for_mitsubis_477873490"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-compressor-filter-honeycomb-air-filter-element-6-4432-0.html",
+      "file": "https___www_hbxueyuan_com_product_compressor_filter_honeycomb_air_filter_element_1122818500"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-air-compressor-filter-kit-for-kaeser-6-4212-0-6-4161-0.html",
+      "file": "https___www_hbxueyuan_com_product_air_compressor_filter_kit_for_kaeser_6_4212_0__1076750651"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-replacement-compressor-part-air-filter-1621138999-1621138900.html",
+      "file": "https___www_hbxueyuan_com_product_replacement_compressor_part_air_filter_1621138_866373656"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-626095-p626096-p626104-air-compressors-filter.html",
+      "file": "https___www_hbxueyuan_com_product_626095_p626096_p626104_air_compressors_filter__723887137"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-air-filter-nlg-piclon-c-28-1440-liebherr-592319514.html",
+      "file": "https___www_hbxueyuan_com_product_air_filter_nlg_piclon_c_28_1440_liebherr_59231_30638356"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-air-compressor-filter-1094162500-1094162550.html",
+      "file": "https___www_hbxueyuan_com_product_air_compressor_filter_1094162500_1094162550_ht_127982518"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-air-compressor-parts-air-filter-1094263133-1094263134.html",
+      "file": "https___www_hbxueyuan_com_product_air_compressor_parts_air_filter_1094263133_109_1440767732"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-air-compressor-filter.html",
+      "file": "https___www_hbxueyuan_com_product_air_compressor_filter_html_256575909"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-p181035-air-filter.html",
+      "file": "https___www_hbxueyuan_com_product_p181035_air_filter_html_152757600"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-air-compressor-filter.html?page=2",
+      "file": "https___www_hbxueyuan_com_product_list_air_compressor_filter_html_page_2_652872671"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-air-filter-fits-bobcat-7286652-7010030-7010031-for-loaders.html",
+      "file": "https___www_hbxueyuan_com_product_air_filter_fits_bobcat_7286652_7010030_7010031_698070039"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-air-filter-sev551h-4-4012-diesel-genset-air-filter.html",
+      "file": "https___www_hbxueyuan_com_product_air_filter_sev551h_4_4012_diesel_genset_air_fi_921272218"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-air-filter-fit-for-cummins-qsb4-5-engines-replaces.html",
+      "file": "https___www_hbxueyuan_com_product_air_filter_fit_for_cummins_qsb4_5_engines_repl_472709593"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-primary-and-safety-air-filters-334-y2810-334-y2811-js-excavators-for-jcb.html",
+      "file": "https___www_hbxueyuan_com_product_primary_and_safety_air_filters_334_y2810_334_y_1418653082"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-best-aftermarket-original-good-quality-air-filter-p181082-p124047.html",
+      "file": "https___www_hbxueyuan_com_product_best_aftermarket_original_good_quality_air_fil_2078811359"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-heavy-duty-machinery-truck-air-filter-p500181.html",
+      "file": "https___www_hbxueyuan_com_product_heavy_duty_machinery_truck_air_filter_p500181__1175704433"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-heavy-duty-machinery-air-filter-p778994-for-avia-deutz-fahr-d-line.html",
+      "file": "https___www_hbxueyuan_com_product_heavy_duty_machinery_air_filter_p778994_for_av_775921769"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-heavy-duty-machinery-air-filter-p822768-p822769-for-case-cat-hitachi.html",
+      "file": "https___www_hbxueyuan_com_product_heavy_duty_machinery_air_filter_p822768_p82276_174629135"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-air-filter-p181052-p123160-16546-02n00-for-hyundai-h100-bus-grace.html",
+      "file": "https___www_hbxueyuan_com_product_air_filter_p181052_p123160_16546_02n00_for_hyu_78451712"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-p827653-p829332-air-filter-set-fits-bobcat-863.html",
+      "file": "https___www_hbxueyuan_com_product_p827653_p829332_air_filter_set_fits_bobcat_863_584329321"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-factory-p613334-p613335-air-filter-oe-replacement.html",
+      "file": "https___www_hbxueyuan_com_product_factory_p613334_p613335_air_filter_oe_replacem_1837061735"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-heavy-machinery-filter.html?page=2",
+      "file": "https___www_hbxueyuan_com_product_list_heavy_machinery_filter_html_page_2_1925064269"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-heavy-machinery-filter.html?page=3",
+      "file": "https___www_hbxueyuan_com_product_list_heavy_machinery_filter_html_page_3_1925064270"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-heavy-machinery-filter.html?page=4",
+      "file": "https___www_hbxueyuan_com_product_list_heavy_machinery_filter_html_page_4_1925064271"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-heavy-machinery-filter.html?page=5",
+      "file": "https___www_hbxueyuan_com_product_list_heavy_machinery_filter_html_page_5_1925064272"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-heavy-machinery-filter.html?page=6",
+      "file": "https___www_hbxueyuan_com_product_list_heavy_machinery_filter_html_page_6_1925064273"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-heavy-machinery-filter.html?page=7",
+      "file": "https___www_hbxueyuan_com_product_list_heavy_machinery_filter_html_page_7_1925064274"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-heavy-machinery-filter.html?page=8",
+      "file": "https___www_hbxueyuan_com_product_list_heavy_machinery_filter_html_page_8_1925064275"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-heavy-machinery-filter.html?page=24",
+      "file": "https___www_hbxueyuan_com_product_list_heavy_machinery_filter_html_page_24_452549753"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-heavy-machinery-filter.html?page=25",
+      "file": "https___www_hbxueyuan_com_product_list_heavy_machinery_filter_html_page_25_452549752"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-secondary-air-filter-p780030-for-nissan-navara-pickup.html",
+      "file": "https___www_hbxueyuan_com_product_secondary_air_filter_p780030_for_nissan_navara_2019409871"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-truck-air-filter-0040940904-a0040940904-0010944704-for-mercedes-benz.html",
+      "file": "https___www_hbxueyuan_com_product_truck_air_filter_0040940904_a0040940904_001094_77035149"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-engine-parts-air-filter-1542743-1660619-6-475388-1542743-8-475386-for-volvo.html",
+      "file": "https___www_hbxueyuan_com_product_engine_parts_air_filter_1542743_1660619_6_4753_1571114202"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-air-filter-0040942304-for-mercedes-benz-avia-deutz-fahr-cito-o-520.html",
+      "file": "https___www_hbxueyuan_com_product_air_filter_0040942304_for_mercedes_benz_avia_d_2111084392"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-trucks-engine-panel-powercore-air-filter-dnp610260-laf6260-p610260.html",
+      "file": "https___www_hbxueyuan_com_product_trucks_engine_panel_powercore_air_filter_dnp61_226035283"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-air-filter-set-28130-7s100-28130-7s101-for-hyundai-truck.html",
+      "file": "https___www_hbxueyuan_com_product_air_filter_set_28130_7s100_28130_7s101_for_hyu_307039562"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-air-cleaner-filter-for-chevy-express-20815924.html",
+      "file": "https___www_hbxueyuan_com_product_air_cleaner_filter_for_chevy_express_20815924__956718143"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-truck-air-filter-88290013-079-p040364-powercore-air-filter.html",
+      "file": "https___www_hbxueyuan_com_product_truck_air_filter_88290013_079_p040364_powercor_64424057"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-air-filter-p040366-auto-parts-heavy-machinery.html",
+      "file": "https___www_hbxueyuan_com_product_air_filter_p040366_auto_parts_heavy_machinery__955096541"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-p631391-87727665-truck-air-filter-for-caterpillar.html",
+      "file": "https___www_hbxueyuan_com_product_p631391_87727665_truck_air_filter_for_caterpil_887561650"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-truck-filter.html?page=2",
+      "file": "https___www_hbxueyuan_com_product_list_truck_filter_html_page_2_1091931990"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-truck-filter.html?page=3",
+      "file": "https___www_hbxueyuan_com_product_list_truck_filter_html_page_3_1091931991"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-truck-filter.html?page=4",
+      "file": "https___www_hbxueyuan_com_product_list_truck_filter_html_page_4_1091931992"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-truck-filter.html?page=5",
+      "file": "https___www_hbxueyuan_com_product_list_truck_filter_html_page_5_1091931993"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-truck-filter.html?page=6",
+      "file": "https___www_hbxueyuan_com_product_list_truck_filter_html_page_6_1091931994"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-truck-filter.html?page=7",
+      "file": "https___www_hbxueyuan_com_product_list_truck_filter_html_page_7_1091931995"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-truck-filter.html?page=8",
+      "file": "https___www_hbxueyuan_com_product_list_truck_filter_html_page_8_1091931996"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-truck-filter.html?page=28",
+      "file": "https___www_hbxueyuan_com_product_list_truck_filter_html_page_28_509846622"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-truck-filter.html?page=29",
+      "file": "https___www_hbxueyuan_com_product_list_truck_filter_html_page_29_509846621"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-air-filter-13780-60b00-for-suzuki-subaru-swift.html",
+      "file": "https___www_hbxueyuan_com_product_air_filter_13780_60b00_for_suzuki_subaru_swift_1082127153"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-element-air-filter-0313aam00521n-for-mahindra-xuv-500-2-2l-diesel-petrol-ecs.html",
+      "file": "https___www_hbxueyuan_com_product_element_air_filter_0313aam00521n_for_mahindra__1756809934"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-air-filter-0313ac2261n-for-mahindra-scorpio-bolero-thar-tuv.html",
+      "file": "https___www_hbxueyuan_com_product_air_filter_0313ac2261n_for_mahindra_scorpio_bo_680606831"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-air-filters-1120940604-for-mercedes-set-of-2.html",
+      "file": "https___www_hbxueyuan_com_product_air_filters_1120940604_for_mercedes_set_of_2_h_257800789"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-passenger-car-filter.html?page=2",
+      "file": "https___www_hbxueyuan_com_product_list_passenger_car_filter_html_page_2_435696044"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-passenger-car-filter.html?page=3",
+      "file": "https___www_hbxueyuan_com_product_list_passenger_car_filter_html_page_3_435696043"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-passenger-car-filter.html?page=4",
+      "file": "https___www_hbxueyuan_com_product_list_passenger_car_filter_html_page_4_435696042"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-passenger-car-filter.html?page=5",
+      "file": "https___www_hbxueyuan_com_product_list_passenger_car_filter_html_page_5_435696041"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-passenger-car-filter.html?page=6",
+      "file": "https___www_hbxueyuan_com_product_list_passenger_car_filter_html_page_6_435696040"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-passenger-car-filter.html?page=7",
+      "file": "https___www_hbxueyuan_com_product_list_passenger_car_filter_html_page_7_435696039"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-passenger-car-filter.html?page=8",
+      "file": "https___www_hbxueyuan_com_product_list_passenger_car_filter_html_page_8_435696038"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-passenger-car-filter.html?page=114",
+      "file": "https___www_hbxueyuan_com_product_list_passenger_car_filter_html_page_114_2092069962"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-passenger-car-filter.html?page=115",
+      "file": "https___www_hbxueyuan_com_product_list_passenger_car_filter_html_page_115_2092069961"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-interior-air-filter-for-dacia-duster-lada-nissan-renault-02-18.html",
+      "file": "https___www_hbxueyuan_com_product_interior_air_filter_for_dacia_duster_lada_niss_57437060"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-caterpillar-500-0957-cabin-air-filter-cat-5000957.html",
+      "file": "https___www_hbxueyuan_com_product_caterpillar_500_0957_cabin_air_filter_cat_5000_1671555229"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-caterpillar-cat-580-5439-cabin-air-filter.html",
+      "file": "https___www_hbxueyuan_com_product_caterpillar_cat_580_5439_cabin_air_filter_html_972608114"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-oil-air-carbon-cabin-2-filter-service-kit-for-bmw-e70-e71-x5-x6-64316945586.html",
+      "file": "https___www_hbxueyuan_com_product_oil_air_carbon_cabin_2_filter_service_kit_for__1063697965"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-filter-set-interior-air-for-toyota-avensis-estate-saloon-88880-20110.html",
+      "file": "https___www_hbxueyuan_com_product_filter_set_interior_air_for_toyota_avensis_est_1099356624"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-cabin-air-filter-72880-fg000-for-forester-subaru-wrx-impreza-wrx-sti-crosstrek-2016-17.html",
+      "file": "https___www_hbxueyuan_com_product_cabin_air_filter_72880_fg000_for_forester_suba_1837696739"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-filter-set-interior-air-for-ssangyong-actyon-i-05-14-68111091a0.html",
+      "file": "https___www_hbxueyuan_com_product_filter_set_interior_air_for_ssangyong_actyon_i_19969899"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-interior-air-filter-for-mazda-suzuki-3-5-grand-vitara-i-bp4k61j6xa9a.html",
+      "file": "https___www_hbxueyuan_com_product_interior_air_filter_for_mazda_suzuki_3_5_grand_1269187821"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-air-cabin-filter-genuine-fits-mitsubishi-l200-triton-mq-2-4-diesel-2015---2018.html",
+      "file": "https___www_hbxueyuan_com_product_air_cabin_filter_genuine_fits_mitsubishi_l200__555372803"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-cabin-air-filter-for-lexus-is300-rx300-99-03-toyota-highlander.html",
+      "file": "https___www_hbxueyuan_com_product_cabin_air_filter_for_lexus_is300_rx300_99_03_t_2005677162"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-electric-vehicle-battery-cabin-filter-g92dj02040-for-corolla.html",
+      "file": "https___www_hbxueyuan_com_product_electric_vehicle_battery_cabin_filter_g92dj020_916645765"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-cabin-air-condition-filter-for-toyota-rav4-g92dh42010-g92dh-42010.html",
+      "file": "https___www_hbxueyuan_com_product_cabin_air_condition_filter_for_toyota_rav4_g92_1739488727"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-cabin-air-filters.html?page=2",
+      "file": "https___www_hbxueyuan_com_product_list_cabin_air_filters_html_page_2_1108073096"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-cabin-air-filters.html?page=3",
+      "file": "https___www_hbxueyuan_com_product_list_cabin_air_filters_html_page_3_1108073095"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-cabin-air-filters.html?page=4",
+      "file": "https___www_hbxueyuan_com_product_list_cabin_air_filters_html_page_4_1108073094"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-cabin-air-filters.html?page=5",
+      "file": "https___www_hbxueyuan_com_product_list_cabin_air_filters_html_page_5_1108073093"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-cabin-air-filters.html?page=6",
+      "file": "https___www_hbxueyuan_com_product_list_cabin_air_filters_html_page_6_1108073092"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-cabin-air-filters.html?page=7",
+      "file": "https___www_hbxueyuan_com_product_list_cabin_air_filters_html_page_7_1108073091"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-cabin-air-filters.html?page=8",
+      "file": "https___www_hbxueyuan_com_product_list_cabin_air_filters_html_page_8_1108073090"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-cabin-air-filters.html?page=36",
+      "file": "https___www_hbxueyuan_com_product_list_cabin_air_filters_html_page_36_9472477"
+    },
+    {
+      "url": "https://www.hbxueyuan.com/product-list-cabin-air-filters.html?page=37",
+      "file": "https___www_hbxueyuan_com_product_list_cabin_air_filters_html_page_37_9472478"
+    }
+  ]
+}

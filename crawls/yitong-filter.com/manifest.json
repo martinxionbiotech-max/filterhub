@@ -1,0 +1,1011 @@
+{
+  "site": "https://www.yitong-filter.com/",
+  "host": "www.yitong-filter.com",
+  "origin": "https://www.yitong-filter.com",
+  "crawlDate": "2026-10-29T11:14:08.519Z",
+  "pagesVisited": 250,
+  "pagesFailed": 0,
+  "failed": [],
+  "pages": [
+    {
+      "url": "https://www.yitong-filter.com/",
+      "file": "https___www_yitong_filter_com__820940545"
+    },
+    {
+      "url": "https://www.yitong-filter.com/products",
+      "file": "https___www_yitong_filter_com_products_178270363"
+    },
+    {
+      "url": "https://www.yitong-filter.com/ventilation-air-filters",
+      "file": "https___www_yitong_filter_com_ventilation_air_filters_2058805785"
+    },
+    {
+      "url": "https://www.yitong-filter.com/pre-filters",
+      "file": "https___www_yitong_filter_com_pre_filters_1288412464"
+    },
+    {
+      "url": "https://www.yitong-filter.com/medium-filters",
+      "file": "https___www_yitong_filter_com_medium_filters_290425572"
+    },
+    {
+      "url": "https://www.yitong-filter.com/hepa-filters",
+      "file": "https___www_yitong_filter_com_hepa_filters_1462623837"
+    },
+    {
+      "url": "https://www.yitong-filter.com/chemical-air-filters",
+      "file": "https___www_yitong_filter_com_chemical_air_filters_2021114302"
+    },
+    {
+      "url": "https://www.yitong-filter.com/gt-inlet-air-filters",
+      "file": "https___www_yitong_filter_com_gt_inlet_air_filters_76164514"
+    },
+    {
+      "url": "https://www.yitong-filter.com/pre-filter",
+      "file": "https___www_yitong_filter_com_pre_filter_1759553629"
+    },
+    {
+      "url": "https://www.yitong-filter.com/industrial-water-treatment",
+      "file": "https___www_yitong_filter_com_industrial_water_treatment_1398354001"
+    },
+    {
+      "url": "https://www.yitong-filter.com/filter-bag",
+      "file": "https___www_yitong_filter_com_filter_bag_1468580340"
+    },
+    {
+      "url": "https://www.yitong-filter.com/liquid-filtration",
+      "file": "https___www_yitong_filter_com_liquid_filtration_1970907998"
+    },
+    {
+      "url": "https://www.yitong-filter.com/solution",
+      "file": "https___www_yitong_filter_com_solution_1977529478"
+    },
+    {
+      "url": "https://www.yitong-filter.com/solution/pharmaceutical.html",
+      "file": "https___www_yitong_filter_com_solution_pharmaceutical_html_38468255"
+    },
+    {
+      "url": "https://www.yitong-filter.com/solution/water.html",
+      "file": "https___www_yitong_filter_com_solution_water_html_92833751"
+    },
+    {
+      "url": "https://www.yitong-filter.com/solution/food-and-beverage.html",
+      "file": "https___www_yitong_filter_com_solution_food_and_beverage_html_793535690"
+    },
+    {
+      "url": "https://www.yitong-filter.com/solution/oil-and-gas.html",
+      "file": "https___www_yitong_filter_com_solution_oil_and_gas_html_186461466"
+    },
+    {
+      "url": "https://www.yitong-filter.com/solution/chemical.html",
+      "file": "https___www_yitong_filter_com_solution_chemical_html_797445682"
+    },
+    {
+      "url": "https://www.yitong-filter.com/solution/power.html",
+      "file": "https___www_yitong_filter_com_solution_power_html_1427634007"
+    },
+    {
+      "url": "https://www.yitong-filter.com/solution/home-appliances.html",
+      "file": "https___www_yitong_filter_com_solution_home_appliances_html_1857695418"
+    },
+    {
+      "url": "https://www.yitong-filter.com/solution/livestock-farming.html",
+      "file": "https___www_yitong_filter_com_solution_livestock_farming_html_858864155"
+    },
+    {
+      "url": "https://www.yitong-filter.com/about-us",
+      "file": "https___www_yitong_filter_com_about_us_1850160417"
+    },
+    {
+      "url": "https://www.yitong-filter.com/support",
+      "file": "https___www_yitong_filter_com_support_1219902894"
+    },
+    {
+      "url": "https://www.yitong-filter.com/support/production-equipment/ventilation-air-filter-production",
+      "file": "https___www_yitong_filter_com_support_production_equipment_ventilation_air_filte_89803303"
+    },
+    {
+      "url": "https://www.yitong-filter.com/support/production-equipment/filter-system-production",
+      "file": "https___www_yitong_filter_com_support_production_equipment_filter_system_product_819305558"
+    },
+    {
+      "url": "https://www.yitong-filter.com/support/testing-equipment/air-filter-testing-system",
+      "file": "https___www_yitong_filter_com_support_testing_equipment_air_filter_testing_syste_2052218335"
+    },
+    {
+      "url": "https://www.yitong-filter.com/news",
+      "file": "https___www_yitong_filter_com_news_380587692"
+    },
+    {
+      "url": "https://www.yitong-filter.com/contact-us",
+      "file": "https___www_yitong_filter_com_contact_us_1132322516"
+    },
+    {
+      "url": "https://www.yitong-filter.com/faq",
+      "file": "https___www_yitong_filter_com_faq_1096093813"
+    },
+    {
+      "url": "https://www.yitong-filter.com/support/oem-odm",
+      "file": "https___www_yitong_filter_com_support_oem_odm_62441375"
+    },
+    {
+      "url": "https://www.yitong-filter.com/support/service",
+      "file": "https___www_yitong_filter_com_support_service_800607404"
+    },
+    {
+      "url": "https://www.yitong-filter.com/hepa-filter-faq",
+      "file": "https___www_yitong_filter_com_hepa_filter_faq_581525919"
+    },
+    {
+      "url": "https://www.yitong-filter.com/company-activity",
+      "file": "https___www_yitong_filter_com_company_activity_2021235872"
+    },
+    {
+      "url": "https://www.yitong-filter.com/products-knowledge",
+      "file": "https___www_yitong_filter_com_products_knowledge_44949526"
+    },
+    {
+      "url": "https://www.yitong-filter.com/products-knowledge/industrial-air-filter.html",
+      "file": "https___www_yitong_filter_com_products_knowledge_industrial_air_filter_html_1770085725"
+    },
+    {
+      "url": "https://www.yitong-filter.com/products-knowledge/air-filter-g4.html",
+      "file": "https___www_yitong_filter_com_products_knowledge_air_filter_g4_html_2009234317"
+    },
+    {
+      "url": "https://www.yitong-filter.com/sitemap.xml",
+      "file": "https___www_yitong_filter_com_sitemap_xml_1122417085"
+    },
+    {
+      "url": "https://www.yitong-filter.com/privacy-policy",
+      "file": "https___www_yitong_filter_com_privacy_policy_991224744"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/28/catid/4/hcatid/28.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_28_catid_4_hcat_805685423"
+    },
+    {
+      "url": "https://www.yitong-filter.com/hepa-filters/mini-pleat-ptfe-panel-filters.html",
+      "file": "https___www_yitong_filter_com_hepa_filters_mini_pleat_ptfe_panel_filters_html_75288004"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/29/catid/4/hcatid/29.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_29_catid_4_hcat_767307821"
+    },
+    {
+      "url": "https://www.yitong-filter.com/hepa-filters/hepa-h13-h14-filter-hospital-grade.html",
+      "file": "https___www_yitong_filter_com_hepa_filters_hepa_h13_h14_filter_hospital_grade_ht_1886123022"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/30/catid/4/hcatid/30.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_30_catid_4_hcat_76999423"
+    },
+    {
+      "url": "https://www.yitong-filter.com/hepa-filters/v-bank-box-shape-hepa-filter.html",
+      "file": "https___www_yitong_filter_com_hepa_filters_v_bank_box_shape_hepa_filter_html_691824984"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/31/catid/4/hcatid/31.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_31_catid_4_hcat_115377025"
+    },
+    {
+      "url": "https://www.yitong-filter.com/hepa-filters/replacement-hepa-air-filter.html",
+      "file": "https___www_yitong_filter_com_hepa_filters_replacement_hepa_air_filter_html_533078388"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/32/catid/4/hcatid/32.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_32_catid_4_hcat_153754627"
+    },
+    {
+      "url": "https://www.yitong-filter.com/pre-filters/panel-filter-coarse-filters.html",
+      "file": "https___www_yitong_filter_com_pre_filters_panel_filter_coarse_filters_html_1305202001"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/33/catid/4/hcatid/33.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_33_catid_4_hcat_192132229"
+    },
+    {
+      "url": "https://www.yitong-filter.com/hepa-filters/mini-pleat-gel-seal-hepa-filter.html",
+      "file": "https___www_yitong_filter_com_hepa_filters_mini_pleat_gel_seal_hepa_filter_html_27798114"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/34/catid/4/hcatid/34.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_34_catid_4_hcat_230509831"
+    },
+    {
+      "url": "https://www.yitong-filter.com/pre-filter/gt-pleated-pre-filter.html",
+      "file": "https___www_yitong_filter_com_pre_filter_gt_pleated_pre_filter_html_1106616079"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/35/catid/4/hcatid/35.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_35_catid_4_hcat_268887433"
+    },
+    {
+      "url": "https://www.yitong-filter.com/pre-filters/rigid-pocket-air-filters.html",
+      "file": "https___www_yitong_filter_com_pre_filters_rigid_pocket_air_filters_html_914931319"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/36/catid/4/hcatid/36.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_36_catid_4_hcat_307265035"
+    },
+    {
+      "url": "https://www.yitong-filter.com/products/index_2.html",
+      "file": "https___www_yitong_filter_com_products_index_2_html_227442082"
+    },
+    {
+      "url": "https://www.yitong-filter.com/products/index_3.html",
+      "file": "https___www_yitong_filter_com_products_index_3_html_198812931"
+    },
+    {
+      "url": "https://www.yitong-filter.com/products/index_4.html",
+      "file": "https___www_yitong_filter_com_products_index_4_html_170183780"
+    },
+    {
+      "url": "https://www.yitong-filter.com/products/index_5.html",
+      "file": "https___www_yitong_filter_com_products_index_5_html_141554629"
+    },
+    {
+      "url": "https://www.yitong-filter.com/products/index_6.html",
+      "file": "https___www_yitong_filter_com_products_index_6_html_112925478"
+    },
+    {
+      "url": "https://www.yitong-filter.com/products/index_9.html",
+      "file": "https___www_yitong_filter_com_products_index_9_html_27038025"
+    },
+    {
+      "url": "https://www.yitong-filter.com/products/index_10.html",
+      "file": "https___www_yitong_filter_com_products_index_10_html_655069827"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/products/pocket-filter.html",
+      "file": "https___www_yitong_filter_com_index_php_products_pocket_filter_html_1671887455"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/products/hepa-filter.html",
+      "file": "https___www_yitong_filter_com_index_php_products_hepa_filter_html_1681862009"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/products/filter-bag.html",
+      "file": "https___www_yitong_filter_com_index_php_products_filter_bag_html_1258697967"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/products/air-filter.html",
+      "file": "https___www_yitong_filter_com_index_php_products_air_filter_html_1377511225"
+    },
+    {
+      "url": "https://www.yitong-filter.com/pre-filters/high-temp-pre-filters.html",
+      "file": "https___www_yitong_filter_com_pre_filters_high_temp_pre_filters_html_1470691285"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/37/catid/4/hcatid/37.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_37_catid_4_hcat_345642637"
+    },
+    {
+      "url": "https://www.yitong-filter.com/chemical-air-filters/activated-carbon-bag-filter-g4.html",
+      "file": "https___www_yitong_filter_com_chemical_air_filters_activated_carbon_bag_filter_g_1905316113"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/38/catid/4/hcatid/38.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_38_catid_4_hcat_384020239"
+    },
+    {
+      "url": "https://www.yitong-filter.com/ventilation-air-filters/index_2.html",
+      "file": "https___www_yitong_filter_com_ventilation_air_filters_index_2_html_1959307492"
+    },
+    {
+      "url": "https://www.yitong-filter.com/ventilation-air-filters/index_3.html",
+      "file": "https___www_yitong_filter_com_ventilation_air_filters_index_3_html_1930678341"
+    },
+    {
+      "url": "https://www.yitong-filter.com/ventilation-air-filters/index_4.html",
+      "file": "https___www_yitong_filter_com_ventilation_air_filters_index_4_html_1902049190"
+    },
+    {
+      "url": "https://www.yitong-filter.com/ventilation-air-filters/index_5.html",
+      "file": "https___www_yitong_filter_com_ventilation_air_filters_index_5_html_1873420039"
+    },
+    {
+      "url": "https://www.yitong-filter.com/pre-filters/washable-cassette-air-filter.html",
+      "file": "https___www_yitong_filter_com_pre_filters_washable_cassette_air_filter_html_1527287268"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/40/catid/4/hcatid/40.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_40_catid_4_hcat_1266705085"
+    },
+    {
+      "url": "https://www.yitong-filter.com/pre-filters/replacement-filter-aap1400009-00770.html",
+      "file": "https___www_yitong_filter_com_pre_filters_replacement_filter_aap1400009_00770_ht_608293547"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/61/catid/4/hcatid/61.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_61_catid_4_hcat_610473285"
+    },
+    {
+      "url": "https://www.yitong-filter.com/pre-filters/grease-filters.html",
+      "file": "https___www_yitong_filter_com_pre_filters_grease_filters_html_1477278803"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/64/catid/4/hcatid/64.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_64_catid_4_hcat_495340479"
+    },
+    {
+      "url": "https://www.yitong-filter.com/pre-filters/coarse-dust-bag-filters.html",
+      "file": "https___www_yitong_filter_com_pre_filters_coarse_dust_bag_filters_html_480601345"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/9/catid/4/hcatid/9.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_9_catid_4_hcati_1276397353"
+    },
+    {
+      "url": "https://www.yitong-filter.com/pre-filters/pre-filter---panel-air-filters.html",
+      "file": "https___www_yitong_filter_com_pre_filters_pre_filter___panel_air_filters_html_562488362"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/10/catid/4/hcatid/10.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_10_catid_4_hcat_1992555395"
+    },
+    {
+      "url": "https://www.yitong-filter.com/medium-filters/dust-filter-bag-f5---f9-pocket-air-filters.html",
+      "file": "https___www_yitong_filter_com_medium_filters_dust_filter_bag_f5___f9_pocket_air__656426286"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/60/catid/4/hcatid/60.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_60_catid_4_hcat_648850887"
+    },
+    {
+      "url": "https://www.yitong-filter.com/medium-filters/box-air-filter-m6-air-filter.html",
+      "file": "https___www_yitong_filter_com_medium_filters_box_air_filter_m6_air_filter_html_106634431"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/80/catid/4/hcatid/80.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_80_catid_4_hcat_1730560437"
+    },
+    {
+      "url": "https://www.yitong-filter.com/medium-filters/panel-type-air-filter.html",
+      "file": "https___www_yitong_filter_com_medium_filters_panel_type_air_filter_html_1535560191"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/11/catid/4/hcatid/11.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_11_catid_4_hcat_2030932997"
+    },
+    {
+      "url": "https://www.yitong-filter.com/medium-filters/bag-type-or-pocket-type-filter.html",
+      "file": "https___www_yitong_filter_com_medium_filters_bag_type_or_pocket_type_filter_html_979369282"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/12/catid/4/hcatid/12.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_12_catid_4_hcat_2069310599"
+    },
+    {
+      "url": "https://www.yitong-filter.com/medium-filters/v-bank-type-air-filters-with-high-capacity.html",
+      "file": "https___www_yitong_filter_com_medium_filters_v_bank_type_air_filters_with_high_c_1109261150"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/13/catid/4/hcatid/13.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_13_catid_4_hcat_2107688201"
+    },
+    {
+      "url": "https://www.yitong-filter.com/hepa-filters/high-temperature-mini-pleat-hepa-filter.html",
+      "file": "https___www_yitong_filter_com_hepa_filters_high_temperature_mini_pleat_hepa_filt_440637129"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/82/catid/4/hcatid/82.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_82_catid_4_hcat_1807315641"
+    },
+    {
+      "url": "https://www.yitong-filter.com/hepa-filters/plastic-frame-hepa-synthetic-minipleat-filter.html",
+      "file": "https___www_yitong_filter_com_hepa_filters_plastic_frame_hepa_synthetic_miniplea_394842225"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/81/catid/4/hcatid/81.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_81_catid_4_hcat_1768938039"
+    },
+    {
+      "url": "https://www.yitong-filter.com/hepa-filters/hepa-h13-v-bank-filter-hospital-grade.html",
+      "file": "https___www_yitong_filter_com_hepa_filters_hepa_h13_v_bank_filter_hospital_grade_1060285590"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/79/catid/4/hcatid/79.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_79_catid_4_hcat_886253193"
+    },
+    {
+      "url": "https://www.yitong-filter.com/hepa-filters/gas-turbine-compressor-air-intake-filters.html",
+      "file": "https___www_yitong_filter_com_hepa_filters_gas_turbine_compressor_air_intake_fil_717360424"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/78/catid/4/hcatid/78.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_78_catid_4_hcat_847875591"
+    },
+    {
+      "url": "https://www.yitong-filter.com/hepa-filters/mini-pleat-hepa-filter.html",
+      "file": "https___www_yitong_filter_com_hepa_filters_mini_pleat_hepa_filter_html_90117143"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/76/catid/4/hcatid/76.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_76_catid_4_hcat_771120387"
+    },
+    {
+      "url": "https://www.yitong-filter.com/hepa-filters/h14-hepa-filter.html",
+      "file": "https___www_yitong_filter_com_hepa_filters_h14_hepa_filter_html_96195018"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/73/catid/4/hcatid/73.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_73_catid_4_hcat_655987581"
+    },
+    {
+      "url": "https://www.yitong-filter.com/hepa-filters/terminal-hepa-filter-ducted-module.html",
+      "file": "https___www_yitong_filter_com_hepa_filters_terminal_hepa_filter_ducted_module_ht_1436727766"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/72/catid/4/hcatid/72.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_72_catid_4_hcat_617609979"
+    },
+    {
+      "url": "https://www.yitong-filter.com/hepa-filters/hepa-knife-edge-frame-mini-pleat-panel-filter.html",
+      "file": "https___www_yitong_filter_com_hepa_filters_hepa_knife_edge_frame_mini_pleat_pane_1102037172"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/71/catid/4/hcatid/71.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_71_catid_4_hcat_579232377"
+    },
+    {
+      "url": "https://www.yitong-filter.com/hepa-filters/high-air-volume-v-bank-mini-pleat-hepa-filter.html",
+      "file": "https___www_yitong_filter_com_hepa_filters_high_air_volume_v_bank_mini_pleat_hep_1118893562"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/70/catid/4/hcatid/70.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_70_catid_4_hcat_540854775"
+    },
+    {
+      "url": "https://www.yitong-filter.com/hepa-filters/index_2.html",
+      "file": "https___www_yitong_filter_com_hepa_filters_index_2_html_1598391910"
+    },
+    {
+      "url": "https://www.yitong-filter.com/hepa-filters/index_3.html",
+      "file": "https___www_yitong_filter_com_hepa_filters_index_3_html_1627021061"
+    },
+    {
+      "url": "https://www.yitong-filter.com/products-knowledge/why-h13-and-h14-hepa-filters-stand-out-as-the-best-air-treatment-options.html",
+      "file": "https___www_yitong_filter_com_products_knowledge_why_h13_and_h14_hepa_filters_st_1870171507"
+    },
+    {
+      "url": "https://www.yitong-filter.com/products-knowledge/approved-vs-standard-hepa-filter-types-making-the-right-choice.html",
+      "file": "https___www_yitong_filter_com_products_knowledge_approved_vs_standard_hepa_filte_167744368"
+    },
+    {
+      "url": "https://www.yitong-filter.com/products-knowledge/faq-about-h14-filter.html",
+      "file": "https___www_yitong_filter_com_products_knowledge_faq_about_h14_filter_html_1897052241"
+    },
+    {
+      "url": "https://www.yitong-filter.com/products-knowledge/understanding-h13-and-h14-filters.html",
+      "file": "https___www_yitong_filter_com_products_knowledge_understanding_h13_and_h14_filte_1033234683"
+    },
+    {
+      "url": "https://www.yitong-filter.com/products-knowledge/which-air-filter-reigns-supreme-for-hvac-systems-hepa-or-merv.html",
+      "file": "https___www_yitong_filter_com_products_knowledge_which_air_filter_reigns_supreme_1123732622"
+    },
+    {
+      "url": "https://www.yitong-filter.com/products-knowledge/understanding-hepa,-ulpa,-merv,-and-pre-filters-for-improved-air-quality.html",
+      "file": "https___www_yitong_filter_com_products_knowledge_understanding_hepa__ulpa__merv__902972847"
+    },
+    {
+      "url": "https://www.yitong-filter.com/chemical-air-filters/chemical-air-filters-panel-type.html",
+      "file": "https___www_yitong_filter_com_chemical_air_filters_chemical_air_filters_panel_ty_1476063863"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/39/catid/4/hcatid/39.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_39_catid_4_hcat_422397841"
+    },
+    {
+      "url": "https://www.yitong-filter.com/chemical-air-filters/activated-carbon-panel-filter.html",
+      "file": "https___www_yitong_filter_com_chemical_air_filters_activated_carbon_panel_filter_935499813"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/55/catid/4/hcatid/55.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_55_catid_4_hcat_1646668539"
+    },
+    {
+      "url": "https://www.yitong-filter.com/chemical-air-filters/chemical-air-filters.html",
+      "file": "https___www_yitong_filter_com_chemical_air_filters_chemical_air_filters_html_1703250773"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/17/catid/4/hcatid/17.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_17_catid_4_hcat_2033768687"
+    },
+    {
+      "url": "https://www.yitong-filter.com/pre-filter/nanowave-bag-filter.html",
+      "file": "https___www_yitong_filter_com_pre_filter_nanowave_bag_filter_html_325375208"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/93/catid/4/hcatid/93.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_93_catid_4_hcat_1259568391"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/92/catid/4/hcatid/92.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_92_catid_4_hcat_1297945993"
+    },
+    {
+      "url": "https://www.yitong-filter.com/pre-filter/panel-air-filter-for-gas-turbine.html",
+      "file": "https___www_yitong_filter_com_pre_filter_panel_air_filter_for_gas_turbine_html_922068129"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/91/catid/4/hcatid/91.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_91_catid_4_hcat_1336323595"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/90/catid/4/hcatid/90.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_90_catid_4_hcat_1374701197"
+    },
+    {
+      "url": "https://www.yitong-filter.com/pre-filter/pre-filter-gt-self-supporting-multi-pocket-filter.html",
+      "file": "https___www_yitong_filter_com_pre_filter_pre_filter_gt_self_supporting_multi_poc_457655816"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/89/catid/4/hcatid/89.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_89_catid_4_hcat_2075958855"
+    },
+    {
+      "url": "https://www.yitong-filter.com/pre-filter/metal-coalescer-filter-for-gas-turbine-intake-air-filtration.html",
+      "file": "https___www_yitong_filter_com_pre_filter_metal_coalescer_filter_for_gas_turbine__1008068546"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/88/catid/4/hcatid/88.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_88_catid_4_hcat_2037581253"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/87/catid/4/hcatid/87.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_87_catid_4_hcat_1999203651"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/86/catid/4/hcatid/86.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_86_catid_4_hcat_1960826049"
+    },
+    {
+      "url": "https://www.yitong-filter.com/pre-filter/bag-air-filter-for-power-plant.html",
+      "file": "https___www_yitong_filter_com_pre_filter_bag_air_filter_for_power_plant_html_1665642139"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/85/catid/4/hcatid/85.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_85_catid_4_hcat_1922448447"
+    },
+    {
+      "url": "https://www.yitong-filter.com/gt-inlet-air-filters/index_2.html",
+      "file": "https___www_yitong_filter_com_gt_inlet_air_filters_index_2_html_1721176255"
+    },
+    {
+      "url": "https://www.yitong-filter.com/pre-filter/bag-type-air-filter.html",
+      "file": "https___www_yitong_filter_com_pre_filter_bag_type_air_filter_html_1083654492"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/84/catid/4/hcatid/84.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_84_catid_4_hcat_1884070845"
+    },
+    {
+      "url": "https://www.yitong-filter.com/pre-filter/high-dust-holding-capacity-pocket-air-filter.html",
+      "file": "https___www_yitong_filter_com_pre_filter_high_dust_holding_capacity_pocket_air_f_1989240748"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/83/catid/4/hcatid/83.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_83_catid_4_hcat_1845693243"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/68/catid/4/hcatid/68.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_68_catid_4_hcat_341830071"
+    },
+    {
+      "url": "https://www.yitong-filter.com/filter-bag/fluid-bed-dryer-filter-bag.html",
+      "file": "https___www_yitong_filter_com_filter_bag_fluid_bed_dryer_filter_bag_html_2142161319"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/66/catid/4/hcatid/66.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_66_catid_4_hcat_418585275"
+    },
+    {
+      "url": "https://www.yitong-filter.com/filter-bag/carbon-filter-bag.html",
+      "file": "https___www_yitong_filter_com_filter_bag_carbon_filter_bag_html_1968498015"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/65/catid/4/hcatid/65.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_65_catid_4_hcat_456962877"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/57/catid/4/hcatid/57.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_57_catid_4_hcat_1569913335"
+    },
+    {
+      "url": "https://www.yitong-filter.com/filter-bag/filter-bags.html",
+      "file": "https___www_yitong_filter_com_filter_bag_filter_bags_html_1563247860"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/56/catid/4/hcatid/56.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_56_catid_4_hcat_1608290937"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/48/catid/4/hcatid/48.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_48_catid_4_hcat_1573725901"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/47/catid/4/hcatid/47.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_47_catid_4_hcat_1535348299"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/46/catid/4/hcatid/46.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_46_catid_4_hcat_1496970697"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/45/catid/4/hcatid/45.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_45_catid_4_hcat_1458593095"
+    },
+    {
+      "url": "https://www.yitong-filter.com/industrial-water-treatment/index_2.html",
+      "file": "https___www_yitong_filter_com_industrial_water_treatment_index_2_html_794375596"
+    },
+    {
+      "url": "https://www.yitong-filter.com/industrial-water-treatment/index_3.html",
+      "file": "https___www_yitong_filter_com_industrial_water_treatment_index_3_html_765746445"
+    },
+    {
+      "url": "https://www.yitong-filter.com/filter-bag/filter-bag.html",
+      "file": "https___www_yitong_filter_com_filter_bag_filter_bag_html_1235369579"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/6/catid/4/hcatid/6.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_6_catid_4_hcati_801610953"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/7/catid/4/hcatid/7.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_7_catid_4_hcati_471782679"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/8/catid/4/hcatid/8.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_8_catid_4_hcati_1745176311"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/18/catid/4/hcatid/18.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_18_catid_4_hcat_1995391085"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/19/catid/4/hcatid/19.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_19_catid_4_hcat_1957013483"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/20/catid/4/hcatid/20.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_20_catid_4_hcat_1112706239"
+    },
+    {
+      "url": "https://www.yitong-filter.com/support/index_2.html",
+      "file": "https___www_yitong_filter_com_support_index_2_html_272870731"
+    },
+    {
+      "url": "https://www.yitong-filter.com/support/index_3.html",
+      "file": "https___www_yitong_filter_com_support_index_3_html_244241580"
+    },
+    {
+      "url": "https://www.yitong-filter.com/support/index_4.html",
+      "file": "https___www_yitong_filter_com_support_index_4_html_215612429"
+    },
+    {
+      "url": "https://www.yitong-filter.com/support/index_5.html",
+      "file": "https___www_yitong_filter_com_support_index_5_html_186983278"
+    },
+    {
+      "url": "https://www.yitong-filter.com/support/index_6.html",
+      "file": "https___www_yitong_filter_com_support_index_6_html_158354127"
+    },
+    {
+      "url": "https://www.yitong-filter.com/products-knowledge/f9-air-filter.html",
+      "file": "https___www_yitong_filter_com_products_knowledge_f9_air_filter_html_646458947"
+    },
+    {
+      "url": "https://www.yitong-filter.com/products-knowledge/compact-v-panel-filters-gas-turbines-turbomachinery.html",
+      "file": "https___www_yitong_filter_com_products_knowledge_compact_v_panel_filters_gas_tur_893405897"
+    },
+    {
+      "url": "https://www.yitong-filter.com/products-knowledge/h13-hepa-filter-guide.html",
+      "file": "https___www_yitong_filter_com_products_knowledge_h13_hepa_filter_guide_html_847300271"
+    },
+    {
+      "url": "https://www.yitong-filter.com/news/index_2.html",
+      "file": "https___www_yitong_filter_com_news_index_2_html_1329234737"
+    },
+    {
+      "url": "https://www.yitong-filter.com/news/index_3.html",
+      "file": "https___www_yitong_filter_com_news_index_3_html_1300605586"
+    },
+    {
+      "url": "https://www.yitong-filter.com/news/index_4.html",
+      "file": "https___www_yitong_filter_com_news_index_4_html_1271976435"
+    },
+    {
+      "url": "https://www.yitong-filter.com/news/index_5.html",
+      "file": "https___www_yitong_filter_com_news_index_5_html_1243347284"
+    },
+    {
+      "url": "https://www.yitong-filter.com/news/index_6.html",
+      "file": "https___www_yitong_filter_com_news_index_6_html_1214718133"
+    },
+    {
+      "url": "https://www.yitong-filter.com/news/index_46.html",
+      "file": "https___www_yitong_filter_com_news_index_46_html_601445457"
+    },
+    {
+      "url": "https://www.yitong-filter.com/news/index_47.html",
+      "file": "https___www_yitong_filter_com_news_index_47_html_572816306"
+    },
+    {
+      "url": "https://www.yitong-filter.com/faq/index_2.html",
+      "file": "https___www_yitong_filter_com_faq_index_2_html_357926066"
+    },
+    {
+      "url": "https://www.yitong-filter.com/faq/index_3.html",
+      "file": "https___www_yitong_filter_com_faq_index_3_html_329296915"
+    },
+    {
+      "url": "https://www.yitong-filter.com/faq/index_4.html",
+      "file": "https___www_yitong_filter_com_faq_index_4_html_300667764"
+    },
+    {
+      "url": "https://www.yitong-filter.com/hepa-filter-faq/index_2.html",
+      "file": "https___www_yitong_filter_com_hepa_filter_faq_index_2_html_218422884"
+    },
+    {
+      "url": "https://www.yitong-filter.com/company-activity/in-the-arab-pharma-manufacturers-expo.html",
+      "file": "https___www_yitong_filter_com_company_activity_in_the_arab_pharma_manufacturers__432665166"
+    },
+    {
+      "url": "https://www.yitong-filter.com/company-activity/chemtech-2024-yitong-filter-meet-us-at-hall-3-m19f.html",
+      "file": "https___www_yitong_filter_com_company_activity_chemtech_2024_yitong_filter_meet__277746163"
+    },
+    {
+      "url": "https://www.yitong-filter.com/company-activity/the-journey-of-h14-hepa-filters:-from-production-to-shipping.html",
+      "file": "https___www_yitong_filter_com_company_activity_the_journey_of_h14_hepa_filters___616257607"
+    },
+    {
+      "url": "https://www.yitong-filter.com/company-activity/kazakhstan-customers-come-to-visit-our-factory.html",
+      "file": "https___www_yitong_filter_com_company_activity_kazakhstan_customers_come_to_visi_2106086985"
+    },
+    {
+      "url": "https://www.yitong-filter.com/company-activity/khimia-2023--yitong-filter-meet-us-at-23c59.html",
+      "file": "https___www_yitong_filter_com_company_activity_khimia_2023__yitong_filter_meet_u_1313577172"
+    },
+    {
+      "url": "https://www.yitong-filter.com/company-activity/index_2.html",
+      "file": "https___www_yitong_filter_com_company_activity_index_2_html_1564900931"
+    },
+    {
+      "url": "https://www.yitong-filter.com/company-activity/index_3.html",
+      "file": "https___www_yitong_filter_com_company_activity_index_3_html_1593530082"
+    },
+    {
+      "url": "https://www.yitong-filter.com/products-knowledge/index_2.html",
+      "file": "https___www_yitong_filter_com_products_knowledge_index_2_html_2060835149"
+    },
+    {
+      "url": "https://www.yitong-filter.com/products-knowledge/index_3.html",
+      "file": "https___www_yitong_filter_com_products_knowledge_index_3_html_2089464300"
+    },
+    {
+      "url": "https://www.yitong-filter.com/products-knowledge/index_4.html",
+      "file": "https___www_yitong_filter_com_products_knowledge_index_4_html_2118093451"
+    },
+    {
+      "url": "https://www.yitong-filter.com/products-knowledge/index_5.html",
+      "file": "https___www_yitong_filter_com_products_knowledge_index_5_html_2146722602"
+    },
+    {
+      "url": "https://www.yitong-filter.com/products-knowledge/index_6.html",
+      "file": "https___www_yitong_filter_com_products_knowledge_index_6_html_2119615543"
+    },
+    {
+      "url": "https://www.yitong-filter.com/products-knowledge/index_43.html",
+      "file": "https___www_yitong_filter_com_products_knowledge_index_43_html_1325618452"
+    },
+    {
+      "url": "https://www.yitong-filter.com/products-knowledge/index_44.html",
+      "file": "https___www_yitong_filter_com_products_knowledge_index_44_html_1354247603"
+    },
+    {
+      "url": "https://www.yitong-filter.com/products-knowledge/understanding-hepa-h13-mini-pleat-filters-a-comprehensive-guide.html",
+      "file": "https___www_yitong_filter_com_products_knowledge_understanding_hepa_h13_mini_ple_1844677509"
+    },
+    {
+      "url": "https://www.yitong-filter.com/products-knowledge/h14-filters.html",
+      "file": "https___www_yitong_filter_com_products_knowledge_h14_filters_html_1127955303"
+    },
+    {
+      "url": "https://www.yitong-filter.com/products-knowledge/hepa-filter-units.html",
+      "file": "https___www_yitong_filter_com_products_knowledge_hepa_filter_units_html_1311619591"
+    },
+    {
+      "url": "https://www.yitong-filter.com/hepa-filters/compact-filter.html",
+      "file": "https___www_yitong_filter_com_hepa_filters_compact_filter_html_618789381"
+    },
+    {
+      "url": "https://www.yitong-filter.com/products-knowledge/understanding-the-5-basic-requirements-of-air-filters.html",
+      "file": "https___www_yitong_filter_com_products_knowledge_understanding_the_5_basic_requi_200833967"
+    },
+    {
+      "url": "https://www.yitong-filter.com/products-knowledge/hepa-and-merv-17-filters.html",
+      "file": "https___www_yitong_filter_com_products_knowledge_hepa_and_merv_17_filters_html_625457328"
+    },
+    {
+      "url": "https://www.yitong-filter.com/products-knowledge/understanding-the-correct-interpretation-of-initial-pressure-drop-for-pre-filters.html",
+      "file": "https___www_yitong_filter_com_products_knowledge_understanding_the_correct_inter_1467523741"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/products/mini-pleat-ptfe-panel-filters.html",
+      "file": "https___www_yitong_filter_com_index_php_products_mini_pleat_ptfe_panel_filters_h_1503755711"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/products/mini-air-filter.html",
+      "file": "https___www_yitong_filter_com_index_php_products_mini_air_filter_html_884035553"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/products/pleat-panel-filter.html",
+      "file": "https___www_yitong_filter_com_index_php_products_pleat_panel_filter_html_16936496"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/products/ptfe-panel-filters.html",
+      "file": "https___www_yitong_filter_com_index_php_products_ptfe_panel_filters_html_499636582"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/products/airborne-molecular-contamination.html",
+      "file": "https___www_yitong_filter_com_index_php_products_airborne_molecular_contaminatio_1920097560"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/products/mini-pleat-hepa-filter.html",
+      "file": "https___www_yitong_filter_com_index_php_products_mini_pleat_hepa_filter_html_2032766898"
+    },
+    {
+      "url": "https://www.yitong-filter.com/hepa-filters/hepa-filter-compact-filter.html",
+      "file": "https___www_yitong_filter_com_hepa_filters_hepa_filter_compact_filter_html_158091439"
+    },
+    {
+      "url": "https://www.yitong-filter.com/hepa-filters/high-temperature-hepa-filter.html",
+      "file": "https___www_yitong_filter_com_hepa_filters_high_temperature_hepa_filter_html_581626604"
+    },
+    {
+      "url": "https://www.yitong-filter.com/hepa-filters/high-temperature-separator-hepa-filters.html",
+      "file": "https___www_yitong_filter_com_hepa_filters_high_temperature_separator_hepa_filte_1061108477"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/products/hepa-h13-h14-filter.html",
+      "file": "https___www_yitong_filter_com_index_php_products_hepa_h13_h14_filter_html_756675572"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/products/hepa-filter-elemant.html",
+      "file": "https___www_yitong_filter_com_index_php_products_hepa_filter_elemant_html_163521234"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/products/high-efficiency-v-bank-filters.html",
+      "file": "https___www_yitong_filter_com_index_php_products_high_efficiency_v_bank_filters__1430317528"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/products/v-bank-filter.html",
+      "file": "https___www_yitong_filter_com_index_php_products_v_bank_filter_html_1777996354"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/products/v-bank-hepa-filter.html",
+      "file": "https___www_yitong_filter_com_index_php_products_v_bank_hepa_filter_html_1618906747"
+    },
+    {
+      "url": "https://www.yitong-filter.com/hepa-filters/h13-compact-hepa-filter.html",
+      "file": "https___www_yitong_filter_com_hepa_filters_h13_compact_hepa_filter_html_1904198527"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/products/v-bank-box-shape-hepa-filter.html",
+      "file": "https___www_yitong_filter_com_index_php_products_v_bank_box_shape_hepa_filter_ht_1016822605"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/products/box-shape-filter.html",
+      "file": "https___www_yitong_filter_com_index_php_products_box_shape_filter_html_785429084"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/products/fine-filter.html",
+      "file": "https___www_yitong_filter_com_index_php_products_fine_filter_html_19291771"
+    },
+    {
+      "url": "https://www.yitong-filter.com/hepa-filters/v-bank-air-filter.html",
+      "file": "https___www_yitong_filter_com_hepa_filters_v_bank_air_filter_html_453800886"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/products/replacement-hepa-air-filter.html",
+      "file": "https___www_yitong_filter_com_index_php_products_replacement_hepa_air_filter_htm_658729937"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/products/hepa-air-filter.html",
+      "file": "https___www_yitong_filter_com_index_php_products_hepa_air_filter_html_307285366"
+    },
+    {
+      "url": "https://www.yitong-filter.com/hepa-filters/separator-hepa-filter.html",
+      "file": "https___www_yitong_filter_com_hepa_filters_separator_hepa_filter_html_613644700"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/products/panel-filter.html",
+      "file": "https___www_yitong_filter_com_index_php_products_panel_filter_html_1950045119"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/products/coarse-filters.html",
+      "file": "https___www_yitong_filter_com_index_php_products_coarse_filters_html_659735045"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/products/pre-filter-air-filter.html",
+      "file": "https___www_yitong_filter_com_index_php_products_pre_filter_air_filter_html_795810198"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/products/panel-air-filters.html",
+      "file": "https___www_yitong_filter_com_index_php_products_panel_air_filters_html_976022143"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/products/mini-pleat-gel-seal-hepa-filter.html",
+      "file": "https___www_yitong_filter_com_index_php_products_mini_pleat_gel_seal_hepa_filter_1604270179"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/products/mini-pleat-hepa-filters.html",
+      "file": "https___www_yitong_filter_com_index_php_products_mini_pleat_hepa_filters_html_512760973"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/products/pleated-pre-filter.html",
+      "file": "https___www_yitong_filter_com_index_php_products_pleated_pre_filter_html_196375374"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/products/pre-filter.html",
+      "file": "https___www_yitong_filter_com_index_php_products_pre_filter_html_974859104"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/products/gt-pleated-pre-filter.html",
+      "file": "https___www_yitong_filter_com_index_php_products_gt_pleated_pre_filter_html_1032742148"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/products/rigid-pocket-air-filters.html",
+      "file": "https___www_yitong_filter_com_index_php_products_rigid_pocket_air_filters_html_599231553"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/products/pocket-air-filters.html",
+      "file": "https___www_yitong_filter_com_index_php_products_pocket_air_filters_html_1960810529"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/products/air-filters.html",
+      "file": "https___www_yitong_filter_com_index_php_products_air_filters_html_2126645736"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/41/catid/4/hcatid/41.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_41_catid_4_hcat_1305082687"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/42/catid/4/hcatid/42.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_42_catid_4_hcat_1343460289"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/43/catid/4/hcatid/43.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_43_catid_4_hcat_1381837891"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/44/catid/4/hcatid/44.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_44_catid_4_hcat_1420215493"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/49/catid/4/hcatid/49.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_49_catid_4_hcat_1612103503"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/50/catid/4/hcatid/50.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_50_catid_4_hcat_1838556549"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/51/catid/4/hcatid/51.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_51_catid_4_hcat_1800178947"
+    },
+    {
+      "url": "https://www.yitong-filter.com/hepa-filters/fiberglass-media-gel-seal-hepa-filters.html",
+      "file": "https___www_yitong_filter_com_hepa_filters_fiberglass_media_gel_seal_hepa_filter_1936814592"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/52/catid/4/hcatid/52.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_52_catid_4_hcat_1761801345"
+    },
+    {
+      "url": "https://www.yitong-filter.com/index.php/Content/Pagedis/lists/id/53/catid/4/hcatid/53.html",
+      "file": "https___www_yitong_filter_com_index_php_Content_Pagedis_lists_id_53_catid_4_hcat_1723423743"
+    }
+  ]
+}
