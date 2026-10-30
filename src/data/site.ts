@@ -21,8 +21,9 @@ export const site = {
     legalRepresentative: 'Liu Fengxiu',
     address:
       'North of Minjiang Street, west of Jiuhuashan Road, Qinghe County, Xingtai City, Hebei Province, China',
-    email: 'martin@carfilterspro.com',
+    email: 'Martin@chinafilterhub.com',
     phone: '+86 13323237275',
+    whatsappLink: 'https://wa.me/8613323237275',
     foundingDate: '2017-10-10', // legal-entity incorporation date
     since: 1996, // brand lineage — the Huiying brand traces back to 1996
   },
