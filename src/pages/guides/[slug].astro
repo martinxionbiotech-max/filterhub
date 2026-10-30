@@ -1,12 +1,17 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { guides, type Guide } from '../../data/guides';
+import { categories } from '../../data/categories';
+import { guideCategories } from '../../data/link-map';
 
 export function getStaticPaths() {
   return guides.map((g) => ({ params: { slug: g.slug }, props: { guide: g } }));
 }
 
 const { guide } = Astro.props as { guide: Guide };
+const relatedCategories = (guideCategories[guide.slug] ?? [])
+  .map((slug) => categories.find((c) => c.slug === slug))
+  .filter(Boolean);
 
 const breadcrumbs = [
   { label: 'Buyer Guides', href: '/guides/' },
@@ -86,6 +91,17 @@ const articleSchema = {
         {guide.sources.map((s) => <li>{s}</li>)}
       </ul>
     </section>
+
+    {relatedCategories.length > 0 && (
+      <section id="related-categories">
+        <h2>Shop the category</h2>
+        <ul>
+          {relatedCategories.map((c) => (
+            <li><a href={`/products/${c!.slug}/`}>{c!.name}</a></li>
+          ))}
+        </ul>
+      </section>
+    )}
 
     <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
   </main>

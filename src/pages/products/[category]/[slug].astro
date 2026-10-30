@@ -2,6 +2,9 @@
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import StatusBadge from '../../../components/StatusBadge.astro';
 import { site } from '../../../data/site';
+import { guides } from '../../../data/guides';
+import { categoryGuides } from '../../../data/link-map';
+import { skuDepth } from '../../../data/sku-depth';
 import {
   products,
   categorySlug,
@@ -20,6 +23,10 @@ export function getStaticPaths() {
 const { product } = Astro.props as { product: Product };
 const catSlug = categorySlug(product.category);
 const catName = categoryName(product.category);
+const depth = skuDepth[product.sku];
+const relatedGuides = (categoryGuides[catSlug] ?? [])
+  .map((slug) => guides.find((g) => g.slug === slug))
+  .filter(Boolean);
 
 const breadcrumbs = [
   { label: 'Products', href: '/products/' },
@@ -173,6 +180,14 @@ const productSchema = {
       </p>
     </section>
 
+    {depth && (
+      <section class="section">
+        <h2 class="mt-0">Fitment &amp; sourcing</h2>
+        <p>{depth.fitment}</p>
+        <p style="margin-top:0.5rem;">{depth.conclusion}</p>
+      </section>
+    )}
+
     {/* 5. OEM terms */}
     <section class="section">
       <h2 class="mt-0">OEM / private-label terms</h2>
@@ -196,16 +211,24 @@ const productSchema = {
       <h2 class="mt-0">Related resources</h2>
       <ul>
         <li>
+          Category overview: <a href={`/products/${catSlug}/`}>{catName}</a>
+        </li>
+        {relatedGuides.length > 0 && (
+          <li>
+            Buyer guides:{' '}
+            {relatedGuides.map((g, i) => (
+              <>
+                {i > 0 && ' · '}
+                <a href={`/guides/${g!.slug}/`}>{g!.title}</a>
+              </>
+            ))}
+          </li>
+        )}
+        <li>
           Machine-readable record:{' '}
           <a href={`${site.dataSubsiteUrl}/products/${skuSlug(product.sku)}/`} rel="noopener" target="_blank">
             data subsite SKU page
           </a>
-        </li>
-        <li>
-          Category overview: <a href={`/products/${catSlug}/`}>{catName}</a>
-        </li>
-        <li>
-          <a href="/guides/">Buyer guides</a> for selection and sourcing.
         </li>
       </ul>
     </section>

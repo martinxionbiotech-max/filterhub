@@ -2,6 +2,8 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import StatusBadge from '../../components/StatusBadge.astro';
 import { categories, type Category } from '../../data/categories';
+import { guides } from '../../data/guides';
+import { categoryGuides } from '../../data/link-map';
 import { site } from '../../data/site';
 import { productsByCategory, skuSlug, codeFromSlug } from '../../data/products';
 
@@ -12,6 +14,9 @@ export function getStaticPaths() {
 const { category } = Astro.props as { category: Category };
 const code = codeFromSlug(category.slug);
 const skus = productsByCategory(code);
+const relatedGuides = (categoryGuides[category.slug] ?? [])
+  .map((slug) => guides.find((g) => g.slug === slug))
+  .filter(Boolean);
 const breadcrumbs = [
   { label: 'Products', href: '/products/' },
   { label: category.name, href: `/products/${category.slug}/` },
@@ -165,6 +170,17 @@ const catImage = categoryImages[category.slug];
       <h2>From a sourcing perspective</h2>
       <p>{category.sourcingPerspective}</p>
     </section>
+
+    {relatedGuides.length > 0 && (
+      <section class="section">
+        <h2 class="mt-0">Related buyer guides</h2>
+        <ul>
+          {relatedGuides.map((g) => (
+            <li><a href={`/guides/${g!.slug}/`}>{g!.title}</a></li>
+          ))}
+        </ul>
+      </section>
+    )}
 
     {skus.length > 0 && (
       <section class="section">
