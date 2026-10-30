@@ -202,10 +202,10 @@ const catImage = categoryImages[category.slug];
               {skus.map((p) => (
                 <tr>
                   <td>
-                    <a href={`/products/${category.slug}/${skuSlug(p.sku)}/`}><code>{p.sku}</code></a>
+                    <a href={`/products/${category.slug}/${skuSlug(p.url_slug || p.sku)}/`}><code>{p.sku}</code></a>
                   </td>
                   <td>
-                    <a href={`/products/${category.slug}/${skuSlug(p.sku)}/`} style="color:var(--ink);">
+                    <a href={`/products/${category.slug}/${skuSlug(p.url_slug || p.sku)}/`} style="color:var(--ink);">
                       {p.name}
                     </a>
                   </td>

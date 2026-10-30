@@ -15,7 +15,7 @@ import {
 
 export function getStaticPaths() {
   return products.map((p) => ({
-    params: { category: categorySlug(p.category), slug: skuSlug(p.sku) },
+    params: { category: categorySlug(p.category), slug: skuSlug(p.url_slug || p.sku) },
     props: { product: p },
   }));
 }
@@ -31,7 +31,7 @@ const relatedGuides = (categoryGuides[catSlug] ?? [])
 const breadcrumbs = [
   { label: 'Products', href: '/products/' },
   { label: catName, href: `/products/${catSlug}/` },
-  { label: product.sku, href: `/products/${catSlug}/${skuSlug(product.sku)}/` },
+  { label: product.sku, href: `/products/${catSlug}/${skuSlug(product.url_slug || product.sku)}/` },
 ];
 
 // Confirmed spec entries only (drop any whose data_status is pending).
@@ -49,13 +49,13 @@ const confirmedApplications = product.application.filter((a) => a.data_status !=
 const productSchema = {
   '@context': 'https://schema.org',
   '@type': 'Product',
-  '@id': `https://chinafilterhub.com/products/${catSlug}/${skuSlug(product.sku)}/#product`,
+  '@id': `https://chinafilterhub.com/products/${catSlug}/${skuSlug(product.url_slug || product.sku)}/#product`,
   name: product.name,
   sku: product.sku,
   category: catName,
   description: product.description || undefined,
   brand: { '@type': 'Brand', name: site.brand },
-  url: `https://chinafilterhub.com/products/${catSlug}/${skuSlug(product.sku)}/`,
+  url: `https://chinafilterhub.com/products/${catSlug}/${skuSlug(product.url_slug || product.sku)}/`,
   material: confirmedMaterial.length > 0
     ? confirmedMaterial.map((m) => `${m.part}: ${m.material_value}`).join(', ')
     : undefined,

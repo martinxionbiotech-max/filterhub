@@ -126,7 +126,7 @@ const articleSchema = {
             const catSlug = categorySlug(p!.category);
             return (
               <li>
-                <a href={`/products/${catSlug}/${skuSlug(p!.sku)}/`}>
+                <a href={`/products/${catSlug}/${skuSlug(p!.url_slug || p!.sku)}/`}>
                   <code>{p!.sku}</code> — {p!.name}
                 </a>
               </li>
