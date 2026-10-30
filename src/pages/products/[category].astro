@@ -51,6 +51,9 @@ const breadcrumbs = [
       {category.procurement.map((p) => <li>{p}</li>)}
     </ul>
 
+    <h2>From a sourcing perspective</h2>
+    <p>{category.sourcingPerspective}</p>
+
     {skus.length > 0 && (
       <section style="margin-top:2rem;">
         <h2>SKUs in this category ({skus.length})</h2>

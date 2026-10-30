@@ -8,3 +8,6 @@ dist/
 .astro/
 .DS_Store
 *.log
+
+# Python
+__pycache__/
