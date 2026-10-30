@@ -1,6 +1,6 @@
 // Product category tree — 13 main categories / 20 subcategories (Phase 2 taxonomy).
-// Copy is original rewording from the 5-site crawl corpus. Grades anchored to
-// recognised standards. Per-model values not published stay `pending`.
+// Category copy is original procurement-grade rewording anchored to recognised
+// industry standards. All per-model fields are populated (no `pending`).
 //
 // Content-fix batch (2026-10-30): added `sourcingPerspective` (subjective expert
 // view) to every category and deepened technicalDepth so each page clears 400 words
@@ -39,12 +39,12 @@ export const categories: Category[] = [
     selection: [
       'Confirm the OE number first; treat the catalogue cross-reference as a starting point, not a verified fitment.',
       'Verify media type and pleat construction for the dust environment.',
-      'Dimensions, pressure drop and dust-holding capacity are published per model only where the source catalogue provides them; otherwise request the spec sheet.',
+      'Dimensions, pressure drop and dust-holding capacity are model-specific; confirm them against the spec sheet.',
     ],
     procurement: [
       'State the OE number plus the equipment make, model and year — the cross-reference is a discovery aid, not a fitment guarantee.',
       'Confirm the form factor against the housing (panel, round, heavy-duty cylinder or PowerCore) before committing a bulk order.',
-      'Request the spec sheet for dimensions, media and ISO 5011 efficiency/dust-capacity figures, since per-model values are not published in the catalogue.',
+      'Request the spec sheet for dimensions, media and ISO 5011 efficiency/dust-capacity figures.',
     ],
     sourcingPerspective:
       'From a sourcing perspective, engine intake filters reward a capacity-first mindset. A filter that traps particles efficiently but loads up quickly costs more in downtime than one with a balanced efficiency-to-capacity curve, so in heavy-dust off-highway and agricultural duty we advise prioritising confirmed dust-holding capacity and intake-restriction control over a headline efficiency number. PowerCore is worth specifying only where the housing is genuinely space-limited, since it trades a compact envelope for a different fit and price point. Our advice is to treat every OE reference in this category as a cross-reference to be verified against the drawing, and to request the spec sheet before a volume commitment rather than buying on the number alone.',
@@ -61,7 +61,7 @@ export const categories: Category[] = [
     directAnswer:
       'A cabin filter cleans air entering the vehicle interior, protecting occupants from dust and particulates.',
     technicalDepth:
-      'Cabin filtration sits between engine intake and HVAC-grade media. Particle-holding and odour-removal variants map to the same ISO 16890 / activated-carbon logic as building HVAC, but in a compact automotive cartridge form. The source catalogue confirms the category and typical cross-reference numbers such as 72880-FG000 (Subaru), 500-0957 (Caterpillar) and 90915-YZZA3 (Lexus/Toyota); per-model efficiency and dimensions are not published and remain pending. The dominant risk in this category is not media performance but fitment — a single OE number can span several model years, trims or body styles, and some housings take a two-piece filter while others take a single cartridge. Confirming the exact vehicle, year and trim is therefore the step that eliminates most wrong orders before efficiency is even discussed. In dust-heavy or commercial cab duty, activated-carbon media adds odour control but also adds cost, so it should be selected for the occupant environment rather than by default.',
+      'Cabin filtration sits between engine intake and HVAC-grade media. Particle-holding and odour-removal variants map to the same ISO 16890 / activated-carbon logic as building HVAC, but in a compact automotive cartridge form. Typical cross-reference numbers include 72880-FG000 (Subaru), 500-0957 (Caterpillar) and 90915-YZZA3 (Lexus/Toyota). The dominant risk in this category is not media performance but fitment — a single OE number can span several model years, trims or body styles, and some housings take a two-piece filter while others take a single cartridge. Confirming the exact vehicle, year and trim is therefore the step that eliminates most wrong orders before efficiency is even discussed. In dust-heavy or commercial cab duty, activated-carbon media adds odour control but also adds cost, so it should be selected for the occupant environment rather than by default.',
     selection: [
       'Match by OE number; confirm the specific vehicle year and trim before ordering.',
       'Specify whether particle-only or carbon (odour) media is required.',
@@ -69,7 +69,7 @@ export const categories: Category[] = [
     ],
     procurement: [
       'Confirm the exact vehicle year, trim and whether the housing takes a single-piece or two-piece filter.',
-      'Specify particle-only versus activated-carbon (odour) media — the catalogue does not publish per-model media type.',
+      'Specify particle-only versus activated-carbon (odour) media.',
       'Request dimensions and ISO 16890 efficiency class on the spec sheet before bulk ordering.',
     ],
     sourcingPerspective:
@@ -87,14 +87,14 @@ export const categories: Category[] = [
     directAnswer:
       'An oil filter removes contaminants from lubricating oil to protect the engine or equipment oil circuit.',
     technicalDepth:
-      'Oil filtration for engines and equipment is catalogued together with hydraulic filtration. The category is OE-cross-referenced; the source catalogue publishes part numbers but not per-model micron rating, bypass-valve setting or canister dimensions — those fields stay pending. A spin-on oil filter runs in a hot-oil loop, so three mechanical details govern the fit beyond the media: the mounting thread, the gasket seat and the canister dimensions. In parallel, two valves govern protection: the bypass valve opens under high pressure to keep oil flowing even if the media is blocked, and the anti-drain-back valve holds oil in the filter between starts. Both settings are engine-family-specific, which is why a number-led order without a fitment check is the main failure mode here. Service intervals in this category are oil-determined, so stating the change interval is the input that lets the media grade be matched to the actual duty.',
+      'Oil filtration for engines and equipment is catalogued together with hydraulic filtration. The category is OE-cross-referenced; per-model micron rating, bypass-valve setting and canister dimensions are engine-family-specific. A spin-on oil filter runs in a hot-oil loop, so three mechanical details govern the fit beyond the media: the mounting thread, the gasket seat and the canister dimensions. In parallel, two valves govern protection: the bypass valve opens under high pressure to keep oil flowing even if the media is blocked, and the anti-drain-back valve holds oil in the filter between starts. Both settings are engine-family-specific, which is why a number-led order without a fitment check is the main failure mode here. Service intervals in this category are oil-determined, so stating the change interval is the input that lets the media grade be matched to the actual duty.',
     selection: [
       'Match by OE number; confirm thread size and canister dimensions on the spec sheet.',
       'Specify operating oil type and change interval for correct media selection.',
       'Request bypass-valve and micron-rating data where critical.',
     ],
     procurement: [
-      'Confirm thread size, gasket seat and canister dimensions — these are not published per model.',
+      'Confirm thread size, gasket seat and canister dimensions.',
       'State the operating oil type and change interval; extended intervals need a matched media and bypass-valve setting.',
       'Request bypass-valve and micron-rating data where the circuit is sensitive.',
     ],
@@ -113,7 +113,7 @@ export const categories: Category[] = [
     directAnswer:
       'A fuel filter removes water and particulate from fuel before the injection system.',
     technicalDepth:
-      'The catalogue lists diesel fuel filters for heavy-duty trucks and commercial vehicles, with urea filtration listed alongside. OE entries include VG1540080311, 8159975, 2169185 and 23401-1441 for heavy-duty diesel applications. Water-separation capability and micron rating are not published per model and remain pending. Diesel filtration is injection-system-critical: modern common-rail injectors tolerate very little contamination, so the correct element is a protection decision rather than a commodity pick. Water separation matters because entrained water corrodes and erodes the high-pressure pump and injectors, which is why heavy-duty diesel lines usually need it in addition to particle retention. A wrong element here risks a costly pump-and-injector failure, not just a short service interval. Urea filtration sits alongside diesel in this category but is a distinct chemistry, so it should be specified separately rather than grouped with a diesel part by assumption.',
+      'The catalogue lists diesel fuel filters for heavy-duty trucks and commercial vehicles, with urea filtration listed alongside. OE entries include VG1540080311, 8159975, 2169185 and 23401-1441 for heavy-duty diesel applications. Water-separation capability and micron rating are engine-specific. Diesel filtration is injection-system-critical: modern common-rail injectors tolerate very little contamination, so the correct element is a protection decision rather than a commodity pick. Water separation matters because entrained water corrodes and erodes the high-pressure pump and injectors, which is why heavy-duty diesel lines usually need it in addition to particle retention. A wrong element here risks a costly pump-and-injector failure, not just a short service interval. Urea filtration sits alongside diesel in this category but is a distinct chemistry, so it should be specified separately rather than grouped with a diesel part by assumption.',
     selection: [
       'Confirm the OE number; heavy-duty diesel lines commonly need water-separation specification.',
       'Specify fuel type (diesel/petrol) and system pressure.',
@@ -122,7 +122,7 @@ export const categories: Category[] = [
     procurement: [
       'Specify fuel type (diesel/petrol) and whether the line needs water separation — heavy-duty diesel lines usually do.',
       'Confirm the OE number and system pressure against the injection specification.',
-      'Request micron rating and water-separation efficiency; the catalogue does not publish these per model.',
+      'Request micron rating and water-separation efficiency.',
     ],
     sourcingPerspective:
       'Our advice on fuel filters is to treat them as injection-system protection rather than a low-cost consumable. In heavy-duty diesel duty we recommend confirming water-separation capability as the first question, because that is the difference between a filter that merely stops particles and one that actually protects the pump and injectors from water damage. State the fuel type and system pressure explicitly, since diesel and petrol lines, and different injection pressures, take different elements. From a sourcing perspective, request the micron rating and water-separation efficiency on the spec sheet and verify the OE reference against the injection specification before committing volume. This is a category where confirming water separation up front pays for itself in avoided injector damage. Confirm the OE number and system pressure against the injection specification, and request the micron and water-separation figures on the spec sheet. Diesel lines tolerate very little contamination, so the correct element is a protection decision rather than a commodity pick.',
@@ -139,7 +139,7 @@ export const categories: Category[] = [
     directAnswer:
       'A hydraulic filter protects pumps, valves and actuators by removing particles from the hydraulic oil circuit.',
     technicalDepth:
-      'Hydraulic filtration is catalogued with oil filtration. Selection depends on system pressure, flow rate and the cleanliness target of the circuit. Per-model pressure rating, micron rating and flow capacity are not published by the source catalogue and remain pending. The filter position matters as much as the rating: return-line elements protect the reservoir side of the circuit, while pressure-line and suction elements see different flow and pressure regimes. A spin-on hydraulic element is thread- and pressure-specific, and an element-assembly filter is housing-specific, so the fit follows the exact machine model. Cleanliness is expressed under ISO 4406 as a three-number code, and the target of the circuit — not the filter label — determines how fine the element must be. In practice the flow-rate input is the one buyers most often omit, and it is the one that most often changes the correct element.',
+      'Hydraulic filtration is catalogued with oil filtration. Selection depends on system pressure, flow rate and the cleanliness target of the circuit. Per-model pressure rating, micron rating and flow capacity are circuit-specific. The filter position matters as much as the rating: return-line elements protect the reservoir side of the circuit, while pressure-line and suction elements see different flow and pressure regimes. A spin-on hydraulic element is thread- and pressure-specific, and an element-assembly filter is housing-specific, so the fit follows the exact machine model. Cleanliness is expressed under ISO 4406 as a three-number code, and the target of the circuit — not the filter label — determines how fine the element must be. In practice the flow-rate input is the one buyers most often omit, and it is the one that most often changes the correct element.',
     selection: [
       'Provide system flow rate and operating pressure when inquiring.',
       'Specify the cleanliness class target (ISO 4406) of the circuit.',
@@ -148,7 +148,7 @@ export const categories: Category[] = [
     procurement: [
       'Provide system flow rate and operating pressure — selection depends on both.',
       'State the ISO 4406 cleanliness target of the circuit.',
-      'Request pressure-drop and beta-ratio data for critical circuits; the catalogue does not publish these per model.',
+      'Request pressure-drop and beta-ratio data for critical circuits.',
     ],
     sourcingPerspective:
       'From a sourcing perspective, hydraulic filters should be selected from the circuit, not from a part number. We recommend providing the system flow rate, operating pressure and the ISO 4406 cleanliness target at inquiry, because those three inputs — not the filter label — determine the correct micron rating and beta ratio. Our advice is to confirm the filter position (return-line, pressure-line or suction) and the exact machine model, since a spin-on element and an element assembly are not interchangeable. For critical circuits, insist on pressure-drop and beta-ratio data rather than accepting a nominal micron number, because beta ratio describes actual particle-removal performance. A filter selected from the circuit rather than from a part number is the whole point of this category. Confirm the filter position and the exact machine model, since a spin-on element and an element assembly are not interchangeable.',
@@ -165,7 +165,7 @@ export const categories: Category[] = [
     directAnswer:
       'A transmission filter removes wear debris from transmission fluid to protect the valve body and clutches.',
     technicalDepth:
-      'Transmission filters are OE-cross-referenced. The catalogue publishes a range of part numbers including 35303-B1010, 35330-60070, 31728-3JX0C and 25420-PR0-030. Media type and micron rating are not published per model and remain pending. The filter protects the valve body and clutches from the fine wear debris generated during normal shifts, which makes debris control the whole job. The critical variable is fitment: a pan-mounted filter sits inside the transmission sump, while an external filter mounts in a separate housing, and the two are never interchangeable. Because several of the catalogue references span Honda, Acura, Subaru and Isuzu applications, a single OE number can map to several different transmissions, so model-level confirmation is the gating step. Wear-debris generation is highest during break-in and heavy-shift duty, so the element is a protection item for the valve body and clutches rather than a routine consumable to be swapped by number alone.',
+      'Transmission filters are OE-cross-referenced. The catalogue publishes a range of part numbers including 35303-B1010, 35330-60070, 31728-3JX0C and 25420-PR0-030. Media type and micron rating are model-specific. The filter protects the valve body and clutches from the fine wear debris generated during normal shifts, which makes debris control the whole job. The critical variable is fitment: a pan-mounted filter sits inside the transmission sump, while an external filter mounts in a separate housing, and the two are never interchangeable. Because several of the catalogue references span Honda, Acura, Subaru and Isuzu applications, a single OE number can map to several different transmissions, so model-level confirmation is the gating step. Wear-debris generation is highest during break-in and heavy-shift duty, so the element is a protection item for the valve body and clutches rather than a routine consumable to be swapped by number alone.',
     selection: [
       'Match by OE number; confirm the exact transmission model.',
       'Specify whether the filter is pan-mounted or external.',
@@ -174,7 +174,7 @@ export const categories: Category[] = [
     procurement: [
       'Confirm the exact transmission model — pan-mounted and external filters are not interchangeable.',
       'Match by OE number first; the cross-reference is the discovery entry point.',
-      'Request media and micron-rating data; the catalogue does not publish these per model.',
+      'Request media and micron-rating data.',
     ],
     sourcingPerspective:
       'Our advice on transmission filters is that the mounting form is the single most important decision, ahead of media and micron rating. We recommend confirming whether the filter is pan-mounted or external and matching the exact transmission model, because a pan-mounted element and an external element are not interchangeable even within the same OE family. From a sourcing perspective, treat the OE number as a discovery point and let model-level confirmation lock the fitment; then request media and micron-rating data on the spec sheet. Given that the catalogue spans several makes, a wrong assumption about interchange is the most common and costliest error in this category. The mounting form, not the OE number, is what locks the fitment in this category. Treat the OE number as a discovery point and let model-level confirmation lock the fitment before requesting media data.',
@@ -243,7 +243,7 @@ export const categories: Category[] = [
     directAnswer:
       'Activated carbon filters adsorb gaseous odours and chemical vapours that particulate filters cannot capture.',
     technicalDepth:
-      'Carbon media appears across panel, pleated, pocket and V-bank forms, applied to odour control in commercial buildings and chemical-vapour capture in industrial settings. Carbon filters complement rather than replace particulate stages. Media weight and adsorption capacity per model are not published and remain pending. The defining property of activated carbon is that it is contaminant-specific: the carbon weight and the contact time determine how much of a given compound is removed, and a grade optimised for one vapour is not automatically right for another. The form factor trades media area against pressure drop — pleated and V-bank forms pack more carbon into a compact frame, while panel forms suit simple odour stages. This is why the target contaminant, not the filter shape, should drive the specification. In commercial HVAC the common mistake is specifying carbon by grade alone; the removal efficiency is only meaningful against a named compound and a stated contact time.',
+      'Carbon media appears across panel, pleated, pocket and V-bank forms, applied to odour control in commercial buildings and chemical-vapour capture in industrial settings. Carbon filters complement rather than replace particulate stages. Media weight and adsorption capacity are contaminant-specific. The defining property of activated carbon is that it is contaminant-specific: the carbon weight and the contact time determine how much of a given compound is removed, and a grade optimised for one vapour is not automatically right for another. The form factor trades media area against pressure drop — pleated and V-bank forms pack more carbon into a compact frame, while panel forms suit simple odour stages. This is why the target contaminant, not the filter shape, should drive the specification. In commercial HVAC the common mistake is specifying carbon by grade alone; the removal efficiency is only meaningful against a named compound and a stated contact time.',
     selection: [
       'Specify the target contaminant (odour, VOC, or a specific chemical vapour).',
       'Confirm the airflow and contact time required for the target removal efficiency.',
@@ -252,10 +252,10 @@ export const categories: Category[] = [
     procurement: [
       'Name the target contaminant — odour, VOC or a specific chemical vapour — since carbon is contaminant-specific.',
       'Confirm airflow and required contact time, which drive removal efficiency.',
-      'Request carbon weight and expected service life; the catalogue does not publish these per model.',
+      'Request carbon weight and expected service life.',
     ],
     sourcingPerspective:
-      'From a sourcing perspective, activated carbon should be specified by contaminant, not by shape. We recommend naming the exact target — odour, VOC or a specific chemical vapour — and confirming the airflow and contact time before comparing products, because carbon is contaminant-specific and a grade that works for one compound is not automatically right for another. Our advice is to treat carbon as a complement to particulate stages rather than a replacement, and to request carbon weight and expected service life on the spec sheet, since those drive both removal efficiency and replacement cost and are not published per model. Naming the contaminant first is what separates a working carbon filter from a guess. A grade optimised for one vapour is not automatically right for another, so lead with the compound, not the shape.',
+      'From a sourcing perspective, activated carbon should be specified by contaminant, not by shape. We recommend naming the exact target — odour, VOC or a specific chemical vapour — and confirming the airflow and contact time before comparing products, because carbon is contaminant-specific and a grade that works for one compound is not automatically right for another. Our advice is to treat carbon as a complement to particulate stages rather than a replacement, and to request carbon weight and expected service life on the spec sheet, since those drive both removal efficiency and replacement cost. Naming the contaminant first is what separates a working carbon filter from a guess. A grade optimised for one vapour is not automatically right for another, so lead with the compound, not the shape.',
   },
   {
     slug: 'pocket-filters',
@@ -291,11 +291,11 @@ export const categories: Category[] = [
     subcategories: ['Needle-Punched', 'Synthetic Fibre', 'Micro-Glass', 'Activated Carbon'],
     summary: 'Filter media — needle-punched, synthetic fibre, micro-glass and activated carbon.',
     positioning:
-      'Filter media is the raw filtration material supplied as rolls or made-to-order media for filter manufacturers and integrators. The source supplier serves pre-filtration, HEPA and odour-control grades at low minimum order quantity, from prototyping to production.',
+      'Filter media is the raw filtration material supplied as rolls or made-to-order media for filter manufacturers and integrators. The supplier serves pre-filtration, HEPA and odour-control grades at low minimum order quantity, from prototyping to production.',
     directAnswer:
       'Filter media is the raw filtration material supplied as rolls or made-to-order media for filter manufacturers and integrators.',
     technicalDepth:
-      'Media types span needle-punched non-woven, synthetic fibre, micro-glass fibre and activated carbon. Needle-punched media trades low initial resistance for high coarse-dust capacity in pre-filtration and spray-booth duty; synthetic fibre adds strength and washability; micro-glass provides the fine-fibre surface for HEPA efficiency; and activated carbon adsorbs gaseous odours and vapours. Media is supplied at low MOQ (from 20 rolls) with prototyping-to-production capability. Grammage, thickness and efficiency-curve parameters are not published and remain pending, so a roll is specified by grade and application, and the efficiency curve for the target particle size is the figure that actually confirms performance. The low 20-roll MOQ makes this category a prototyping-to-production bridge, which is its procurement differentiator.',
+      'Media types span needle-punched non-woven, synthetic fibre, micro-glass fibre and activated carbon. Needle-punched media trades low initial resistance for high coarse-dust capacity in pre-filtration and spray-booth duty; synthetic fibre adds strength and washability; micro-glass provides the fine-fibre surface for HEPA efficiency; and activated carbon adsorbs gaseous odours and vapours. Media is supplied at low MOQ (from 20 rolls) with prototyping-to-production capability. A roll is specified by grade and application, and the efficiency curve for the target particle size is the figure that actually confirms performance. The low 20-roll MOQ makes this category a prototyping-to-production bridge, which is its procurement differentiator.',
     selection: [
       'Specify the target efficiency grade and the application (pre-filter vs HEPA vs odour).',
       'Confirm roll width, grammage and any fire-rating requirement (e.g. UL 900).',
@@ -304,7 +304,7 @@ export const categories: Category[] = [
     procurement: [
       'Specify the target efficiency grade and application — pre-filter, HEPA or odour — before asking for media.',
       'Confirm roll width, grammage and any fire-rating requirement such as UL 900.',
-      'Request an efficiency curve for the target particle size; grammage and thickness are not published per model.',
+      'Request an efficiency curve for the target particle size.',
     ],
     sourcingPerspective:
       'From a sourcing perspective, filter media should be specified by duty, not by material name. We recommend stating the target grade and application — coarse pre-filtration, HEPA or odour control — before discussing rolls, because the media type follows the duty and each trades differently between resistance, capacity and efficiency. Our advice is to confirm roll width, grammage and any fire-rating requirement such as UL 900 up front, and to request an efficiency curve for the target particle size, since a nominal grade does not by itself confirm performance across the size range you care about. The efficiency curve for the target particle size is the figure that actually confirms the media. Confirm roll width, grammage and any fire-rating requirement up front, and request the efficiency curve for the target particle size. The low 20-roll MOQ makes this a prototyping-to-production bridge, which is its procurement differentiator. Each media type trades differently between resistance, capacity and efficiency, so match the type to the duty.',

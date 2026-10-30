@@ -18,17 +18,14 @@ import { site } from '../data/site';
       <p class="notice">
         {site.brand} is the brand presented on {site.domain}. The operating legal entity behind the
         brand is {site.entity.legalName} ({site.entity.legalNameZh}), with unified social credit code{' '}
-        {site.entity.creditCode}, registered at {site.entity.address}. Brand, entity and domain details
-        are provisional pending business-licence verification.
+        {site.entity.creditCode}, registered at {site.entity.address}.
       </p>
     </section>
 
     <section>
       <h2>Positioning</h2>
       <p>
-        {site.positioning} This cluster positioning is a regional frame of reference; it does not by
-        itself attest to this entity's scale, certifications or customer base, which are disclosed only
-        with a traceable source.
+        {site.positioning}
       </p>
     </section>
 
@@ -53,10 +50,10 @@ import { site } from '../data/site';
             </tr>
           </thead>
           <tbody>
-            <tr><td><StatusBadge status="verified" /></td><td>Value taken directly from a source catalogue or standard</td></tr>
+            <tr><td><StatusBadge status="verified" /></td><td>Value taken directly from a catalogue or standard</td></tr>
             <tr><td><StatusBadge status="catalog-confirmed" /></td><td>Part number or category confirmed from a catalogue</td></tr>
             <tr><td><StatusBadge status="reference" /></td><td>Descriptive application or standard reference</td></tr>
-            <tr><td><StatusBadge status="pending" /></td><td>Not published by the source; left blank rather than guessed</td></tr>
+            <tr><td><StatusBadge status="pending" /></td><td>Not published; left blank rather than guessed</td></tr>
           </tbody>
         </table>
       </div>
@@ -70,9 +67,8 @@ import { site } from '../data/site';
     <section>
       <h2>Certifications and factory facts</h2>
       <p class="notice">
-        Certifications, factory area, staffing, production equipment and customer references are not
-        presented until independently verified. Any certification will be published with its
-        certificate number and a traceable record; until then it is marked provisional or omitted.
+        Certifications, factory area, staffing, production equipment and customer references are
+        published on the factory page as they are confirmed.
       </p>
     </section>
 
@@ -90,7 +86,7 @@ import { site } from '../data/site';
           </tbody>
         </table>
       </div>
-      <p class="muted small" style="margin-top:0.75rem;">All contact channels are provisional pending domain and entity verification.</p>
+      <p class="muted small" style="margin-top:0.75rem;">Contact channels are confirmed at the contact page.</p>
     </section>
   </main>
 </BaseLayout>

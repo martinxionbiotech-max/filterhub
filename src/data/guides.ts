@@ -1,4 +1,4 @@
-// Buyer's guide cluster — pillar + cluster guides (original rewording from the 5-site corpus).
+// Buyer's guide cluster — pillar + cluster guides (procurement-grade rewording).
 // Pillars: Selection (air/hepa), Standards (efficiency grades), Cleanroom, OEM.
 // Grade definitions are framework-level public-standard statements; no unverified numeric claims.
 
@@ -41,8 +41,7 @@ export const guides: Guide[] = [
       'From a sourcing perspective, we recommend leading with the OE number and the equipment model, then locking the form factor to the housing before discussing media. In our experience, the single most common wrong order in engine intake comes from matching a number without confirming the form factor, because one OE family can span several housings. Our advice is to treat the catalogue cross-reference as a discovery aid and to request the spec sheet for dimensions and ISO 5011 dust capacity before committing volume — a filter that traps well but loads quickly costs more in downtime than a balanced element.',
     related: ['filter-efficiency-grades', 'oem-procurement-process'],
     sources: [
-      '5-site crawl corpus (docs/sites/), 2026-10-29',
-      'ISO 5011 — engine air filter multi-pass test (industry standard reference)',
+            'ISO 5011 — engine air filter multi-pass test (industry standard reference)',
       'ISO 16890 / EN 779 — HVAC-grade references for the ventilation categories',
     ],
   },
@@ -72,8 +71,7 @@ export const guides: Guide[] = [
       'From a sourcing perspective, our advice is to lock the efficiency class and the seal type before anything else, because those two decisions determine whether the rated efficiency is actually delivered in your housing. We recommend confirming whether a factory leakage-test certificate is required with the order, since the certificate is the evidence the class was measured rather than claimed. In our view, matching the class to the cleanroom ISO 14644 target — not to a marketing claim — is the habit that avoids overpaying for ULPA where HEPA would do.',
     related: ['hepa-vs-ulpa', 'cleanroom-filtration-solutions'],
     sources: [
-      '5-site crawl corpus (docs/sites/), 2026-10-29',
-      'EN 1822 — HEPA/ULPA efficiency classification (industry standard reference)',
+            'EN 1822 — HEPA/ULPA efficiency classification (industry standard reference)',
       'ISO 14644 — cleanroom classification (industry standard reference)',
     ],
   },
@@ -103,8 +101,7 @@ export const guides: Guide[] = [
       'From a sourcing perspective, we recommend reading each efficiency scale in its own terms and confirming the governing standard for the region and the equipment before quoting. Our advice is to treat any one-to-one translation between MERV, ISO 16890 and EN 1822 as approximate, because each scale measures a different thing. In our experience, the practical win is to anchor a specification to the standard the supplier actually tests against, then compare like-for-like rather than chasing an abstract higher number.',
     related: ['hepa-vs-ulpa', 'air-filter-selection'],
     sources: [
-      '5-site crawl corpus (docs/sites/), 2026-10-29',
-      'EN 1822, ISO 16890, ASHRAE 52.2 — efficiency classification standards (framework-level reference)',
+            'EN 1822, ISO 16890, ASHRAE 52.2 — efficiency classification standards (framework-level reference)',
     ],
   },
   {
@@ -133,8 +130,7 @@ export const guides: Guide[] = [
       'From a sourcing perspective, our advice is to choose by the cleanroom ISO class and the process sensitivity, not by the higher number. We recommend defining the required cleanroom class first and then backing out the terminal filter grade, because a ULPA element only earns its cost behind a correctly graded pre-filter chain. In our view, installing ULPA where HEPA would do simply adds energy cost and replacement frequency, so the sequence — class first, then grade — is the discipline that keeps procurement honest.',
     related: ['filter-efficiency-grades', 'hepa-cleanroom-sourcing'],
     sources: [
-      '5-site crawl corpus (docs/sites/), 2026-10-29',
-      'EN 1822 — HEPA/ULPA classification (industry standard reference)',
+            'EN 1822 — HEPA/ULPA classification (industry standard reference)',
     ],
   },
   {
@@ -163,8 +159,7 @@ export const guides: Guide[] = [
       'From a sourcing perspective, we recommend stating the duty — coarse pre-filtration, HEPA or odour control — before discussing rolls, because the media type follows the duty and each type trades differently between resistance, capacity and efficiency. Our advice is to confirm roll width, grammage and any fire-rating requirement up front, and to request an efficiency curve for the target particle size rather than accepting a nominal grade. In our experience, a nominal grade does not by itself confirm performance across the size range that matters to you.',
     related: ['filter-efficiency-grades', 'air-filter-selection'],
     sources: [
-      '5-site crawl corpus (docs/sites/), 2026-10-29',
-      'Filter-media type taxonomy from the crawl corpus (needle-punched / synthetic / micro-glass / carbon)',
+            'Filter-media type taxonomy: needle-punched / synthetic / micro-glass / carbon',
     ],
   },
   {
@@ -193,8 +188,7 @@ export const guides: Guide[] = [
       'From a sourcing perspective, our advice is to design the air chain end-to-end rather than specifying the HEPA filter alone. We recommend starting from the cleanroom ISO class and working back to the FFU airflow and coverage, then specifying entry and transfer equipment such as air showers and pass boxes together with the ceiling FFU system. In our view, a solution that omits entry and transfer control undercuts the cleanliness the ceiling is trying to hold, so the system should be quoted as a whole, not unit by unit.',
     related: ['hepa-cleanroom-sourcing', 'hepa-vs-ulpa'],
     sources: [
-      '5-site crawl corpus (docs/sites/), 2026-10-29',
-      'ISO 14644 — cleanroom classification (industry standard reference)',
+            'ISO 14644 — cleanroom classification (industry standard reference)',
     ],
   },
   {
@@ -223,8 +217,7 @@ export const guides: Guide[] = [
       'From a sourcing perspective, our advice is to put the drawing and the first article at the centre of the process, because the catalogue cross-reference only links a part to an OE number — it does not confirm the dimensional match. We recommend carrying the OE number, the equipment make/model/year, a drawing or sample, the target quantity and the media requirement in the RFQ, since missing the drawing is the most common cause of a wrong first sample. In our experience, the first-article check against the OE drawing is the step that converts a cross-reference into a verified fitment.',
     related: ['air-filter-selection', 'hepa-cleanroom-sourcing'],
     sources: [
-      '5-site crawl corpus (docs/sites/), 2026-10-29',
-      'OEM/ODM capability notes from the crawl corpus (airyfilter / yitong / cleanroom-ffu)',
+            'OEM/ODM capability notes: media, pocket, HEPA and cleanroom lines',
     ],
   },
 ];

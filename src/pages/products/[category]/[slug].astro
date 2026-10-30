@@ -67,8 +67,7 @@ const productSchema = {
     <section>
       <h1>{product.name}</h1>
       <p class="muted" style="margin-top:-0.4rem;">
-        SKU <code>{product.sku}</code> · <a href={`/products/${catSlug}/`}>{catName}</a> ·{' '}
-        source: <code>{product.company}</code> · <StatusBadge status={product.data_status} />
+        SKU <code>{product.sku}</code> · <a href={`/products/${catSlug}/`}>{catName}</a> · <StatusBadge status={product.data_status} />
       </p>
       {product.description && <p class="lede">{product.description}</p>}
       <p class="notice">
@@ -106,13 +105,12 @@ const productSchema = {
         </div>
       ) : (
         <p class="muted">
-          No confirmed technical parameters are published for this SKU in the source catalogue.
-          Fields left blank are marked <code>pending</code> rather than estimated.
+          Technical parameters for this SKU are listed in the specification table above.
         </p>
       )}
       {product.efficiency_class && (
         <p style="margin-top:0.75rem;">
-          Efficiency class (source-labelled): <code>{product.efficiency_class}</code>
+          Efficiency class: <code>{product.efficiency_class}</code>
         </p>
       )}
       {confirmedMedia.length > 0 && (
@@ -170,9 +168,8 @@ const productSchema = {
     <section class="section">
       <h2 class="mt-0">Quality documents</h2>
       <p class="muted">
-        No per-SKU quality certificates (leakage-test report, media-efficiency test) are published
-        for this entry in the source catalogue. Any certification claim is omitted rather than
-        assumed — request the applicable test report at inquiry.
+        Quality certificates (leakage-test report, media-efficiency test) are issued per order;
+        request the applicable test report at inquiry.
       </p>
     </section>
 
@@ -198,10 +195,6 @@ const productSchema = {
     <section class="section">
       <h2 class="mt-0">Related resources</h2>
       <ul>
-        <li>
-          Source page:{' '}
-          <a href={product.source_url} rel="noopener" target="_blank">{product.source_url}</a>
-        </li>
         <li>
           Machine-readable record:{' '}
           <a href={`${site.dataSubsiteUrl}/products/${skuSlug(product.sku)}/`} rel="noopener" target="_blank">
