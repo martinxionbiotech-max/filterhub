@@ -2,7 +2,7 @@
 
 > 阶段：Phase 2 — 架构设计
 > 主站域名（占位）：`chinafilterhub.com`
-> 主站品牌（占位）：**Qinghe Air Filter**（清河滤清器产业集群定位）
+> 主站品牌（占位）：**Qinghe Yinghui Filter**（清河滤清器产业集群定位）
 > 数据子站域名（占位）：`data.chinafilterhub.com`
 > 日期：2026-10-29
 
@@ -43,7 +43,7 @@
 │  ├─ /guides/air-filter-selection/    （支柱 1：空气滤选型）
 │  ├─ /guides/hepa-cleanroom-sourcing/ （支柱 2：HEPA/洁净室采购）
 │  └─ /guides/oem-private-label/       （支柱 3：OEM 私牌）
-├─ /company/              公司/主体（Qinghe Air Filter 占位 + 产业集群）
+├─ /company/              公司/主体（Qinghe Yinghui Filter 占位 + 产业集群）
 ├─ /contact/              联系
 └─ 合规四页 /privacy/ /terms/ /disclaimer/ /cookies/
 ```

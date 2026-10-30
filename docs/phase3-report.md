@@ -2,7 +2,7 @@
 
 > 阶段：Phase 3 — SKU 结构化数据填充 + 品类页/指南集群深化批
 > 日期：2026-10-29
-> 主体（占位）：Qinghe Air Filter · 域名（占位）：chinafilterhub.com · 数据子站：data.chinafilterhub.com
+> 主体（占位）：Qinghe Yinghui Filter · 域名（占位）：chinafilterhub.com · 数据子站：data.chinafilterhub.com
 
 ## 1. SKU 结构化提取
 

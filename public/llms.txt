@@ -1,4 +1,4 @@
-# Qinghe Air Filter (FilterHub)
+# Qinghe Yinghui Filter (FilterHub)
 
 > Main site: https://chinafilterhub.com (placeholder domain chinafilterhub.com)
 > Data subsite: https://data.chinafilterhub.com (placeholder domain)

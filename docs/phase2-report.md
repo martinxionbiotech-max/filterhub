@@ -2,7 +2,7 @@
 
 > 阶段：Phase 2 — 内容整合 + B2B 网站架构设计 + 原创重编加深 + EEAT 规划
 > 日期：2026-10-29
-> 主体（占位）：Qinghe Air Filter · 域名（占位）：chinafilterhub.com · 数据子站：data.chinafilterhub.com
+> 主体（占位）：Qinghe Yinghui Filter · 域名（占位）：chinafilterhub.com · 数据子站：data.chinafilterhub.com
 
 ## 1. 交付物清单
 
@@ -49,7 +49,7 @@
 
 ## 6. EEAT 占位清单
 
-- 品牌名 `Qinghe Air Filter`（provisional，待用户确认）
+- 品牌名 `Qinghe Yinghui Filter`（provisional，待用户确认）
 - 法律实体全称（英/中）、统一社会信用代码、注册地址、成立年份、法定代表人、注册资本、电话/WhatsApp、邮箱 —— 全部 `[provisional: …]`
 - 域名所有权 `chinafilterhub.com`（占位）
 - 工厂面积/员工/产能、认证/资质 —— `pending`（非占位，综合 5 站无主体自身数据）

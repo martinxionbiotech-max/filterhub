@@ -1,4 +1,4 @@
-# Homepage Copy — Qinghe Air Filter (Draft)
+# Homepage Copy — Qinghe Yinghui Filter (Draft)
 
 > Status: content draft (Phase 2). Entity fields are `provisional` (see `docs/eeat-plan.md`); product/technical knowledge is drawn from the 5-site crawl corpus and is original rewording, not copied text.
 
@@ -6,11 +6,11 @@
 
 ## H1
 
-Air, oil, fuel, hydraulic and cleanroom filtration — one Qinghe-based manufacturing partner
+Air, oil, fuel, hydraulic and cleanroom filtration — one Qinghe Yinghui-based manufacturing partner
 
 ## Positioning statement
 
-Qinghe Air Filter consolidates a full-span filter catalogue under a single sourcing relationship. Engine intake air, cabin, oil, fuel, hydraulic and transmission filters sit alongside HVAC, HEPA/ULPA, activated-carbon and cleanroom-grade equipment, so a buyer carrying several categories no longer has to split orders across multiple suppliers.
+Qinghe Yinghui Filter consolidates a full-span filter catalogue under a single sourcing relationship. Engine intake air, cabin, oil, fuel, hydraulic and transmission filters sit alongside HVAC, HEPA/ULPA, activated-carbon and cleanroom-grade equipment, so a buyer carrying several categories no longer has to split orders across multiple suppliers.
 
 > Entity disclosure: the operating legal entity, registration details, factory address and contact channels are marked provisional pending business-licence verification. See the company page.
 

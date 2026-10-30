@@ -32,7 +32,7 @@ def main():
 
     # --- Main site llms.txt ---
     lines = [
-        "# Qinghe Air Filter (FilterHub)",
+        "# Qinghe Yinghui Filter (FilterHub)",
         "",
         f"> Main site: {SITE} (placeholder domain chinafilterhub.com)",
         f"> Data subsite: {DATA_SITE} (placeholder domain)",

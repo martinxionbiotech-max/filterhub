@@ -1,14 +1,14 @@
 # FilterHub EEAT 框架 (E-E-A-T Plan)
 
 > 阶段：Phase 2 — EEAT 规划
-> 主体（占位）：**Qinghe Air Filter**（清河滤清器产业集群定位）
+> 主体（占位）：**Qinghe Yinghui Filter**（清河滤清器产业集群定位）
 > 域名（占位）：`chinafilterhub.com`
 > 日期：2026-10-29
 > 状态：**本文件所有实体字段均为占位符（provisional），无工商核验数据前不写实值。**
 
 ## 1. 主体与占位符纪律
 
-**硬约束（零编造）**：Qinghe Air Filter 为暂定主体，尚无任何工商核验数据（统一社会信用代码、法定代表人、注册资本、注册地址、成立日期、联系电话、邮箱域名所有权）。在取得权威核验（工商/百科/资质/实拍）前：
+**硬约束（零编造）**：Qinghe Yinghui Filter 为暂定主体，尚无任何工商核验数据（统一社会信用代码、法定代表人、注册资本、注册地址、成立日期、联系电话、邮箱域名所有权）。在取得权威核验（工商/百科/资质/实拍）前：
 
 - **品牌名 / 法律实体名 / 地址 / 电话 / 邮箱 / 信用代码 / 成立年份** 一律用显式占位符，格式统一为 `[provisional: <字段>]`。
 - **禁止**写入任何「看起来真实」的实值（哪怕是行业典型值、近似值）。
@@ -18,7 +18,7 @@
 
 | 字段 | 当前状态 | 占位值 | 核验来源 |
 |---|---|---|---|
-| 品牌名 | provisional | `Qinghe Air Filter`（暂定，待确认） | 用户确认 |
+| 品牌名 | provisional | `Qinghe Yinghui Filter`（暂定，待确认） | 用户确认 |
 | 法律实体全称（英） | provisional | `[provisional: legalName]` | 工商核验 |
 | 法律实体全称（中） | provisional | `[provisional: legalNameZh]` | 工商核验 |
 | 统一社会信用代码 | provisional | `[provisional: creditCode]` | 工商核验（CN-USCC） |
@@ -46,7 +46,7 @@
 待工商核验完成后更新为可溯源的权威值。
 ```
 
-**三处口径一致**（Organization schema、页面署名、数据子站 publisher.name）：品牌名用 `Qinghe Air Filter`（不改动），法律实体全称仅在 `legalName` 字段，待核验。
+**三处口径一致**（Organization schema、页面署名、数据子站 publisher.name）：品牌名用 `Qinghe Yinghui Filter`（不改动），法律实体全称仅在 `legalName` 字段，待核验。
 
 ## 3. 清河产业集群背景素材（框架性）
 

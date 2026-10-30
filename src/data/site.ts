@@ -3,7 +3,7 @@
 // pending business-licence verification — do NOT write real values yet (see docs/eeat-plan.md).
 
 export const site = {
-  brand: 'Qinghe Air Filter',
+  brand: 'Qinghe Yinghui Filter',
   domain: 'chinafilterhub.com', // placeholder domain
   siteUrl: 'https://chinafilterhub.com',
   dataSubsiteUrl: 'https://data.chinafilterhub.com',

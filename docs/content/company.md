@@ -1,4 +1,4 @@
-# Company Page Copy — Qinghe Air Filter (Draft)
+# Company Page Copy — Qinghe Yinghui Filter (Draft)
 
 > Status: content draft (Phase 2). All legal-entity fields are `provisional` pending business-licence verification (see `docs/eeat-plan.md`).
 
@@ -6,15 +6,15 @@
 
 ## H1
 
-Qinghe Air Filter — filter manufacturer and exporter
+Qinghe Yinghui Filter — filter manufacturer and exporter
 
 ## Brand-entity-domain disclosure
 
-Qinghe Air Filter is the brand presented on `chinafilterhub.com`. The operating legal entity behind the brand is `[provisional: legalName]` (`[provisional: legalNameZh]`), with unified social credit code `[provisional: creditCode]`, registered at `[provisional: address]`. Brand, entity and domain details are provisional pending business-licence verification, after which they will be replaced with traceable authoritative values.
+Qinghe Yinghui Filter is the brand presented on `chinafilterhub.com`. The operating legal entity behind the brand is `[provisional: legalName]` (`[provisional: legalNameZh]`), with unified social credit code `[provisional: creditCode]`, registered at `[provisional: address]`. Brand, entity and domain details are provisional pending business-licence verification, after which they will be replaced with traceable authoritative values.
 
 ## Positioning
 
-Qinghe Air Filter is positioned within the Qinghe filter industry cluster of Hebei province, a region with an established concentration of filter and auto-parts manufacturers. This cluster positioning is a regional frame of reference; it does not by itself attest to this entity's scale, certifications or customer base, which are disclosed only with a traceable source.
+Qinghe Yinghui Filter is positioned within the Qinghe filter industry cluster of Hebei province, a region with an established concentration of filter and auto-parts manufacturers. This cluster positioning is a regional frame of reference; it does not by itself attest to this entity's scale, certifications or customer base, which are disclosed only with a traceable source.
 
 ## What we make
 

@@ -110,7 +110,7 @@
 见 `docs/site-architecture.md` 的 URL 结构。此处给出品类树与数据子站 category code 的映射，作为主站 `/products/` 与数据子站 `/products/` 的共同骨架：
 
 ```
-Qinghe Air Filter（占位主体）
+Qinghe Yinghui Filter（占位主体）
 ├─ /products/air-filters/          空气滤清器（6 子类）
 ├─ /products/cabin-filters/        空调滤清器
 ├─ /products/oil-filters/          机油滤清器
