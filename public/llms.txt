@@ -20,17 +20,48 @@
 - [Liquid Filter Cartridges](https://chinafilterhub.com/products/liquid-cartridges/): 液体过滤滤芯
 - [Cleanroom Equipment](https://chinafilterhub.com/products/cleanroom-equipment/): 洁净室设备
 
-## Buyer guides
+## Buyer guides (by pillar)
 
+### Selection
 - [Selecting engine intake air filters](https://chinafilterhub.com/guides/air-filter-selection/)
 - [Sourcing HEPA/ULPA filters and cleanroom equipment](https://chinafilterhub.com/guides/hepa-cleanroom-sourcing/)
+
+### Standards
 - [Filter efficiency grades: EN 1822, ISO 16890 and MERV](https://chinafilterhub.com/guides/filter-efficiency-grades/)
 - [HEPA vs ULPA](https://chinafilterhub.com/guides/hepa-vs-ulpa/)
 - [Filter media selection](https://chinafilterhub.com/guides/filter-media-selection/)
+
+### Cleanroom
 - [Cleanroom filtration solutions](https://chinafilterhub.com/guides/cleanroom-filtration-solutions/)
+
+### OEM
 - [OEM filter procurement process](https://chinafilterhub.com/guides/oem-procurement-process/)
 
-## SKUs
+
+## Important SKUs (top models)
+
+- [42N-62-15470 — Air Filter 42N-62-15470 (Komatsu Loader)](https://chinafilterhub.com/products/air-filters/42n-62-15470/)
+- [1542743 — Engine Parts Air Filter 1542743/1660619/475388 (Volvo)](https://chinafilterhub.com/products/air-filters/1542743/)
+- [P822768 — Heavy Duty Machinery Air Filter P822768/P822769 (Case/Cat/Hitachi)](https://chinafilterhub.com/products/air-filters/p822768/)
+- [72880-FG000 — Cabin Air Filter 72880-FG000 (Subaru Forester/WRX/Impreza)](https://chinafilterhub.com/products/cabin-filters/72880-fg000/)
+- [500-0957 — Caterpillar Cabin Air Filter 500-0957 (CAT 5000957)](https://chinafilterhub.com/products/cabin-filters/500-0957/)
+- [90915-YZZA3 — Cabin Air Filter 90915-YZZA3 (Lexus IS300/RX300, Toyota Highlander)](https://chinafilterhub.com/products/cabin-filters/90915-yzza3/)
+- [15208-AD200 — Oil Filter 15208-AD200](https://chinafilterhub.com/products/oil-filters/15208-ad200/)
+- [03C115577A — Oil Filter 03C115577A](https://chinafilterhub.com/products/oil-filters/03c115577a/)
+- [1S7J-6744-BA — Oil Filter 1S7J-6744-BA](https://chinafilterhub.com/products/oil-filters/1s7j-6744-ba/)
+- [23401-1441 — Fuel Filter 23401-1441](https://chinafilterhub.com/products/fuel-filters/23401-1441/)
+- [FS19920 — Fuel Filter FS19920 (Water Separation)](https://chinafilterhub.com/products/fuel-filters/fs19920/)
+- [SH66279 — Hydraulic Oil Filter SH66279/362-1163 (Caterpillar 308C2)](https://chinafilterhub.com/products/hydraulic-filters/sh66279/)
+- [P177047 — Hydraulic Filter Spin-On P177047/1G-8878/6668819 (Bobcat)](https://chinafilterhub.com/products/hydraulic-filters/p177047/)
+- [35330-60070 — Transmission Filter 35330-60070](https://chinafilterhub.com/products/transmission-filters/35330-60070/)
+- [25420-PR0-030 — Transmission Filter 25420-PR0-030 (Honda)](https://chinafilterhub.com/products/transmission-filters/25420-pr0-030/)
+- [AIRY-GEL-HEPA — Gel Seal Mini Pleated HEPA Filter (H14)](https://chinafilterhub.com/products/hepa-filters/airy-gel-hepa/)
+- [EAWAY-HEPA-61061070 — Cleanroom HEPA Filter 610×610×70mm](https://chinafilterhub.com/products/hepa-filters/eaway-hepa-61061070/)
+- [KLC-HT-SEPARATOR — 260/350°C High Temperature Separator Filter](https://chinafilterhub.com/products/hvac-filters/klc-ht-separator/)
+- [YT-METAL-CART — Metal Filter Cartridge (SS304/SS316L/Ti)](https://chinafilterhub.com/products/liquid-cartridges/yt-metal-cart/)
+- [EAWAY-FFU-4848 — Fan Filter Unit (FFU) 48"x48"](https://chinafilterhub.com/products/cleanroom-equipment/eaway-ffu-4848/)
+
+## All SKUs
 
 - [42N-62-15470 — Air Filter 42N-62-15470 (Komatsu Loader)](https://chinafilterhub.com/products/air-filters/42n-62-15470/)
 - [P778989 — Air Compressor Air Filter P778989 (Mitsubishi L200/Storm)](https://chinafilterhub.com/products/air-filters/p778989/)
@@ -101,7 +132,7 @@
 - [AIRY-CEILING — F5 / MERV 5 Synthetic Fiber Ceiling Air Filter Roll](https://chinafilterhub.com/products/filter-media/airy-ceiling/)
 - [KLC-24X24-HEPA — 24x24 HEPA Filter](https://chinafilterhub.com/products/hepa-filters/klc-24x24-hepa/)
 - [KLC-PTFE-ULPA — PTFE ULPA / HEPA / Sub-HEPA Mini-pleat Filter](https://chinafilterhub.com/products/hepa-filters/klc-ptfe-ulpa/)
-- [KLC-HT-HEPA — High Temperature HEPA Filter](https://chinafilterhub.com/products/hepa-filters/klc-ht-hepa/)
+- [KLC-HT-HEPA — High Temperature HEPA Filter (KLC)](https://chinafilterhub.com/products/hepa-filters/klc-ht-hepa/)
 - [KLC-HT-SEPARATOR — 260/350°C High Temperature Separator Filter](https://chinafilterhub.com/products/hvac-filters/klc-ht-separator/)
 - [KLC-MED-VBANK — Medium V-bank Filter](https://chinafilterhub.com/products/hvac-filters/klc-med-vbank/)
 - [KLC-MERV8 — MERV 8 Pleated Filter](https://chinafilterhub.com/products/hvac-filters/klc-merv8/)
@@ -130,7 +161,7 @@
 - [EAWAY-GEL-HEPA — Gel HEPA Filter](https://chinafilterhub.com/products/hepa-filters/eaway-gel-hepa/)
 - [EAWAY-SEPARATOR-HEPA — Separator HEPA Filter for Clean Room](https://chinafilterhub.com/products/hepa-filters/eaway-separator-hepa/)
 - [EAWAY-CASSETTE-HEPA — HEPA Filter Cassette (6 or 12 inch)](https://chinafilterhub.com/products/hepa-filters/eaway-cassette-hepa/)
-- [EAWAY-HT-HEPA — High Temperature HEPA Filter](https://chinafilterhub.com/products/hepa-filters/eaway-ht-hepa/)
+- [EAWAY-HT-HEPA — High Temperature HEPA Filter (EAWAY)](https://chinafilterhub.com/products/hepa-filters/eaway-ht-hepa/)
 - [EAWAY-FLAT-F5 — Metal Frame Flat Pre Air Filter F5](https://chinafilterhub.com/products/hvac-filters/eaway-flat-f5/)
 - [EAWAY-SUS-G4 — SUS Frame Washable Pleated Air Filter G4](https://chinafilterhub.com/products/hvac-filters/eaway-sus-g4/)
 - [EAWAY-AIR-SHOWER — Cleanroom Air Shower](https://chinafilterhub.com/products/cleanroom-equipment/eaway-air-shower/)
