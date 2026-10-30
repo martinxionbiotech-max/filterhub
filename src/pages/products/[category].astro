@@ -25,6 +25,35 @@ const materials = [
 const applications = [
   ...new Set(skus.flatMap((p) => p.application.map((a) => a.medium)).filter(Boolean)),
 ];
+
+// Representative imagery for the six main category pages (industrial, text-free).
+const categoryImages: Record<string, { src: string; alt: string }> = {
+  'air-filters': {
+    src: '/images/ai/category-air-filters.webp',
+    alt: 'Pleated panel engine air filter cartridge with white synthetic media in a metal frame',
+  },
+  'hepa-filters': {
+    src: '/images/ai/category-hepa-filters.webp',
+    alt: 'Folded pleated HEPA filter element with dense white micro-glass media',
+  },
+  'pocket-filters': {
+    src: '/images/ai/category-pocket-filters.webp',
+    alt: 'Row of white fabric filter bags in a metal air-handling frame',
+  },
+  'cleanroom-equipment': {
+    src: '/images/ai/category-cleanroom-equipment.webp',
+    alt: 'Cleanroom fan filter unit ceiling module with a stainless steel laminar flow panel',
+  },
+  'oil-filters': {
+    src: '/images/ai/category-oil-filters.webp',
+    alt: 'Spin-on oil filter canister with ribbed metal body and rubber gasket',
+  },
+  'filter-media': {
+    src: '/images/ai/category-filter-media.webp',
+    alt: 'Macro view of a non-woven filter media fibre web',
+  },
+};
+const catImage = categoryImages[category.slug];
 ---
 
 <BaseLayout title={category.name} description={category.summary} breadcrumbs={breadcrumbs}>
@@ -39,6 +68,19 @@ const applications = [
       <p style="margin-top:1rem;">
         <strong>Sub-categories:</strong> {category.subcategories.join(' · ')}
       </p>
+    )}
+
+    {catImage && (
+      <figure style="margin:1.5rem 0 0;">
+        <img
+          src={catImage.src}
+          alt={catImage.alt}
+          width="1200"
+          height="675"
+          loading="lazy"
+          style="width:100%;height:auto;border-radius:var(--radius-lg);border:1px solid var(--line);display:block;"
+        />
+      </figure>
     )}
 
     {/* At-a-glance comparison table */}

@@ -13,6 +13,14 @@ const totalCategories = categories.length;
   description="Qinghe Air Filter consolidates a full-span filter catalogue — engine intake, oil, fuel, hydraulic, HVAC, HEPA/ULPA, activated carbon and cleanroom equipment — under one sourcing relationship."
 >
   <section class="hero">
+    <img
+      class="hero-bg"
+      src="/images/ai/hero-filtration.webp"
+      alt="Pleated air filter with orange airflow particles streaming through the folds against a deep navy background"
+      width="1600"
+      height="900"
+    />
+    <div class="hero-overlay" aria-hidden="true"></div>
     <div class="wrap">
       <p class="eyebrow eyebrow--on-dark">Filter manufacturer &amp; exporter</p>
       <h1 style="max-width:20ch;margin-top:0.35rem;">
@@ -100,6 +108,20 @@ const totalCategories = categories.length;
 </BaseLayout>
 
 <style>
+  .hero { position: relative; overflow: hidden; }
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(160deg, rgba(8, 29, 48, 0.9) 0%, rgba(15, 42, 67, 0.82) 55%, rgba(22, 58, 92, 0.7) 100%);
+  }
+  .hero .wrap { position: relative; z-index: 1; }
   .category-card {
     display: flex;
     align-items: flex-start;
