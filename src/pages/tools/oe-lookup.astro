@@ -1,0 +1,163 @@
+---
+// OE cross-reference lookup (Phase 9 — lightweight static tool).
+//
+// Data-backed only: the index is built from src/data/products.json `oe_reference`
+// fields (67 published OE entries across 50 SKUs). No vehicle-compatibility
+// database exists, so the tool matches a query against PUBLISHED OE numbers and
+// returns the catalogue record — it never claims a verified fitment. Where no
+// catalogue match exists, the user is directed to the RFQ for human confirmation.
+//
+// Honesty discipline: every result carries the "cross-reference, not a verified
+// fitment" notice, and unmatched queries always request human confirmation rather
+// than guessing.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { site } from '../../data/site';
+import { products, skuSlug } from '../../data/products';
+
+function norm(s: string): string {
+  return s.toLowerCase().replace(/[^a-z0-9]/g, '');
+}
+
+interface IndexEntry {
+  key: string; // normalised search key
+  oe: string; // display OE number
+  sku: string;
+  name: string;
+  href: string;
+}
+
+const index: IndexEntry[] = [];
+const seen = new Set<string>();
+
+for (const p of products) {
+  const href = `/products/${p.category}/${skuSlug(p.url_slug || p.sku)}/`;
+  // Searchable by SKU code and URL slug too (not just OE numbers).
+  const aliases = [
+    ...p.oe_reference.map((o) => o.oe_number),
+    p.sku,
+    p.url_slug || p.sku,
+  ];
+  for (const alias of aliases) {
+    const key = norm(alias);
+    if (!key || seen.has(`${p.sku}::${key}`)) continue;
+    seen.add(`${p.sku}::${key}`);
+    // Prefer the first OE number as the display label; fall back to SKU.
+    const oe = p.oe_reference[0]?.oe_number ?? p.sku;
+    index.push({ key, oe, sku: p.sku, name: p.name, href });
+  }
+}
+
+const indexJson = JSON.stringify(index);
+const oeCount = new Set(index.map((e) => e.oe)).size;
+const skuCount = new Set(index.map((e) => e.sku)).size;
+
+const breadcrumbs = [
+  { label: 'OE cross-reference lookup', href: '/tools/oe-lookup/' },
+];
+---
+
+<BaseLayout
+  title="OE Cross-Reference Lookup"
+  description="Look up a published OE or manufacturer part number against the China Filter Hub catalogue. Cross-references are discovery aids, not verified fitments."
+  breadcrumbs={breadcrumbs}
+>
+  <main class="wrap" style="padding-top:2rem;max-width:760px;">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> / Tools / OE cross-reference lookup</nav>
+    <h1>OE cross-reference lookup</h1>
+    <p class="lede">
+      Find the catalogue record that publishes a given OE or manufacturer part number. The index
+      covers {oeCount} published OE numbers across {skuCount} SKUs.
+    </p>
+
+    <div class="lookup" style="margin-top:1.5rem;">
+      <label class="sr-only" for="oe-input">OE or manufacturer part number</label>
+      <input
+        id="oe-input"
+        type="text"
+        placeholder="e.g. 42N-62-15470 · P822768 · 90915-YZZA3"
+        autocomplete="off"
+        style="width:100%;"
+      />
+    </div>
+
+    <div id="results" style="margin-top:1.25rem;"></div>
+
+    <p class="notice" style="margin-top:1.5rem;">
+      A cross-reference links a part to an OE number; it does not by itself confirm a dimensional
+      match. The database does not verify vehicle compatibility — confirm specifications against
+      the OE drawing before ordering.
+    </p>
+    <p class="muted small" style="margin-top:1rem;">
+      No match? Send the OE number or drawing through the{' '}
+      <a href="/rfq/">RFQ form</a> for human confirmation.
+    </p>
+  </main>
+</BaseLayout>
+
+<script>
+  const INDEX: { key: string; oe: string; sku: string; name: string; href: string }[] =
+    JSON.parse(document.getElementById('oe-data')!.textContent!);
+
+  const input = document.getElementById('oe-input') as HTMLInputElement;
+  const results = document.getElementById('results') as HTMLDivElement;
+
+  const norm = (s: string) => s.toLowerCase().replace(/[^a-z0-9]/g, '');
+
+  function render(items: { oe: string; sku: string; name: string; href: string }[]) {
+    if (!items.length) {
+      results.innerHTML = `
+        <div class="card" style="border-color:var(--orange-300);">
+          <strong style="color:var(--navy-800);">No catalogue match</strong>
+          <p class="muted small" style="margin:0.4rem 0 0;">
+            This part number is not in the published cross-reference index. Send it (or a drawing)
+            through the <a href="/rfq/">RFQ form</a> for human confirmation — the database does not
+            verify vehicle compatibility.
+          </p>
+        </div>`;
+      return;
+    }
+    const dedup = new Map<string, typeof items[0]>();
+    for (const it of items) if (!dedup.has(it.sku)) dedup.set(it.sku, it);
+    results.innerHTML = [...dedup.values()]
+      .map(
+        (it) => `
+        <a class="card card--link" href="${it.href}" style="display:block;margin-bottom:0.75rem;">
+          <p class="muted small" style="margin:0 0 0.2rem;">OE / part: <code>${it.oe}</code></p>
+          <strong style="color:var(--navy-800);">${it.name}</strong>
+          <p class="muted small" style="margin:0.3rem 0 0;">SKU <code>${it.sku}</code> · open catalogue record →</p>
+        </a>`
+      )
+      .join('');
+  }
+
+  input.addEventListener('input', () => {
+    const q = norm(input.value);
+    if (q.length < 2) {
+      results.innerHTML = '';
+      return;
+    }
+    // Exact normalised match first, then prefix/substring.
+    const exact = INDEX.filter((e) => e.key === q);
+    const partial = INDEX.filter((e) => e.key !== q && (e.key.startsWith(q) || e.key.includes(q)));
+    render([...exact, ...partial]);
+  });
+</script>
+
+<script type="application/json" id="oe-data" set:html={indexJson} />
+
+<style>
+  .lookup input {
+    padding: 0.75rem 0.9rem;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    font: inherit;
+    font-size: 1.05rem;
+    color: var(--ink);
+    background: var(--surface);
+  }
+  .lookup input:focus {
+    outline: 2px solid var(--orange-500);
+    outline-offset: 1px;
+    border-color: var(--orange-500);
+  }
+</style>
