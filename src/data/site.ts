@@ -22,6 +22,7 @@ export const site = {
     address:
       'North of Minjiang Street, west of Jiuhuashan Road, Qinghe County, Xingtai City, Hebei Province, China',
     email: 'Martin@chinafilterhub.com',
+    emailAlt: 'martin@dwycorp.com',
     phone: '+86 13323237275',
     whatsappLink: 'https://wa.me/8613323237275',
     foundingDate: '2017-10-10', // legal-entity incorporation date

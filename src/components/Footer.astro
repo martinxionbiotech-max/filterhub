@@ -35,7 +35,7 @@ const { site, complianceLinks } = Astro.props;
     <div>
       <p class="footer-label">Contact</p>
       <ul>
-        <li><strong>Email:</strong> <a href={`mailto:${site.entity.email}`}>{site.entity.email}</a></li>
+        <li><strong>Email:</strong> <a href={`mailto:${site.entity.email}`}>{site.entity.email}</a> · <a href={`mailto:${site.entity.emailAlt}`}>{site.entity.emailAlt}</a></li>
         <li><strong>Phone | WeChat:</strong> {site.entity.phone}</li>
         <li style="margin-top:0.5rem;"><a class="btn wa-btn" href={site.entity.whatsappLink} target="_blank" rel="noopener">💬 Chat on WhatsApp Now</a></li>
       </ul>
