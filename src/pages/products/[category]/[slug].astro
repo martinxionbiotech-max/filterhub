@@ -12,6 +12,7 @@ import {
   skuSlug,
   type Product,
 } from '../../../data/products';
+import { pillarForCategory, isAutomotiveCategory } from '../../../data/pillars';
 
 export function getStaticPaths() {
   return products.map((p) => ({
@@ -23,10 +24,18 @@ export function getStaticPaths() {
 const { product } = Astro.props as { product: Product };
 const catSlug = categorySlug(product.category);
 const catName = categoryName(product.category);
-const depth = skuDepth[product.sku];
+const depth = skuDepth[skuSlug(product.url_slug || product.sku)];
 const relatedGuides = (categoryGuides[catSlug] ?? [])
   .map((slug) => guides.find((g) => g.slug === slug))
   .filter(Boolean);
+
+// Related products: sibling SKUs in the same category (max 4), excluding self.
+const relatedProducts = products
+  .filter((p) => p.category === product.category && p.sku !== product.sku)
+  .slice(0, 4);
+
+const pillar = pillarForCategory(catSlug);
+const isAutomotive = isAutomotiveCategory(catSlug);
 
 const breadcrumbs = [
   { label: 'Products', href: '/products/' },
@@ -97,8 +106,9 @@ const productSchema = {
         This is a catalogue reference entry, not a verified fitment. Request a quotation with the
         SKU or OE number and confirm the spec sheet before ordering.
       </p>
-      <p style="margin-top:1.25rem;">
-        <a class="btn btn-primary" href="/contact/">Request quotation for {product.sku} →</a>
+      <p style="margin-top:1rem;">
+        <a class="btn btn-primary" href="/rfq/">Request quotation for {product.sku} →</a>
+        <a class="btn btn-ghost" href="/contact/" style="margin-left:0.5rem;">Other channels</a>
       </p>
     </section>
 
@@ -222,22 +232,50 @@ const productSchema = {
       </p>
     </section>
 
-    {/* 6. Related resources */}
+    {/* 6. Related products & guides (Phase 5 template) */}
+    {relatedProducts.length > 0 && (
+      <section class="section">
+        <h2 class="mt-0">Related products</h2>
+        <p class="muted small">Other catalogue SKUs in {catName}.</p>
+        <ul>
+          {relatedProducts.map((p) => (
+            <li>
+              <a href={`/products/${catSlug}/${skuSlug(p.url_slug || p.sku)}/`}>
+                <code>{p.sku}</code> — {p.name}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+
+    {relatedGuides.length > 0 && (
+      <section class="section">
+        <h2 class="mt-0">Related guides</h2>
+        <ul>
+          {relatedGuides.map((g) => (
+            <li><a href={`/guides/${g!.slug}/`}>{g!.title}</a></li>
+          ))}
+        </ul>
+      </section>
+    )}
+
+    {/* 7. Related resources */}
     <section class="section">
       <h2 class="mt-0">Related resources</h2>
       <ul>
+        {pillar && (
+          <li>
+            Pillar: <a href={`/pillars/${pillar.slug}/`}>{pillar.name}</a>
+          </li>
+        )}
         <li>
           Category overview: <a href={`/products/${catSlug}/`}>{catName}</a>
         </li>
-        {relatedGuides.length > 0 && (
+        {isAutomotive && (
           <li>
-            Buyer guides:{' '}
-            {relatedGuides.map((g, i) => (
-              <>
-                {i > 0 && ' · '}
-                <a href={`/guides/${g!.slug}/`}>{g!.title}</a>
-              </>
-            ))}
+            Manufacturer: <a href="/company/">Qinghe Huiying manufacturing</a> ·{' '}
+            <a href="/factory/">factory &amp; quality control</a>
           </li>
         )}
         <li>

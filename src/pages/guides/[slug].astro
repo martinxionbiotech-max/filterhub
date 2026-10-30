@@ -3,7 +3,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import { guides, type Guide } from '../../data/guides';
 import { categories } from '../../data/categories';
 import { guideCategories, guideSkus, guideCommercialLinks } from '../../data/link-map';
-import { productBySku, categorySlug, skuSlug } from '../../data/products';
+import { productBySlug, categorySlug, skuSlug } from '../../data/products';
+import { pillarForGuide } from '../../data/pillars';
 
 export function getStaticPaths() {
   return guides.map((g) => ({ params: { slug: g.slug }, props: { guide: g } }));
@@ -16,10 +17,11 @@ const relatedCategories = (guideCategories[guide.slug] ?? [])
 
 // Featured SKUs (top models) resolved to full catalogue records.
 const featuredSkus = (guideSkus[guide.slug] ?? [])
-  .map((sku) => productBySku(sku))
+  .map((sku) => productBySlug(sku))
   .filter(Boolean);
 
 const commercialLinks = guideCommercialLinks[guide.slug] ?? [];
+const pillar = pillarForGuide(guide.slug);
 
 const breadcrumbs = [
   { label: 'Buyer Guides', href: '/guides/' },
@@ -147,6 +149,18 @@ const articleSchema = {
       </section>
     )}
 
+    {pillar && (
+      <section id="related-pillar">
+        <div class="pillar-cta">
+          <h2 style="color:#fff;">{pillar.name}</h2>
+          <p style="color:#c4d3e2;max-width:60ch;">{pillar.positioning}</p>
+          <p style="margin:0;">
+            <a class="btn btn-primary" href={`/pillars/${pillar.slug}/`} style="background:#fff;color:var(--navy-800);">Explore the {pillar.shortName} pillar →</a>
+          </p>
+        </div>
+      </section>
+    )}
+
     <section id="sources">
       <h2>Sources</h2>
       <ul>
@@ -157,3 +171,14 @@ const articleSchema = {
     <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
   </main>
 </BaseLayout>
+
+<style>
+  .pillar-cta {
+    background: linear-gradient(160deg, var(--navy-900) 0%, var(--navy-700) 100%);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem 1.6rem;
+    color: #eaf1f7;
+  }
+  .pillar-cta h2 { color: #fff; }
+  .pillar-cta p { margin: 0 0 1em; }
+</style>

@@ -6,6 +6,7 @@ import { guides } from '../../data/guides';
 import { categoryGuides } from '../../data/link-map';
 import { site } from '../../data/site';
 import { productsByCategory, skuSlug, codeFromSlug } from '../../data/products';
+import { pillarForCategory, isAutomotiveCategory } from '../../data/pillars';
 
 export function getStaticPaths() {
   return categories.map((c) => ({ params: { category: c.slug }, props: { category: c } }));
@@ -17,6 +18,8 @@ const skus = productsByCategory(code);
 const relatedGuides = (categoryGuides[category.slug] ?? [])
   .map((slug) => guides.find((g) => g.slug === slug))
   .filter(Boolean);
+const pillar = pillarForCategory(category.slug);
+const isAutomotive = isAutomotiveCategory(category.slug);
 const breadcrumbs = [
   { label: 'Products', href: '/products/' },
   { label: category.name, href: `/products/${category.slug}/` },
@@ -197,6 +200,18 @@ const catImage = categoryImages[category.slug];
       </section>
     )}
 
+    {pillar && (
+      <section class="section">
+        <div class="pillar-cta">
+          <h2 class="mt-0" style="color:#fff;">Explore the {pillar.name} pillar</h2>
+          <p style="color:#c4d3e2;">{pillar.positioning}</p>
+          <p style="margin:0;">
+            <a class="btn btn-navy" href={`/pillars/${pillar.slug}/`} style="background:#fff;color:var(--navy-800);">View the {pillar.shortName} pillar →</a>
+          </p>
+        </div>
+      </section>
+    )}
+
     {skus.length > 0 && (
       <section class="section">
         <div class="section-head">
@@ -240,5 +255,36 @@ const catImage = categoryImages[category.slug];
       <a href={`${site.dataSubsiteUrl}/products/${category.slug}/`} rel="noopener" target="_blank">data subsite</a>{' '}
       rather than estimated.
     </p>
+
+    {/* Phase 5 · quotation CTA (matched to product-page intent) */}
+    <section class="section">
+      <div class="cta-band">
+        <h2 class="mt-0" style="color:#fff;">Request a quotation</h2>
+        <p style="max-width:60ch;color:#c4d3e2;">
+          Send the SKU or OE number, a drawing or sample, and a target quantity for {category.name}.
+          MOQ and lead time are quoted per line; indicative pricing is confirmed on quotation.
+        </p>
+        <p style="margin:0;">
+          <a class="btn btn-primary" href="/rfq/">Request quotation →</a>
+          <a class="btn btn-ghost" href="/contact/" style="margin-left:0.5rem;">Contact us</a>
+        </p>
+      </div>
+    </section>
   </main>
 </BaseLayout>
+
+<style>
+  .pillar-cta {
+    background: linear-gradient(160deg, var(--navy-900) 0%, var(--navy-700) 100%);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem 1.6rem;
+    color: #eaf1f7;
+  }
+  .cta-band {
+    background: linear-gradient(160deg, var(--navy-900) 0%, var(--navy-700) 100%);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem 1.6rem;
+    border-bottom: 4px solid var(--orange-600);
+  }
+  .cta-band h2 { color: #fff; }
+</style>
