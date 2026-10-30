@@ -129,6 +129,17 @@ export function productBySku(sku: string): Product | undefined {
   return products.find((p) => p.sku === sku);
 }
 
+/**
+ * Look up a product by its URL slug (case-insensitive, matches `url_slug` first
+ * then falls back to the SKU). This is the correct resolver for `guideSkus`
+ * values and any legacy OE/manufacturer codes, which are stored under `url_slug`
+ * rather than under the CFH SKU.
+ */
+export function productBySlug(slug: string): Product | undefined {
+  const key = skuSlug(slug);
+  return products.find((p) => skuSlug(p.url_slug || p.sku) === key);
+}
+
 /** Number of SKUs per category slug (single data source for the homepage count). */
 export function categoryCount(slug: string): number {
   return productsByCategory(slug).length;

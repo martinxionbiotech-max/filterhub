@@ -62,14 +62,63 @@ export const guideSkus: Record<string, string[]> = {
 /**
  * guide slug -> commercial/static pages (non-category, non-SKU destinations).
  * Rendered on guide pages after the category links.
+ *
+ * Boundary discipline: automotive (P1) and OEM (P4) guides may link to Huiying
+ * manufacturing (/company/, /factory/). Industrial/HVAC (P3) and filter-technology
+ * (P2) guides link to generic /rfq/ + /contact/ + a relevant category — never to
+ * Huiying manufacturing pages.
  */
 export const guideCommercialLinks: Record<string, { label: string; href: string }[]> = {
+  // P1 — automotive filters (Huiying-manufactured)
+  'air-filter-selection': [
+    { label: 'Discuss an OEM project', href: '/oem/' },
+    { label: 'Qinghe Huiying manufacturing', href: '/company/' },
+    { label: 'Factory & quality control', href: '/factory/' },
+  ],
+  'cabin-vs-engine-air-filter': [
+    { label: 'Discuss an OEM project', href: '/oem/' },
+    { label: 'Qinghe Huiying manufacturing', href: '/company/' },
+  ],
+  'oil-filter-types': [
+    { label: 'Discuss an OEM project', href: '/oem/' },
+    { label: 'Qinghe Huiying manufacturing', href: '/company/' },
+    { label: 'Factory & quality control', href: '/factory/' },
+  ],
+  // P4 — OEM & wholesale
   'oem-procurement-process': [
     { label: 'OEM / Private Label', href: '/oem/' },
-    { label: 'Product Centre', href: '/products/' },
+    { label: 'Qinghe Huiying manufacturing', href: '/company/' },
+    { label: 'Submit an RFQ', href: '/rfq/' },
   ],
   'filter-moq-lead-time': [
     { label: 'OEM / Private Label', href: '/oem/' },
-    { label: 'Contact & RFQ', href: '/contact/' },
+    { label: 'Qinghe Huiying manufacturing', href: '/company/' },
+    { label: 'Submit an RFQ', href: '/rfq/' },
+  ],
+  // P2 — filter technology (platform content, not Huiying-manufactured)
+  'filter-efficiency-grades': [
+    { label: 'Explore filter media', href: '/products/filter-media/' },
+    { label: 'Submit an RFQ', href: '/rfq/' },
+  ],
+  'filter-media-selection': [
+    { label: 'Explore filter media', href: '/products/filter-media/' },
+    { label: 'Submit an RFQ', href: '/rfq/' },
+  ],
+  'efficiency-vs-pressure-drop': [
+    { label: 'Explore filter media', href: '/products/filter-media/' },
+    { label: 'Submit an RFQ', href: '/rfq/' },
+  ],
+  // P3 — industrial / HVAC (platform content, not Huiying-manufactured)
+  'hepa-cleanroom-sourcing': [
+    { label: 'Explore HEPA / ULPA filters', href: '/products/hepa-filters/' },
+    { label: 'Submit an RFQ', href: '/rfq/' },
+  ],
+  'hepa-vs-ulpa': [
+    { label: 'Explore HEPA / ULPA filters', href: '/products/hepa-filters/' },
+    { label: 'Submit an RFQ', href: '/rfq/' },
+  ],
+  'cleanroom-filtration-solutions': [
+    { label: 'Explore cleanroom equipment', href: '/products/cleanroom-equipment/' },
+    { label: 'Submit an RFQ', href: '/rfq/' },
   ],
 };

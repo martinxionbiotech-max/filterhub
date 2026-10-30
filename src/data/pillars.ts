@@ -152,9 +152,12 @@ export const pillars: Pillar[] = [
       'Procurement process, private label, MOQ/lead time and RFQ preparation for OEM and wholesale buyers.',
     topics: [
       { label: 'OEM & private label', href: '/oem/' },
+      { label: 'Private-label supply', href: '/private-label/' },
+      { label: 'Wholesale & distributor cooperation', href: '/wholesale/' },
+      { label: 'Request a quotation', href: '/rfq/' },
       { label: 'Automotive filter OEM manufacturing guide', href: '/guides/oem-procurement-process/' },
       { label: 'Automotive filter MOQ, lead time and pricing', href: '/guides/filter-moq-lead-time/' },
-      { label: 'Contact & RFQ', href: '/contact/' },
+      { label: 'Contact', href: '/contact/' },
     ],
     conclusions: [
       'The RFQ carries the fitment — OE number, drawing, target quantity and media requirement — and the drawing is what locks the match, not the cross-reference.',
@@ -182,7 +185,10 @@ export const pillars: Pillar[] = [
       { label: 'Company & legal entity', href: '/company/' },
       { label: 'Factory & quality control', href: '/factory/' },
       { label: 'OEM & private label', href: '/oem/' },
+      { label: 'Private-label supply', href: '/private-label/' },
+      { label: 'Wholesale & distributor cooperation', href: '/wholesale/' },
       { label: 'Automotive filter products', href: '/products/air-filters/' },
+      { label: 'Request a quotation', href: '/rfq/' },
       { label: 'Contact', href: '/contact/' },
     ],
     conclusions: [
@@ -208,4 +214,24 @@ export const pillars: Pillar[] = [
 
 export function getPillar(slug: string): Pillar | undefined {
   return pillars.find((p) => p.slug === slug);
+}
+
+/** Resolve the pillar a category belongs to (primary pillar wins: p1 before p5). */
+export function pillarForCategory(slug: string): Pillar | undefined {
+  return pillars.find((p) => p.categories.includes(slug));
+}
+
+/** Resolve the pillar a guide belongs to. */
+export function pillarForGuide(slug: string): Pillar | undefined {
+  return pillars.find((p) => p.guides.includes(slug));
+}
+
+/**
+ * Whether a category is an automotive (Huiying-manufactured) category.
+ * Only the six P1 categories are Huiying-manufactured; industrial/HVAC/HEPA/ULPA
+ * and liquid categories are platform content and must NOT be linked to Huiying
+ * manufacturing pages.
+ */
+export function isAutomotiveCategory(slug: string): boolean {
+  return pillars.find((p) => p.key === 'p1')?.categories.includes(slug) ?? false;
 }
