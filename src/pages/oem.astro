@@ -1,10 +1,19 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { site } from '../data/site';
+
+const mailtoSubject = 'RFQ — filter inquiry';
+const mailtoBody = [
+  'SKU or OE number:',
+  'Drawing or sample:',
+  'Target quantity:',
+  'Media / efficiency / packaging requirements:',
+].join('\n');
 ---
 
 <BaseLayout
   title="OEM & Private Label"
-  description="OEM and ODM manufacturing for standard and custom filter sizes, from prototyping to production."
+  description="OEM and ODM manufacturing for standard and custom filter sizes — prototyping, private-label packaging, MOQ, lead time and inquiry guidance."
   breadcrumbs={[{ label: 'OEM / Private Label', href: '/oem/' }]}
 >
   <main class="wrap" style="padding-top:2rem;">
@@ -12,8 +21,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <h1>OEM &amp; Private Label</h1>
 
     <p class="lede" style="max-width:70ch;">
-      OEM and ODM manufacturing is supported for standard and custom sizes. The process runs from
-      prototyping through to production, including filter media at low minimum order quantities.
+      OEM and ODM manufacturing is supported for standard and custom sizes, from prototyping through
+      to production, including filter media at low minimum order quantities.
     </p>
 
     <section>
@@ -43,8 +52,57 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </ol>
     </section>
 
-    <p class="notice">
-      MOQ and lead time are quoted per line. Indicative pricing is confirmed on quotation.
-    </p>
+    <section>
+      <h2>Sampling and prototyping</h2>
+      <p>
+        For custom or OE-matched work, the sequence is sample-first: confirm the specification, produce
+        a prototype or first article, and submit it against the OE drawing for approval before serial
+        production. The approved sample is put on file as the reference for every subsequent batch.
+      </p>
+    </section>
+
+    <section>
+      <h2>Private label and packaging</h2>
+      <div class="table-wrap">
+        <table class="data">
+          <thead>
+            <tr><th scope="col">Condition</th><th scope="col">Options</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Branding</strong></td><td>Your own brand or neutral (unbranded) marking.</td></tr>
+            <tr><td><strong>Packaging</strong></td><td>Plain carton, retail box, polybag or custom-printed packaging.</td></tr>
+            <tr><td><strong>Labelling</strong></td><td>Barcode, part number and logo per your artwork.</td></tr>
+            <tr><td><strong>Marking</strong></td><td>Multi-SKU runs supported across standard and custom sizes.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>MOQ and lead time</h2>
+      <p>
+        MOQ and lead time are quoted per line. Standard sizes ship faster; custom sizes and
+        private-label packaging add lead time. Filter media is available at a low minimum order
+        quantity, which makes this a prototyping-to-production bridge for integrators.
+      </p>
+    </section>
+
+    <section>
+      <h2>Start an inquiry</h2>
+      <p>
+        Send the SKU or OE number, a drawing or sample, and a target quantity. We respond with an
+        MOQ, lead-time and price indication per line.
+      </p>
+      <p style="margin-top:1rem;">
+        <a class="btn btn-primary" href={`mailto:${site.entity.email}?subject=${encodeURIComponent(mailtoSubject)}&body=${encodeURIComponent(mailtoBody)}`}>
+          Email an inquiry →
+        </a>
+        <a class="btn btn-ghost" href="/contact/" style="margin-left:0.5rem;">Other channels</a>
+      </p>
+      <p class="muted small" style="margin-top:0.75rem;">
+        The email address is provisional pending domain ownership verification; see the contact page
+        for the current channels.
+      </p>
+    </section>
   </main>
 </BaseLayout>

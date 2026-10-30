@@ -5,7 +5,7 @@ import { site } from '../data/site';
 
 <BaseLayout
   title="Factory & Quality Control"
-  description="Manufacturing and quality-control approach for the Qinghe filter industry cluster, with production equipment and testing standards."
+  description="Manufacturing process and quality-control framework (IQC/IPQC/FQC/OQC) for the Qinghe filter industry cluster, with equipment categories and industry-reference capacity."
   breadcrumbs={[{ label: 'Factory', href: '/factory/' }]}
 >
   <main class="wrap" style="padding-top:2rem;">
@@ -30,12 +30,12 @@ import { site } from '../data/site';
     </figure>
 
     <section>
-      <h2>Production capability (industry reference)</h2>
+      <h2>Production process (industry reference)</h2>
       <p>
-        Filter manufacturing in this cluster typically spans several dedicated lines — air-filter
-        assembly, HEPA mini-pleat and separator pleating, filter-media production, and cleanroom
-        equipment assembly. The following capability descriptions are drawn from the industry cluster
-        reference corpus and are <em>not</em> presented as this entity's verified equipment list:
+        Filter manufacturing in this cluster typically runs in a media-to-finish sequence: filter-media
+        production, pleating, frame forming, element assembly, and final testing. The following line
+        descriptions are drawn from the industry cluster reference corpus and are <em>not</em> presented
+        as this entity's verified equipment list:
       </p>
       <div class="table-wrap">
         <table class="data">
@@ -46,6 +46,7 @@ import { site } from '../data/site';
             <tr><td><strong>Filter media lines</strong></td><td>Needle-punched and synthetic-fibre media production with lamination.</td></tr>
             <tr><td><strong>HEPA pleating</strong></td><td>Separator and mini-pleat lines using micro-glass media (pleat depths 20–100 mm).</td></tr>
             <tr><td><strong>Frame forming</strong></td><td>Galvanised and stainless frame welding and forming.</td></tr>
+            <tr><td><strong>Element assembly</strong></td><td>Panel, round, cartridge and pocket element assembly with seal application.</td></tr>
             <tr><td><strong>Quality testing</strong></td><td>Efficiency, leakage and pressure-drop test equipment.</td></tr>
           </tbody>
         </table>
@@ -53,14 +54,41 @@ import { site } from '../data/site';
     </section>
 
     <section>
-      <h2>Quality control</h2>
+      <h2>Quality-control gates</h2>
       <p>
-        Quality control follows a label discipline: every specification field carries a
-        data-status label (<code>verified</code> / <code>catalog-confirmed</code> / <code>reference</code> /{' '}
-        <code>pending</code>). HEPA elements are leak-tested before dispatch where a factory
-        leakage-test certificate is specified. The{' '}
+        Quality control in this industry is organised as a four-gate sequence. These are the standard
+        in-process gates a filter plant applies, described as a framework rather than as this entity's
+        audited procedure:
+      </p>
+      <div class="table-wrap">
+        <table class="data">
+          <thead>
+            <tr><th scope="col">Gate</th><th scope="col">What it checks</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>IQC — Incoming</strong></td><td>Raw media, frames, seals and adhesives inspected on receipt against the order specification.</td></tr>
+            <tr><td><strong>IPQC — In-process</strong></td><td>Pleat depth, adhesive application and frame dimensions checked during production.</td></tr>
+            <tr><td><strong>FQC — Final</strong></td><td>Finished elements tested for efficiency, leakage and pressure drop before release.</td></tr>
+            <tr><td><strong>OQC — Outgoing</strong></td><td>Pre-shipment verification of dimensions, packaging, marking and batch documentation.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="margin-top:0.9rem;">
+        HEPA elements are leak-tested before dispatch where a factory leakage-test certificate is
+        specified. The{' '}
         <a href={`${site.dataSubsiteUrl}/reference/test-standards/`} rel="noopener" target="_blank">test-standards reference</a>{' '}
         documents the efficiency classifications applied across the range.
+      </p>
+    </section>
+
+    <section>
+      <h2>Capacity and data discipline</h2>
+      <p>
+        Capacity in this cluster is a function of line count, shift structure and the mix of standard
+        versus custom sizes, so it is quoted per line rather than as a single headline figure. Every
+        specification field on this site carries a data-status label (<code>verified</code> /{' '}
+        <code>catalog-confirmed</code> / <code>reference</code> / <code>pending</code>), so the
+        catalogue stays comparable and no unpublished field is guessed.
       </p>
     </section>
 

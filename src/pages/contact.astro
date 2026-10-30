@@ -1,11 +1,19 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { site } from '../data/site';
+
+const mailtoSubject = 'Filter inquiry';
+const mailtoBody = [
+  'SKU or OE number:',
+  'Drawing or sample:',
+  'Target quantity:',
+  'Media / efficiency / packaging requirements:',
+].join('\n');
 ---
 
 <BaseLayout
   title="Contact"
-  description="Contact Qinghe Yinghui Filter for filter inquiries, OEM and private-label requests."
+  description="Contact Qinghe Yinghui Filter for filter inquiries, OEM and private-label requests — email, phone/WhatsApp and address."
   breadcrumbs={[{ label: 'Contact', href: '/contact/' }]}
 >
   <main class="wrap" style="padding-top:2rem;max-width:720px;">
@@ -16,6 +24,15 @@ import { site } from '../data/site';
       Send an inquiry with the SKU or OE number, or a drawing and target quantity. MOQ and lead
       time are quoted per line; indicative pricing is confirmed on quotation.
     </p>
+
+    <section>
+      <h2>What to include in an inquiry</h2>
+      <ul>
+        <li>SKU or OE number, or a drawing and target quantity.</li>
+        <li>Media, efficiency and packaging requirements if known.</li>
+        <li>For OEM/private-label work, the branding and marking requirement.</li>
+      </ul>
+    </section>
 
     <div class="table-wrap">
       <table class="data">
@@ -29,6 +46,12 @@ import { site } from '../data/site';
         </tbody>
       </table>
     </div>
+
+    <p style="margin-top:1rem;">
+      <a class="btn btn-primary" href={`mailto:${site.entity.email}?subject=${encodeURIComponent(mailtoSubject)}&body=${encodeURIComponent(mailtoBody)}`}>
+        Email an inquiry →
+      </a>
+    </p>
 
     <p class="notice" style="margin-top:1rem;">
       All contact channels are provisional pending domain and entity verification.
