@@ -1,0 +1,77 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { site } from '../data/site';
+
+const breadcrumbs = [{ label: 'Private Label', href: '/private-label/' }];
+---
+
+<BaseLayout
+  title="Private Label Filter Supply"
+  description="Private-label automotive filter supply — own-brand or neutral packaging, marking and multi-SKU runs under your brand."
+  breadcrumbs={breadcrumbs}
+>
+  <main class="wrap" style="padding-top:2rem;max-width:820px;">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> / Private Label</nav>
+    <h1>Private-label filter supply</h1>
+
+    <p class="lede" style="max-width:70ch;">
+      Sell filters under your own brand. Private-label supply covers own-brand or neutral
+      packaging, marking to your artwork, and multi-SKU runs across the automotive filter range.
+    </p>
+
+    <section>
+      <h2>What private label covers</h2>
+      <div class="table-wrap">
+        <table class="data">
+          <thead>
+            <tr><th scope="col">Condition</th><th scope="col">Options</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Branding</strong></td><td>Your own brand or neutral (unbranded) marking.</td></tr>
+            <tr><td><strong>Packaging</strong></td><td>Plain carton, retail box, polybag or custom-printed packaging.</td></tr>
+            <tr><td><strong>Labelling</strong></td><td>Barcode, part number and logo per your artwork.</td></tr>
+            <tr><td><strong>Marking</strong></td><td>Multi-SKU runs supported across standard and custom sizes.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>Process</h2>
+      <ol>
+        <li>Send your brand artwork, target SKU range and quantity.</li>
+        <li>Confirm packaging, labelling and marking specification.</li>
+        <li>Approve a first article against the specification.</li>
+        <li>Serial production with the approved sample kept as the batch reference.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>MOQ and lead time</h2>
+      <p>
+        Private-label runs are quoted per line. The packaging and marking requirement is part of
+        the specification, so stating it up front — alongside the SKU range and quantity — is what
+        converts an inquiry into an accurate quote. Custom-printed packaging and marking add lead
+        time versus plain-carton supply.
+      </p>
+      <p class="notice" style="margin-top:1rem;">
+        Scope boundary: private-label supply is offered for automotive filters, the manufacturing
+        range of Qinghe Huiying. Industrial, HVAC, HEPA/ULPA and liquid products on this platform
+        are not Huiying-manufactured.
+      </p>
+    </section>
+
+    <section>
+      <h2>Start a private-label inquiry</h2>
+      <p>
+        State the target SKU range, quantity, and the branding and packaging requirement. We
+        respond with an MOQ, lead-time and price indication per line.
+      </p>
+      <p style="margin-top:1rem;">
+        <a class="btn btn-primary" href="/rfq/">Submit an RFQ →</a>
+        <a class="btn btn-ghost" href="/oem/" style="margin-left:0.5rem;">OEM / ODM</a>
+        <a class="btn btn-ghost" href="/contact/" style="margin-left:0.5rem;">Contact</a>
+      </p>
+    </section>
+  </main>
+</BaseLayout>

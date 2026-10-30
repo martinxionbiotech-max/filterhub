@@ -94,14 +94,16 @@ const mailtoBody = [
         MOQ, lead-time and price indication per line.
       </p>
       <p style="margin-top:1rem;">
-        <a class="btn btn-primary" href={`mailto:${site.entity.email}?subject=${encodeURIComponent(mailtoSubject)}&body=${encodeURIComponent(mailtoBody)}`}>
-          Email an inquiry →
-        </a>
-        <a class="btn btn-ghost" href="/contact/" style="margin-left:0.5rem;">Other channels</a>
+        <a class="btn btn-primary" href="/rfq/">Submit an RFQ →</a>
+        <a class="btn btn-ghost" href="/private-label/" style="margin-left:0.5rem;">Private label</a>
+        <a class="btn btn-ghost" href="/wholesale/" style="margin-left:0.5rem;">Wholesale &amp; distribution</a>
       </p>
       <p class="muted small" style="margin-top:0.75rem;">
-        Inquiries are handled by the operating legal entity, Qinghe County Huiying Automotive
-        Parts Co., Ltd.; see the <a href="/contact/">contact page</a> for the current channels.
+        Prefer email?{' '}
+        <a href={`mailto:${site.entity.email}?subject=${encodeURIComponent(mailtoSubject)}&body=${encodeURIComponent(mailtoBody)}`}>
+          Email an inquiry
+        </a>{' '}
+        or see the <a href="/contact/">contact page</a> for the current channels.
       </p>
     </section>
   </main>

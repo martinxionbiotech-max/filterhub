@@ -1,0 +1,156 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { site } from '../data/site';
+import { categories } from '../data/categories';
+
+// RFQ form collects only useful sourcing fields (transformation-brief Phase 7).
+// No redundant fields: the eight below are exactly what a supplier needs to
+// quote a filter line. Static site → the form composes a mailto: to the sales
+// address on submit (no fabricated backend, no data collection).
+const breadcrumbs = [{ label: 'Request a Quotation', href: '/rfq/' }];
+---
+
+<BaseLayout
+  title="Request a Quotation (RFQ)"
+  description="Request a filter quotation — product category, OE reference, quantity and destination. MOQ and lead time are quoted per line."
+  breadcrumbs={breadcrumbs}
+>
+  <main class="wrap" style="padding-top:2rem;max-width:720px;">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> / Request a Quotation</nav>
+    <h1>Request a quotation</h1>
+    <p class="lede">
+      Fill in the fields below to request a filter quotation. MOQ and lead time are quoted per
+      line; indicative pricing is confirmed on quotation. Submitting opens your email client with
+      the details pre-filled — nothing is stored on this site.
+    </p>
+
+    <form id="rfq-form" class="rfq-form" novalidate data-email={site.entity.email}>
+      <div class="field">
+        <label for="category">Product category <span class="req">*</span></label>
+        <select id="category" name="category" required>
+          <option value="">Select a category…</option>
+          {categories.map((c) => (
+            <option value={c.name}>{c.name}</option>
+          ))}
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="product">Product name or OE reference</label>
+        <input id="product" name="product" type="text" placeholder="e.g. CFH-AF-001 · 42N-62-15470" autocomplete="off" />
+        <p class="hint">An SKU, OE number or a short product description is enough.</p>
+      </div>
+
+      <div class="field">
+        <label for="dimensions">Dimensions / specifications (if available)</label>
+        <input id="dimensions" name="dimensions" type="text" placeholder="e.g. Ø110 × 220 mm · ISO 5011" autocomplete="off" />
+        <p class="hint">Optional — include only if you already know them.</p>
+      </div>
+
+      <div class="field">
+        <label for="quantity">Estimated quantity <span class="req">*</span></label>
+        <input id="quantity" name="quantity" type="text" inputmode="numeric" placeholder="e.g. 500 pcs / 10,000 pcs" required autocomplete="off" />
+      </div>
+
+      <div class="field">
+        <label for="country">Destination country / market</label>
+        <input id="country" name="country" type="text" placeholder="e.g. United States · Germany" autocomplete="off" />
+      </div>
+
+      <div class="field">
+        <label for="oem">OEM / private-label requirement</label>
+        <select id="oem" name="oem">
+          <option value="">No OEM requirement — standard catalogue product</option>
+          <option value="OEM / custom development">OEM / custom development</option>
+          <option value="Private label">Private label (own brand / neutral packaging)</option>
+          <option value="Private label + OEM">Private label + OEM</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="email">Contact email <span class="req">*</span></label>
+        <input id="email" name="email" type="email" placeholder="you@company.com" required autocomplete="email" />
+      </div>
+
+      <div class="field">
+        <label for="notes">Additional requirements</label>
+        <textarea id="notes" name="notes" rows="3" placeholder="Media, efficiency class, packaging, certification or delivery notes…"></textarea>
+      </div>
+
+      <div class="actions">
+        <button type="submit" class="btn btn-primary">Submit an RFQ →</button>
+        <a class="btn wa-btn" href={site.entity.whatsappLink} target="_blank" rel="noopener">💬 Chat on WhatsApp</a>
+      </div>
+      <p class="muted small" style="margin-top:0.75rem;">
+        Prefer direct email? Write to <a href={`mailto:${site.entity.email}`}>{site.entity.email}</a>.
+      </p>
+    </form>
+
+    <p class="notice" style="margin-top:1.5rem;">
+      Inquiries are handled by the operating legal entity, Qinghe County Huiying Automotive
+      Parts Co., Ltd.; see the <a href="/contact/">contact page</a> for current channels.
+    </p>
+  </main>
+</BaseLayout>
+
+<script>
+  const form = document.getElementById('rfq-form') as HTMLFormElement | null;
+  if (form) {
+    const salesEmail = form.dataset.email || '';
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+      const get = (id: string) => (document.getElementById(id) as HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement).value.trim();
+      const lines = [
+        'RFQ — filter inquiry',
+        '',
+        `Product category: ${get('category')}`,
+        `Product name / OE reference: ${get('product') || '—'}`,
+        `Dimensions / specifications: ${get('dimensions') || '—'}`,
+        `Estimated quantity: ${get('quantity')}`,
+        `Destination country / market: ${get('country') || '—'}`,
+        `OEM / private-label requirement: ${get('oem') || '—'}`,
+        `Contact email: ${get('email')}`,
+        `Additional requirements: ${get('notes') || '—'}`,
+      ];
+      const subject = 'RFQ — filter inquiry';
+      const body = lines.join('\n');
+      window.location.href = `mailto:${salesEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    });
+  }
+</script>
+
+<style>
+  .rfq-form {
+    margin-top: 1.5rem;
+    display: grid;
+    gap: 1rem;
+  }
+  .field { display: grid; gap: 0.35rem; }
+  .field label { font-weight: 600; color: var(--navy-800); font-size: 0.95rem; }
+  .req { color: var(--orange-600); }
+  .field input,
+  .field select,
+  .field textarea {
+    width: 100%;
+    padding: 0.65rem 0.8rem;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    font: inherit;
+    font-size: 0.98rem;
+    color: var(--ink);
+    background: var(--surface);
+  }
+  .field input:focus,
+  .field select:focus,
+  .field textarea:focus {
+    outline: 2px solid var(--orange-500);
+    outline-offset: 1px;
+    border-color: var(--orange-500);
+  }
+  .hint { margin: 0; font-size: 0.82rem; color: var(--muted); }
+  .actions { display: flex; gap: 0.6rem; flex-wrap: wrap; margin-top: 0.5rem; }
+</style>

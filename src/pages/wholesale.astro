@@ -1,0 +1,85 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { site } from '../data/site';
+
+const breadcrumbs = [{ label: 'Wholesale & Distribution', href: '/wholesale/' }];
+---
+
+<BaseLayout
+  title="Wholesale & Distributor Cooperation"
+  description="Wholesale buying and distributor cooperation for automotive filters — bulk pricing, MOQ, lead time and distributor terms."
+  breadcrumbs={breadcrumbs}
+>
+  <main class="wrap" style="padding-top:2rem;max-width:820px;">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> / Wholesale &amp; Distribution</nav>
+    <h1>Wholesale &amp; distributor cooperation</h1>
+
+    <p class="lede" style="max-width:70ch;">
+      For buyers ordering automotive filters in bulk, or distributors looking to carry a filter
+      line under their own supply agreement, wholesale terms cover pricing, MOQ, lead time and
+      packaging across the automotive range.
+    </p>
+
+    <section>
+      <h2>Who wholesale is for</h2>
+      <div class="table-wrap">
+        <table class="data">
+          <thead>
+            <tr><th scope="col">Buyer type</th><th scope="col">What they typically need</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Parts distributors</strong></td><td>Multi-SKU replenishment across engine intake, cabin, oil, fuel, hydraulic and transmission lines.</td></tr>
+            <tr><td><strong>Fleet and workshop supply</strong></td><td>High-volume repeats on a narrow set of OE references, with consistent packaging.</td></tr>
+            <tr><td><strong>Regional wholesalers</strong></td><td>Bulk orders by container with neutral or own-brand packaging.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>Wholesale terms</h2>
+      <div class="table-wrap">
+        <table class="data">
+          <thead>
+            <tr><th scope="col">Term</th><th scope="col">How it is set</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>MOQ</strong></td><td>Quoted per line. Standard catalogue sizes carry lower minimums; custom sizes and dedicated OE matches carry higher minimums.</td></tr>
+            <tr><td><strong>Pricing</strong></td><td>Per-line, tiered by quantity. Indicative pricing is confirmed on quotation.</td></tr>
+            <tr><td><strong>Lead time</strong></td><td>Standard sizes ship faster; custom sizes and private-label packaging add lead time.</td></tr>
+            <tr><td><strong>Packaging</strong></td><td>Plain carton, retail box, polybag or custom-printed packaging.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>Distributor cooperation</h2>
+      <p>
+        Distributor cooperation is arranged around a defined SKU range and a target market. The
+        scope of the range, any exclusivity terms, pricing tier and packaging are agreed per
+        agreement — they are not published as a fixed schedule. A first article is approved before
+        serial production, and the approved sample is kept as the reference for every subsequent
+        batch.
+      </p>
+      <p class="notice" style="margin-top:1rem;">
+        Scope boundary: wholesale and distributor cooperation is offered for automotive filters,
+        which are the manufacturing range of Qinghe Huiying. Industrial, HVAC, HEPA/ULPA and
+        liquid products catalogued on this platform are not Huiying-manufactured.
+      </p>
+    </section>
+
+    <section>
+      <h2>Start a wholesale inquiry</h2>
+      <p>
+        State the SKU range or OE numbers, the target quantity per line, and the destination
+        market. We respond with an MOQ, lead-time and price indication per line.
+      </p>
+      <p style="margin-top:1rem;">
+        <a class="btn btn-primary" href="/rfq/">Submit an RFQ →</a>
+        <a class="btn btn-ghost" href="/oem/" style="margin-left:0.5rem;">OEM / private label</a>
+        <a class="btn btn-ghost" href="/contact/" style="margin-left:0.5rem;">Contact</a>
+      </p>
+    </section>
+  </main>
+</BaseLayout>
