@@ -124,6 +124,11 @@ export function productsByCategory(slug: string): Product[] {
   return products.filter((p) => p.category === slug);
 }
 
+/** Look up a product by its exact SKU code (case-sensitive). */
+export function productBySku(sku: string): Product | undefined {
+  return products.find((p) => p.sku === sku);
+}
+
 /** Number of SKUs per category slug (single data source for the homepage count). */
 export function categoryCount(slug: string): number {
   return productsByCategory(slug).length;

@@ -2,7 +2,8 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { guides, type Guide } from '../../data/guides';
 import { categories } from '../../data/categories';
-import { guideCategories } from '../../data/link-map';
+import { guideCategories, guideSkus, guideCommercialLinks } from '../../data/link-map';
+import { productBySku, categorySlug, skuSlug } from '../../data/products';
 
 export function getStaticPaths() {
   return guides.map((g) => ({ params: { slug: g.slug }, props: { guide: g } }));
@@ -12,6 +13,13 @@ const { guide } = Astro.props as { guide: Guide };
 const relatedCategories = (guideCategories[guide.slug] ?? [])
   .map((slug) => categories.find((c) => c.slug === slug))
   .filter(Boolean);
+
+// Featured SKUs (top models) resolved to full catalogue records.
+const featuredSkus = (guideSkus[guide.slug] ?? [])
+  .map((sku) => productBySku(sku))
+  .filter(Boolean);
+
+const commercialLinks = guideCommercialLinks[guide.slug] ?? [];
 
 const breadcrumbs = [
   { label: 'Buyer Guides', href: '/guides/' },
@@ -24,12 +32,17 @@ function anchor(text: string): string {
 }
 
 const tocItems = [
+  { id: 'key-takeaway', label: 'Key takeaway' },
   ...guide.sections.map((s) => ({ id: anchor(s.heading), label: s.heading })),
   { id: 'sourcing-perspective', label: 'From a sourcing perspective' },
   ...(guide.related.length > 0 ? [{ id: 'related-guides', label: 'Related guides' }] : []),
+  ...(relatedCategories.length > 0 ? [{ id: 'related-categories', label: 'Shop the category' }] : []),
+  ...(featuredSkus.length > 0 ? [{ id: 'featured-skus', label: 'Featured SKUs' }] : []),
   { id: 'sources', label: 'Sources' },
 ];
 
+// Article schema with entity associations: standard entities (EN 1822 / ISO 16890
+// etc.) and the pillar/cluster as `about`, so body and structured data stay in sync.
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
@@ -38,6 +51,11 @@ const articleSchema = {
   mainEntityOfPage: `https://chinafilterhub.com/guides/${guide.slug}/`,
   publisher: { '@id': 'https://chinafilterhub.com/#organization' },
   inLanguage: 'en',
+  articleSection: guide.pillar,
+  about: [
+    ...(guide.standards.length > 0 ? guide.standards.map((s) => ({ '@type': 'Thing', name: s })) : []),
+    { '@type': 'Thing', name: guide.pillar },
+  ],
 };
 ---
 
@@ -58,6 +76,10 @@ const articleSchema = {
         ))}
       </ol>
     </nav>
+
+    <section id="key-takeaway" class="notice notice--navy" style="margin-top:1.5rem;">
+      <strong>Key takeaway — </strong>{guide.keyTakeaway}
+    </section>
 
     {guide.sections.map((s) => (
       <section id={anchor(s.heading)}>
@@ -85,13 +107,6 @@ const articleSchema = {
       </section>
     )}
 
-    <section id="sources">
-      <h2>Sources</h2>
-      <ul>
-        {guide.sources.map((s) => <li>{s}</li>)}
-      </ul>
-    </section>
-
     {relatedCategories.length > 0 && (
       <section id="related-categories">
         <h2>Shop the category</h2>
@@ -102,6 +117,42 @@ const articleSchema = {
         </ul>
       </section>
     )}
+
+    {featuredSkus.length > 0 && (
+      <section id="featured-skus">
+        <h2>Featured SKUs</h2>
+        <ul>
+          {featuredSkus.map((p) => {
+            const catSlug = categorySlug(p!.category);
+            return (
+              <li>
+                <a href={`/products/${catSlug}/${skuSlug(p!.sku)}/`}>
+                  <code>{p!.sku}</code> — {p!.name}
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+      </section>
+    )}
+
+    {commercialLinks.length > 0 && (
+      <section>
+        <h2>Related pages</h2>
+        <ul>
+          {commercialLinks.map((l) => (
+            <li><a href={l.href}>{l.label}</a></li>
+          ))}
+        </ul>
+      </section>
+    )}
+
+    <section id="sources">
+      <h2>Sources</h2>
+      <ul>
+        {guide.sources.map((s) => <li>{s}</li>)}
+      </ul>
+    </section>
 
     <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
   </main>

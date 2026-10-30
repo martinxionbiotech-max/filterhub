@@ -43,6 +43,9 @@ const confirmedApplications = product.application.filter((a) => a.data_status !=
 // Six-block structure (carfilterspro audit paradigm):
 // 1. Identity + inquiry · 2. Core params (confirmed only) · 3. OE cross-reference
 // 4. Quality documents (real items only) · 5. OEM terms · 6. Related resources
+// Entity associations mirror the on-page fields: material (media type), efficiency
+// class, and spec values are exposed as Product `material` + `additionalProperty` so
+// the structured data stays consistent with the body text (no fabricated values).
 const productSchema = {
   '@context': 'https://schema.org',
   '@type': 'Product',
@@ -53,6 +56,19 @@ const productSchema = {
   description: product.description || undefined,
   brand: { '@type': 'Brand', name: site.brand },
   url: `https://chinafilterhub.com/products/${catSlug}/${skuSlug(product.sku)}/`,
+  material: confirmedMaterial.length > 0
+    ? confirmedMaterial.map((m) => `${m.part}: ${m.material_value}`).join(', ')
+    : undefined,
+  additionalProperty: [
+    ...(product.efficiency_class
+      ? [{ '@type': 'PropertyValue', name: 'efficiency_class', value: product.efficiency_class }]
+      : []),
+    ...confirmedSpec.map((s) => ({
+      '@type': 'PropertyValue',
+      name: s.spec_key,
+      value: `${s.spec_value}${s.unit ? ` ${s.unit}` : ''}`,
+    })),
+  ],
   offers: {
     '@type': 'AggregateOffer',
     priceCurrency: 'USD',

@@ -11,6 +11,18 @@ interface Props {
 
 const { title, description, breadcrumbs = [] } = Astro.props;
 
+// Meta descriptions are truncated to ~155 chars (word boundary) for length
+// compliance; the full text stays on-page. Intent keywords lead the sentence
+// set, so truncation never drops them.
+function truncateDesc(text: string, max = 155): string {
+  if (text.length <= max) return text;
+  const cut = text.slice(0, max);
+  const at = cut.lastIndexOf(' ');
+  return (at > max * 0.6 ? cut.slice(0, at) : cut).trimEnd() + '…';
+}
+
+const metaDescription = truncateDesc(description);
+
 const canonical = new URL(Astro.url.pathname, site.siteUrl).toString();
 const ogImage = `${site.siteUrl}/images/og-default.svg`;
 
@@ -36,7 +48,7 @@ const webPageSchema = {
   '@id': canonical,
   url: canonical,
   name: title,
-  description,
+  description: metaDescription,
   isPartOf: { '@id': `${site.siteUrl}/#website` },
   publisher: { '@id': `${site.siteUrl}/#organization` },
 };
@@ -57,12 +69,12 @@ const websiteSchema = {
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title} — {site.brand}</title>
-    <meta name="description" content={description} />
+    <meta name="description" content={metaDescription} />
     <link rel="canonical" href={canonical} />
     <meta name="generator" content={Astro.generator} />
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
-    <meta property="og:description" content={description} />
+    <meta property="og:description" content={metaDescription} />
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content={ogImage} />
     <meta name="twitter:card" content="summary_large_image" />
