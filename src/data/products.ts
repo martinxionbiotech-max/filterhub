@@ -86,40 +86,55 @@ const data = raw as ProductsFile;
 export const products: Product[] = data.products;
 export const productsMeta: ProductsMeta = data._meta;
 
-/** Map a category code to its 13-main-category slug (for URL building). */
-export function categorySlug(code: string): string {
-  return productsMeta.categories[code]?.slug ?? code;
+// Note: `products[].category` now stores the kebab-case slug directly (e.g.
+// `air-filters`), matching `categories[].slug`. The `_meta.categories` map keys are
+// legacy snake_case codes (`air_filter`); all helpers below therefore resolve by
+// kebab slug first and fall back to a snake_code key lookup for robustness.
+
+function metaBySlug(slug: string): CategoryMeta | undefined {
+  for (const meta of Object.values(productsMeta.categories)) {
+    if (meta.slug === slug) return meta;
+  }
+  return undefined;
 }
 
-/** Reverse lookup: category slug (kebab-case) → category code (snake_case). */
+/** Map a category code (snake) or slug (kebab) to its kebab slug (for URL building). */
+export function categorySlug(codeOrSlug: string): string {
+  return productsMeta.categories[codeOrSlug]?.slug ?? codeOrSlug;
+}
+
+/**
+ * Resolve a category slug to the value stored on `products[].category`.
+ * Since the category field is now the kebab slug itself, this is an identity
+ * mapping; retained as a named helper so the category page reads clearly.
+ */
 export function codeFromSlug(slug: string): string {
-  for (const [code, meta] of Object.entries(productsMeta.categories)) {
-    if (meta.slug === slug) return code;
-  }
   return slug;
 }
 
-/** Map a category code to its display name. */
-export function categoryName(code: string): string {
-  return productsMeta.categories[code]?.name ?? code;
+/** Map a category code (snake) or slug (kebab) to its display name. */
+export function categoryName(codeOrSlug: string): string {
+  const direct = productsMeta.categories[codeOrSlug];
+  if (direct) return direct.name;
+  return metaBySlug(codeOrSlug)?.name ?? codeOrSlug;
 }
 
-/** SKUs belonging to one category code. */
-export function productsByCategory(code: string): Product[] {
-  return products.filter((p) => p.category === code);
+/** SKUs belonging to one category slug (kebab). */
+export function productsByCategory(slug: string): Product[] {
+  return products.filter((p) => p.category === slug);
 }
 
-/** Number of SKUs per category code (single data source for the homepage count). */
-export function categoryCount(code: string): number {
-  return productsByCategory(code).length;
+/** Number of SKUs per category slug (single data source for the homepage count). */
+export function categoryCount(slug: string): number {
+  return productsByCategory(slug).length;
 }
 
 /** Total SKU count. */
 export const totalProducts = products.length;
 
 /** Count of categories (of 13) covered by at least one SKU. */
-export const coveredCategories = Object.keys(productsMeta.categories).filter(
-  (code) => productsByCategory(code).length > 0
+export const coveredCategories = Object.values(productsMeta.categories).filter(
+  (meta) => productsByCategory(meta.slug).length > 0
 ).length;
 
 /** URL-safe slug from a SKU/OE number. */
