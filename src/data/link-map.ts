@@ -14,17 +14,17 @@
 // the two directions can never drift apart.
 
 const LINKS: Record<string, string[]> = {
-  'air-filters': ['air-filter-selection', 'filter-efficiency-grades'],
-  'cabin-filters': ['filter-efficiency-grades', 'oem-procurement-process'],
-  'oil-filters': ['oem-procurement-process'],
+  'air-filters': ['air-filter-selection', 'filter-efficiency-grades', 'cabin-vs-engine-air-filter'],
+  'cabin-filters': ['filter-efficiency-grades', 'oem-procurement-process', 'cabin-vs-engine-air-filter'],
+  'oil-filters': ['oem-procurement-process', 'oil-filter-types'],
   'fuel-filters': ['oem-procurement-process'],
   'hydraulic-filters': ['oem-procurement-process'],
   'transmission-filters': ['oem-procurement-process'],
-  'hvac-filters': ['filter-efficiency-grades'],
+  'hvac-filters': ['filter-efficiency-grades', 'efficiency-vs-pressure-drop'],
   'hepa-filters': ['hepa-cleanroom-sourcing', 'hepa-vs-ulpa', 'filter-efficiency-grades', 'cleanroom-filtration-solutions'],
   'activated-carbon': ['filter-media-selection'],
   'pocket-filters': ['filter-efficiency-grades'],
-  'filter-media': ['filter-media-selection', 'air-filter-selection'],
+  'filter-media': ['filter-media-selection', 'air-filter-selection', 'efficiency-vs-pressure-drop'],
   'liquid-cartridges': ['oem-procurement-process'],
   'cleanroom-equipment': ['cleanroom-filtration-solutions', 'hepa-cleanroom-sourcing', 'hepa-vs-ulpa'],
 };
@@ -67,5 +67,9 @@ export const guideCommercialLinks: Record<string, { label: string; href: string 
   'oem-procurement-process': [
     { label: 'OEM / Private Label', href: '/oem/' },
     { label: 'Product Centre', href: '/products/' },
+  ],
+  'filter-moq-lead-time': [
+    { label: 'OEM / Private Label', href: '/oem/' },
+    { label: 'Contact & RFQ', href: '/contact/' },
   ],
 };

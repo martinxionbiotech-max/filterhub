@@ -19,7 +19,7 @@ export interface Guide {
 export const guides: Guide[] = [
   {
     slug: 'air-filter-selection',
-    title: 'Selecting engine intake air filters: panel, round and heavy-duty',
+    title: 'Engine air filters: types, materials and selection',
     pillar: 'Selection',
     description:
       'How to match engine intake air filters by form factor, efficiency and OE cross-reference.',
@@ -149,7 +149,7 @@ export const guides: Guide[] = [
   },
   {
     slug: 'filter-media-selection',
-    title: 'Filter media selection: needle-punched, synthetic, micro-glass and carbon',
+    title: 'Filter media types: needle-punched, synthetic, micro-glass and carbon',
     pillar: 'Standards',
     description:
       'Choosing the raw media type for pre-filtration, HEPA and odour-control duty.',
@@ -213,7 +213,7 @@ export const guides: Guide[] = [
   },
   {
     slug: 'oem-procurement-process',
-    title: 'OEM filter procurement: from RFQ to first article',
+    title: 'Automotive filter OEM manufacturing guide: from RFQ to first article',
     pillar: 'OEM',
     description:
       'A framework-level walkthrough of sourcing filters under OEM or private-label terms.',
@@ -239,6 +239,135 @@ export const guides: Guide[] = [
       'Put the drawing and the first article at the centre of the process. Carry the OE number, the equipment make/model/year, a drawing or sample, the target quantity and the media requirement in the RFQ, and check the first article against the OE drawing before serial production.',
     standards: [],
     related: ['air-filter-selection', 'hepa-cleanroom-sourcing', 'filter-media-selection', 'cleanroom-filtration-solutions'],
+    sources: [
+      'OEM/ODM capability notes: media, pocket, HEPA and cleanroom lines',
+    ],
+  },
+  {
+    slug: 'cabin-vs-engine-air-filter',
+    title: 'Cabin air filter vs engine air filter: two different jobs',
+    pillar: 'Selection',
+    description:
+      'How cabin and engine intake filters differ in function, media, fitment and replacement, and why the two are never interchangeable.',
+    directAnswer:
+      'A cabin filter cleans the air entering the vehicle interior for occupants; an engine air filter cleans the air entering the combustion chamber for the engine. They sit in different systems, use different media grades and change intervals, and are never interchangeable.',
+    sections: [
+      {
+        heading: 'Two systems, two failure modes',
+        body: 'The engine air filter sits upstream of the combustion chamber, shielding cylinders, pistons and rings from abrasive dust in a high-velocity intake flow. It is graded under ISO 5011 and sized by the intake housing, so the failure mode is a wrong form factor or housing match. The cabin filter sits in the low-velocity HVAC plenum, protecting occupants from dust, pollen and particulates, and is graded under ISO 16890. Its failure mode is a wrong year or trim, because one OE number can span several body styles.',
+      },
+      {
+        heading: 'Media and grade diverge',
+        body: 'Engine intake media is tuned for dust capacity and intake restriction, so capacity and pressure-drop behaviour matter as much as raw efficiency. Cabin media is tuned for particle holding and, where specified, odour control through activated carbon. The two carry different efficiency scales — ISO 5011 multi-pass for engine intake, ISO 16890 particle-fraction for cabin — so their grades are not directly comparable even when the labels look similar.',
+      },
+      {
+        heading: 'Fitment and replacement rhythm',
+        body: 'An engine filter is replaced by dust loading rather than a fixed calendar, so the operating environment sets the interval. A cabin filter is replaced by time or mileage and by the occupant environment, with carbon media only worth the cost in congested urban or commercial-cab duty. Each is cross-referenced by OE number, but each must be confirmed against its own housing or vehicle application.',
+      },
+    ],
+    sourcingPerspective:
+      'The two filters fail for different reasons, so they are sourced against different checks. An engine intake element is confirmed by form factor and housing, then by media and dust capacity for the operating environment; a cabin element is confirmed by vehicle year and trim, then by particle versus carbon media. Ordering one from the other\u2019s OE family is the quickest route to a wrong part, because the reference looks similar but the housing and the duty do not transfer.',
+    keyTakeaway:
+      'Match each filter to its own system: the engine filter protects the combustion chamber and is sized by the intake housing, while the cabin filter protects occupants and is matched by vehicle year and trim. Confirm the OE number and the specific application for each, and state particle-only versus carbon media for the cabin element.',
+    standards: ['ISO 5011', 'ISO 16890'],
+    related: ['air-filter-selection', 'filter-media-selection', 'filter-efficiency-grades'],
+    sources: [
+      'ISO 5011 — engine air filter multi-pass test (industry standard reference)',
+      'ISO 16890 — HVAC/cabin filter particle-fraction grading (industry standard reference)',
+    ],
+  },
+  {
+    slug: 'oil-filter-types',
+    title: 'Oil filter types: spin-on, cartridge and element assembly',
+    pillar: 'Selection',
+    description:
+      'How spin-on, cartridge and element-assembly oil filters differ, and how thread, gasket, bypass valve and micron rating drive selection.',
+    directAnswer:
+      'Oil filters come in three construction families — spin-on canisters, replaceable cartridges and element assemblies. Selection turns on the mounting thread, gasket seat, canister dimensions, and the bypass and anti-drain-back valve settings, which are engine-family-specific.',
+    sections: [
+      {
+        heading: 'Three construction families',
+        body: 'A spin-on filter is a self-contained canister that threads onto the engine, sealed by a gasket. A replaceable cartridge is an element that drops into a reusable housing, common on Volkswagen and BMW engines. An element assembly is a housing-and-element unit used in heavy equipment. Each fits a specific mounting, and the three are never interchangeable even within the same engine family.',
+      },
+      {
+        heading: 'What the two valves do',
+        body: 'Two valves govern protection beyond the media. The bypass valve opens under high pressure to keep oil flowing even if the media is blocked, and the anti-drain-back valve holds oil in the filter between starts. Both settings are engine-family-specific, which is why a number-led order without a fitment check is the main failure mode in this category.',
+      },
+      {
+        heading: 'Micron rating and service interval',
+        body: 'Micron rating, bypass-valve setting and canister dimensions are engine-family-specific. Service intervals are oil-determined, so stating the operating oil type and change interval is what lets the media grade be matched to the actual duty. Extended drain intervals need a matched media and bypass calibration that a generic element does not deliver.',
+      },
+    ],
+    sourcingPerspective:
+      'The mechanical details decide whether an oil filter fits and seals before media quality is ever considered. Thread pitch, gasket seat and canister dimensions have to be confirmed against the OE drawing, and the bypass and anti-drain-back settings should be treated as part of the selection rather than an afterthought. For extended-interval duty, the media grade and bypass calibration have to match the actual service schedule, which is why the oil type and change interval belong in the inquiry from the start.',
+    keyTakeaway:
+      'Confirm the mounting form — spin-on, cartridge or element assembly — the thread and gasket dimensions, and the bypass-valve setting before ordering. State the oil grade and change interval so the media grade matches the service schedule.',
+    standards: ['ISO 4548'],
+    related: ['air-filter-selection', 'oem-procurement-process', 'filter-media-selection'],
+    sources: [
+      'ISO 4548 — lubricating oil filter test methods (industry standard reference)',
+    ],
+  },
+  {
+    slug: 'efficiency-vs-pressure-drop',
+    title: 'Filtration efficiency vs pressure drop: why higher is not automatically better',
+    pillar: 'Standards',
+    description:
+      'How to weigh filtration efficiency against pressure drop, dust-holding capacity and service life when comparing filters.',
+    directAnswer:
+      'Filtration efficiency describes how much particulate a filter removes; pressure drop describes how hard the system has to work to push air or oil through it. A higher-efficiency filter almost always carries higher initial resistance, so the right filter balances efficiency with pressure drop, dust-holding capacity, operating conditions and service life.',
+    sections: [
+      {
+        heading: 'What each number measures',
+        body: 'Efficiency is the fraction of particles removed at a given size, graded by MPPS penetration under EN 1822, particle fraction under ISO 16890, or multi-pass under ISO 5011. Pressure drop is the resistance to flow, stated as an initial value for a clean element and a final value at terminal loading. The two move together: finer media removes more but resists more.',
+      },
+      {
+        heading: 'The trade-off',
+        body: 'Higher efficiency raises initial pressure drop, which means more fan or pump energy, or reduced flow. In continuous HVAC duty the energy cost of pressure drop over the service life often exceeds the purchase price. In engine intake, a filter that loads quickly shortens the service interval regardless of its efficiency label. The cost of the trade-off depends on the duty, not on the efficiency number alone.',
+      },
+      {
+        heading: 'Reading it as a system',
+        body: 'Judge the filter on the full curve: initial pressure drop, final pressure drop, and the dust-holding capacity between them, in the actual operating environment. A useful specification states the duty and the terminal resistance, not just the efficiency grade. This is what separates a filter that performs from one that only scores well on a single number.',
+      },
+    ],
+    sourcingPerspective:
+      'A single efficiency number, quoted without pressure drop and dust capacity, describes only part of a filter\u2019s behaviour. The useful comparison brings all three together: how much is removed, how hard the system works to move air or fluid, and how long the element lasts before terminal resistance. For continuous-duty HVAC this makes life-cycle cost the correct basis for choice; for dust-heavy engine intake it makes dust capacity and intake-restriction control the figures that schedule replacement.',
+    keyTakeaway:
+      'Evaluate efficiency together with pressure drop, dust-holding capacity and the operating duty. A filter that traps a high fraction of particles but loads quickly or forces high energy consumption can cost more in downtime and energy than a balanced element.',
+    standards: ['EN 1822', 'ISO 16890', 'ISO 5011'],
+    related: ['filter-efficiency-grades', 'filter-media-selection', 'air-filter-selection', 'hepa-vs-ulpa'],
+    sources: [
+      'EN 1822 / ISO 16890 / ISO 5011 — efficiency classification and multi-pass test references',
+    ],
+  },
+  {
+    slug: 'filter-moq-lead-time',
+    title: 'Automotive filter MOQ, lead time and pricing: what drives them',
+    pillar: 'OEM',
+    description:
+      'How minimum order quantity, lead time and pricing are set for automotive filters, and what to state in an inquiry to get an accurate quote.',
+    directAnswer:
+      'MOQ, lead time and price for automotive filters are quoted per line. They turn on whether the part is a standard or custom size, the media and packaging, and the target quantity — standard sizes ship faster, while custom sizes and private-label packaging add lead time.',
+    sections: [
+      {
+        heading: 'Why MOQ is per line',
+        body: 'Standard catalogue sizes carry lower minimums because tooling and media are shared across the range. A custom dimension or a dedicated OE match can carry a higher minimum to cover setup. Filter media is available at low minimum order quantity, from 20 rolls, which makes it a prototyping-to-production bridge for integrators who are not yet at finished-filter volumes.',
+      },
+      {
+        heading: 'Lead time follows the specification',
+        body: 'Standard sizes ship faster; custom sizes, tooling changes and private-label packaging add lead time. The approved first-article sample is put on file as the reference for every subsequent batch, which is what keeps later runs consistent. Lead time is therefore an output of the specification, not a fixed number to be quoted before the details are known.',
+      },
+      {
+        heading: 'Pricing factors',
+        body: 'Media type, efficiency grade, frame and seal construction, and quantity all move the unit price. Indicative pricing is confirmed on quotation. The catalogue cross-reference is a discovery aid, not a committed price, so a figure only becomes firm once the specification and quantity are stated.',
+      },
+    ],
+    sourcingPerspective:
+      'MOQ and lead time are outputs of the specification, not fixed numbers. A clear inquiry — OE number or drawing, target quantity, and media and packaging requirement — is what lets a supplier quote accurately, and a missing drawing is the most common cause of a wrong first sample or a delayed quote. Because standard sizes and private-label runs sit on different minimums and lead times, stating the packaging requirement up front prevents a quote that has to be reworked later.',
+    keyTakeaway:
+      'State the OE number or drawing, the target quantity, and whether private-label packaging is required up front. MOQ and lead time are per-line figures, so a clear specification is what converts an inquiry into an accurate quote.',
+    standards: [],
+    related: ['oem-procurement-process', 'air-filter-selection'],
     sources: [
       'OEM/ODM capability notes: media, pocket, HEPA and cleanroom lines',
     ],
