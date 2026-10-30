@@ -12,40 +12,53 @@ import { site } from '../data/site';
     <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> / Factory</nav>
     <h1>Factory &amp; Quality Control</h1>
 
-    <p class="lede">
+    <p class="lede" style="max-width:70ch;">
       Manufacturing is positioned within the Qinghe filter industry cluster of Hebei province.
       Factory area, staffing and production equipment for this entity are marked provisional until
       independently verified with on-site evidence.
     </p>
 
-    <h2>Production capability (industry reference)</h2>
-    <p>
-      Filter manufacturing in this cluster typically spans several dedicated lines — air-filter
-      assembly, HEPA mini-pleat and separator pleating, filter-media production, and cleanroom
-      equipment assembly. The following capability descriptions are drawn from the industry cluster
-      reference corpus and are <em>not</em> presented as this entity's verified equipment list:
-    </p>
-    <ul>
-      <li><strong>Filter media lines</strong> — needle-punched and synthetic-fibre media production with lamination.</li>
-      <li><strong>HEPA pleating</strong> — separator and mini-pleat lines using micro-glass media (pleat depths 20–100 mm).</li>
-      <li><strong>Frame forming</strong> — galvanised and stainless frame welding and forming.</li>
-      <li><strong>Quality testing</strong> — efficiency, leakage and pressure-drop test equipment.</li>
-    </ul>
+    <section>
+      <h2>Production capability (industry reference)</h2>
+      <p>
+        Filter manufacturing in this cluster typically spans several dedicated lines — air-filter
+        assembly, HEPA mini-pleat and separator pleating, filter-media production, and cleanroom
+        equipment assembly. The following capability descriptions are drawn from the industry cluster
+        reference corpus and are <em>not</em> presented as this entity's verified equipment list:
+      </p>
+      <div class="table-wrap">
+        <table class="data">
+          <thead>
+            <tr><th scope="col">Line</th><th scope="col">Description</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Filter media lines</strong></td><td>Needle-punched and synthetic-fibre media production with lamination.</td></tr>
+            <tr><td><strong>HEPA pleating</strong></td><td>Separator and mini-pleat lines using micro-glass media (pleat depths 20–100 mm).</td></tr>
+            <tr><td><strong>Frame forming</strong></td><td>Galvanised and stainless frame welding and forming.</td></tr>
+            <tr><td><strong>Quality testing</strong></td><td>Efficiency, leakage and pressure-drop test equipment.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
 
-    <h2>Quality control</h2>
-    <p>
-      Quality control follows a source-and-label discipline: every specification field carries a
-      data-status label (<code>verified</code> / <code>catalog-confirmed</code> / <code>reference</code> /{' '}
-      <code>pending</code>). HEPA elements are leak-tested before dispatch where a factory
-      leakage-test certificate is specified. The{' '}
-      <a href={`${site.dataSubsiteUrl}/reference/test-standards/`} rel="noopener" target="_blank">test-standards reference</a>{' '}
-      documents the efficiency classifications applied across the range.
-    </p>
+    <section>
+      <h2>Quality control</h2>
+      <p>
+        Quality control follows a source-and-label discipline: every specification field carries a
+        data-status label (<code>verified</code> / <code>catalog-confirmed</code> / <code>reference</code> /{' '}
+        <code>pending</code>). HEPA elements are leak-tested before dispatch where a factory
+        leakage-test certificate is specified. The{' '}
+        <a href={`${site.dataSubsiteUrl}/reference/test-standards/`} rel="noopener" target="_blank">test-standards reference</a>{' '}
+        documents the efficiency classifications applied across the range.
+      </p>
+    </section>
 
-    <h2>Certifications</h2>
-    <p class="notice">
-      Certifications are not presented until independently verified with certificate numbers. Any
-      certification claim seen in third-party catalogues is not attributed to this entity.
-    </p>
+    <section>
+      <h2>Certifications</h2>
+      <p class="notice">
+        Certifications are not presented until independently verified with certificate numbers. Any
+        certification claim seen in third-party catalogues is not attributed to this entity.
+      </p>
+    </section>
   </main>
 </BaseLayout>

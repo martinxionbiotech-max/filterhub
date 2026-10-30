@@ -1,0 +1,20 @@
+---
+interface Props {
+  status: string;
+}
+
+const { status } = Astro.props;
+
+const labelMap: Record<string, string> = {
+  verified: 'Verified',
+  'catalog-confirmed': 'Catalog confirmed',
+  reference: 'Reference',
+  pending: 'Pending',
+  provisional: 'Provisional',
+};
+
+const label = labelMap[status] ?? status;
+const slugClass = status.replace(/[^a-z0-9_-]/g, '-');
+---
+
+<span class:list={['badge', `badge--${slugClass}`]}>{label}</span>

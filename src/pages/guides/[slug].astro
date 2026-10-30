@@ -13,6 +13,18 @@ const breadcrumbs = [
   { label: guide.title, href: `/guides/${guide.slug}/` },
 ];
 
+// Stable anchors for section headings (used for the in-page table of contents).
+function anchor(text: string): string {
+  return text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+}
+
+const tocItems = [
+  ...guide.sections.map((s) => ({ id: anchor(s.heading), label: s.heading })),
+  { id: 'sourcing-perspective', label: 'From a sourcing perspective' },
+  ...(guide.related.length > 0 ? [{ id: 'related-guides', label: 'Related guides' }] : []),
+  { id: 'sources', label: 'Sources' },
+];
+
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
@@ -25,27 +37,37 @@ const articleSchema = {
 ---
 
 <BaseLayout title={guide.title} description={guide.description} breadcrumbs={breadcrumbs}>
-  <main class="wrap" style="padding-top:2rem;max-width:760px;">
+  <main class="wrap" style="padding-top:2rem;max-width:780px;">
     <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="/">Home</a> / <a href="/guides/">Buyer Guides</a> / {guide.title}
     </nav>
     <h1>{guide.title}</h1>
+    <p class="eyebrow">{guide.pillar}</p>
     <p class="lede">{guide.directAnswer}</p>
 
+    <nav class="toc" aria-label="On this page">
+      <strong>On this page</strong>
+      <ol>
+        {tocItems.map((t) => (
+          <li><a href={`#${t.id}`}>{t.label}</a></li>
+        ))}
+      </ol>
+    </nav>
+
     {guide.sections.map((s) => (
-      <section>
+      <section id={anchor(s.heading)}>
         <h2>{s.heading}</h2>
         <p>{s.body}</p>
       </section>
     ))}
 
-    <section style="margin-top:2rem;">
+    <section id="sourcing-perspective">
       <h2>From a sourcing perspective</h2>
       <p>{guide.sourcingPerspective}</p>
     </section>
 
     {guide.related.length > 0 && (
-      <section style="margin-top:2rem;">
+      <section id="related-guides">
         <h2>Related guides</h2>
         <ul>
           {guide.related.map((slug) => {
@@ -58,10 +80,12 @@ const articleSchema = {
       </section>
     )}
 
-    <h2>Sources</h2>
-    <ul>
-      {guide.sources.map((s) => <li>{s}</li>)}
-    </ul>
+    <section id="sources">
+      <h2>Sources</h2>
+      <ul>
+        {guide.sources.map((s) => <li>{s}</li>)}
+      </ul>
+    </section>
 
     <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
   </main>

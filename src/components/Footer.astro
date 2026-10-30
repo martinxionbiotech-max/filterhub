@@ -1,4 +1,79 @@
 ---
-// Footer is rendered inside BaseLayout's footer element; this component is a
-// lightweight helper kept for future expansion (currently unused directly).
+import type { site as SiteShape } from '../data/site';
+
+interface Props {
+  site: typeof SiteShape;
+  complianceLinks: { label: string; href: string }[];
+}
+
+const { site, complianceLinks } = Astro.props;
 ---
+
+<footer class="site-footer">
+  <div class="wrap-wide footer-grid">
+    <div>
+      <p class="footer-brand">{site.brand}</p>
+      <p class="muted small" style="margin-top:0.25rem;">{site.tagline}</p>
+    </div>
+    <nav aria-label="Legal">
+      <p class="footer-label">Legal</p>
+      <ul>
+        {complianceLinks.map((l) => (
+          <li><a href={l.href}>{l.label}</a></li>
+        ))}
+      </ul>
+    </nav>
+    <div>
+      <p class="footer-label">Data</p>
+      <p class="muted small" style="margin:0;">
+        Domain <code>{site.domain}</code> is a placeholder. Machine-readable record:{' '}
+        <a href={site.dataSubsiteUrl} rel="noopener" target="_blank">
+          {site.dataSubsiteUrl.replace('https://', '')}
+        </a>
+      </p>
+    </div>
+  </div>
+  <div class="wrap-wide footer-bottom">
+    <p class="muted smaller" style="margin:0;">
+      &copy; {new Date().getFullYear()} {site.brand}. {site.disclosure}
+    </p>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    margin-top: 3.5rem;
+    border-top: 4px solid var(--navy-800);
+    background: var(--bg);
+    padding: 2.5rem 0 0;
+    color: var(--ink);
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1.6fr;
+    gap: 2rem;
+    padding-bottom: 1.5rem;
+  }
+  .footer-brand { font-weight: 800; font-size: 1.05rem; color: var(--navy-800); margin: 0; }
+  .footer-label {
+    font-size: 0.74rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 700;
+    color: var(--muted);
+    margin: 0 0 0.6rem;
+  }
+  .site-footer ul { list-style: none; margin: 0; padding: 0; }
+  .site-footer ul li { margin: 0.3rem 0; }
+  .site-footer a { color: var(--navy-700); }
+  .site-footer a:hover { color: var(--orange-600); }
+  .footer-bottom {
+    border-top: 1px solid var(--line);
+    padding-top: 1.25rem;
+    padding-bottom: 1.5rem;
+  }
+
+  @media (max-width: 720px) {
+    .footer-grid { grid-template-columns: 1fr; gap: 1.25rem; }
+  }
+</style>

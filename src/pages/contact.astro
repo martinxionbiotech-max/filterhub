@@ -17,13 +17,20 @@ import { site } from '../data/site';
       time are quoted per line; indicative pricing is confirmed on quotation.
     </p>
 
-    <ul>
-      <li>Email: <code>{site.entity.email}</code></li>
-      <li>Phone / WhatsApp: <code>{site.entity.phone}</code></li>
-      <li>Address: <code>{site.entity.address}</code></li>
-    </ul>
+    <div class="table-wrap">
+      <table class="data">
+        <thead>
+          <tr><th scope="col">Channel</th><th scope="col">Value</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Email</strong></td><td><code>{site.entity.email}</code></td></tr>
+          <tr><td><strong>Phone / WhatsApp</strong></td><td><code>{site.entity.phone}</code></td></tr>
+          <tr><td><strong>Address</strong></td><td><code>{site.entity.address}</code></td></tr>
+        </tbody>
+      </table>
+    </div>
 
-    <p class="notice">
+    <p class="notice" style="margin-top:1rem;">
       All contact channels are provisional pending domain and entity verification.
     </p>
   </main>

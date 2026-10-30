@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import StatusBadge from '../../components/StatusBadge.astro';
 import { categories, type Category } from '../../data/categories';
 import { site } from '../../data/site';
 import { productsByCategory, skuSlug, codeFromSlug } from '../../data/products';
@@ -9,12 +10,20 @@ export function getStaticPaths() {
 }
 
 const { category } = Astro.props as { category: Category };
-// Map category slug (kebab-case) back to the dataset category code (snake_case).
 const code = codeFromSlug(category.slug);
 const skus = productsByCategory(code);
 const breadcrumbs = [
   { label: 'Products', href: '/products/' },
   { label: category.name, href: `/products/${category.slug}/` },
+];
+
+// Distinct efficiency labels and material values actually present in this category's SKUs.
+const effLabels = [...new Set(skus.map((p) => p.efficiency_class).filter(Boolean))];
+const materials = [
+  ...new Set(skus.flatMap((p) => p.material.map((m) => m.material_value)).filter(Boolean)),
+];
+const applications = [
+  ...new Set(skus.flatMap((p) => p.application.map((a) => a.medium)).filter(Boolean)),
 ];
 ---
 
@@ -24,7 +33,7 @@ const breadcrumbs = [
       <a href="/">Home</a> / <a href="/products/">Products</a> / {category.name}
     </nav>
     <h1>{category.name}</h1>
-    <p class="muted" style="margin-top:-0.5rem;">{category.nameZh} · {category.grades}</p>
+    <p class="muted" style="margin-top:-0.4rem;">{category.nameZh} · <code>{category.grades}</code></p>
 
     {category.subcategories.length > 0 && (
       <p style="margin-top:1rem;">
@@ -32,41 +41,123 @@ const breadcrumbs = [
       </p>
     )}
 
-    <h2>Positioning</h2>
-    <p>{category.positioning}</p>
+    {/* At-a-glance comparison table */}
+    <section class="section">
+      <h2 class="mt-0">Category at a glance</h2>
+      <div class="table-wrap">
+        <table class="data">
+          <thead>
+            <tr>
+              <th scope="col">Attribute</th>
+              <th scope="col">Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Efficiency framework</strong></td>
+              <td><code>{category.grades}</code></td>
+            </tr>
+            {category.subcategories.length > 0 && (
+              <tr>
+                <td><strong>Sub-categories</strong></td>
+                <td>{category.subcategories.join(' · ')}</td>
+              </tr>
+            )}
+            <tr>
+              <td><strong>SKUs catalogued</strong></td>
+              <td>{skus.length}</td>
+            </tr>
+            {effLabels.length > 0 && (
+              <tr>
+                <td><strong>Efficiency grades seen</strong></td>
+                <td>{effLabels.map((e) => <code>{e}</code>).reduce((a, b) => <>{a} · {b}</>)}</td>
+              </tr>
+            )}
+            {materials.length > 0 && (
+              <tr>
+                <td><strong>Materials / construction</strong></td>
+                <td>{materials.join(' · ')}</td>
+              </tr>
+            )}
+            {applications.length > 0 && (
+              <tr>
+                <td><strong>Application medium</strong></td>
+                <td>{applications.map((a) => <code>{a}</code>).reduce((a, b) => <>{a} · {b}</>)}</td>
+              </tr>
+            )}
+          </tbody>
+        </table>
+      </div>
+    </section>
 
-    <h2>What it is</h2>
-    <p>{category.directAnswer}</p>
+    <section>
+      <h2>Positioning</h2>
+      <p>{category.positioning}</p>
+    </section>
 
-    <h2>Technical depth</h2>
-    <p>{category.technicalDepth}</p>
+    <section>
+      <h2>What it is</h2>
+      <p>{category.directAnswer}</p>
+    </section>
 
-    <h2>Selection guidance</h2>
-    <ul>
-      {category.selection.map((s) => <li>{s}</li>)}
-    </ul>
+    <section>
+      <h2>Technical depth</h2>
+      <p>{category.technicalDepth}</p>
+    </section>
 
-    <h2>Procurement notes</h2>
-    <ul>
-      {category.procurement.map((p) => <li>{p}</li>)}
-    </ul>
+    <section>
+      <h2>Selection guidance</h2>
+      <ul>
+        {category.selection.map((s) => <li>{s}</li>)}
+      </ul>
+    </section>
 
-    <h2>From a sourcing perspective</h2>
-    <p>{category.sourcingPerspective}</p>
+    <section>
+      <h2>Procurement notes</h2>
+      <ul>
+        {category.procurement.map((p) => <li>{p}</li>)}
+      </ul>
+    </section>
+
+    <section>
+      <h2>From a sourcing perspective</h2>
+      <p>{category.sourcingPerspective}</p>
+    </section>
 
     {skus.length > 0 && (
-      <section style="margin-top:2rem;">
-        <h2>SKUs in this category ({skus.length})</h2>
-        <ul>
-          {skus.map((p) => (
-            <li>
-              <a href={`/products/${category.slug}/${skuSlug(p.sku)}/`}>
-                <code>{p.sku}</code> — {p.name}
-              </a>
-              {p.efficiency_class && <span class="muted"> · {p.efficiency_class}</span>}
-            </li>
-          ))}
-        </ul>
+      <section class="section">
+        <div class="section-head">
+          <h2 class="mt-0">SKUs in this category ({skus.length})</h2>
+          <p class="muted small">Cross-references are discovery aids, not verified fitments.</p>
+        </div>
+        <div class="table-wrap">
+          <table class="data">
+            <thead>
+              <tr>
+                <th scope="col">SKU</th>
+                <th scope="col">Name</th>
+                <th scope="col">Efficiency</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              {skus.map((p) => (
+                <tr>
+                  <td>
+                    <a href={`/products/${category.slug}/${skuSlug(p.sku)}/`}><code>{p.sku}</code></a>
+                  </td>
+                  <td>
+                    <a href={`/products/${category.slug}/${skuSlug(p.sku)}/`} style="color:var(--ink);">
+                      {p.name}
+                    </a>
+                  </td>
+                  <td>{p.efficiency_class ? <code>{p.efficiency_class}</code> : <span class="muted">—</span>}</td>
+                  <td><StatusBadge status={p.data_status} /></td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </section>
     )}
 

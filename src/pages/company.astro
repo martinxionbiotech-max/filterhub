@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import StatusBadge from '../components/StatusBadge.astro';
 import { site } from '../data/site';
 ---
 
@@ -8,59 +9,88 @@ import { site } from '../data/site';
   description="Qinghe Air Filter — filter manufacturer and exporter positioned in the Qinghe filter industry cluster."
   breadcrumbs={[{ label: 'Company', href: '/company/' }]}
 >
-  <main class="wrap" style="padding-top:2rem;max-width:760px;">
+  <main class="wrap" style="padding-top:2rem;max-width:780px;">
     <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> / Company</nav>
     <h1>{site.brand} — filter manufacturer and exporter</h1>
 
-    <h2>Brand, entity and domain</h2>
-    <p class="notice">
-      {site.brand} is the brand presented on {site.domain}. The operating legal entity behind the
-      brand is {site.entity.legalName} ({site.entity.legalNameZh}), with unified social credit code{' '}
-      {site.entity.creditCode}, registered at {site.entity.address}. Brand, entity and domain details
-      are provisional pending business-licence verification.
-    </p>
+    <section>
+      <h2>Brand, entity and domain</h2>
+      <p class="notice">
+        {site.brand} is the brand presented on {site.domain}. The operating legal entity behind the
+        brand is {site.entity.legalName} ({site.entity.legalNameZh}), with unified social credit code{' '}
+        {site.entity.creditCode}, registered at {site.entity.address}. Brand, entity and domain details
+        are provisional pending business-licence verification.
+      </p>
+    </section>
 
-    <h2>Positioning</h2>
-    <p>
-      {site.positioning} This cluster positioning is a regional frame of reference; it does not by
-      itself attest to this entity's scale, certifications or customer base, which are disclosed only
-      with a traceable source.
-    </p>
+    <section>
+      <h2>Positioning</h2>
+      <p>
+        {site.positioning} This cluster positioning is a regional frame of reference; it does not by
+        itself attest to this entity's scale, certifications or customer base, which are disclosed only
+        with a traceable source.
+      </p>
+    </section>
 
-    <h2>What we make</h2>
-    <p>
-      Thirteen product categories across engine filtration, HVAC and cleanroom air filtration, and
-      liquid/metal cartridges, structured around a single efficiency-grade framework. See the{' '}
-      <a href="/products/">product centre</a> for the full taxonomy.
-    </p>
+    <section>
+      <h2>What we make</h2>
+      <p>
+        Thirteen product categories across engine filtration, HVAC and cleanroom air filtration, and
+        liquid/metal cartridges, structured around a single efficiency-grade framework. See the{' '}
+        <a href="/products/">product centre</a> for the full taxonomy.
+      </p>
+    </section>
 
-    <h2>Quality and data discipline</h2>
-    <p>Every specification field on this site carries a data-status label:</p>
-    <ul>
-      <li><code>verified</code> — value taken directly from a source catalogue or standard</li>
-      <li><code>catalog-confirmed</code> — part number or category confirmed from a catalogue</li>
-      <li><code>reference</code> — descriptive application or standard reference</li>
-      <li><code>pending</code> — not published by the source; left blank rather than guessed</li>
-    </ul>
-    <p>
-      The{' '}
-      <a href={site.dataSubsiteUrl} rel="noopener" target="_blank">data subsite</a>{' '}
-      holds the machine-readable record behind each claim.
-    </p>
+    <section>
+      <h2>Quality and data discipline</h2>
+      <p>Every specification field on this site carries a data-status label:</p>
+      <div class="table-wrap">
+        <table class="data">
+          <thead>
+            <tr>
+              <th scope="col">Label</th>
+              <th scope="col">Meaning</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><StatusBadge status="verified" /></td><td>Value taken directly from a source catalogue or standard</td></tr>
+            <tr><td><StatusBadge status="catalog-confirmed" /></td><td>Part number or category confirmed from a catalogue</td></tr>
+            <tr><td><StatusBadge status="reference" /></td><td>Descriptive application or standard reference</td></tr>
+            <tr><td><StatusBadge status="pending" /></td><td>Not published by the source; left blank rather than guessed</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="margin-top:0.9rem;">
+        The{' '}
+        <a href={site.dataSubsiteUrl} rel="noopener" target="_blank">data subsite</a>{' '}
+        holds the machine-readable record behind each claim.
+      </p>
+    </section>
 
-    <h2>Certifications and factory facts</h2>
-    <p class="notice">
-      Certifications, factory area, staffing, production equipment and customer references are not
-      presented until independently verified. Any certification will be published with its
-      certificate number and a traceable record; until then it is marked provisional or omitted.
-    </p>
+    <section>
+      <h2>Certifications and factory facts</h2>
+      <p class="notice">
+        Certifications, factory area, staffing, production equipment and customer references are not
+        presented until independently verified. Any certification will be published with its
+        certificate number and a traceable record; until then it is marked provisional or omitted.
+      </p>
+    </section>
 
-    <h2>Contact</h2>
-    <ul>
-      <li>Email: <code>{site.entity.email}</code></li>
-      <li>Phone / WhatsApp: <code>{site.entity.phone}</code></li>
-      <li>Address: <code>{site.entity.address}</code></li>
-    </ul>
-    <p class="muted">All contact channels are provisional pending domain and entity verification.</p>
+    <section>
+      <h2>Contact</h2>
+      <div class="table-wrap">
+        <table class="data">
+          <thead>
+            <tr><th scope="col">Channel</th><th scope="col">Value</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Email</strong></td><td><code>{site.entity.email}</code></td></tr>
+            <tr><td><strong>Phone / WhatsApp</strong></td><td><code>{site.entity.phone}</code></td></tr>
+            <tr><td><strong>Address</strong></td><td><code>{site.entity.address}</code></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="muted small" style="margin-top:0.75rem;">All contact channels are provisional pending domain and entity verification.</p>
+    </section>
   </main>
 </BaseLayout>
