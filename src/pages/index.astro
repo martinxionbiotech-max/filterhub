@@ -3,14 +3,40 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import CategoryIcon from '../components/CategoryIcon.astro';
 import { site } from '../data/site';
 import { categories } from '../data/categories';
+import { guides } from '../data/guides';
+import { pillars } from '../data/pillars';
 import { categoryCount, totalProducts, coveredCategories } from '../data/products';
 
 const totalCategories = categories.length;
+const pillarByKey = Object.fromEntries(pillars.map((p) => [p.key, p]));
+const p1 = pillarByKey.p1;
+const p2 = pillarByKey.p2;
+const p4 = pillarByKey.p4;
+const p5 = pillarByKey.p5;
+
+// Automotive pillar: six P1 categories shown as chips in section 3.
+const automotiveSlugs = p1.categories;
+const automotiveCategories = automotiveSlugs
+  .map((slug) => categories.find((c) => c.slug === slug))
+  .filter((c): c is NonNullable<typeof c> => Boolean(c));
+
+// Featured guides for section 7 (one representative per cluster area).
+const featuredGuideSlugs = [
+  'air-filter-selection',
+  'oil-filter-types',
+  'efficiency-vs-pressure-drop',
+  'hepa-vs-ulpa',
+  'oem-procurement-process',
+  'filter-moq-lead-time',
+];
+const featuredGuides = featuredGuideSlugs
+  .map((slug) => guides.find((g) => g.slug === slug))
+  .filter((g): g is NonNullable<typeof g> => Boolean(g));
 ---
 
 <BaseLayout
   title="Air, oil, fuel, hydraulic and cleanroom filtration"
-  description="China Filter Hub is a product information and database hub for automotive, HVAC and cleanroom filters — 104 SKUs across 13 categories, operated by Qinghe County Huiying Automotive Parts Co., Ltd."
+  description="China Filter Hub is a filtration knowledge and product sourcing platform — filter products, technical guides and manufacturing supply, operated by Qinghe County Huiying Automotive Parts Co., Ltd."
 >
   <section class="hero">
     <img
@@ -22,25 +48,26 @@ const totalCategories = categories.length;
     />
     <div class="hero-overlay" aria-hidden="true"></div>
     <div class="wrap">
-      <p class="eyebrow eyebrow--on-dark">Product information &amp; database hub · 104 SKUs · 13 categories</p>
+      <p class="eyebrow eyebrow--on-dark">Filtration knowledge &amp; sourcing platform · 104 SKUs · 13 categories</p>
       <h1 style="max-width:20ch;margin-top:0.35rem;">
-        A searchable product information and database hub for filters
+        Filter products, technical knowledge and manufacturing supply
       </h1>
       <p class="lede" style="max-width:62ch;">
-        China Filter Hub catalogues the engine-intake, cabin, oil, fuel, hydraulic, transmission,
-        HVAC, HEPA/ULPA, activated-carbon and cleanroom filter range as a structured product
-        database. Each SKU links to its machine-readable record, so specifications, OE
-        cross-references and data status stay traceable.
+        China Filter Hub connects product selection, technical understanding and manufacturing
+        supply in one chain. The catalogue spans engine-intake, cabin, oil, fuel, hydraulic,
+        transmission, HVAC, HEPA/ULPA, activated-carbon and cleanroom filters — each SKU linked to
+        its machine-readable record so specifications, OE cross-references and data status stay
+        traceable.
       </p>
       <p style="margin-top:1.5rem;">
-        <a class="btn btn-primary" href="/products/">Browse the catalogue</a>
-        <a class="btn btn-ghost" href="/guides/" style="margin-left:0.5rem;background:rgba(255,255,255,0.06);color:#fff;border-color:rgba(255,255,255,0.25);">Buyer guides</a>
+        <a class="btn btn-primary" href="/products/">Explore filter products</a>
+        <a class="btn btn-ghost" href="/pillars/" style="margin-left:0.5rem;background:rgba(255,255,255,0.06);color:#fff;border-color:rgba(255,255,255,0.25);">Browse the pillars</a>
       </p>
     </div>
   </section>
 
   <main class="wrap">
-    {/* Strength data cards */}
+    {/* 1 · Brand positioning & value proposition */}
     <section class="grid grid--stats" style="margin-top:-2rem;position:relative;">
       <div class="card"><p class="muted small mb-0">Total SKUs</p><p class="stat" style="font-size:2rem;font-weight:800;color:var(--navy-800);margin:0.1rem 0 0;">{totalProducts}</p></div>
       <div class="card"><p class="muted small mb-0">Categories covered</p><p class="stat" style="font-size:2rem;font-weight:800;color:var(--navy-800);margin:0.1rem 0 0;">{coveredCategories}<span class="muted" style="font-size:1.1rem;font-weight:600;"> / {totalCategories}</span></p></div>
@@ -48,50 +75,11 @@ const totalCategories = categories.length;
       <div class="card"><p class="muted small mb-0">Data discipline</p><p class="stat" style="font-size:1.35rem;font-weight:800;color:var(--navy-800);margin:0.35rem 0 0;">4 status labels</p></div>
     </section>
 
-    <section class="section">
-      <div class="section-head">
-        <h2 class="mt-0">Category entry</h2>
-        <p class="muted">All specifications carry a per-field data-status label.</p>
-      </div>
-      <div class="grid grid--cards">
-        {categories.map((c) => {
-          const count = categoryCount(c.slug);
-          return (
-            <a class="card card--link category-card" href={`/products/${c.slug}/`}>
-              <span class="category-icon" aria-hidden="true"><CategoryIcon slug={c.slug} /></span>
-              <span class="category-body">
-                <strong class="category-name">{c.name}</strong>
-                <span class="muted small" style="display:block;margin-top:0.2rem;">{c.summary}</span>
-              </span>
-              <span class="category-count">
-                {count} SKU{count === 1 ? '' : 's'}
-              </span>
-            </a>
-          );
-        })}
-      </div>
-    </section>
-
-    <section class="section" style="max-width:820px;">
-      <h2 class="mt-0">Product database</h2>
-      <p>
-        Every SKU on this site has a matching machine-readable record on the{' '}
-        <a href={site.dataSubsiteUrl} rel="noopener" target="_blank">data subsite</a>, with the full
-        OE cross-reference, technical parameters, material, filter-media, application and MOQ fields
-        — plus a per-field data-status label. The dataset is published as a single{' '}
-        <a href={`${site.dataSubsiteUrl}/data/products.json`} rel="noopener" target="_blank">products.json</a>{' '}
-        file.
-      </p>
-      <p style="margin-top:1rem;">
-        <a class="btn btn-navy" href={site.dataSubsiteUrl} rel="noopener" target="_blank">Open the product database →</a>
-      </p>
-    </section>
-
     <section class="section" style="max-width:820px;">
       <h2 class="mt-0">Five questions buyers ask first</h2>
       <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr));">
-        <div class="card"><h3>Who are you?</h3><p class="muted small mb-0">China Filter Hub is a product information and database hub operated by Qinghe County Huiying Automotive Parts Co., Ltd. — a filter manufacturer based in Qinghe County, Hebei, China. Registration details are disclosed on the company page.</p></div>
-        <div class="card"><h3>In-house or outsourced?</h3><p class="muted small mb-0">Manufacturing is centred on in-house production, with collaborative fabrication for specialist categories. The production model is disclosed per product rather than claimed generically.</p></div>
+        <div class="card"><h3>Who are you?</h3><p class="muted small mb-0">China Filter Hub is a filtration knowledge and product sourcing platform operated by Qinghe County Huiying Automotive Parts Co., Ltd. — a filter manufacturer based in Qinghe County, Hebei, China. Registration details are disclosed on the company page.</p></div>
+        <div class="card"><h3>In-house or outsourced?</h3><p class="muted small mb-0">Automotive filter manufacturing is centred on in-house production, with collaborative fabrication for specialist categories. The production model is disclosed per product rather than claimed generically.</p></div>
         <div class="card"><h3>Can you develop from an OE sample?</h3><p class="muted small mb-0">Yes — send a sample, drawing or OE number. We prototype against the drawing and submit a first article for approval before serial production.</p></div>
         <div class="card"><h3>OEM private label and batch traceability?</h3><p class="muted small mb-0">Private-label and neutral packaging is supported across standard and custom sizes. Batch traceability is kept through per-order quality records and the field-level data-status label on every specification.</p></div>
         <div class="card"><h3>What do you need for a quotation?</h3><p class="muted small mb-0">An SKU or OE number, a drawing or sample, and a target quantity. MOQ and lead time are quoted per line; indicative pricing is confirmed on quotation.</p></div>
@@ -118,6 +106,153 @@ const totalCategories = categories.length;
         channels are shown on the{' '}
         <a href="/company/">company page</a>.
       </p>
+    </section>
+
+    {/* 2 · Explore Filter Products */}
+    <section class="section">
+      <div class="section-head">
+        <h2 class="mt-0">Explore filter products</h2>
+        <p class="muted">All specifications carry a per-field data-status label.</p>
+      </div>
+      <div class="grid grid--cards">
+        {categories.map((c) => {
+          const count = categoryCount(c.slug);
+          return (
+            <a class="card card--link category-card" href={`/products/${c.slug}/`}>
+              <span class="category-icon" aria-hidden="true"><CategoryIcon slug={c.slug} /></span>
+              <span class="category-body">
+                <strong class="category-name">{c.name}</strong>
+                <span class="muted small" style="display:block;margin-top:0.2rem;">{c.summary}</span>
+              </span>
+              <span class="category-count">
+                {count} SKU{count === 1 ? '' : 's'}
+              </span>
+            </a>
+          );
+        })}
+      </div>
+      <p style="margin-top:1.25rem;">
+        Every SKU has a matching machine-readable record on the{' '}
+        <a href={site.dataSubsiteUrl} rel="noopener" target="_blank">data subsite</a>, with the full
+        OE cross-reference, technical parameters, material, filter-media, application and MOQ fields.
+        The dataset is published as a single{' '}
+        <a href={`${site.dataSubsiteUrl}/data/products.json`} rel="noopener" target="_blank">products.json</a>{' '}
+        file.
+      </p>
+      <p style="margin-top:1rem;">
+        <a class="btn btn-navy" href={site.dataSubsiteUrl} rel="noopener" target="_blank">Open the product database →</a>
+      </p>
+    </section>
+
+    {/* 3 · Automotive Filter Solutions */}
+    <section class="section pillar-band">
+      <div class="section-head">
+        <h2 class="mt-0">Automotive Filter Solutions</h2>
+        <p class="muted small"><a href={`/pillars/${p1.slug}/`}>View the automotive pillar →</a></p>
+      </div>
+      <p style="max-width:70ch;">
+        Engine intake, cabin, oil, fuel, hydraulic and transmission filtration for vehicles and
+        heavy equipment — selected on fitment first, then media and duty.
+      </p>
+      <div class="grid grid--cards" style="margin-top:1rem;">
+        {automotiveCategories.map((c) => (
+          <a class="card card--link" href={`/products/${c.slug}/`}>
+            <span class="pillar-cat">
+              <span class="category-icon" aria-hidden="true"><CategoryIcon slug={c.slug} /></span>
+              <span><strong class="category-name">{c.name}</strong></span>
+            </span>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    {/* 4 · Technical Knowledge Center */}
+    <section class="section pillar-band">
+      <div class="section-head">
+        <h2 class="mt-0">Technical Knowledge Center</h2>
+        <p class="muted small"><a href={`/pillars/${p2.slug}/`}>View the technology pillar →</a></p>
+      </div>
+      <p style="max-width:70ch;">
+        Media types, efficiency scales, pressure drop and dust-holding capacity — the
+        cross-category layer that makes the whole catalogue comparable before any specific part is
+        chosen.
+      </p>
+      <div class="grid grid--cards" style="margin-top:1rem;">
+        <a class="card card--link" href="/guides/filter-efficiency-grades/"><strong style="color:var(--navy-800);">Filter efficiency grades compared</strong><span class="muted small" style="display:block;margin-top:0.25rem;">EN 1822 · ISO 16890 · MERV</span></a>
+        <a class="card card--link" href="/guides/filter-media-selection/"><strong style="color:var(--navy-800);">Filter media types</strong><span class="muted small" style="display:block;margin-top:0.25rem;">Needle-punched · synthetic · micro-glass · carbon</span></a>
+        <a class="card card--link" href="/guides/efficiency-vs-pressure-drop/"><strong style="color:var(--navy-800);">Efficiency vs pressure drop</strong><span class="muted small" style="display:block;margin-top:0.25rem;">Why higher is not automatically better</span></a>
+      </div>
+    </section>
+
+    {/* 5 · OEM & Wholesale Solutions */}
+    <section class="section pillar-band">
+      <div class="section-head">
+        <h2 class="mt-0">OEM &amp; Wholesale Solutions</h2>
+        <p class="muted small"><a href={`/pillars/${p4.slug}/`}>View the sourcing pillar →</a></p>
+      </div>
+      <p style="max-width:70ch;">
+        Buy filters under your own brand or in bulk: the RFQ that carries the fitment, first-article
+        verification, private-label packaging, and the MOQ, lead time and pricing that follow from
+        the specification.
+      </p>
+      <p style="margin-top:1rem;">
+        <a class="btn btn-primary" href="/oem/">Discuss an OEM project →</a>
+        <a class="btn btn-ghost" href="/guides/oem-procurement-process/" style="margin-left:0.5rem;">Read the OEM manufacturing guide</a>
+      </p>
+    </section>
+
+    {/* 6 · Qinghe Huiying manufacturer introduction */}
+    <section class="section pillar-band">
+      <div class="section-head">
+        <h2 class="mt-0">Qinghe Huiying — core manufacturing partner</h2>
+        <p class="muted small"><a href={`/pillars/${p5.slug}/`}>View the manufacturing pillar →</a></p>
+      </div>
+      <p style="max-width:70ch;">
+        Qinghe Huiying is the operating legal entity behind this platform and the core automotive
+        filter manufacturing and supply partner. Its manufacturing range is automotive: engine
+        intake, cabin, oil, fuel, hydraulic and transmission filters, plus filter media at low MOQ.
+      </p>
+      <p class="notice" style="margin-top:1rem;max-width:70ch;">
+        Scope boundary: Qinghe Huiying manufactures automotive filters. The industrial, HVAC,
+        HEPA/ULPA, cleanroom and liquid filtration products catalogued on this platform are
+        multi-source industry references, not Huiying-manufactured products.
+      </p>
+      <p style="margin-top:1rem;">
+        <a class="btn btn-navy" href="/factory/">Factory &amp; quality control</a>
+        <a class="btn btn-ghost" href="/company/" style="margin-left:0.5rem;">Company &amp; legal entity</a>
+      </p>
+    </section>
+
+    {/* 7 · Featured technical guides */}
+    <section class="section">
+      <div class="section-head">
+        <h2 class="mt-0">Featured technical guides</h2>
+        <p class="muted small"><a href="/guides/">All buyer guides →</a></p>
+      </div>
+      <div class="grid grid--cards">
+        {featuredGuides.map((g) => (
+          <a class="card card--link" href={`/guides/${g.slug}/`}>
+            <p class="eyebrow" style="margin:0 0 0.3rem;">{g.pillar}</p>
+            <strong style="color:var(--navy-800);">{g.title}</strong>
+            <p class="muted small" style="margin:0.45rem 0 0;">{g.description}</p>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    {/* 8 · Request a Quotation CTA */}
+    <section class="section">
+      <div class="cta-band">
+        <h2 class="mt-0" style="color:#fff;">Request a quotation</h2>
+        <p style="max-width:60ch;color:#c4d3e2;">
+          Send an SKU or OE number, a drawing or sample, and a target quantity. MOQ and lead time
+          are quoted per line; indicative pricing is confirmed on quotation.
+        </p>
+        <p style="margin:0;">
+          <a class="btn btn-primary" href="/contact/">Request a quotation →</a>
+          <a class="btn wa-btn" href={site.entity.whatsappLink} target="_blank" rel="noopener" style="margin-left:0.5rem;">💬 Chat on WhatsApp Now</a>
+        </p>
+      </div>
     </section>
   </main>
 </BaseLayout>
@@ -168,4 +303,20 @@ const totalCategories = categories.length;
     white-space: nowrap;
   }
   .category-card:hover .category-count { background: var(--orange-50); color: var(--orange-700); }
+  .pillar-cat {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+  }
+  .pillar-band {
+    border-top: 1px solid var(--line);
+    padding-top: 1.5rem;
+  }
+  .cta-band {
+    background: linear-gradient(160deg, var(--navy-900) 0%, var(--navy-700) 100%);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem 1.6rem;
+    border-bottom: 4px solid var(--orange-600);
+  }
+  .cta-band h2 { color: #fff; }
 </style>

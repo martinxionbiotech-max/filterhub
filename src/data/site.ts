@@ -47,12 +47,12 @@ export const site = {
 };
 
 export const nav = [
-  { label: 'Home', href: '/' },
   { label: 'Products', href: '/products/' },
-  { label: 'Factory', href: '/factory/' },
-  { label: 'OEM / Private Label', href: '/oem/' },
-  { label: 'Buyer Guides', href: '/guides/' },
-  { label: 'Company', href: '/company/' },
+  { label: 'Automotive Filters', href: '/pillars/automotive-filters/' },
+  { label: 'Industrial Filtration', href: '/pillars/industrial-hvac/' },
+  { label: 'Technical Resources', href: '/pillars/filter-technology/' },
+  { label: 'OEM & Wholesale', href: '/pillars/oem-wholesale/' },
+  { label: 'Manufacturers', href: '/pillars/qinghe-huiying/' },
   { label: 'Contact', href: '/contact/' },
 ];
 
