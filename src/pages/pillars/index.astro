@@ -1,0 +1,31 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { pillars } from '../../data/pillars';
+
+const breadcrumbs = [{ label: 'Pillars', href: '/pillars/' }];
+---
+
+<BaseLayout
+  title="Content Pillars"
+  description="Five content pillars organising China Filter Hub — automotive filters, filter technology, industrial & HVAC filtration, OEM & wholesale sourcing, and Qinghe Huiying manufacturing."
+  breadcrumbs={breadcrumbs}
+>
+  <main class="wrap" style="padding-top:2rem;">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> / Pillars</nav>
+    <h1>Content Pillars</h1>
+    <p class="lede" style="max-width:70ch;">
+      The site is organised into five pillars that connect product selection, technical
+      understanding and manufacturing supply into one sourcing decision chain.
+    </p>
+
+    <div class="grid grid--cards" style="margin-top:1.75rem;">
+      {pillars.map((p) => (
+        <a class="card card--link" href={`/pillars/${p.slug}/`}>
+          <p class="eyebrow" style="margin:0 0 0.3rem;">{p.shortName}</p>
+          <strong style="color:var(--navy-800);">{p.name}</strong>
+          <p class="muted small" style="margin:0.45rem 0 0;">{p.positioning}</p>
+        </a>
+      ))}
+    </div>
+  </main>
+</BaseLayout>

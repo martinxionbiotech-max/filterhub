@@ -1,0 +1,152 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CategoryIcon from '../../components/CategoryIcon.astro';
+import { pillars, getPillar, type Pillar } from '../../data/pillars';
+import { categories } from '../../data/categories';
+import { guides } from '../../data/guides';
+
+export function getStaticPaths() {
+  return pillars.map((p) => ({ params: { slug: p.slug }, props: { pillar: p } }));
+}
+
+const { pillar } = Astro.props as { pillar: Pillar };
+
+const pillarCategories = pillar.categories
+  .map((slug) => categories.find((c) => c.slug === slug))
+  .filter((c): c is NonNullable<typeof c> => Boolean(c));
+
+const pillarGuides = pillar.guides
+  .map((slug) => guides.find((g) => g.slug === slug))
+  .filter((g): g is NonNullable<typeof g> => Boolean(g));
+
+const otherPillars = pillars.filter((p) => p.key !== pillar.key);
+
+const breadcrumbs = [
+  { label: 'Pillars', href: '/pillars/' },
+  { label: pillar.name, href: `/pillars/${pillar.slug}/` },
+];
+---
+
+<BaseLayout
+  title={pillar.name}
+  description={pillar.positioning}
+  breadcrumbs={breadcrumbs}
+>
+  <main class="wrap" style="padding-top:2rem;">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a> / <a href="/pillars/">Pillars</a> / {pillar.name}
+    </nav>
+    <p class="eyebrow" style="margin-bottom:0.4rem;">{pillar.eyebrow}</p>
+    <h1 style="margin-top:0;">{pillar.name}</h1>
+    <p class="lede" style="max-width:70ch;">{pillar.positioning}</p>
+
+    {/* Topics (theme list linking to existing content) */}
+    <section class="section">
+      <h2 class="mt-0">Topics in this pillar</h2>
+      <div class="grid grid--cards">
+        {pillar.topics.map((t) => (
+          <a class="card card--link" href={t.href}>
+            <strong style="color:var(--navy-800);">{t.label}</strong>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    {/* Key conclusions / professional judgment */}
+    <section class="section">
+      <h2 class="mt-0">Key conclusions</h2>
+      <ul>
+        {pillar.conclusions.map((c) => <li>{c}</li>)}
+      </ul>
+    </section>
+
+    {/* Related categories */}
+    {pillarCategories.length > 0 && (
+      <section class="section">
+        <h2 class="mt-0">Related categories</h2>
+        <div class="grid grid--cards">
+          {pillarCategories.map((c) => (
+            <a class="card card--link" href={`/products/${c.slug}/`}>
+              <span class="pillar-cat">
+                <span class="category-icon" aria-hidden="true"><CategoryIcon slug={c.slug} /></span>
+                <span>
+                  <strong class="category-name">{c.name}</strong>
+                  <span class="muted small" style="display:block;">{c.summary}</span>
+                </span>
+              </span>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+
+    {/* Related guides */}
+    {pillarGuides.length > 0 && (
+      <section class="section">
+        <h2 class="mt-0">Related buyer guides</h2>
+        <ul>
+          {pillarGuides.map((g) => (
+            <li><a href={`/guides/${g.slug}/`}>{g.title}</a></li>
+          ))}
+        </ul>
+      </section>
+    )}
+
+    {/* Conversion CTA matched to pillar intent */}
+    <section class="section">
+      <div class="pillar-cta">
+        <h2 class="mt-0" style="color:#fff;">{pillar.intent}</h2>
+        <p>
+          <a class="btn btn-primary" href={pillar.ctaPrimary.href}>{pillar.ctaPrimary.label} →</a>
+          <a class="btn btn-ghost" href={pillar.ctaSecondary.href} style="margin-left:0.5rem;background:rgba(255,255,255,0.08);color:#fff;border-color:rgba(255,255,255,0.3);">{pillar.ctaSecondary.label}</a>
+        </p>
+      </div>
+    </section>
+
+    {/* Platform vs manufacturer boundary */}
+    <p class="notice" style="margin-top:1.5rem;">{pillar.boundary}</p>
+
+    {/* Cross-link to the other four pillars */}
+    <section class="section">
+      <h2 class="mt-0">Explore the other pillars</h2>
+      <div class="grid grid--cards">
+        {otherPillars.map((p) => (
+          <a class="card card--link" href={`/pillars/${p.slug}/`}>
+            <p class="eyebrow" style="margin:0 0 0.3rem;">{p.shortName}</p>
+            <strong style="color:var(--navy-800);">{p.name}</strong>
+          </a>
+        ))}
+      </div>
+    </section>
+  </main>
+</BaseLayout>
+
+<style>
+  .pillar-cat {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.85rem;
+  }
+  .category-icon {
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    background: var(--navy-50);
+    color: var(--navy-700);
+  }
+  .card--link:hover .category-icon { background: var(--orange-50); color: var(--orange-600); }
+  .category-name { color: var(--navy-800); }
+  .pillar-cta {
+    background: linear-gradient(160deg, var(--navy-900) 0%, var(--navy-700) 100%);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem 1.6rem;
+    color: #eaf1f7;
+  }
+  .pillar-cta h2 { color: #fff; }
+  .pillar-cta p { margin: 0; }
+  .pillar-cta a { color: #f6a07c; }
+</style>
