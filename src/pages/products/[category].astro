@@ -171,6 +171,21 @@ const catImage = categoryImages[category.slug];
       <p>{category.sourcingPerspective}</p>
     </section>
 
+    <section class="section">
+      <h2 class="mt-0">Product database</h2>
+      <p>
+        Every SKU in this category has a machine-readable record on the{' '}
+        <a href={`${site.dataSubsiteUrl}/products/${category.slug}/`} rel="noopener" target="_blank">data subsite</a>{' '}
+        with the full OE cross-reference, technical parameters, material, filter-media,
+        application and MOQ fields, each carrying a data-status label.
+      </p>
+      <p style="margin-top:1rem;">
+        <a class="btn btn-navy" href={`${site.dataSubsiteUrl}/products/${category.slug}/`} rel="noopener" target="_blank">
+          Open {category.name} in the product database →
+        </a>
+      </p>
+    </section>
+
     {relatedGuides.length > 0 && (
       <section class="section">
         <h2 class="mt-0">Related buyer guides</h2>

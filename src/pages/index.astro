@@ -10,7 +10,7 @@ const totalCategories = categories.length;
 
 <BaseLayout
   title="Air, oil, fuel, hydraulic and cleanroom filtration"
-  description="Qinghe Yinghui Filter consolidates a full-span filter catalogue — engine intake, oil, fuel, hydraulic, HVAC, HEPA/ULPA, activated carbon and cleanroom equipment — under one sourcing relationship."
+  description="China Filter Hub is a product information and database hub for automotive, HVAC and cleanroom filters — 104 SKUs across 13 categories, operated by Qinghe County Huiying Automotive Parts Co., Ltd."
 >
   <section class="hero">
     <img
@@ -22,16 +22,15 @@ const totalCategories = categories.length;
     />
     <div class="hero-overlay" aria-hidden="true"></div>
     <div class="wrap">
-      <p class="eyebrow eyebrow--on-dark">Automotive filters manufacturer · OEM supplier</p>
+      <p class="eyebrow eyebrow--on-dark">Product information &amp; database hub · 104 SKUs · 13 categories</p>
       <h1 style="max-width:20ch;margin-top:0.35rem;">
-        Air, oil, fuel, hydraulic and cleanroom filtration — one Qinghe Yinghui-based manufacturing partner
+        A searchable product information and database hub for filters
       </h1>
       <p class="lede" style="max-width:62ch;">
-        Qinghe Yinghui Filter is an automotive filters manufacturer and OEM supplier consolidating
-        a full-span filter catalogue under a single sourcing relationship. Engine intake air, cabin,
-        oil, fuel, hydraulic and transmission filters sit alongside HVAC, HEPA/ULPA, activated-carbon
-        and cleanroom-grade equipment, so a buyer carrying several categories no longer has to split
-        orders across multiple suppliers.
+        China Filter Hub catalogues the engine-intake, cabin, oil, fuel, hydraulic, transmission,
+        HVAC, HEPA/ULPA, activated-carbon and cleanroom filter range as a structured product
+        database. Each SKU links to its machine-readable record, so specifications, OE
+        cross-references and data status stay traceable.
       </p>
       <p style="margin-top:1.5rem;">
         <a class="btn btn-primary" href="/products/">Browse the catalogue</a>
@@ -74,9 +73,24 @@ const totalCategories = categories.length;
     </section>
 
     <section class="section" style="max-width:820px;">
+      <h2 class="mt-0">Product database</h2>
+      <p>
+        Every SKU on this site has a matching machine-readable record on the{' '}
+        <a href={site.dataSubsiteUrl} rel="noopener" target="_blank">data subsite</a>, with the full
+        OE cross-reference, technical parameters, material, filter-media, application and MOQ fields
+        — plus a per-field data-status label. The dataset is published as a single{' '}
+        <a href={`${site.dataSubsiteUrl}/data/products.json`} rel="noopener" target="_blank">products.json</a>{' '}
+        file.
+      </p>
+      <p style="margin-top:1rem;">
+        <a class="btn btn-navy" href={site.dataSubsiteUrl} rel="noopener" target="_blank">Open the product database →</a>
+      </p>
+    </section>
+
+    <section class="section" style="max-width:820px;">
       <h2 class="mt-0">Five questions buyers ask first</h2>
       <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr));">
-        <div class="card"><h3>Who are you?</h3><p class="muted small mb-0">Qinghe Yinghui Filter is an automotive filters manufacturer and OEM supplier positioned in the Qinghe filter industry cluster of Hebei province. Entity and registration details are disclosed on the company page.</p></div>
+        <div class="card"><h3>Who are you?</h3><p class="muted small mb-0">China Filter Hub is a product information and database hub operated by Qinghe County Huiying Automotive Parts Co., Ltd. — a filter manufacturer based in Qinghe County, Hebei, China. Registration details are disclosed on the company page.</p></div>
         <div class="card"><h3>In-house or outsourced?</h3><p class="muted small mb-0">Manufacturing is centred on in-house production, with collaborative fabrication for specialist categories. The production model is disclosed per product rather than claimed generically.</p></div>
         <div class="card"><h3>Can you develop from an OE sample?</h3><p class="muted small mb-0">Yes — send a sample, drawing or OE number. We prototype against the drawing and submit a first article for approval before serial production.</p></div>
         <div class="card"><h3>OEM private label and batch traceability?</h3><p class="muted small mb-0">Private-label and neutral packaging is supported across standard and custom sizes. Batch traceability is kept through per-order quality records and the field-level data-status label on every specification.</p></div>
@@ -100,8 +114,8 @@ const totalCategories = categories.length;
         </table>
       </div>
       <p class="notice" style="margin-top:1.25rem;">
-        Entity disclosure: the operating legal entity, registration details, factory address and
-        contact channels are shown on the{' '}
+        Entity disclosure: the operating legal entity, registration details, address and contact
+        channels are shown on the{' '}
         <a href="/company/">company page</a>.
       </p>
     </section>

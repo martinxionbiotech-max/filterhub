@@ -75,11 +75,12 @@ def main():
 
     # --- Main site llms.txt ---
     lines = [
-        "# Qinghe Yinghui Filter (FilterHub)",
+        "# China Filter Hub (Huiying)",
         "",
         f"> Main site: {SITE} (placeholder domain chinafilterhub.com)",
         f"> Data subsite: {DATA_SITE} (placeholder domain)",
-        "> Brand/entity fields are provisional pending verification.",
+        "> Product information & database hub for automotive, HVAC and cleanroom filters.",
+        "> Operating legal entity: Qinghe County Huiying Automotive Parts Co., Ltd. (credit code 91130534MA0958NT84).",
         "",
         "## Categories",
         "",
@@ -123,6 +124,7 @@ def main():
         "",
         f"> Data subsite: {DATA_SITE} (placeholder domain)",
         f"> Main site: {SITE} (placeholder domain chinafilterhub.com)",
+        "> Operating legal entity: Qinghe County Huiying Automotive Parts Co., Ltd. (credit code 91130534MA0958NT84).",
         "",
         "## Products",
         f"- [SKU index]({DATA_SITE}/products/)",

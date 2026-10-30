@@ -5,7 +5,7 @@ import { site } from '../data/site';
 
 <BaseLayout
   title="Factory & Quality Control"
-  description="Manufacturing process and quality-control framework (IQC/IPQC/FQC/OQC) for the Qinghe filter industry cluster, with equipment categories and industry-reference capacity."
+  description="Brief production framework and quality-control gates for the filter range, with a link to the full factory details on carfilterspro.com."
   breadcrumbs={[{ label: 'Factory', href: '/factory/' }]}
 >
   <main class="wrap" style="padding-top:2rem;">
@@ -13,29 +13,18 @@ import { site } from '../data/site';
     <h1>Factory &amp; Quality Control</h1>
 
     <p class="lede" style="max-width:70ch;">
-      Manufacturing is positioned within the Qinghe filter industry cluster of Hebei province.
-      Factory area, staffing and production equipment for this entity are marked provisional until
-      independently verified with on-site evidence.
+      This page keeps the production framework concise and product-focused. Detailed factory
+      information — facility area, equipment list, staffing and history — lives on the primary
+      storefront, not here.
     </p>
-
-    <figure style="margin:1.5rem 0 0;">
-      <img
-        src="/images/ai/factory-workshop.webp"
-        alt="Wide view of a filter manufacturing workshop with steel production machinery"
-        width="1600"
-        height="900"
-        loading="lazy"
-        style="width:100%;height:auto;border-radius:var(--radius-lg);border:1px solid var(--line);display:block;"
-      />
-    </figure>
 
     <section>
       <h2>Production process (industry reference)</h2>
       <p>
-        Filter manufacturing in this cluster typically runs in a media-to-finish sequence: filter-media
-        production, pleating, frame forming, element assembly, and final testing. The following line
-        descriptions are drawn from the industry cluster reference corpus and are <em>not</em> presented
-        as this entity's verified equipment list:
+        Filter manufacturing in the Qinghe cluster typically runs a media-to-finish sequence:
+        filter-media production, pleating, frame forming, element assembly and final testing. The
+        line descriptions below are drawn from the industry-cluster reference corpus and are{' '}
+        <em>not</em> presented as this entity&rsquo;s verified equipment list:
       </p>
       <div class="table-wrap">
         <table class="data">
@@ -56,9 +45,8 @@ import { site } from '../data/site';
     <section>
       <h2>Quality-control gates</h2>
       <p>
-        Quality control in this industry is organised as a four-gate sequence. These are the standard
-        in-process gates a filter plant applies, described as a framework rather than as this entity's
-        audited procedure:
+        Quality control in this industry is organised as a four-gate sequence, described as a
+        framework rather than as an audited procedure:
       </p>
       <div class="table-wrap">
         <table class="data">
@@ -82,21 +70,18 @@ import { site } from '../data/site';
     </section>
 
     <section>
-      <h2>Capacity and data discipline</h2>
-      <p>
-        Capacity in this cluster is a function of line count, shift structure and the mix of standard
-        versus custom sizes, so it is quoted per line rather than as a single headline figure. Every
-        specification field on this site carries a data-status label (<code>verified</code> /{' '}
-        <code>catalog-confirmed</code> / <code>reference</code> / <code>pending</code>), so the
-        catalogue stays comparable and no unpublished field is guessed.
-      </p>
-    </section>
-
-    <section>
       <h2>Certifications</h2>
       <p class="notice">
         Certifications are not presented until independently verified with certificate numbers. Any
         certification claim seen in third-party catalogues is not attributed to this entity.
+      </p>
+    </section>
+
+    <section>
+      <h2>Full factory details</h2>
+      <p class="notice">
+        For facility area, equipment, staffing and factory history, see the primary storefront&rsquo;s{' '}
+        <a href={site.factoryUrl} rel="noopener" target="_blank">factory page on carfilterspro.com</a>.
       </p>
     </section>
   </main>

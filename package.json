@@ -2,7 +2,7 @@
   "name": "filterhub",
   "type": "module",
   "version": "0.1.0",
-  "description": "Qinghe Yinghui Filter — B2B filter manufacturer & exporter (Astro commercial main site, placeholder domain chinafilterhub.com)",
+  "description": "China Filter Hub — filter product information & database hub (Astro main site, placeholder domain chinafilterhub.com)",
   "private": true,
   "scripts": {
     "dev": "astro dev",
