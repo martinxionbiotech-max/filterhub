@@ -4,7 +4,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://chinafilterhub.com', // placeholder domain
+  site: 'https://chinafilterhub.com',
   output: 'static',
   trailingSlash: 'always',
   integrations: [sitemap()],
