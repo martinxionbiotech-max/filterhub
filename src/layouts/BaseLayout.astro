@@ -7,9 +7,11 @@ interface Props {
   title: string;
   description: string;
   breadcrumbs?: { label: string; href: string }[];
+  /** ISO date (YYYY-MM-DD). Adds dateModified to the WebPage node. */
+  updated?: string;
 }
 
-const { title, description, breadcrumbs = [] } = Astro.props;
+const { title, description, breadcrumbs = [], updated } = Astro.props;
 
 // Meta descriptions are truncated to ~155 chars (word boundary) for length
 // compliance; the full text stays on-page. Intent keywords lead the sentence
@@ -51,6 +53,7 @@ const webPageSchema = {
   description: metaDescription,
   isPartOf: { '@id': `${site.siteUrl}/#website` },
   publisher: { '@id': `${site.siteUrl}/#organization` },
+  ...(updated ? { dateModified: updated } : {}),
 };
 
 const websiteSchema = {

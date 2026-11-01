@@ -1,26 +1,238 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import LegalPage from '../components/LegalPage.astro';
+import { site } from '../data/site';
+
+const updated = '1 November 2026';
+const toc = [
+  { id: 'agreement', label: 'Agreement to these terms' },
+  { id: 'who-we-are', label: 'Who we are' },
+  { id: 'what-this-site-is', label: 'What this site is, and is not' },
+  { id: 'product-information', label: 'Product information' },
+  { id: 'oe-references', label: 'OE references and part numbers' },
+  { id: 'quotations-orders', label: 'Quotations and orders' },
+  { id: 'prices', label: 'Prices, taxes and delivery' },
+  { id: 'acceptable-use', label: 'Acceptable use' },
+  { id: 'intellectual-property', label: 'Intellectual property' },
+  { id: 'third-party', label: 'Third-party links' },
+  { id: 'warranties', label: 'Disclaimer of warranties' },
+  { id: 'liability', label: 'Limitation of liability' },
+  { id: 'indemnity', label: 'Indemnity' },
+  { id: 'governing-law', label: 'Governing law and disputes' },
+  { id: 'changes', label: 'Changes and severability' },
+  { id: 'contact', label: 'Contact' },
+];
 ---
 
 <BaseLayout
   title="Terms of Service"
-  description="Terms of service for the China Filter Hub website — a product information and database hub."
+  description="Terms governing use of China Filter Hub: data status, quotations and orders, acceptable use, intellectual property and liability."
   breadcrumbs={[{ label: 'Terms of Service', href: '/terms/' }]}
+  updated="2026-11-01"
 >
-  <main class="wrap" style="padding-top:2rem;max-width:760px;">
-    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> / Terms of Service</nav>
-    <h1>Terms of Service</h1>
+  <LegalPage
+    title="Terms of Service"
+    updated={updated}
+    toc={toc}
+    intro="These terms govern your use of chinafilterhub.com and data.chinafilterhub.com. They set out what this site is — an information and cross-reference resource — what it is not, and the basis on which information on it is provided."
+  >
+    <h2 id="agreement">1. Agreement to these terms</h2>
     <p>
-      This website provides catalogue and specification information for sourcing purposes. Content
-      is provided as-is; specifications carry per-field data-status labels and are not a contractual
-      offer. Orders are confirmed separately in writing.
+      By accessing this website you agree to these terms. If you do not agree, please stop using
+      the site. If you use the site on behalf of a company, you confirm that you are authorised to
+      accept these terms for that company, and &ldquo;you&rdquo; includes the company.
     </p>
     <p>
-      Brand, entity and domain details are provisional pending business-licence verification.
+      These terms apply to the website. They do not replace the terms of any individual contract of
+      sale, quotation, or supply agreement, which prevail over these terms in the event of a
+      conflict.
+    </p>
+
+    <h2 id="who-we-are">2. Who we are</h2>
+    <p>
+      This website is operated by <strong>{site.entity.legalName}</strong>, a company registered in
+      Qinghe County, Hebei, China, under unified social credit code
+      <code>{site.entity.creditCode}</code>, with its registered address at {site.entity.address}.
+      Contact details are set out in section 16.
+    </p>
+
+    <h2 id="what-this-site-is">3. What this site is, and what it is not</h2>
+    <p>
+      China Filter Hub is a product information and cross-reference resource for automotive, HVAC,
+      cleanroom and industrial filtration products. It exists to help buyers identify a part, read
+      its recorded specification, and decide whether to request a quotation.
+    </p>
+    <p><strong>The site is not:</strong></p>
+    <ul>
+      <li>an online shop — no order is placed or accepted by using the site;</li>
+      <li>a marketplace — we do not host third-party sellers or process payments;</li>
+      <li>a certification body — we do not certify that any product meets a standard;</li>
+      <li>a substitute for the original equipment manufacturer&rsquo;s documentation.</li>
+    </ul>
+
+    <h2 id="product-information">4. Product information and specifications</h2>
+    <p>
+      Specifications on this site are compiled from manufacturer catalogues, published standards,
+      and supplier documentation. Each field carries a data-status label indicating how it was
+      obtained. Where a value could not be verified from a traceable source, the field is left
+      blank rather than estimated.
     </p>
     <p>
-      Certain product and facility images on this site are computer-generated illustrations for
-      presentation purposes and do not depict actual production facilities.
+      Dimensions, media, efficiency ratings and interchange information can change between
+      production batches and model years, and catalogues are occasionally wrong. Information on
+      this site is therefore <strong>indicative</strong>. Before you place an order, confirm the
+      specification against the OE drawing, the vehicle or equipment identification, or a physical
+      sample. Section 11 explains the limits of what we warrant.
     </p>
-  </main>
+
+    <h2 id="oe-references">5. OE references and part numbers</h2>
+    <p>
+      OE numbers and competitor part numbers are reproduced for identification purposes only. A
+      cross-reference on this site means that a part has been recorded as associated with that
+      number — it does <strong>not</strong> by itself confirm dimensional equivalence, material
+      equivalence, or fitness for a particular application.
+    </p>
+    <p>
+      Manufacturer names and trademarks are the property of their respective owners and are used
+      descriptively, to identify the application a part is intended for. Their use does not imply
+      any affiliation with, endorsement by, or approval of us by those manufacturers.
+    </p>
+
+    <h2 id="quotations-orders">6. Quotations and orders</h2>
+    <p>
+      Submitting a request for quotation through this site is an invitation to us to quote. It does
+      not create a contract, reserve stock, or fix a price. A quotation is valid for the period
+      stated in it, or for 30 days if no period is stated, and is subject to the availability of
+      materials at the time of acceptance.
+    </p>
+    <p>
+      A contract of sale is formed only when we issue a written order confirmation or proforma
+      invoice and you accept it. Any samples, drawings or pre-production approvals are governed by
+      the terms stated in that confirmation.
+    </p>
+
+    <h2 id="prices">7. Prices, taxes and delivery</h2>
+    <p>
+      Prices quoted through this site are in the currency stated on the quotation and are exclusive
+      of taxes, duties and freight unless stated otherwise. International Commercial Terms
+      (Incoterms) are specified per quotation; where they are not, they are agreed in writing
+      before shipment. Import duties, value-added tax and customs clearance in the destination
+      country are the buyer&rsquo;s responsibility unless the quotation expressly states otherwise.
+    </p>
+    <p>
+      Lead times are estimates based on production capacity at the time of quotation and are not
+      guaranteed unless expressly agreed as a contractual delivery date.
+    </p>
+
+    <h2 id="acceptable-use">8. Acceptable use</h2>
+    <p>You agree not to:</p>
+    <ul>
+      <li>use the site in breach of any applicable law or regulation;</li>
+      <li>attempt to gain unauthorised access to the site, its servers, or any connected system;</li>
+      <li>introduce malware, or interfere with the availability or integrity of the site;</li>
+      <li>extract data at a rate or in a manner that imposes an unreasonable load, or that circumvents rate limits and access controls;</li>
+      <li>reproduce the database or a substantial part of it for a competing service;</li>
+      <li>misrepresent your identity, your company, or your authority to act for a company; or</li>
+      <li>use contact details published on this site to send unsolicited bulk messages.</li>
+    </ul>
+    <p>
+      Automated access for search indexing is permitted subject to our robots directives. Other
+      automated collection requires our prior written consent.
+    </p>
+
+    <h2 id="intellectual-property">9. Intellectual property</h2>
+    <p>
+      The layout, text, original descriptions, data compilation and design of this site are owned by
+      us or used under licence, and are protected by copyright and database rights. You may view,
+      download and print pages for your own internal business evaluation. You may not republish,
+      resell, or create a derivative database from them without written permission.
+    </p>
+    <p>
+      Third-party trademarks, part numbers and catalogue references remain the property of their
+      owners. Nothing in these terms grants you a licence to use any third-party mark.
+    </p>
+
+    <h2 id="third-party">10. Third-party links and content</h2>
+    <p>
+      The site links to external resources, including messaging services and public reference
+      sources. Those sites are not under our control, and we are not responsible for their content,
+      accuracy or practices. A link is not an endorsement.
+    </p>
+
+    <h2 id="warranties">11. Disclaimer of warranties</h2>
+    <p>
+      The site and its content are provided on an &ldquo;as is&rdquo; and &ldquo;as
+      available&rdquo; basis. To the fullest extent permitted by law, we disclaim all warranties,
+      express or implied, including implied warranties of merchantability, fitness for a particular
+      purpose, and non-infringement.
+    </p>
+    <p>
+      We do not warrant that the site will be uninterrupted, error-free or free of harmful
+      components, or that any specification, cross-reference or other content is accurate, complete
+      or current. Warranties for goods supplied under a contract of sale are set out in that
+      contract and are not affected by this section.
+    </p>
+
+    <h2 id="liability">12. Limitation of liability</h2>
+    <p>
+      To the extent permitted by law, we are not liable for indirect, incidental, special,
+      consequential or punitive loss, or for loss of profit, revenue, business, goodwill, data, or
+      anticipated savings, arising from your use of or inability to use this site, or from reliance
+      on its content.
+    </p>
+    <p>
+      Our aggregate liability arising out of or in connection with your use of the site is limited
+      to the amount you paid us, if any, for the product or service giving rise to the claim.
+    </p>
+    <p>
+      Nothing in these terms excludes or limits liability that cannot lawfully be excluded or
+      limited, including liability for death or personal injury caused by negligence, for fraud, or
+      for any other liability that applicable law does not permit to be excluded.
+    </p>
+
+    <h2 id="indemnity">13. Indemnity</h2>
+    <p>
+      You agree to indemnify us against claims, losses and reasonable costs arising from your breach
+      of these terms, your misuse of the site, or your infringement of the rights of a third party.
+      This does not apply to the extent the claim arises from our own negligence or breach.
+    </p>
+
+    <h2 id="governing-law">14. Governing law and disputes</h2>
+    <p>
+      These terms are governed by the laws of the People&rsquo;s Republic of China, without regard
+      to conflict-of-law rules. The parties will first attempt to resolve any dispute through good-
+      faith negotiation. If it is not resolved within 30 days, either party may bring proceedings in
+      the people&rsquo;s court with jurisdiction at the defendant&rsquo;s domicile.
+    </p>
+    <p>
+      Nothing in this section deprives a consumer of the protection of mandatory rules of the law of
+      their country of residence, where those rules apply.
+    </p>
+
+    <h2 id="changes">15. Changes and severability</h2>
+    <p>
+      We may revise these terms from time to time. The version published on this page, with the
+      date shown above, is the current version and applies from the date of publication. If any
+      provision is found unenforceable, the remaining provisions continue in full force, and the
+      unenforceable provision is replaced by the closest enforceable equivalent.
+    </p>
+    <p>
+      These terms, together with the <a href="/privacy/">Privacy Policy</a>,
+      <a href="/cookies/">Cookie Policy</a> and <a href="/disclaimer/">Disclaimer</a>, constitute
+      the entire agreement between us regarding use of the site.
+    </p>
+
+    <h2 id="contact">16. Contact</h2>
+    <p>
+      {site.entity.legalName}<br />
+      {site.entity.address}<br />
+      Email: <a href={`mailto:${site.entity.email}`}>{site.entity.email}</a> ·{' '}
+      <a href={`mailto:${site.entity.emailAlt}`}>{site.entity.emailAlt}</a><br />
+      Telephone / WhatsApp: {site.entity.phone}
+    </p>
+    <p class="muted small">
+      See also: <a href="/privacy/">Privacy Policy</a> · <a href="/cookies/">Cookie Policy</a> ·{' '}
+      <a href="/disclaimer/">Disclaimer</a> · <a href="/company/">Company details</a>
+    </p>
+  </LegalPage>
 </BaseLayout>

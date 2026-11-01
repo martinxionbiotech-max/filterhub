@@ -1,18 +1,178 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import LegalPage from '../components/LegalPage.astro';
+import { site } from '../data/site';
+
+const updated = '1 November 2026';
+const toc = [
+  { id: 'what-are-cookies', label: 'What cookies are' },
+  { id: 'our-position', label: 'Our position' },
+  { id: 'cookies-we-use', label: 'Cookies that may be set' },
+  { id: 'what-we-do-not-use', label: 'What we do not use' },
+  { id: 'browser-storage', label: 'Browser storage' },
+  { id: 'third-party', label: 'Third-party destinations' },
+  { id: 'managing', label: 'Managing cookies' },
+  { id: 'consent', label: 'Consent position' },
+  { id: 'changes', label: 'Changes' },
+  { id: 'contact', label: 'Contact' },
+];
 ---
 
 <BaseLayout
   title="Cookie Policy"
-  description="Cookie policy for the China Filter Hub website — a product information and database hub."
+  description="Which cookies China Filter Hub does and does not use: no advertising or analytics tracking, only the security cookies our content delivery network may set."
   breadcrumbs={[{ label: 'Cookie Policy', href: '/cookies/' }]}
+  updated="2026-11-01"
 >
-  <main class="wrap" style="padding-top:2rem;max-width:760px;">
-    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> / Cookie Policy</nav>
-    <h1>Cookie Policy</h1>
+  <LegalPage
+    title="Cookie Policy"
+    updated={updated}
+    toc={toc}
+    intro="This page lists the cookies and similar technologies that may be used when you visit chinafilterhub.com, what each one does, and how you can control them. It should be read together with our Privacy Policy."
+  >
+    <h2 id="what-are-cookies">1. What cookies are</h2>
     <p>
-      This site does not use advertising or tracking cookies. Any cookies are limited to those
-      necessary for basic site function.
+      A cookie is a small text file that a website asks your browser to store. It is sent back to
+      the same site on later requests, which lets the site remember something between page views —
+      for example, that a security challenge has already been passed. Cookies can be
+      <em>first-party</em> (set by the site you are visiting) or <em>third-party</em> (set by
+      another domain whose resource is loaded by the page).
     </p>
-  </main>
+    <p>
+      Related technologies include local storage, session storage and pixels. They work in
+      comparable ways and are treated the same way in this policy.
+    </p>
+
+    <h2 id="our-position">2. Our position</h2>
+    <p>
+      This site is a business-to-business information resource. It does not carry advertising, does
+      not run audience analytics, and does not embed social plugins or tracking pixels. There is
+      therefore no cookie banner on the site, because there is no non-essential cookie to ask you
+      about.
+    </p>
+    <p>
+      The only cookies that may be present are set by our content delivery network for security and
+      abuse prevention. They do not identify you to us, are not used to build a profile, and are not
+      shared for advertising.
+    </p>
+
+    <h2 id="cookies-we-use">3. Cookies that may be set</h2>
+    <p>
+      The site is delivered through Cloudflare. Depending on traffic conditions and whether a
+      security check is triggered, Cloudflare may set one or more of the following:
+    </p>
+    <div class="table-wrap">
+      <table class="data">
+        <thead>
+          <tr>
+            <th scope="col">Cookie</th>
+            <th scope="col">Set by</th>
+            <th scope="col">Purpose</th>
+            <th scope="col">Typical lifetime</th>
+            <th scope="col">Category</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>__cf_bm</code></td>
+            <td>Cloudflare</td>
+            <td>Distinguishes human visitors from automated traffic, so that bots cannot degrade the site or abuse forms.</td>
+            <td>About 30 minutes</td>
+            <td>Strictly necessary — security</td>
+          </tr>
+          <tr>
+            <td><code>cf_clearance</code></td>
+            <td>Cloudflare</td>
+            <td>Records that a visitor has passed a security challenge, so the challenge is not repeated on every request.</td>
+            <td>For the duration of the clearance period</td>
+            <td>Strictly necessary — security</td>
+          </tr>
+          <tr>
+            <td><code>_cfuvid</code></td>
+            <td>Cloudflare</td>
+            <td>Supports rate limiting and bot detection at the edge.</td>
+            <td>Session</td>
+            <td>Strictly necessary — security</td>
+          </tr>
+          <tr>
+            <td><code>cf_chl_*</code></td>
+            <td>Cloudflare</td>
+            <td>Short-lived values used while a security challenge is being completed.</td>
+            <td>Minutes</td>
+            <td>Strictly necessary — security</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="muted small">
+      Whether a particular cookie appears depends on your request and on the security settings
+      applied to the site at that moment. You can inspect the cookies actually set in your browser
+      using its developer tools.
+    </p>
+
+    <h2 id="what-we-do-not-use">4. What we do not use</h2>
+    <ul>
+      <li><strong>No analytics cookies</strong> — the site does not load Google Analytics, Plausible, Umami, Matomo or any comparable product.</li>
+      <li><strong>No advertising or retargeting cookies</strong> — no advertising pixels, no conversion tracking, no remarketing audiences.</li>
+      <li><strong>No social media plugins</strong> — no embedded like buttons, feeds or share widgets that would contact a third party before you click.</li>
+      <li><strong>No session or login cookies</strong> — there are no accounts, no shopping cart and no checkout on this site.</li>
+      <li><strong>No cross-site tracking</strong> — we do not attempt to recognise you across other websites.</li>
+    </ul>
+
+    <h2 id="browser-storage">5. Browser storage</h2>
+    <p>
+      The site does not write to local storage or session storage, and does not read or set
+      first-party cookies through script. The quotation form is composed entirely in your browser
+      and opens a message in your own email client; nothing is saved locally by the site.
+    </p>
+
+    <h2 id="third-party">6. Third-party destinations</h2>
+    <p>
+      Some pages contain ordinary links to external services — for example a WhatsApp click-to-chat
+      link, or a citation to Baidu Baike. Following a link takes you to that service, which may then
+      set its own cookies under its own policy. Because those are links rather than embedded
+      widgets, no third-party cookie is set while you are simply reading this site.
+    </p>
+
+    <h2 id="managing">7. Managing cookies</h2>
+    <p>
+      You can block or delete cookies through your browser settings. Because the cookies described
+      above are used for security, blocking them may cause a security check to reappear more often,
+      or may prevent access to the site entirely if you block all first-party cookies.
+    </p>
+    <p>
+      Most browsers also offer a private or incognito mode, which discards cookies when the window
+      closes. Browser help pages describe the exact menu path for each product.
+    </p>
+
+    <h2 id="consent">8. Consent position</h2>
+    <p>
+      Under the ePrivacy Directive and the UK Privacy and Electronic Communications Regulations,
+      consent is required for non-essential cookies. This site sets no non-essential cookies, so no
+      consent request is shown. If we introduce analytics or advertising in future, we will update
+      this page and add a consent mechanism before those cookies are set.
+    </p>
+    <p>
+      Because we do not track or sell personal information, Do Not Track and Global Privacy Control
+      signals do not change the site&rsquo;s behaviour: the site already does not do what those
+      signals are intended to prevent.
+    </p>
+
+    <h2 id="changes">9. Changes to this policy</h2>
+    <p>
+      We review this page whenever the site&rsquo;s technology changes. The date at the top shows
+      the current version. Any future addition of analytics or advertising would be reflected here
+      before it went live.
+    </p>
+
+    <h2 id="contact">10. Contact</h2>
+    <p>
+      Questions about this policy: <a href={`mailto:${site.entity.email}`}>{site.entity.email}</a> ·{' '}
+      <a href={`mailto:${site.entity.emailAlt}`}>{site.entity.emailAlt}</a> · {site.entity.phone}
+    </p>
+    <p class="muted small">
+      See also: <a href="/privacy/">Privacy Policy</a> · <a href="/terms/">Terms of Service</a> ·{' '}
+      <a href="/disclaimer/">Disclaimer</a> · <a href="/company/">Company details</a>
+    </p>
+  </LegalPage>
 </BaseLayout>

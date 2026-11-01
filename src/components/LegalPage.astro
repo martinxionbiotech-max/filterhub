@@ -1,0 +1,78 @@
+---
+// Shared shell for legal / compliance pages: breadcrumb, H1, last-updated line,
+// optional table of contents, and a readable measure. Keeps the four policy
+// pages structurally identical so they read as one set rather than four orphans.
+interface Props {
+  title: string;
+  updated: string;
+  toc?: { id: string; label: string }[];
+  intro?: string;
+}
+
+const { title, updated, toc = [], intro } = Astro.props;
+---
+
+<main class="wrap legal" style="padding-top:2rem;max-width:820px;">
+  <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> / {title}</nav>
+  <h1>{title}</h1>
+  <p class="muted small" style="margin-top:-0.35rem;">Last updated: {updated}</p>
+
+  {intro && <p class="lede" style="max-width:70ch;">{intro}</p>}
+
+  {toc.length > 0 && (
+    <nav class="legal-toc" aria-label="On this page">
+      <p class="footer-label" style="margin:0 0 0.4rem;">On this page</p>
+      <ol>
+        {toc.map((item) => (
+          <li><a href={`#${item.id}`}>{item.label}</a></li>
+        ))}
+      </ol>
+    </nav>
+  )}
+
+  <slot />
+</main>
+
+<style>
+  .legal :global(h2) {
+    margin-top: 2.1rem;
+    padding-top: 0.2rem;
+    /* anchor offset so in-page links do not hide the heading under the sticky header */
+    scroll-margin-top: 5rem;
+  }
+  .legal :global(h3) {
+    margin-top: 1.4rem;
+    font-size: 1.02rem;
+  }
+  .legal :global(p),
+  .legal :global(li) {
+    max-width: 74ch;
+  }
+  .legal :global(ul),
+  .legal :global(ol) {
+    max-width: 74ch;
+  }
+
+  .legal-toc {
+    background: var(--navy-50, #f0f4f8);
+    border: 1px solid var(--navy-100, #e3ebf2);
+    border-radius: 6px;
+    padding: 0.9rem 1.1rem;
+    margin: 1.4rem 0 0.4rem;
+  }
+  .legal-toc ol {
+    margin: 0;
+    padding-left: 1.2rem;
+    columns: 2;
+    column-gap: 2rem;
+  }
+  .legal-toc li {
+    margin: 0.15rem 0;
+    break-inside: avoid;
+  }
+  @media (max-width: 620px) {
+    .legal-toc ol {
+      columns: 1;
+    }
+  }
+</style>

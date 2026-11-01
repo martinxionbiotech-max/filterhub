@@ -1,23 +1,292 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import LegalPage from '../components/LegalPage.astro';
+import { site } from '../data/site';
+
+const updated = '1 November 2026';
+const toc = [
+  { id: 'who-we-are', label: 'Who we are' },
+  { id: 'summary', label: 'Summary' },
+  { id: 'information-you-give', label: 'Information you give us' },
+  { id: 'information-collected', label: 'Information collected automatically' },
+  { id: 'cookies', label: 'Cookies' },
+  { id: 'why-we-use', label: 'Why we use it' },
+  { id: 'retention', label: 'How long we keep it' },
+  { id: 'sharing', label: 'Who we share it with' },
+  { id: 'transfers', label: 'International transfers' },
+  { id: 'your-rights', label: 'Your rights' },
+  { id: 'security', label: 'Security' },
+  { id: 'children', label: 'Children' },
+  { id: 'automated', label: 'Automated decisions' },
+  { id: 'dnt', label: 'Do Not Track' },
+  { id: 'third-party-links', label: 'Third-party links' },
+  { id: 'changes', label: 'Changes' },
+  { id: 'contact', label: 'Contact' },
+];
 ---
 
 <BaseLayout
   title="Privacy Policy"
-  description="Privacy policy for the China Filter Hub website — a product information and database hub."
+  description="What personal information China Filter Hub collects, why we process it, how long we keep it, who it is shared with, and the rights you can exercise."
   breadcrumbs={[{ label: 'Privacy Policy', href: '/privacy/' }]}
+  updated="2026-11-01"
 >
-  <main class="wrap" style="padding-top:2rem;max-width:760px;">
-    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> / Privacy Policy</nav>
-    <h1>Privacy Policy</h1>
+  <LegalPage
+    title="Privacy Policy"
+    updated={updated}
+    toc={toc}
+    intro="This policy explains what personal information this website collects, why we process it, how long we keep it, who it is shared with, and what you can ask us to do with it. It applies to chinafilterhub.com and to the machine-readable data subdomain data.chinafilterhub.com, both operated by the same legal entity."
+  >
+    <h2 id="who-we-are">1. Who we are</h2>
     <p>
-      This site collects only the information you provide through inquiry or contact. It does not
-      use third-party advertising trackers. Inquiry details are used solely to respond to your
-      request.
+      China Filter Hub is a product information and database website operated by
+      <strong>{site.entity.legalName}</strong>, a company registered in Qinghe County, Hebei,
+      China, under unified social credit code <code>{site.entity.creditCode}</code>, with its
+      registered address at {site.entity.address}.
     </p>
     <p>
-      Contact channels are provisional pending domain and entity verification. For data requests,
-      use the contact channels listed on the contact page.
+      For the purposes of the EU General Data Protection Regulation and the UK GDPR, we are the
+      <strong>data controller</strong> for personal data collected through this site. For the
+      purposes of the Personal Information Protection Law of the People&rsquo;s Republic of China
+      (PIPL), we are the <strong>personal information handler</strong>.
     </p>
-  </main>
+    <p>
+      Privacy questions and requests: <a href={`mailto:${site.entity.email}`}>{site.entity.email}</a>
+      {' '}or <a href={`mailto:${site.entity.emailAlt}`}>{site.entity.emailAlt}</a>. Telephone and
+      WhatsApp: {site.entity.phone}.
+    </p>
+
+    <h2 id="summary">2. Summary</h2>
+    <ul>
+      <li>We collect the details you send us in an inquiry, and basic technical logs from our server and CDN.</li>
+      <li>We use them to answer your inquiry, prepare quotations, and keep the site secure.</li>
+      <li>We do not run advertising trackers or cross-site analytics, and we do not sell personal information.</li>
+      <li>We do not require you to create an account, and we do not take payment card details on this site.</li>
+      <li>You can ask for a copy, a correction, or a deletion at any time using the contact details above.</li>
+    </ul>
+
+    <h2 id="information-you-give">3. Information you give us</h2>
+    <p>
+      When you submit a request for quotation, a contact form, an email or a WhatsApp message, you
+      choose what to send. In practice this usually includes:
+    </p>
+    <ul>
+      <li><strong>Identity and contact details</strong> — your name, company name, business email address, telephone or WhatsApp number, and country.</li>
+      <li><strong>Commercial details</strong> — the product, OE number or drawing you are asking about, target quantity, required specification, destination market and delivery expectations.</li>
+      <li><strong>Content</strong> — the message itself and any file you attach, such as a drawing, photograph or specification sheet.</li>
+    </ul>
+    <p>
+      The request-for-quotation form on this site does not transmit data to a server. It composes
+      an email in your own email client, addressed to our sales mailbox, and you decide whether to
+      send it. Nothing entered into the form is stored by the website.
+    </p>
+    <p>
+      You are not obliged to provide any of this. If you do not, we may not be able to answer a
+      technical question or prepare a quotation. Please do not send sensitive categories of
+      personal data — for example health information, biometric data, or government identity
+      numbers — because we do not need them and do not ask for them.
+    </p>
+    <p>
+      If you provide information about another person, you confirm that you have their permission
+      to pass it to us for the purpose of the inquiry.
+    </p>
+
+    <h2 id="information-collected">4. Information collected automatically</h2>
+    <p>
+      Like most websites, this site receives technical information when a page is requested. Our
+      hosting and content delivery provider records:
+    </p>
+    <ul>
+      <li>the IP address the request came from;</li>
+      <li>the date and time, the URL requested, and the referring page;</li>
+      <li>the browser and operating-system identifier (user agent); and</li>
+      <li>the HTTP response status and approximate geographic region derived from the IP address.</li>
+    </ul>
+    <p>
+      This information is used to deliver pages, diagnose faults, measure aggregate traffic volume
+      and detect abusive or automated requests. We do not use it to build advertising profiles, and
+      we do not attempt to identify individual visitors from it except where necessary to
+      investigate a security incident or where the law requires it.
+    </p>
+
+    <h2 id="cookies">5. Cookies and similar technologies</h2>
+    <p>
+      This site does not set advertising, analytics or cross-site tracking cookies. The cookies
+      that may be present are security-related cookies set by our content delivery network. They
+      are described, with their purposes and lifetimes, in our
+      <a href="/cookies/">Cookie Policy</a>.
+    </p>
+
+    <h2 id="why-we-use">6. Why we use your information, and on what legal basis</h2>
+    <p>
+      Where the GDPR or UK GDPR applies, we rely on the legal bases set out below. Where another
+      law applies, we process on the equivalent basis available under that law.
+    </p>
+    <div class="table-wrap">
+      <table class="data">
+        <thead>
+          <tr><th scope="col">Purpose</th><th scope="col">Information used</th><th scope="col">Legal basis</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Answering an inquiry and preparing a quotation</td>
+            <td>Contact details, company, product interest, message, attachments</td>
+            <td>Steps taken at your request before entering a contract — Art. 6(1)(b)</td>
+          </tr>
+          <tr>
+            <td>Performing and administering an order</td>
+            <td>Contact and commercial details, correspondence</td>
+            <td>Performance of a contract — Art. 6(1)(b)</td>
+          </tr>
+          <tr>
+            <td>Keeping business records and defending legal claims</td>
+            <td>Correspondence and transaction records</td>
+            <td>Legitimate interests — Art. 6(1)(f)</td>
+          </tr>
+          <tr>
+            <td>Site security, fraud and abuse prevention</td>
+            <td>Technical logs, request metadata</td>
+            <td>Legitimate interests — Art. 6(1)(f)</td>
+          </tr>
+          <tr>
+            <td>Tax, accounting and other statutory records</td>
+            <td>Transaction and invoicing records</td>
+            <td>Legal obligation — Art. 6(1)(c)</td>
+          </tr>
+          <tr>
+            <td>Sending commercial updates, if you ask for them</td>
+            <td>Name, company, email address</td>
+            <td>Consent — Art. 6(1)(a), withdrawable at any time</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>
+      We do not send newsletters or marketing email unless you ask us to. Where we rely on
+      legitimate interests, we have considered whether those interests are overridden by your
+      rights; you may object to that processing at any time (see section 10).
+    </p>
+
+    <h2 id="retention">7. How long we keep it</h2>
+    <ul>
+      <li><strong>Inquiries that do not become orders</strong> — up to 24 months from the last exchange, after which they are deleted or reduced to anonymised statistics.</li>
+      <li><strong>Orders, invoices and related correspondence</strong> — for the period required by applicable tax, accounting and contract law, which in China is generally ten years for accounting records.</li>
+      <li><strong>Server and security logs</strong> — normally 30 days, longer only where a specific security investigation requires it.</li>
+      <li><strong>Backup copies</strong> — up to 90 days, after which they are overwritten in the ordinary backup cycle.</li>
+      <li><strong>Aggregate statistics</strong> that contain no personal information — retained without limit.</li>
+    </ul>
+
+    <h2 id="sharing">8. Who we share it with</h2>
+    <p>We disclose personal information only in the following circumstances:</p>
+    <ul>
+      <li><strong>Service providers</strong> that operate the site and our communications — content delivery and hosting, email hosting, and IT support — under contracts that restrict them to processing on our instructions.</li>
+      <li><strong>Professional advisers</strong> such as accountants, auditors or lawyers, where necessary and subject to confidentiality.</li>
+      <li><strong>Public authorities</strong> where disclosure is required by law, a court order, or a lawful request, and where we have verified the basis for the request.</li>
+      <li><strong>A successor entity</strong> if the business or its assets are transferred, in which case the recipient remains bound by this policy and we will give notice of the change.</li>
+    </ul>
+    <p>
+      We do not sell, rent or trade personal information. We do not share it for cross-context
+      behavioural advertising, and we do not disclose it to data brokers.
+    </p>
+
+    <h2 id="transfers">9. International transfers</h2>
+    <p>
+      This site is delivered through a global content delivery network, so technical data may be
+      processed in countries other than the one you are in. Business correspondence is handled by
+      our staff in China.
+    </p>
+    <p>
+      Where the GDPR or UK GDPR applies, transfers outside the European Economic Area or the United
+      Kingdom rely on an adequacy decision or on appropriate safeguards such as the Standard
+      Contractual Clauses, together with supplementary measures where required. Where PIPL applies,
+      cross-border transfers are carried out under the mechanisms that law provides, including
+      separate consent where it is required.
+    </p>
+
+    <h2 id="your-rights">10. Your rights</h2>
+    <p>Depending on where you live, you may have some or all of the following rights:</p>
+    <ul>
+      <li><strong>Access</strong> — to know whether we hold personal information about you and to receive a copy.</li>
+      <li><strong>Correction</strong> — to have inaccurate or incomplete information corrected.</li>
+      <li><strong>Deletion</strong> — to have information erased where there is no continuing lawful reason to keep it.</li>
+      <li><strong>Restriction and objection</strong> — to limit processing, or to object to processing based on legitimate interests.</li>
+      <li><strong>Portability</strong> — to receive information you provided in a structured, machine-readable format.</li>
+      <li><strong>Withdrawal of consent</strong> — where processing is based on consent, without affecting processing carried out before withdrawal.</li>
+      <li><strong>Complaint</strong> — to lodge a complaint with your local supervisory authority.</li>
+    </ul>
+    <p>
+      California residents may request to know, delete or correct personal information, and may opt
+      out of sale or sharing. We do not sell or share personal information as those terms are
+      defined by the CCPA, so there is nothing to opt out of; we will not discriminate against you
+      for exercising any right.
+    </p>
+    <p>
+      Under PIPL you may access, copy, correct or delete your personal information, withdraw
+      consent, and ask us to explain our processing rules.
+    </p>
+    <p>
+      To exercise a right, email <a href={`mailto:${site.entity.email}`}>{site.entity.email}</a> with
+      &ldquo;Privacy request&rdquo; in the subject line. We respond within 30 days. We may ask for
+      information to verify that the request comes from the person concerned, and we may refuse or
+      limit a request where the law permits or requires it — for example where records must be kept
+      for tax purposes.
+    </p>
+
+    <h2 id="security">11. Security</h2>
+    <p>
+      Pages are served over TLS. Access to inquiry records is limited to staff who need them, and
+      we apply retention limits so that data does not accumulate beyond its purpose. No method of
+      transmission or storage is completely secure; we cannot guarantee absolute security, but if a
+      breach occurs that is likely to affect your rights, we will notify you and the relevant
+      authority as required by law.
+    </p>
+
+    <h2 id="children">12. Children</h2>
+    <p>
+      This site is a business-to-business resource and is not directed at children. We do not
+      knowingly collect personal information from anyone under 16. If you believe a child has
+      provided information to us, contact us and we will delete it.
+    </p>
+
+    <h2 id="automated">13. Automated decisions and profiling</h2>
+    <p>
+      We do not make automated decisions that produce legal or similarly significant effects, and
+      we do not build behavioural profiles of visitors.
+    </p>
+
+    <h2 id="dnt">14. Do Not Track and Global Privacy Control</h2>
+    <p>
+      Browsers and extensions can send a Do Not Track or Global Privacy Control signal. Because we
+      do not track visitors across sites and do not sell personal information, these signals do not
+      change how the site behaves: it already does not do the thing they are intended to prevent.
+    </p>
+
+    <h2 id="third-party-links">15. Third-party links</h2>
+    <p>
+      Some pages link to external sites — for example WhatsApp, for messaging, or Baidu Baike, as a
+      citation for company-registration facts. Once you follow such a link, the privacy policy of
+      that site applies. We do not control those sites and are not responsible for their practices.
+    </p>
+
+    <h2 id="changes">16. Changes to this policy</h2>
+    <p>
+      We may update this policy to reflect changes in the site, our suppliers or the law. The
+      &ldquo;last updated&rdquo; date at the top of the page always shows the current version. Where
+      a change materially affects how we use personal information, we will give notice on the site
+      before it takes effect.
+    </p>
+
+    <h2 id="contact">17. How to contact us</h2>
+    <p>
+      {site.entity.legalName}<br />
+      {site.entity.address}<br />
+      Email: <a href={`mailto:${site.entity.email}`}>{site.entity.email}</a> ·{' '}
+      <a href={`mailto:${site.entity.emailAlt}`}>{site.entity.emailAlt}</a><br />
+      Telephone / WhatsApp: {site.entity.phone}
+    </p>
+    <p class="muted small">
+      See also: <a href="/terms/">Terms of Service</a> · <a href="/cookies/">Cookie Policy</a> ·{' '}
+      <a href="/disclaimer/">Disclaimer</a> · <a href="/company/">Company details</a>
+    </p>
+  </LegalPage>
 </BaseLayout>

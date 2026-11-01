@@ -1,24 +1,147 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import LegalPage from '../components/LegalPage.astro';
+import { site } from '../data/site';
+
+const updated = '1 November 2026';
+const toc = [
+  { id: 'general', label: 'General information only' },
+  { id: 'no-advice', label: 'No professional or engineering advice' },
+  { id: 'accuracy', label: 'Accuracy, completeness and currency' },
+  { id: 'oe-references', label: 'OE references and trademarks' },
+  { id: 'images', label: 'Images and illustrations' },
+  { id: 'external-links', label: 'External links' },
+  { id: 'no-warranty', label: 'No warranty and limitation of liability' },
+  { id: 'verify', label: 'Verify before you order' },
+  { id: 'changes', label: 'Changes' },
+  { id: 'contact', label: 'Contact' },
+];
 ---
 
 <BaseLayout
   title="Disclaimer"
-  description="Disclaimer for the China Filter Hub website — a product information and database hub."
+  description="How to read China Filter Hub data: the limits of compiled specifications and OE cross-references, trademarks, and checks before ordering."
   breadcrumbs={[{ label: 'Disclaimer', href: '/disclaimer/' }]}
+  updated="2026-11-01"
 >
-  <main class="wrap" style="padding-top:2rem;max-width:760px;">
-    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> / Disclaimer</nav>
-    <h1>Disclaimer</h1>
+  <LegalPage
+    title="Disclaimer"
+    updated={updated}
+    toc={toc}
+    intro="This page explains the status of the information published on China Filter Hub, the limits of cross-reference data, and the checks a buyer should complete before placing an order. It applies to every product, specification and reference page on the site."
+  >
+    <h2 id="general">1. General information only</h2>
     <p>
-      Specifications on this site are compiled from multiple manufacturer catalogues and standards
-      references. Cross-reference part numbers link a filter to an OE number and do not by
-      themselves confirm a dimensional match. Confirm specifications against the OE drawing before
-      ordering.
+      The content of this website is provided for general information and sourcing purposes. It is
+      not a contractual specification, a certificate of conformity, or a statement that a product is
+      suitable for a particular vehicle, machine or process. Binding specifications exist only in
+      the documents issued with a confirmed order.
+    </p>
+
+    <h2 id="no-advice">2. No professional or engineering advice</h2>
+    <p>
+      Nothing on this site constitutes engineering, safety, legal, customs or regulatory advice.
+      Filtration requirements depend on the medium being filtered, the operating conditions, the
+      equipment manufacturer&rsquo;s requirements and the rules of the destination market — factors
+      we cannot assess from a web page. Where a decision carries safety, warranty or regulatory
+      consequences, confirm it with a qualified engineer or with the equipment manufacturer.
+    </p>
+
+    <h2 id="accuracy">3. Accuracy, completeness and currency</h2>
+    <p>
+      Specifications are compiled from manufacturer catalogues, published standards and supplier
+      documentation. Each field is recorded with a data-status label describing how the value was
+      obtained; where a value could not be traced to a source, the field is left blank rather than
+      estimated or inferred.
     </p>
     <p>
-      Certain product and facility images on this site are computer-generated illustrations for
-      presentation purposes and do not depict actual production facilities.
+      Compilation has inherent limits. Catalogues contain errors. Part numbers are revised,
+      superseded or reused across model years. A filter that fits one variant of an engine may not
+      fit another built in a different plant or year. Information on this site may therefore be
+      incomplete, out of date, or in specific cases incorrect, and it is published without any
+      representation that it is free of error.
     </p>
-  </main>
+
+    <h2 id="oe-references">4. OE references and trademarks</h2>
+    <p>
+      OE numbers, competitor part numbers and manufacturer names are reproduced for identification
+      only. A recorded cross-reference means that a part has been associated with that number in a
+      catalogue or supplier document. It does <strong>not</strong> establish dimensional equivalence,
+      material equivalence, filtration performance equivalence, or the existence of any approval by
+      the original manufacturer.
+    </p>
+    <p>
+      All trademarks, brand names and part numbers remain the property of their respective owners.
+      They are used descriptively, to identify the application a part is intended for, and their use
+      does not imply affiliation with, endorsement by, or approval of this site or its operator by
+      any manufacturer. If you are a rights holder and believe a reference on this site is
+      mislabelled, contact us and we will review it.
+    </p>
+
+    <h2 id="images">5. Images and illustrations</h2>
+    <p>
+      Some product and facility images on this site are computer-generated illustrations created for
+      presentation. They do not depict an actual production facility, an actual shipment, or the
+      exact appearance of the product you would receive. Where a photograph of a real product is
+      shown, the accompanying specification — not the image — governs the description.
+    </p>
+
+    <h2 id="external-links">6. External links</h2>
+    <p>
+      Links to external websites are provided for convenience and reference. We do not control those
+      sites and accept no responsibility for their content, accuracy, availability or practices.
+      Following an external link is at your own discretion.
+    </p>
+
+    <h2 id="no-warranty">7. No warranty and limitation of liability</h2>
+    <p>
+      The site and its content are provided on an &ldquo;as is&rdquo; basis, without warranties of
+      any kind, express or implied, to the extent permitted by law. We are not liable for loss
+      arising from reliance on information published here, including a part ordered on the basis of
+      an unverified cross-reference.
+    </p>
+    <p>
+      This does not affect the warranties that apply to goods supplied under a contract of sale,
+      which are set out in that contract, nor any liability that cannot lawfully be excluded. The
+      full liability provisions are in our <a href="/terms/">Terms of Service</a>.
+    </p>
+
+    <h2 id="verify">8. Verify before you order</h2>
+    <p>
+      Before committing to an order, confirm the following against a source you trust:
+    </p>
+    <ul>
+      <li><strong>Dimensions</strong> — outer and inner diameter, height, thread or connection type, and gasket profile, checked against the OE drawing or a physical sample.</li>
+      <li><strong>Application</strong> — engine code, model year, plant of manufacture and any market-specific variant, not only the vehicle model name.</li>
+      <li><strong>Media and efficiency</strong> — the filtration rating and media type required by the equipment manufacturer, particularly where warranty or safety applies.</li>
+      <li><strong>Standards and marking</strong> — any standard the destination market requires, and whether the product is marked accordingly.</li>
+      <li><strong>Packaging and labelling</strong> — for private-label or OEM supply, the agreed artwork, language and traceability marking.</li>
+    </ul>
+    <p>
+      If a value on this site is marked as unverified or is missing, ask us before assuming it. We
+      would rather send a drawing than have you order against a number that has not been confirmed.
+    </p>
+
+    <h2 id="changes">9. Changes to this disclaimer</h2>
+    <p>
+      We may update this page as the site&rsquo;s data model or the applicable rules change. The
+      date at the top of the page shows the current version.
+    </p>
+
+    <h2 id="contact">10. Contact</h2>
+    <p>
+      To query a specification, report an error, or raise a trademark concern:
+    </p>
+    <p>
+      {site.entity.legalName}<br />
+      {site.entity.address}<br />
+      Email: <a href={`mailto:${site.entity.email}`}>{site.entity.email}</a> ·{' '}
+      <a href={`mailto:${site.entity.emailAlt}`}>{site.entity.emailAlt}</a><br />
+      Telephone / WhatsApp: {site.entity.phone}
+    </p>
+    <p class="muted small">
+      See also: <a href="/privacy/">Privacy Policy</a> · <a href="/terms/">Terms of Service</a> ·{' '}
+      <a href="/cookies/">Cookie Policy</a> · <a href="/company/">Company details</a>
+    </p>
+  </LegalPage>
 </BaseLayout>
