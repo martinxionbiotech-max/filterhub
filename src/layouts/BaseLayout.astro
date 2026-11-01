@@ -180,7 +180,29 @@ const websiteSchema = {
       ul, ol { padding-left: 1.35rem; }
       li { margin: 0.3rem 0; }
 
-      a { color: var(--orange-600); text-decoration: none; }
+      a { color: var(--orange-700); text-decoration: none; }
+
+      /* ---- Keyboard focus ---- */
+      /* Skip link stays off-screen until focused, then sits above the header. */
+      .skip-link {
+        position: absolute;
+        left: -9999px;
+        top: 0;
+        z-index: 1000;
+        padding: 0.6rem 1rem;
+        background: var(--navy-800);
+        color: #fff;
+        font-weight: 600;
+        text-decoration: none;
+        border-radius: 0 0 4px 0;
+      }
+      .skip-link:focus { left: 0; }
+
+      :focus-visible {
+        outline: 3px solid var(--orange-700);
+        outline-offset: 2px;
+        border-radius: 2px;
+      }
       a:hover { color: var(--orange-700); text-decoration: underline; }
 
       code {
@@ -388,6 +410,7 @@ const websiteSchema = {
     </style>
   </head>
   <body>
+    <a class="skip-link" href="#main">Skip to content</a>
     <Header />
     <slot />
     <Footer site={site} complianceLinks={complianceLinks} />

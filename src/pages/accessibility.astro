@@ -1,0 +1,115 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import LegalPage from '../components/LegalPage.astro';
+import { site } from '../data/site';
+
+const updated = '1 November 2026';
+const toc = [
+  { id: 'commitment', label: 'Our commitment' },
+  { id: 'conformance', label: 'Conformance status' },
+  { id: 'measures', label: 'What we have implemented' },
+  { id: 'limitations', label: 'Known limitations' },
+  { id: 'feedback', label: 'Feedback and contact' },
+  { id: 'compatibility', label: 'Browser and device support' },
+  { id: 'review', label: 'Review cycle' },
+];
+---
+
+<BaseLayout
+  title="Accessibility Statement"
+  description="How accessible China Filter Hub is, the measures we have implemented, the limitations we know about, and how to report a barrier."
+  breadcrumbs={[{ label: 'Accessibility Statement', href: '/accessibility/' }]}
+  updated="2026-11-01"
+>
+  <LegalPage
+    title="Accessibility Statement"
+    updated={updated}
+    toc={toc}
+    intro="This statement explains the accessibility of chinafilterhub.com, what we have done to make the site usable with assistive technology, where it still falls short, and how to tell us about a barrier you encounter."
+  >
+    <h2 id="commitment">1. Our commitment</h2>
+    <p>
+      This site is used by buyers, engineers and procurement teams in many countries, some of whom
+      use screen readers, keyboard-only navigation, magnification or voice control. We want the
+      product data on this site to be reachable by those users on the same terms as everyone else,
+      and we treat accessibility as part of the quality of the page rather than as a separate
+      project.
+    </p>
+
+    <h2 id="conformance">2. Conformance status</h2>
+    <p>
+      The site <strong>aims to conform to WCAG 2.2 Level AA</strong>. It has not yet been through an
+      independent accessibility audit or a formal conformance assessment. We therefore describe the
+      site as <em>partially conforming</em>: the measures in section 3 are implemented and verified
+      by inspection, but we cannot state that every success criterion is met until an external
+      audit has been carried out.
+    </p>
+    <p class="notice">
+      We would rather state that position plainly than claim full conformance we have not tested.
+      If you find a barrier, section 5 explains how to report it, and we will treat it as a defect.
+    </p>
+
+    <h2 id="measures">3. What we have implemented</h2>
+    <ul>
+      <li><strong>Semantic structure</strong> — pages use one level-one heading, ordered section headings, and HTML landmarks (header, navigation, main, footer) so that assistive technology can move between regions.</li>
+      <li><strong>Skip link</strong> — the first focusable element on every page is a &ldquo;Skip to content&rdquo; link that jumps past the navigation.</li>
+      <li><strong>Keyboard operation</strong> — all interactive elements are reachable and operable with a keyboard, and a visible focus outline is shown on focus.</li>
+      <li><strong>Form labels</strong> — every field in the quotation form has a programmatically associated label; required fields are marked in text, not by colour alone.</li>
+      <li><strong>Colour contrast</strong> — body text and links are set to meet the 4.5:1 contrast requirement for normal-size text. The link colour was darkened for this reason; the earlier orange did not meet the ratio.</li>
+      <li><strong>Text alternatives</strong> — images carry descriptive alternative text, or are marked decorative where they convey nothing.</li>
+      <li><strong>Data tables</strong> — tables use header cells with explicit scope, so a screen reader can announce the column a value belongs to.</li>
+      <li><strong>No motion or sound</strong> — the site has no autoplaying media, no carousels, no animation that cannot be stopped, and no time limits on any task.</li>
+      <li><strong>Reflow</strong> — the layout adapts to narrow viewports and to 200% zoom without horizontal scrolling of body text.</li>
+      <li><strong>Language</strong> — the page language is declared in the document, so screen readers use the correct pronunciation rules.</li>
+    </ul>
+
+    <h2 id="limitations">4. Known limitations</h2>
+    <p>The following are known and not yet resolved:</p>
+    <ul>
+      <li><strong>No independent audit.</strong> The statement above is based on our own inspection, not on testing by an accessibility specialist or by users of assistive technology.</li>
+      <li><strong>Wide data tables.</strong> Specification tables scroll horizontally on narrow screens. The content is reachable, but reading a row across a small phone screen is awkward. We are considering a card layout as an alternative view.</li>
+      <li><strong>Status labels.</strong> Data-status badges combine a colour with a text label, so the meaning survives without colour vision — but the badge text is small, and users who enlarge text may find the surrounding table rows crowded.</li>
+      <li><strong>Third-party destinations.</strong> Links to WhatsApp and to external reference sites leave this site. We do not control the accessibility of those services.</li>
+      <li><strong>Documents on request.</strong> Specification sheets and drawings are supplied by email rather than published here. If you need one in an accessible format, ask us and we will provide it in an alternative format where the source material allows.</li>
+    </ul>
+
+    <h2 id="feedback">5. Feedback and contact</h2>
+    <p>
+      If you meet a barrier on this site — a page a screen reader cannot parse, a control you cannot
+      reach with a keyboard, text you cannot read at your magnification level — please tell us. It
+      helps if you include the page address, what you were trying to do, and the browser or
+      assistive technology you were using.
+    </p>
+    <p>
+      Email: <a href={`mailto:${site.entity.email}`}>{site.entity.email}</a> ·
+      {' '}<a href={`mailto:${site.entity.emailAlt}`}>{site.entity.emailAlt}</a><br />
+      Telephone / WhatsApp: {site.entity.phone}
+    </p>
+    <p>
+      We aim to acknowledge accessibility reports within <strong>10 business days</strong> and to
+      tell you what we intend to do about the issue. Where a fix cannot be made quickly, we will
+      offer the information you need in another form in the meantime.
+    </p>
+
+    <h2 id="compatibility">6. Browser and device support</h2>
+    <p>
+      The site is tested in current versions of Chrome, Edge, Firefox and Safari, on desktop and on
+      iOS and Android. It is built with standard HTML and CSS and does not require JavaScript to
+      read product or policy pages; the quotation form uses a short script to compose an email, and
+      the same information can always be sent to us by email or WhatsApp instead.
+    </p>
+
+    <h2 id="review">7. Review cycle</h2>
+    <p>
+      We review this statement when the site&rsquo;s templates change and at least once a year. The
+      date at the top of the page shows the current version. If an independent audit is carried
+      out, its findings will be reflected here.
+    </p>
+
+    <p class="muted small">
+      See also: <a href="/editorial/">Data &amp; Editorial Policy</a> · <a href="/privacy/">Privacy Policy</a> ·{' '}
+      <a href="/terms/">Terms of Service</a> · <a href="/cookies/">Cookie Policy</a> ·{' '}
+      <a href="/disclaimer/">Disclaimer</a>
+    </p>
+  </LegalPage>
+</BaseLayout>

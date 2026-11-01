@@ -1,0 +1,196 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import LegalPage from '../components/LegalPage.astro';
+import { site } from '../data/site';
+
+const updated = '1 November 2026';
+const toc = [
+  { id: 'purpose', label: 'Purpose and scope' },
+  { id: 'responsibility', label: 'Who is responsible' },
+  { id: 'what-we-publish', label: 'What we publish' },
+  { id: 'status-labels', label: 'What the status labels mean' },
+  { id: 'sources', label: 'Where the data comes from' },
+  { id: 'what-we-do-not-do', label: 'What we do not do' },
+  { id: 'oe-method', label: 'OE cross-references' },
+  { id: 'dataset', label: 'The current dataset' },
+  { id: 'corrections', label: 'Corrections and right of reply' },
+  { id: 'updates', label: 'Update cycle' },
+  { id: 'contact', label: 'Contact' },
+];
+---
+
+<BaseLayout
+  title="Data &amp; Editorial Policy"
+  description="How China Filter Hub builds its filter database: source hierarchy, data-status labels, OE cross-reference limits, correction procedure and update cycle."
+  breadcrumbs={[{ label: 'Data & Editorial Policy', href: '/editorial/' }]}
+  updated="2026-11-01"
+>
+  <LegalPage
+    title="Data & Editorial Policy"
+    updated={updated}
+    toc={toc}
+    intro="This page explains how the product records on China Filter Hub are compiled and labelled, what each status label claims, what we refuse to publish, and how to get an error corrected. It is the methodology behind the specification tables."
+  >
+    <h2 id="purpose">1. Purpose and scope</h2>
+    <p>
+      China Filter Hub publishes structured records for automotive, HVAC, cleanroom and industrial
+      filters. Each record describes a part — its dimensions, media, efficiency class, application,
+      minimum order quantity and, where available, the OE numbers it is associated with.
+    </p>
+    <p>
+      This policy applies to every product record, category page, guide and reference table on the
+      site. It does not apply to third-party sites we link to.
+    </p>
+
+    <h2 id="responsibility">2. Who is responsible</h2>
+    <p>
+      Editorial responsibility sits with <strong>{site.entity.legalName}</strong>, the operating
+      legal entity named in the footer and on the <a href="/company/">company page</a>. Product
+      records are compiled and checked in-house; we do not operate an open wiki and do not accept
+      anonymous edits.
+    </p>
+    <p>
+      Questions about a record, its source, or a correction should be addressed to the contact in
+      section 11. A named person is accountable for the dataset, and replies come from that
+      mailbox rather than from an unmonitored form.
+    </p>
+
+    <h2 id="what-we-publish">3. What we publish</h2>
+    <ul>
+      <li><strong>Product records</strong> — one record per SKU, with the specification fields that a buyer needs to shortlist and enquire.</li>
+      <li><strong>Cross-references</strong> — OE numbers recorded against a SKU, with the vehicle or equipment application where known.</li>
+      <li><strong>Category and pillar pages</strong> — explanatory material on filter types, selection criteria and sourcing considerations.</li>
+      <li><strong>Guides</strong> — longer technical notes on specific selection problems.</li>
+      <li><strong>Machine-readable data</strong> — the same records published in a structured form at <a href={site.dataSubsiteUrl} rel="noopener" target="_blank">data.chinafilterhub.com</a>.</li>
+    </ul>
+
+    <h2 id="status-labels">4. What the status labels mean</h2>
+    <p>
+      Every record carries a status label. The label describes <em>how the record was compiled</em>.
+      It is not a statement that every field has been measured, and it is not a certification.
+    </p>
+    <div class="table-wrap">
+      <table class="data">
+        <thead>
+          <tr><th scope="col">Label</th><th scope="col">What it means</th><th scope="col">How to use it</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Verified</strong></td>
+            <td>The value was confirmed against a primary document we hold — an OE drawing, a manufacturer datasheet, or a physical measurement.</td>
+            <td>Treat as reliable for shortlisting. Still confirm the drawing before a production order.</td>
+          </tr>
+          <tr>
+            <td><strong>Catalog confirmed</strong></td>
+            <td>The record transcribes a published manufacturer or supplier catalogue entry. The catalogue is the source; the entry has not been independently measured.</td>
+            <td>Good for identification and comparison. Catalogue errors are inherited, so verify dimensions on the drawing.</td>
+          </tr>
+          <tr>
+            <td><strong>Reference</strong></td>
+            <td>The value is indicative — compiled from secondary sources or industry-typical figures rather than a specific catalogue entry.</td>
+            <td>Use for orientation only. Do not order against a reference value without confirmation.</td>
+          </tr>
+          <tr>
+            <td><strong>Pending</strong></td>
+            <td>The field is required for completeness but has not yet been checked.</td>
+            <td>Ask us before relying on it. We would rather show a gap than invent a number.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>
+      A label applies to the record as a whole. Where an individual field is materially uncertain —
+      an efficiency class taken from a catalogue rather than a test report, for example — the
+      description says so explicitly rather than letting the record label imply more than it should.
+    </p>
+
+    <h2 id="sources">5. Where the data comes from</h2>
+    <p>Sources are used in the following order of preference:</p>
+    <ol>
+      <li><strong>Primary documents</strong> — drawings, datasheets and test reports issued by the manufacturer of the part.</li>
+      <li><strong>Manufacturer and supplier catalogues</strong> — published catalogues, including those covering OE applications.</li>
+      <li><strong>Published standards</strong> — test and classification standards referenced by the industry, used to describe a class of product rather than to certify a specific unit.</li>
+      <li><strong>Industry-typical values</strong> — where none of the above exists, a typical value may be recorded, and is labelled reference.</li>
+    </ol>
+    <p>
+      Where two sources disagree, the primary document takes precedence. Where a conflict cannot be
+      resolved, the field is left blank or the disagreement is recorded in the description rather
+      than resolved silently.
+    </p>
+
+    <h2 id="what-we-do-not-do">6. What we do not do</h2>
+    <ul>
+      <li>We do not operate a laboratory and do not present test results as our own.</li>
+      <li>We do not certify that a product meets a standard, and we do not describe a product as &ldquo;certified&rdquo; without a certificate number that can be checked.</li>
+      <li>We do not present industry-typical equipment or production figures as this entity&rsquo;s verified data.</li>
+      <li>We do not invent benchmarks, performance comparisons or customer references.</li>
+      <li>We do not present a cross-reference as proof of dimensional equivalence.</li>
+    </ul>
+
+    <h2 id="oe-method">7. OE cross-references: method and limits</h2>
+    <p>
+      An OE reference is recorded when a catalogue or supplier document associates a part with an
+      original-equipment number. The record stores the number, the brand it belongs to, and the
+      equipment application where the document states one.
+    </p>
+    <p>
+      A cross-reference means <strong>the numbers have been associated in a document</strong>. It does
+      not mean the part has been dimensionally checked against the OE part, that the materials match,
+      or that the original manufacturer has approved it. Part numbers are revised and reused across
+      model years, and the same number can cover more than one variant. Confirm the application — engine
+      code, model year, plant — before ordering.
+    </p>
+
+    <h2 id="dataset">8. The current dataset</h2>
+    <p>
+      So that readers can judge the coverage rather than take it on trust, the current public dataset
+      is summarised here. These figures describe the records published on this site at the date
+      shown at the top of the page.
+    </p>
+    <ul>
+      <li><strong>104 product records</strong> across <strong>13 categories</strong>.</li>
+      <li><strong>50 records</strong> carry at least one OE reference — <strong>67 references</strong> in total.</li>
+      <li>All 104 records carry a specification, a minimum order quantity and an efficiency class.</li>
+      <li>The most recent structured data review was <strong>29 October 2026</strong>.</li>
+    </ul>
+    <p>
+      The dataset is intentionally small and internally consistent rather than large and uneven. A
+      record is added when its core fields can be populated from a source, not to reach a target
+      count.
+    </p>
+
+    <h2 id="corrections">9. Corrections and right of reply</h2>
+    <p>
+      If you believe a record is wrong — a dimension, a cross-reference, an application, a
+      trademark attribution — tell us which SKU and which field, and what the correct value is, with
+      the source you are relying on.
+    </p>
+    <p>
+      We aim to acknowledge a correction request within <strong>10 business days</strong> and to
+      resolve it within 30 days. Where a correction is accepted, the record is updated and the
+      change is reflected in the machine-readable dataset. Where we do not accept the correction, we
+      explain why. If you are a rights holder and object to the way a trademark or part number is
+      used, we will review the attribution and, where the objection is well founded, amend or remove
+      the reference.
+    </p>
+
+    <h2 id="updates">10. Update cycle</h2>
+    <p>
+      Product records are reviewed when a source changes, when a correction is accepted, or when a
+      category is revised. The site as a whole is reviewed at least twice a year. The date at the top
+      of this page shows when this policy last changed; the dataset review date is stated in section
+      8.
+    </p>
+
+    <h2 id="contact">11. Contact</h2>
+    <p>
+      Data and editorial enquiries: <a href={`mailto:${site.entity.email}`}>{site.entity.email}</a> ·{' '}
+      <a href={`mailto:${site.entity.emailAlt}`}>{site.entity.emailAlt}</a> · {site.entity.phone}
+    </p>
+    <p class="muted small">
+      See also: <a href="/accessibility/">Accessibility Statement</a> · <a href="/disclaimer/">Disclaimer</a> ·{' '}
+      <a href="/privacy/">Privacy Policy</a> · <a href="/terms/">Terms of Service</a> ·{' '}
+      <a href="/cookies/">Cookie Policy</a>
+    </p>
+  </LegalPage>
+</BaseLayout>

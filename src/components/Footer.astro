@@ -15,8 +15,8 @@ const { site, complianceLinks } = Astro.props;
       <p class="footer-brand">{site.brand}</p>
       <p class="muted small" style="margin-top:0.25rem;">{site.tagline}</p>
     </div>
-    <nav aria-label="Legal">
-      <p class="footer-label">Legal</p>
+    <nav aria-label="Policies">
+      <p class="footer-label">Policies</p>
       <ul>
         {complianceLinks.map((l) => (
           <li><a href={l.href}>{l.label}</a></li>

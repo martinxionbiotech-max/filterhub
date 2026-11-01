@@ -59,8 +59,10 @@ export const nav = [
 export const complianceLinks = [
   { label: 'Privacy Policy', href: '/privacy/' },
   { label: 'Terms of Service', href: '/terms/' },
-  { label: 'Disclaimer', href: '/disclaimer/' },
   { label: 'Cookie Policy', href: '/cookies/' },
+  { label: 'Disclaimer', href: '/disclaimer/' },
+  { label: 'Data & Editorial Policy', href: '/editorial/' },
+  { label: 'Accessibility', href: '/accessibility/' },
 ];
 
 // Organisation JSON-LD — aligned with carfilterspro.com (same legal entity, same fields).

@@ -89,7 +89,7 @@ const productSchema = {
 ---
 
 <BaseLayout title={product.name} description={product.description || product.name} breadcrumbs={breadcrumbs}>
-  <main class="wrap" style="padding-top:2rem;max-width:860px;">
+  <main id="main" class="wrap" style="padding-top:2rem;max-width:860px;">
     <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="/">Home</a> / <a href="/products/">Products</a> /{' '}
       <a href={`/products/${catSlug}/`}>{catName}</a> / {product.sku}

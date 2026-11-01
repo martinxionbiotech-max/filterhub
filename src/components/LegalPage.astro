@@ -12,7 +12,7 @@ interface Props {
 const { title, updated, toc = [], intro } = Astro.props;
 ---
 
-<main class="wrap legal" style="padding-top:2rem;max-width:820px;">
+<main id="main" class="wrap legal" style="padding-top:2rem;max-width:820px;">
   <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> / {title}</nav>
   <h1>{title}</h1>
   <p class="muted small" style="margin-top:-0.35rem;">Last updated: {updated}</p>
