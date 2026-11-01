@@ -14,8 +14,7 @@ import { site } from '../data/site';
 
     <p class="lede" style="max-width:70ch;">
       China Filter Hub is a product information and database hub operated by a single legal
-      entity, disclosed in full below. This page keeps the entity disclosure concise; the full
-      company story, factory details and history live on the primary storefront.
+      entity, disclosed in full below.
     </p>
 
     <section>
@@ -59,7 +58,19 @@ import { site } from '../data/site';
           </thead>
           <tbody>
             <tr><td><strong>Email</strong></td><td><code>{site.entity.email}</code></td></tr>
-            <tr><td><strong>Phone / WhatsApp</strong></td><td><code>{site.entity.phone}</code></td></tr>
+            <tr>
+              <td><strong>Phone / WhatsApp</strong></td>
+              <td>
+                <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
+                  <a class="btn btn-ghost" href={`tel:${site.entity.phone.replace(/\s+/g, '')}`}>
+                    📞 {site.entity.phone}
+                  </a>
+                  <a class="btn wa-btn" href={site.entity.whatsappLink} target="_blank" rel="noopener">
+                    💬 WhatsApp
+                  </a>
+                </div>
+              </td>
+            </tr>
             <tr><td><strong>Address</strong></td><td><code>{site.entity.address}</code></td></tr>
           </tbody>
         </table>
@@ -69,16 +80,5 @@ import { site } from '../data/site';
       </p>
     </section>
 
-    <section>
-      <h2>Full company profile</h2>
-      <p class="notice">
-        For the full company profile, factory details, equipment, history and production figures,
-        see{' '}
-        <a href={site.companyProfileUrl} rel="noopener" target="_blank">
-          carfilterspro.com/company-profile/
-        </a>{' '}
-        — the primary storefront of the same legal entity.
-      </p>
-    </section>
   </main>
 </BaseLayout>
