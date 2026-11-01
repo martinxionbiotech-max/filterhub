@@ -1,0 +1,181 @@
+---
+import 'katex/dist/katex.min.css';
+import { render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { categories } from '../../data/categories';
+import {
+  getKnowledgeEntries,
+  knowledgeCategorySlugs,
+  readingMinutes,
+  entryEyebrow,
+  type KnowledgeEntry,
+} from '../../lib/knowledge';
+
+export async function getStaticPaths() {
+  const entries = await getKnowledgeEntries();
+  return entries.map((entry) => ({
+    params: { slug: entry.data.slug },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props as { entry: KnowledgeEntry };
+const entries = await getKnowledgeEntries();
+const { Content, headings } = await render(entry);
+
+const isPillar = entry.data.isPillar;
+const clusters = entries.filter((item) => !item.data.isPillar);
+const pillar = entries.find((item) => item.data.slug === entry.data.pillarSlug);
+const relatedEntries = isPillar ? clusters : pillar ? [pillar] : [];
+const tocItems = headings.filter((heading) => heading.depth === 2);
+const canonical = `https://chinafilterhub.com/knowledge/${entry.data.slug}/`;
+const published = entry.data.published.toISOString().slice(0, 10);
+
+const relatedCategories = knowledgeCategorySlugs
+  .map((slug) => categories.find((category) => category.slug === slug))
+  .filter((category): category is NonNullable<typeof category> => Boolean(category));
+
+const breadcrumbs = [
+  { label: 'Knowledge', href: '/knowledge/' },
+  { label: entry.data.title, href: `/knowledge/${entry.data.slug}/` },
+];
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: entry.data.title,
+  description: entry.data.description,
+  mainEntityOfPage: canonical,
+  datePublished: published,
+  dateModified: published,
+  publisher: { '@id': 'https://chinafilterhub.com/#organization' },
+  inLanguage: 'en',
+  articleSection: 'Air Filter Performance',
+  isPartOf: {
+    '@type': 'CollectionPage',
+    name: 'Air Filter Performance Knowledge Base',
+    url: 'https://chinafilterhub.com/knowledge/',
+  },
+};
+---
+
+<BaseLayout
+  title={entry.data.metaTitle}
+  description={entry.data.description}
+  breadcrumbs={breadcrumbs}
+>
+  <main class="wrap knowledge-page">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a> / <a href="/knowledge/">Knowledge</a> / {entry.data.title}
+    </nav>
+
+    <header class="knowledge-header">
+      <p class="eyebrow">{entryEyebrow(entry)}</p>
+      <h1>{entry.data.title}</h1>
+      <p class="muted small">≈ {readingMinutes(entry.body ?? '')} min read</p>
+    </header>
+
+    {tocItems.length > 0 && (
+      <nav class="toc knowledge-toc" aria-label="On this page">
+        <strong>On this page</strong>
+        <ol>
+          {tocItems.map((heading) => (
+            <li><a href={`#${heading.slug}`}>{heading.text}</a></li>
+          ))}
+        </ol>
+      </nav>
+    )}
+
+    <article class="knowledge-body">
+      <Content />
+    </article>
+
+    {relatedEntries.length > 0 && (
+      <section class="section knowledge-related" aria-labelledby="related-heading">
+        <div class="section-head">
+          <h2 id="related-heading" class="mt-0">Related</h2>
+          <p class="muted small">{isPillar ? 'Continue with the series' : 'Return to the complete framework'}</p>
+        </div>
+        <div class="grid grid--cards">
+          {relatedEntries.map((item) => (
+            <a class="card card--link" href={`/knowledge/${item.data.slug}/`}>
+              <p class="eyebrow" style="margin:0 0 0.35rem;">
+                {item.data.isPillar ? 'Pillar' : `Part ${item.data.order}`}
+              </p>
+              <strong style="color:var(--navy-800);">{item.data.title}</strong>
+              <p class="muted small" style="margin:0.5rem 0 0;">{item.data.description}</p>
+              <span class="knowledge-card-meta">≈ {readingMinutes(item.body ?? '')} min read</span>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <section class="section knowledge-categories" aria-labelledby="categories-heading">
+      <div class="section-head">
+        <h2 id="categories-heading" class="mt-0">Related product categories</h2>
+        <a class="muted small" href="/products/">Browse all filter categories →</a>
+      </div>
+      <div class="grid grid--cards">
+        {relatedCategories.map((category) => (
+          <a class="card card--link knowledge-category-card" href={`/products/${category.slug}/`}>
+            <strong>{category.name}</strong>
+            <p class="muted small">{category.summary}</p>
+            <span class="knowledge-card-meta">Explore category →</span>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  </main>
+</BaseLayout>
+
+<style>
+  .knowledge-page { padding-top: 2rem; }
+  .knowledge-header { max-width: 820px; margin: 1.35rem 0 1.5rem; }
+  .knowledge-header h1 { margin: 0.35rem 0 0.65rem; }
+  .knowledge-header .small { margin: 0; }
+  .knowledge-toc { max-width: 820px; margin-bottom: 2.25rem; }
+  .knowledge-toc ol { columns: 2; column-gap: 2rem; }
+  .knowledge-body { max-width: 820px; }
+  .knowledge-body :global(p) { margin: 0 0 1.15rem; line-height: 1.75; }
+  .knowledge-body :global(h2) {
+    margin: 2.6rem 0 1rem;
+    padding-top: 0.25rem;
+    scroll-margin-top: 6rem;
+  }
+  .knowledge-body :global(h3) {
+    margin: 1.9rem 0 0.75rem;
+    color: var(--navy-800);
+    scroll-margin-top: 6rem;
+  }
+  .knowledge-body :global(ul),
+  .knowledge-body :global(ol) { margin: 0 0 1.3rem; padding-left: 1.4rem; }
+  .knowledge-body :global(li) { margin: 0.35rem 0; line-height: 1.65; }
+  .knowledge-body :global(a) { color: var(--navy-700); text-decoration-color: var(--orange-500); text-underline-offset: 2px; }
+  .knowledge-body :global(a:hover) { color: var(--orange-700); }
+  .knowledge-body :global(.table-wrap) { margin: 1.5rem 0; }
+  .knowledge-body :global(.katex-display) {
+    margin: 1.4rem 0;
+    padding: 0.65rem 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .knowledge-body :global(p.small) { font-size: var(--fs-sm); line-height: 1.65; }
+  .knowledge-body :global(p.small > a) { font-weight: 600; }
+  .knowledge-related { max-width: 820px; }
+  .knowledge-categories { max-width: 820px; }
+  .knowledge-category-card { display: flex; flex-direction: column; }
+  .knowledge-category-card p { flex: 1; }
+  .knowledge-card-meta {
+    display: inline-block;
+    margin-top: 0.75rem;
+    color: var(--orange-700);
+    font-size: var(--fs-xs);
+    font-weight: 700;
+  }
+  @media (max-width: 720px) {
+    .knowledge-toc ol { columns: 1; }
+  }
+</style>

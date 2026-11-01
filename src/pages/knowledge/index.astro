@@ -1,0 +1,100 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getKnowledgeEntries, readingMinutes } from '../../lib/knowledge';
+
+const entries = await getKnowledgeEntries();
+const pillar = entries.find((entry) => entry.data.isPillar);
+const clusters = entries.filter((entry) => !entry.data.isPillar);
+
+if (!pillar) {
+  throw new Error('Knowledge collection is missing its pillar article.');
+}
+
+const breadcrumbs = [{ label: 'Knowledge', href: '/knowledge/' }];
+---
+
+<BaseLayout
+  title="Air Filter Performance Knowledge Base"
+  description={pillar.data.description}
+  breadcrumbs={breadcrumbs}
+>
+  <main class="wrap knowledge-index">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a> / Knowledge
+    </nav>
+
+    <header class="knowledge-index-head">
+      <p class="eyebrow">Technical knowledge base</p>
+      <h1>Air Filter Performance Knowledge Base</h1>
+      <p class="lede">{pillar.data.description}</p>
+      <p class="muted small">1 pillar · {clusters.length} in-depth guides</p>
+    </header>
+
+    <section aria-labelledby="pillar-heading">
+      <div class="section-head">
+        <h2 id="pillar-heading" class="mt-0">Pillar</h2>
+        <p class="muted small">Start with the complete evaluation framework</p>
+      </div>
+      <a class="card card--link knowledge-pillar-card" href={`/knowledge/${pillar.data.slug}/`}>
+        <div>
+          <p class="eyebrow" style="margin:0 0 0.35rem;">Pillar</p>
+          <h3 class="mt-0">{pillar.data.title}</h3>
+          <p class="muted">{pillar.data.description}</p>
+        </div>
+        <span class="knowledge-read-time">≈ {readingMinutes(pillar.body ?? '')} min read</span>
+      </a>
+    </section>
+
+    <section class="section" aria-labelledby="series-heading">
+      <div class="section-head">
+        <h2 id="series-heading" class="mt-0">The series</h2>
+        <p class="muted small">Eight technical articles, ordered from fundamentals to service-life planning</p>
+      </div>
+      <div class="grid grid--cards">
+        {clusters.map((entry) => (
+          <a class="card card--link knowledge-series-card" href={`/knowledge/${entry.data.slug}/`}>
+            <p class="eyebrow" style="margin:0 0 0.35rem;">Part {entry.data.order}</p>
+            <h3>{entry.data.title}</h3>
+            <p class="muted small">{entry.data.description}</p>
+            <span class="knowledge-read-time">≈ {readingMinutes(entry.body ?? '')} min read</span>
+          </a>
+        ))}
+      </div>
+    </section>
+  </main>
+</BaseLayout>
+
+<style>
+  .knowledge-index { padding-top: 2rem; }
+  .knowledge-index-head { max-width: 820px; margin: 1.25rem 0 2.5rem; }
+  .knowledge-index-head h1 { margin: 0.3rem 0 0.85rem; }
+  .knowledge-pillar-card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1.25rem;
+    padding: 1.5rem;
+    border-left: 4px solid var(--orange-600);
+  }
+  .knowledge-pillar-card h3 { color: var(--navy-800); margin-bottom: 0.55rem; }
+  .knowledge-pillar-card p:last-child { margin-bottom: 0; }
+  .knowledge-series-card { display: flex; flex-direction: column; }
+  .knowledge-series-card h3 {
+    color: var(--navy-800);
+    font-size: 1.05rem;
+    line-height: 1.4;
+    margin: 0 0 0.6rem;
+  }
+  .knowledge-series-card p { flex: 1; }
+  .knowledge-read-time {
+    display: inline-block;
+    margin-top: 0.85rem;
+    color: var(--orange-700);
+    font-size: var(--fs-xs);
+    font-weight: 700;
+    white-space: nowrap;
+  }
+  @media (max-width: 720px) {
+    .knowledge-pillar-card { flex-direction: column; }
+  }
+</style>
