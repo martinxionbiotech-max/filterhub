@@ -37,7 +37,7 @@ export const site = {
   brandRelationship:
     '"Huiying" is the brand name. The operating legal entity is Qinghe County Huiying Automotive Parts Co., Ltd.',
 
-  tagline: 'Filter product information & database hub',
+  tagline: 'China filter database — OE cross-references, specifications and sourcing data',
   positioning:
     'A product information and database hub for automotive, HVAC and cleanroom filters, operated by Qinghe County Huiying Automotive Parts Co., Ltd.',
 
