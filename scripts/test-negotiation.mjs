@@ -10,7 +10,7 @@
 // Cache-Control headers, and fallback behaviour — but it is NOT proof that
 // Cloudflare Pages Functions work in production (see report, Phase Nine).
 
-import { readFileSync, existsSync, statSync } from 'node:fs';
+import { readFileSync, readdirSync, existsSync, statSync } from 'node:fs';
 import { join, extname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -180,11 +180,25 @@ console.log('Phase Nine — local negotiation tests (simulated ASSETS, no wrangl
   assert('Test 7e: asset → no Vary: Accept added', !(res.headers.get('Vary') || '').toLowerCase().includes('accept'), res.headers.get('Vary'));
 }
 
-// Test 8: manifest asset itself resolves (sanity)
+// Test 8: manifest asset itself resolves (sanity). The expected count is derived
+// from the generated sidecars rather than hardcoded, so adding a page does not
+// require editing this test.
 {
   const res = await env.ASSETS.fetch(new Request('https://chinafilterhub.com/_md/manifest.json'));
   const json = await res.json();
-  assert('Test 8: manifest readable, 149 entries', Object.keys(json).length === 149, `got ${Object.keys(json).length}`);
+
+  const countMd = (dir) =>
+    readdirSync(dir, { withFileTypes: true }).reduce((n, e) => {
+      if (e.isDirectory()) return e.name === '_md' ? n : n + countMd(join(dir, e.name));
+      return n + (e.name === 'index.md' ? 1 : 0);
+    }, 0);
+
+  const expected = countMd(DIST);
+  assert(
+    `Test 8: manifest readable, ${expected} entries`,
+    Object.keys(json).length === expected,
+    `got ${Object.keys(json).length}`,
+  );
 }
 
 console.log(`\n${pass} passed, ${fail} failed`);

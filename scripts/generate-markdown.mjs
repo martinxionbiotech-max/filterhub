@@ -132,6 +132,8 @@ function inline(node) {
   const tag = node.tagName;
   if (!tag) return (node.childNodes || []).map(inline).join('');
   if (SKIP_TAGS.has(tag)) return '';
+  // Page chrome: the accessibility skip link is UI, not content.
+  if (tag === 'a' && /skip-link/.test(attr(node, 'class'))) return '';
 
   const children = (node.childNodes || []).map(inline).join('');
 
@@ -150,6 +152,10 @@ function inline(node) {
       return children ? `*${children}*` : '';
     case 'code':
       return inlineCodeSpan(children);
+    case 'span':
+      // .mono values are rendered as inline code in Markdown so machine-readable
+      // identifiers keep their formatting in the negotiated text representation.
+      return /\bmono\b/.test(attr(node, 'class')) ? inlineCodeSpan(children) : children;
     case 'del':
     case 's':
       return children ? `~~${children}~~` : '';
@@ -263,6 +269,7 @@ function block(node) {
   const tag = node.tagName;
   if (!tag) return (node.childNodes || []).map(block).join('');
   if (SKIP_TAGS.has(tag)) return '';
+  if (tag === 'a' && /\bskip-link\b/.test(attr(node, 'class'))) return '';
 
   // Inline content at block level (e.g. a bare <a> button or card link) → one
   // Markdown line rendered inline, so links/code/emphasis are preserved.

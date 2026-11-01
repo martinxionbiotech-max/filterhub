@@ -215,6 +215,20 @@ const websiteSchema = {
         white-space: nowrap;
       }
 
+      /* Same visual treatment as <code>, without nowrap: used for long values
+         such as a registered address that must wrap inside a table cell.
+         Also avoids an Astro compiler bug that mis-nests <code>{expr}</code>
+         inside <td> and leaks a <code> element past the table. */
+      .mono {
+        font-family: var(--font-mono);
+        font-size: 0.88em;
+        background: var(--navy-50);
+        color: var(--navy-700);
+        padding: 0.1rem 0.4rem;
+        border-radius: 4px;
+        overflow-wrap: anywhere;
+      }
+
       /* ---- Layout primitives ---- */
       .wrap { max-width: 1080px; margin: 0 auto; padding: 0 1.25rem; }
       .wrap-wide { max-width: 1240px; margin: 0 auto; padding: 0 1.25rem; }
