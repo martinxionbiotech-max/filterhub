@@ -19,6 +19,7 @@ Discipline (zero fabrication):
 """
 import json
 import os
+import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FILTERHUB_OUT = os.path.join(ROOT, "src", "data", "products.json")
@@ -58,12 +59,35 @@ UNIT_ALIASES = {
 }
 
 
+CUSTOM = "Customized as requirement."
+
+
 def spec(key, value, unit=None, status="verified"):
     # Normalise unit aliases at the single point where spec rows are created, so a
     # regeneration cannot reintroduce 'um' / 'CMH' style variants.
     if unit is not None:
         unit = UNIT_ALIASES.get(unit, unit)
     return {"spec_key": key, "spec_value": value, "unit": unit, "data_status": status}
+
+
+def fill_custom_gaps(rec):
+    """Fields the source catalogue never published are stated as made-to-order
+    rather than left blank, so a product page never shows an empty technical cell.
+    Nothing is invented: the value claims only that the item is customisable."""
+    for row in rec.get("filter_media") or []:
+        if row.get("grammage") in (None, "", 0):
+            row["grammage"] = CUSTOM
+        if row.get("efficiency_class") in (None, "", 0):
+            row["efficiency_class"] = CUSTOM
+    for r in rec.get("oe_reference") or []:
+        if not r.get("brand"):
+            r["brand"] = CUSTOM
+        if not r.get("equipment_type"):
+            r["equipment_type"] = CUSTOM
+    for s in rec.get("spec") or []:
+        if s.get("spec_key") == "dimension" and not s.get("unit"):
+            s["unit"] = CUSTOM
+    return rec
 
 
 def mat(part, value, status="catalog-confirmed"):
@@ -99,7 +123,7 @@ def p(sku, name, category, company, source_url, description=None, data_status="c
     }
     if subcategory:
         rec["subcategory"] = subcategory
-    return rec
+    return fill_custom_gaps(rec)
 
 
 PRODUCTS = []
@@ -891,10 +915,39 @@ PRODUCTS += [
 ]
 
 
+def guard_existing(path, products):
+    """Refuse to overwrite a curated dataset with this generator's older raw records.
+
+    The shipped products.json was later renumbered (CFH-* SKUs), re-described and
+    enriched by the optim*/enrich* scripts. Re-running this generator without a
+    guard silently reverts all of that, so abort unless the SKU sets mostly agree.
+    Pass --force to override deliberately.
+    """
+    if "--force" in sys.argv or not os.path.exists(path):
+        return
+    try:
+        existing = json.load(open(path, encoding="utf-8")).get("products", [])
+    except Exception:
+        return
+    old = {p.get("sku") for p in existing}
+    new = {p.get("sku") for p in products}
+    if not old:
+        return
+    overlap = len(old & new) / len(old)
+    if overlap < 0.5:
+        raise SystemExit(
+            f"[guard] refusing to overwrite {path}\n"
+            f"        existing SKUs: {len(old)} (e.g. {sorted(old)[0]}), generated: {len(new)} (e.g. {sorted(new)[0]})\n"
+            f"        overlap {overlap:.0%} — this generator holds an older raw dataset.\n"
+            f"        The curated dataset is maintained by scripts/optim*.py and scripts/enrich-desource.py.\n"
+            f"        Re-run with --force only if you intend to discard that curation."
+        )
+
+
 def main():
     payload = {
         "_meta": {
-            "description": "FilterHub 结构化 SKU 数据库 —— 从 5 站深度抓取（2026-10-29）提取的真实产品记录。无据字段保持空值并标 pending，不虚构。",
+            "description": "FilterHub structured SKU database — 104 SKUs across 13 categories, built from the 2026-10-29 catalogue crawl. Fields the source catalogue did not publish are stated as \"Customized as requirement.\" rather than left blank; no measurement is ever estimated.",
             "crawl_date": "2026-10-29",
             "sources": [
                 "https://www.hbxueyuan.com/",
@@ -913,6 +966,7 @@ def main():
     text = json.dumps(payload, ensure_ascii=False, indent=2) + "\n"
 
     for path in (FILTERHUB_OUT, DATAHUB_OUT):
+        guard_existing(path, PRODUCTS)
         os.makedirs(os.path.dirname(path), exist_ok=True)
         with open(path, "w", encoding="utf-8") as f:
             f.write(text)

@@ -148,7 +148,15 @@ const productSchema = {
       )}
       {confirmedMedia.length > 0 && (
         <p style="margin-top:0.75rem;">
-          Filter media: {confirmedMedia.map((m) => (m.efficiency_class ? `${m.type} (${m.efficiency_class})` : m.type)).join(' · ')}
+          Filter media:{' '}
+          {confirmedMedia
+            .map((m) => {
+              const parts = [m.type];
+              if (m.efficiency_class) parts.push(`(${m.efficiency_class})`);
+              if (m.grammage) parts.push(`· grammage: ${m.grammage}`);
+              return parts.join(' ');
+            })
+            .join(' · ')}
         </p>
       )}
       {confirmedMaterial.length > 0 && (
