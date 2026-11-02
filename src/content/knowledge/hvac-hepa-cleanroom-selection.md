@@ -250,6 +250,10 @@ The resulting specification may be simple. A commercial HVAC system may need onl
 
 Two judgments summarize the approach. First, **choose the filtration architecture from the required environment, not from a preferred product category.** Second, **treat the installed interface and verification plan as part of the filter selection.** A filter is not proven by its label; it is proven by the system evidence around it.
 
+## The practical position
+
+The practical position is that the buyer should procure a system brief before procuring filters. We would require the supplier to map each proposed stage to a protected outcome, a pressure allowance and a verification method, then price the interfaces and commissioning support that make the claim real. A proposal that lists classes without that map is an equipment quote, not a filtration design. The buyer should retain authority over the acceptance decision because the supplier cannot own the room's process risk. If the brief cannot survive a change in occupancy or airflow, the selection is still provisional.
+
 ## 13. What this page does not claim.
 
 This page is a selection framework, not a design specification for a particular building, cleanroom or process. It does not replace ventilation design, fire and life-safety review, cleanroom validation, or the judgment of a qualified engineer. It does not certify that any catalogue item will achieve a stated room class or application performance in a specific installation. It is not a recommendation to buy a particular filter or to use a particular class without project-specific verification.

@@ -321,6 +321,10 @@ This record protects the buyer during supplier changes, audits and later failure
 
 An auditable decision does not need to claim perfect certainty. It needs to state what was known, what was not known and why the residual risk was acceptable.
 
+## The practical position
+
+The practical position is that verification should be designed backward from the acceptance decision, not assembled from the certificates that happen to be available. We would name the failure mode, the evidence that can detect it and the person allowed to release the product before asking a supplier for documents. If the same evidence is accepted at sample, batch and installation stages, at least one gate is doing no work. The buyer owns that gap; no certificate closes it. A verification file should show why each gate exists and what would trigger re-verification.
+
 ## 19. What this page does not claim.
 
 This page is a procurement and quality-engineering framework, not a test report, certificate or substitute for the current text of any standard. It does not establish that a particular filter, supplier, sample or batch meets a stated efficiency, pressure-drop, capacity, cleanliness or integrity requirement. Applicable standards, test methods and regulatory obligations must be confirmed with the controlling documents and qualified professionals. Any approval or release decision remains the buyer's responsibility and should rest on product-specific evidence and independent testing where the risk requires it.

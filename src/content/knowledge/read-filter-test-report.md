@@ -239,6 +239,10 @@ A supplier who can answer these questions demonstrates control of the evidence. 
 
 **The purpose of reading a report is not to find a reason to reject it.** It is to establish the exact scope of the assurance it provides.
 
+## The practical position
+
+The practical position is that a test report should be read as a chain of conditions, and any missing condition should reduce assurance rather than be filled by assumption. We would reject a conclusion that runs beyond the tested object, airflow, challenge or decision rule, even when the headline is favourable. Buyers should keep a review record stating what the report proves, what it leaves open and who accepted the residual uncertainty. A positive number is not a substitute for applicability. The supplier should be asked to explain the gap, not merely send a newer certificate.
+
 ## 14. What this page does not claim.
 
 This page is a report-reading guide for procurement and quality professionals, not a test report, certification or substitute for the current standards it mentions. It does not establish that any particular filter or report is accurate, complete or suitable for a regulated application. Test methods, acceptance rules and accreditation requirements must be confirmed against the applicable documents and the buyer's technical requirements. Final acceptance remains the buyer's responsibility, supported by independent testing and product-specific evidence where the risk requires it.

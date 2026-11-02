@@ -186,6 +186,10 @@ Document the decision to stop or defer. A short record of the missing data, the 
 
 The central judgment is this: **when the contaminant requires a different removal mechanism or a different safety envelope, a higher filter class is not the answer.** The project should change the technology, the source-control strategy or the process, and then integrate filtration where it is actually appropriate.
 
+## The practical position
+
+The practical position is that when the contaminant changes phase, chemistry or hazard class, the buyer should stop specifying filters and reopen the process design. We would decline to treat a higher particulate class as protection against grease, vapour, corrosive aerosol or combustible dust; that is a technology and safety boundary, not a filtration grade. A supplier that quotes anyway should be asked what it excludes. A documented no-bid is more valuable than a filter that creates false assurance. Procurement should reward the supplier that names the limit, not the one that promises a universal media solution.
+
 ## 12. What this page does not claim.
 
 This page is a boundary-screening aid, not a process-safety assessment or a design specification. It does not determine whether a particular filter, material or housing is suitable for a specific chemical, temperature, fire, explosion or biological hazard. It does not replace applicable codes, industrial-hygiene review, dust hazard analysis, biosafety review or professional engineering judgment. It is not a recommendation to use or avoid any product in a hazardous application.

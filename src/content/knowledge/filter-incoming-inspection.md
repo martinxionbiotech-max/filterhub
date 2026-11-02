@@ -261,6 +261,10 @@ Receiving processes often fail for reasons that are easy to correct once they ar
 
 These errors do not mean that incoming inspection is not worth doing. They mean that inspection should be designed as a controlled process, with defined sampling, capable measurements, trained inspectors and a clear hold path. **The goal is not to inspect more; it is to know what the inspection can and cannot prove.**
 
+## The practical position
+
+In our view, most receiving teams inspect what is easy rather than what fails. We would concentrate limited bench capability on characteristics that cannot be recovered after installation: gasket condition, frame integrity, media identity and pressure behaviour. Documentation and supplier release should cover the rest, provided the buyer audits them rather than assuming them. Inspecting every carton while never cutting a sample is a false economy. The inspection plan should state which failure modes it cannot detect, because that list determines where independent testing or supplier controls must take over.
+
 ## 14. What this page does not claim.
 
 This page is a receiving-inspection and procurement guide, not a test report, certification or substitute for the applicable standards. It does not establish that a particular filter shipment meets a stated efficiency, pressure-drop, capacity, cleanliness or integrity requirement. The checks described must be adapted to the product, available equipment, risk and contractual acceptance criteria. Final shipment release remains the buyer's responsibility, with independent laboratory testing used where incoming inspection cannot provide the required evidence.

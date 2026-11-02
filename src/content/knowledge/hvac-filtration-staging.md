@@ -162,6 +162,10 @@ The [batch consistency guide](/knowledge/filter-batch-consistency/) is relevant 
 
 Use the [RFQ page](/rfq/) to provide the staging context rather than sending a list of class labels. A supplier who understands the load split can propose a coherent configuration; a supplier who receives only labels can only quote labels.
 
+## The practical position
+
+The practical position is that every stage must earn its pressure drop. We would remove a stage that has no defined load or protection duty, even if the sequence looks conventional, and reject a final filter that exists only to compensate for a poorly selected pre-filter. The proposal should show the loading path and maintenance trigger for each stage, not just a class and a frame size. A stage count is a design outcome, not a procurement target. The buyer should ask what happens to the downstream stages when any upstream stage is bypassed, overloaded or changed.
+
 ## 12. What this page does not claim.
 
 This page is a staging framework, not a design specification for a particular HVAC system. It does not prescribe a specific number of stages, filter class or form factor for any application. It does not replace ventilation design, pressure calculations, life-safety review or cleanroom validation. It is not a recommendation that a particular configuration will meet a project's air-quality, energy or cleanliness target without project-specific verification.

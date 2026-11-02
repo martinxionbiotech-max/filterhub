@@ -239,6 +239,10 @@ Sample programmes often fail for predictable procedural reasons rather than a la
 
 These shortcuts are tempting because each one saves time in the short term. Their cost appears later as unresolved deviations, inconsistent incoming batches or disputes over whether the supplier changed the product. A disciplined sample plan is not bureaucratic excess; it is the cheapest point at which to discover that the buyer and supplier have different definitions of the approved product.
 
+## The practical position
+
+The practical position is that a sample should be treated as a manufacturing claim, not a design trophy. We would approve only the configuration the supplier can repeat, and production-line provenance should be a condition of approval rather than a follow-up question. A hand-built unit can settle a design debate, but it should not release supply. If the supplier cannot show the batch record behind the sample, the buyer is still evaluating a prototype. Approval language should make that distinction visible before the purchase order turns it into a commitment.
+
 ## 14. What this page does not claim.
 
 This page is a supplier-qualification and sample-validation guide, not a test report, certificate or substitute for the applicable standard. It does not establish that a particular sample, supplier or production process meets any efficiency, pressure-drop, capacity, cleanliness or integrity requirement. Test methods, sample quantities and acceptance criteria must be chosen for the specific product, application and risk, with qualified technical review. Final supplier approval remains the buyer's responsibility and should include independent testing where the consequence of failure warrants it.

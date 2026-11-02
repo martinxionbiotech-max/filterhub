@@ -188,6 +188,10 @@ Use the [RFQ page](/rfq/) to provide the room target, airflow, filter position, 
 
 The central judgment is this: **cleanroom filtration should be selected from the room's classified performance requirement, not from a filter catalogue's highest available label.** The room target determines the airflow, terminal strategy and verification plan; the filter is one controlled contributor to that plan.
 
+## The practical position
+
+The practical position is that a cleanroom filtration proposal should be judged at its weakest boundary, not by the terminal filter's class. We would require the supplier to show how the filter, housing, seal, airflow and verification fit together before discussing a grade. A strong element cannot compensate for a bypass path, and a room test cannot repair a poorly specified interface. We would prefer a slightly lower-performing assembly that can be installed and leak-tested repeatably over a premium filter whose performance depends on site improvisation. If the proposal cannot name what the supplier excludes, it is not a system proposal.
+
 ## 11. What this page does not claim.
 
 This page is a system-selection explanation, not a cleanroom design or validation protocol. It does not state that any filter, FFU or equipment item will achieve a particular ISO class in a specific room. It does not replace ISO 14644 methods, project engineering, risk assessment or commissioning by qualified professionals. It is not a recommendation to use a particular filter class for a particular cleanroom application.

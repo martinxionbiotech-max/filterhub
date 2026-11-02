@@ -129,6 +129,10 @@ The review should distinguish a temporary disruption from a structural problem. 
 | Delivery | Correct Incoterm, insurance, route visibility | Transport documents, tracking, customs status | Risk-transfer point inconsistent with contract |
 | Quality failure | Acceptance, containment and remedy terms | Batch data, complaint trend, CAPA closure | Repeated escapes or unresolved corrective action |
 
+## The practical position
+
+In our view, a second supplier that has not produced an approved article is a name on a risk register, not a second source. We would pay deposits against documented milestones and make each release conditional on evidence the buyer can inspect, not on elapsed time. Commercial protection should follow technical exposure: tooling, dedicated inventory and custom product justify stronger terms than a catalogue item. A supplier that will not accept a verifiable milestone structure is telling the buyer where the leverage sits. The remedy for concentration risk is qualified capacity, not another quotation.
+
 ## 13. What this page does not claim.
 
 This page is a commercial-risk planning framework, not legal, tax, accounting or financial advice and not a substitute for a contract reviewed by qualified counsel. It does not establish that any particular payment term, Incoterms rule, dual-source arrangement or remedy is enforceable or suitable for a transaction. The buyer remains responsible for verifying the supplier, the product, the route and the commercial terms before committing money.

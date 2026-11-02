@@ -288,6 +288,10 @@ The following table is a practical review aid, not a mandatory contract structur
 | Audit | How is the system examined? | Audit plan, findings, closure |
 | Review | When is the agreement updated? | Revision history, approval |
 
+## The practical position
+
+The practical position is that a quality agreement should be short enough to operate and specific enough to survive a dispute. We would attach the evidence schedule, sampling rules, change classes and disposition path, then remove aspirational language that no record can verify. A clause without an owner, trigger or acceptance rule is not a control. If the buyer and supplier cannot agree on what a failed result sets in motion, the agreement is unfinished. The best test is whether a new quality engineer could release a shipment using the document alone.
+
 ## 15. What this page does not claim.
 
 This page is a procurement and quality-management guide, not a legal contract, test report or certification. It does not establish that a particular clause, supplier or filter meets any performance, regulatory or contractual requirement. The applicable standards, legal terms and acceptance criteria must be confirmed with qualified technical, quality and legal professionals for the specific transaction. Final approval and enforcement of a quality agreement remain the buyer's responsibility.

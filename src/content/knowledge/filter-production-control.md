@@ -143,6 +143,10 @@ A release record is not a narrative written after a complaint. It should be crea
 
 The buyer should review a sample release record during supplier qualification and periodically thereafter. If the record cannot be retrieved for a delivered shipment, the supplier may have a document-retention issue, a lot-identification issue or both. Either one weakens the value of every other quality document in the relationship.
 
+## The practical position
+
+The practical position is that a supplier control plan is credible only when it can name the process variables that predict a field failure. We would rather see a short list of monitored causes with reaction limits than a long list of final checks that cannot stop a lot early. Buyers should request trends, deviation records and change history, not every internal measurement. A control that produces data but never holds product is documentation, not control. The review should ask what the supplier did the last time a trend crossed its limit, including whether production was actually stopped.
+
 ## 14. What this page does not claim.
 
 This page describes production-control principles, not a product standard, legal requirement or substitute for auditing and testing the actual manufacturing process. It does not establish that any supplier, control plan, sampling frequency or metric is adequate for a particular filter, and it does not guarantee that the absence of a reported deviation means the product is conforming. The buyer remains responsible for defining acceptance criteria and verifying the evidence for the product and risk at hand.

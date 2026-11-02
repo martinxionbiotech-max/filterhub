@@ -169,6 +169,10 @@ If a supplier cannot provide airflow-specific pressure data, the buyer can still
 
 This sequence does not produce a universal "most efficient filter." It produces a traceable decision. That is more useful than a payback number built on invented inputs.
 
+## The practical position
+
+The practical position is that a filter should never win an energy comparison on clean pressure drop alone. We would compare options at the same delivered airflow over the loading path to changeout, then treat fan energy, replacement labour and downtime as one operating cost. A lower-efficiency filter can be rational where the fan has no pressure margin; a premium filter can be waste where the system cannot preserve its benefit. The buyer should demand the operating point and the changeout criterion, not a catalogue claim. Energy choices become defensible only when the delivered duty is held constant.
+
 ## 11. What this page does not claim.
 
 This page is an engineering framework, not a financial model or an energy audit. It does not provide electricity prices, payback periods or guaranteed savings for any filter choice. It does not claim that a particular pressure drop, loading curve or fan-control strategy applies to a specific installation. It is not a substitute for measured system data, professional ventilation design or project-specific life-cycle analysis.

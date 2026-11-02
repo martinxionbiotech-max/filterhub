@@ -221,6 +221,10 @@ This sequence is slower than copying a standard number from a competitor's datas
 
 The central procurement judgement is simple: **do not buy a class label; buy evidence that matches the duty.** The standard is valuable when it makes that match explicit. It is dangerous when it merely makes an unrelated claim look rigorous.
 
+## The practical position
+
+The practical position is that the test standard should follow the decision the buyer must make, not the label the supplier prefers. We would write the test object, method part, operating condition and acceptance rule into the RFQ before asking for a report; a family name without those details is not a specification. Where no standard covers the installed duty, the buyer should define a witnessed test instead of borrowing an unrelated one. An impressive report for the wrong object is a liability. The right question is always what decision the evidence will support.
+
 ## 14. What this page does not claim.
 
 This page is a purchasing and quality-engineering guide, not a test report, a certificate or a substitute for the current text of any standard. It does not establish that a particular filter, supplier or laboratory meets any classification or regulatory requirement. Standard editions, parts, national adoptions and acceptance criteria must be confirmed with the applicable document and a qualified technical or quality professional. Any approval decision remains the buyer's responsibility, supported by product-specific evidence and, where required, independent third-party testing.
