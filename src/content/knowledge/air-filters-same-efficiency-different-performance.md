@@ -8,6 +8,8 @@ order: 1
 isPillar: false
 pillarSlug: "air-filter-performance"
 published: 2026-11-01
+series: air-filter-performance
+seriesTitle: Air filter performance
 ---
 
 When two air filters carry the same efficiency classification, it is reasonable to assume that they offer similar [filtration performance](/knowledge/air-filter-performance/).

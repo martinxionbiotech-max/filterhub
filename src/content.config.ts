@@ -13,6 +13,8 @@ const knowledge = defineCollection({
     isPillar: z.boolean(),
     pillarSlug: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),
     published: z.coerce.date(),
+    series: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),
+    seriesTitle: z.string().min(1),
   }),
 });
 

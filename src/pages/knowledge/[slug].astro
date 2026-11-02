@@ -24,9 +24,19 @@ const entries = await getKnowledgeEntries();
 const { Content, headings } = await render(entry);
 
 const isPillar = entry.data.isPillar;
-const clusters = entries.filter((item) => !item.data.isPillar);
-const pillar = entries.find((item) => item.data.slug === entry.data.pillarSlug);
-const relatedEntries = isPillar ? clusters : pillar ? [pillar] : [];
+const seriesEntries = entries.filter((item) => item.data.series === entry.data.series);
+const clusters = seriesEntries
+  .filter((item) => !item.data.isPillar)
+  .sort((a, b) => a.data.order - b.data.order);
+const pillar = seriesEntries.find(
+  (item) => item.data.isPillar && item.data.slug === entry.data.pillarSlug,
+);
+const adjacentEntries = clusters.filter(
+  (item) => Math.abs(item.data.order - entry.data.order) === 1,
+);
+const relatedEntries = isPillar
+  ? clusters
+  : [pillar, ...adjacentEntries].filter((item): item is KnowledgeEntry => Boolean(item));
 const tocItems = headings.filter((heading) => heading.depth === 2);
 const canonical = `https://chinafilterhub.com/knowledge/${entry.data.slug}/`;
 const published = entry.data.published.toISOString().slice(0, 10);
@@ -50,10 +60,10 @@ const articleSchema = {
   dateModified: published,
   publisher: { '@id': 'https://chinafilterhub.com/#organization' },
   inLanguage: 'en',
-  articleSection: 'Air Filter Performance',
+  articleSection: entry.data.seriesTitle,
   isPartOf: {
     '@type': 'CollectionPage',
-    name: 'Air Filter Performance Knowledge Base',
+    name: entry.data.seriesTitle,
     url: 'https://chinafilterhub.com/knowledge/',
   },
 };
@@ -64,7 +74,7 @@ const articleSchema = {
   description={entry.data.description}
   breadcrumbs={breadcrumbs}
 >
-  <main class="wrap knowledge-page">
+  <main id="main" class="wrap knowledge-page">
     <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="/">Home</a> / <a href="/knowledge/">Knowledge</a> / {entry.data.title}
     </nav>
@@ -94,7 +104,9 @@ const articleSchema = {
       <section class="section knowledge-related" aria-labelledby="related-heading">
         <div class="section-head">
           <h2 id="related-heading" class="mt-0">Related</h2>
-          <p class="muted small">{isPillar ? 'Continue with the series' : 'Return to the complete framework'}</p>
+          <p class="muted small">
+            {isPillar ? 'Continue with the series' : 'Return to the framework or move to an adjacent part'}
+          </p>
         </div>
         <div class="grid grid--cards">
           {relatedEntries.map((item) => (
