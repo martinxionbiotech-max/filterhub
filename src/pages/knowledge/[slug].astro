@@ -10,6 +10,7 @@ import {
   entryEyebrow,
   type KnowledgeEntry,
 } from '../../lib/knowledge';
+import { standardsIn } from '../../data/standard-links';
 
 export async function getStaticPaths() {
   const entries = await getKnowledgeEntries();
@@ -50,9 +51,57 @@ const breadcrumbs = [
   { label: entry.data.title, href: `/knowledge/${entry.data.slug}/` },
 ];
 
+// FAQPage for the question-style H2 sections. Only pairs whose first paragraph reads
+// as an answer survive: short preambles ("Before discussing ...") and one-line stubs
+// make low-quality FAQ markup, so they are dropped rather than padded.
+function buildFaq(body: string | undefined): { q: string; a: string }[] {
+  if (!body) return [];
+  const weak = /^(before discussing|this section|to understand|in this section|the next|consider two)/i;
+  const lines = body.split('\n');
+  const pairs: { q: string; a: string }[] = [];
+  for (let i = 0; i < lines.length; i += 1) {
+    const heading = lines[i].trim();
+    if (!/^##\s+.+\?\s*$/.test(heading)) continue;
+    let answer = '';
+    for (let j = i + 1; j < Math.min(i + 10, lines.length); j += 1) {
+      const line = lines[j].trim();
+      if (!line || line.startsWith('#') || line.startsWith('|') || line.startsWith('-')) continue;
+      answer = line;
+      break;
+    }
+    answer = answer
+      .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+      .replace(/[*_`]/g, '')
+      .trim();
+    // take the first two sentences
+    const sentences = answer.match(/[^.!?]+[.!?]+/g);
+    if (sentences) answer = sentences.slice(0, 2).join(' ').trim();
+    if (answer.length < 110 || weak.test(answer)) continue;
+    const question = heading.replace(/^##\s+/, '').replace(/^\d+\.\s*/, '').trim();
+    pairs.push({ q: question, a: answer });
+    if (pairs.length === 6) break;
+  }
+  return pairs;
+}
+
+const citedStandards = standardsIn(entry.body);
+const faqPairs = buildFaq(entry.body);
+const faqSchema = faqPairs.length >= 2
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      '@id': `${canonical}#faq`,
+      mainEntity: faqPairs.map(({ q, a }) => ({
+        '@type': 'Question',
+        name: q,
+        acceptedAnswer: { '@type': 'Answer', text: a },
+      })),
+    }
+  : null;
+
 const articleSchema = {
   '@context': 'https://schema.org',
-  '@type': 'Article',
+  '@type': 'TechArticle',
   headline: entry.data.title,
   description: entry.data.description,
   mainEntityOfPage: canonical,
@@ -100,6 +149,29 @@ const articleSchema = {
       <Content />
     </article>
 
+    {citedStandards.length > 0 && (
+      <section class="section" aria-labelledby="standards-heading">
+        <h2 id="standards-heading" class="mt-0">Standards referenced</h2>
+        <p class="muted small" style="max-width:70ch;">
+          Each title links to the issuing body's catalogue page so the source can be checked
+          at origin. The standard text is not reproduced here, and the page is not a
+          substitute for the document itself.
+        </p>
+        <ul>
+          {citedStandards.map((ref) => (
+            <li>
+              {ref.url ? (
+                <a href={ref.url} target="_blank" rel="noopener noreferrer">{ref.label}</a>
+              ) : (
+                <span>{ref.label}</span>
+              )}
+              {' '}<span class="muted small">— {ref.issuer}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+
     {relatedEntries.length > 0 && (
       <section class="section knowledge-related" aria-labelledby="related-heading">
         <div class="section-head">
@@ -140,6 +212,7 @@ const articleSchema = {
     </section>
 
     <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+    {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
   </main>
 </BaseLayout>
 

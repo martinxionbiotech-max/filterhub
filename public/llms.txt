@@ -1,4 +1,4 @@
-# China Filter Hub (Huiying)
+# China Filter Hub
 
 > Main site: https://chinafilterhub.com (placeholder domain chinafilterhub.com)
 > Data subsite: https://data.chinafilterhub.com (placeholder domain)
@@ -55,6 +55,53 @@
 ### OEM & Wholesale Sourcing
 - [Automotive filter OEM manufacturing guide: from RFQ to first article](https://chinafilterhub.com/guides/oem-procurement-process/)
 - [Automotive filter MOQ, lead time and pricing: what drives them](https://chinafilterhub.com/guides/filter-moq-lead-time/)
+
+
+## Knowledge base — deep-dive technical series
+
+### Air filter performance
+- [Pillar: How to Evaluate Air Filter Performance: Efficiency, Pressure Drop, Dust Holding Capacity and Service Life](https://chinafilterhub.com/knowledge/air-filter-performance/) — Learn how air filter efficiency, pressure drop, dust holding capacity, airflow velocity, and service life interact. A practical framework for evaluating filters under real operating conditions.
+- [Part 1: Why Do Two Air Filters with the Same Efficiency Rating Perform Differently?](https://chinafilterhub.com/knowledge/air-filters-same-efficiency-different-performance/) — Two air filters with the same efficiency rating can have different pressure drops, dust holding capacities, and service lives. Learn what determines real-world filter performance.
+- [Part 2: What Is Filter Pressure Drop and Why Does It Matter?](https://chinafilterhub.com/knowledge/air-filter-pressure-drop/) — Understand air filter pressure drop, how airflow and filter design affect resistance, and why pressure drop influences HVAC energy consumption, maintenance, and filter selection.
+- [Part 3: Initial vs Final Pressure Drop: When Should an Air Filter Be Replaced?](https://chinafilterhub.com/knowledge/initial-vs-final-pressure-drop-air-filter/) — Understand initial and final air filter pressure drop, how filter resistance changes during dust loading, and how to establish a practical filter replacement strategy.
+- [Part 4: What Is Dust Holding Capacity and How Should It Be Compared?](https://chinafilterhub.com/knowledge/air-filter-dust-holding-capacity/) — Learn what air filter dust holding capacity really measures, why test conditions matter, and how to compare filters beyond maximum dust retention.
+- [Part 5: Air Filter Efficiency vs Pressure Drop: Understanding the Trade-Off](https://chinafilterhub.com/knowledge/air-filter-efficiency-vs-pressure-drop/) — Understand the relationship between air filter efficiency and pressure drop, why higher efficiency does not always mean higher resistance, and how to select the right balance.
+- [Part 6: How Airflow Velocity Changes Air Filter Performance](https://chinafilterhub.com/knowledge/how-airflow-velocity-affects-air-filter-performance/) — Discover how face velocity and media velocity influence air filter efficiency, pressure drop, dust loading and service life. Learn how to select filters for real operating conditions.
+- [Part 7: Why Filter Surface Area Matters More Than Media Thickness](https://chinafilterhub.com/knowledge/air-filter-surface-area-vs-media-thickness/) — Learn why effective filter media area, pleat design and airflow distribution often matter more than media thickness when evaluating air filter efficiency, pressure drop and service life.
+- [Part 8: How to Estimate Air Filter Service Life in Real Operating Conditions](https://chinafilterhub.com/knowledge/how-to-estimate-air-filter-service-life/) — Learn how to estimate air filter service life using dust concentration, airflow, pressure drop, dust holding capacity and operating conditions. A practical HVAC filter replacement framework.
+
+### HVAC, HEPA and cleanroom systems
+- [Pillar: HVAC, HEPA and Cleanroom Filtration: A System-Level Selection Guide](https://chinafilterhub.com/knowledge/hvac-hepa-cleanroom-selection/) — A system-level method for choosing HVAC, HEPA and cleanroom filtration by application, air target, pressure budget, energy use and verification.
+- [Part 1: Choosing Filter Classes by Application, Not by Habit](https://chinafilterhub.com/knowledge/filter-class-by-application/) — How to select filter classes from exposure, process risk and air-path evidence instead of repeating a legacy grade or defaulting to the highest number.
+- [Part 2: HVAC Filtration Staging: Pre-Filter, Secondary and Final](https://chinafilterhub.com/knowledge/hvac-filtration-staging/) — How to design HVAC filter staging by contaminant load, particle target and pressure budget, without treating the three stages as a fixed recipe.
+- [Part 3: Fan Energy and the Life-Cycle Cost of a Filter Choice](https://chinafilterhub.com/knowledge/filter-fan-energy-lifecycle-cost/) — How to compare filters using fan power, pressure-drop profile, service life and normalized energy, without relying on purchase price or payback claims.
+- [Part 4: Cleanroom Classification and What It Demands from Filtration](https://chinafilterhub.com/knowledge/cleanroom-classification-filtration/) — How ISO cleanroom classification drives airflow, terminal filtration and verification, and why a filter class alone cannot establish a room class.
+- [Part 5: Terminal Filtration: FFU, Terminal Box or Ceiling Grid](https://chinafilterhub.com/knowledge/terminal-filtration-selection/) — How to choose between an FFU, ducted terminal box and ceiling-grid HEPA filter by airflow, seal, service access, pressure and cleanroom verification.
+- [Part 6: HEPA vs ULPA in System Terms: What the Extra Class Costs You](https://chinafilterhub.com/knowledge/hepa-ulpa-system-tradeoff/) — What upgrading from HEPA to ULPA changes in pressure, fan energy, housing, testing and installed performance, and when the extra class is justified.
+- [Part 7: Pocket, Panel, V-Bank or Compact: Choosing the Form Factor](https://chinafilterhub.com/knowledge/filter-form-factor-selection/) — How panel, pocket, V-bank and compact filter geometries change media area, pressure drop, dust loading, airflow and housing fit in HVAC systems.
+- [Part 8: Where Standard Filtration Stops Working: Application Boundaries](https://chinafilterhub.com/knowledge/filtration-application-boundaries/) — A boundary check for grease, oil mist, high temperature, corrosive, wet, explosive and molecular contaminants that ordinary HVAC filters cannot solve.
+
+### Filter quality and verification
+- [Pillar: How to Verify Filter Quality Before You Buy: Test Methods, Reports, Samples and Batch Consistency](https://chinafilterhub.com/knowledge/filter-quality-verification/) — Verify filter quality through standards, reports, sample tests, batch sampling and quality agreements before approving a supplier or release.
+- [Part 1: Which Filter Test Standard Applies to Your Product?](https://chinafilterhub.com/knowledge/filter-test-standard-selection/) — Choose the right filter test standard by matching the product, contaminant, installation and acceptance decision, not by comparing class labels.
+- [Part 2: How to Read a Filter Test Report Without Being Misled](https://chinafilterhub.com/knowledge/read-filter-test-report/) — Read filter test reports critically: check scope, test object, method, airflow, measurements, uncertainty and whether results apply to the product you buy.
+- [Part 3: Sample Validation: What to Test Before Approving a Supplier](https://chinafilterhub.com/knowledge/filter-sample-validation/) — Validate filter samples through configuration checks, performance tests, destructive inspection and production evidence before approving a supplier.
+- [Part 4: Batch-to-Batch Consistency: Sampling Plans and What to Monitor](https://chinafilterhub.com/knowledge/filter-batch-consistency/) — Build a filter batch-consistency plan using lot definition, attribute and variable sampling, control charts and change triggers that catch drift early.
+- [Part 5: What Belongs in a Filter Quality Agreement](https://chinafilterhub.com/knowledge/filter-quality-agreement/) — Define product, test standards, sampling, reports, change control, non-conformance and escalation in a filter quality agreement that is auditable.
+- [Part 6: HEPA and ULPA Integrity Testing: Leakage, Scan and Acceptance](https://chinafilterhub.com/knowledge/hepa-ulpa-integrity-testing/) — Understand HEPA and ULPA integrity testing: classification versus leak scan, test stages, acceptance records and the limits of factory and site tests.
+- [Part 7: Incoming Inspection: What a Buyer Can Verify Without a Laboratory](https://chinafilterhub.com/knowledge/filter-incoming-inspection/) — Set a risk-based incoming filter inspection plan covering identity, packaging, dimensions, gaskets, visual defects and controlled pressure-drop checks.
+- [Part 8: When a Batch Fails: Non-Conformance, CAPA and Supplier Escalation](https://chinafilterhub.com/knowledge/filter-batch-failure-capa/) — Respond to a failed filter batch with containment, evidence-based disposition, root-cause CAPA and proportionate escalation to prevent recurrence.
+
+### OEM sourcing and supplier risk
+- [Pillar: How to Choose and Control a Filter Supplier: Screening, Audits and Production Risk](https://chinafilterhub.com/knowledge/filter-supplier-selection/) — A risk-based framework for screening filter suppliers, auditing factories, approving first articles and controlling production and commercial exposure.
+- [Part 1: Supplier Screening Before the First RFQ](https://chinafilterhub.com/knowledge/supplier-screening-filter/) — A structured pre-RFQ screen for filter suppliers: legal identity, site fit, process capability, quality evidence, export readiness and red flags.
+- [Part 2: What to Verify on a Filter Factory Audit](https://chinafilterhub.com/knowledge/filter-factory-audit/) — A practical filter factory audit guide covering scope, process walk, traceability, measurement, nonconformance, capacity and clear audit closure.
+- [Part 3: First Article Inspection for Filters: Acceptance Criteria and Documents](https://chinafilterhub.com/knowledge/filter-first-article-inspection/) — A practical guide to filter first article inspection, covering acceptance criteria, provenance, measurement decisions and production approval.
+- [Part 4: Tooling and IP Ownership with Chinese Filter Suppliers](https://chinafilterhub.com/knowledge/filter-tooling-ip-ownership/) — A practical guide to tooling ownership, drawing rights, production access, maintenance and exit terms when sourcing filters from Chinese suppliers.
+- [Part 5: Production Control: What to Monitor Between Batches](https://chinafilterhub.com/knowledge/filter-production-control/) — A practical framework for filter production control, covering control plans, lot traceability, SPC, release data, deviation handling and supplier review.
+- [Part 6: Silent Changes: Material Substitution and Change Management](https://chinafilterhub.com/knowledge/filter-change-management/) — A practical framework for controlling filter supplier material substitutions and process changes, from formal notification to production release.
+- [Part 7: Commercial Risk: Deposits, Capacity and Dual Sourcing](https://chinafilterhub.com/knowledge/filter-commercial-risk/) — A practical guide to deposits, payment exposure, capacity concentration, Incoterms and dual sourcing when buying filters from overseas suppliers.
+- [Part 8: Claims and Documentation Risk: Certificates, Export Papers, Traceability](https://chinafilterhub.com/knowledge/filter-claims-documentation-risk/) — A practical guide to filter claims and export documents: certificates, test reports, traceability, Incoterms and evidence-based claim handling.
 
 ## Commercial & company pages
 
