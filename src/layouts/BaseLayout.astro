@@ -308,6 +308,18 @@ const websiteSchema = {
       .btn-navy:hover { background: var(--navy-700); color: #fff; }
       .btn-ghost { background: transparent; color: var(--navy-800); border-color: var(--line); }
       .btn-ghost:hover { border-color: var(--orange-600); color: var(--orange-600); }
+      /* Ghost buttons sitting on the dark navy CTA bands need light text,
+         otherwise navy-on-navy makes the label invisible. */
+      .btn-ghost--on-dark {
+        background: rgba(255, 255, 255, 0.08);
+        color: #fff;
+        border-color: rgba(255, 255, 255, 0.45);
+      }
+      .btn-ghost--on-dark:hover {
+        background: rgba(255, 255, 255, 0.16);
+        color: #fff;
+        border-color: #fff;
+      }
 
       /* ---- Cards ---- */
       .card {
