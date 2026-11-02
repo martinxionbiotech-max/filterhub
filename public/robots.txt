@@ -1,4 +1,44 @@
+# China Filter Hub — robots.txt
+#
+# The site is a public technical reference: product catalogue, filter test
+# standards and sourcing guidance. AI crawlers are welcome; the machine-readable
+# entry points are listed at the end so they can be discovered directly.
+
 User-agent: *
 Allow: /
 
+# Answer engines and LLM crawlers, named explicitly so a future blanket block
+# (or a CDN rule) does not silently drop them.
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Machine-readable entry points
+# llms.txt           — structured index of products, guides and the knowledge base
+# sitemap-index.xml  — full URL list
+# /search-index.json — flat search index (104 products, 36 articles, 12 guides)
+# /<path>/index.md   — every page is also served as clean Markdown
 Sitemap: https://chinafilterhub.com/sitemap-index.xml
