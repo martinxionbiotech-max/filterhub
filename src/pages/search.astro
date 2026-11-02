@@ -1,0 +1,369 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { totalProducts } from '../data/products';
+import { getSeriesList } from '../lib/knowledge';
+
+const seriesList = await getSeriesList();
+const totalKnowledge = seriesList.reduce(
+  (total, series) => total + series.clusters.length + 1,
+  0,
+);
+
+const chips = [
+  { label: 'All', tag: 'all' },
+  { label: 'Automotive', tag: 'automotive' },
+  { label: 'HVAC', tag: 'hvac' },
+  { label: 'Cleanroom', tag: 'cleanroom' },
+  { label: 'Liquid', tag: 'liquid' },
+  { label: 'Media', tag: 'media' },
+  { label: 'OEM', tag: 'oem' },
+  { label: 'Quality', tag: 'quality' },
+];
+
+const popularLinks = [
+  { label: 'All filter products', href: '/products/' },
+  { label: 'Knowledge base', href: '/knowledge/' },
+  { label: 'Content pillars', href: '/pillars/' },
+  { label: 'Request a quotation', href: '/rfq/' },
+];
+---
+
+<BaseLayout
+  title="Search"
+  description="Search filter products, technical articles and buyer guides by product, application or keyword."
+>
+  <main id="main" class="wrap" style="padding-top:2rem;max-width:900px;">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> / Search</nav>
+    <h1>Search</h1>
+    <p class="lede" style="max-width:70ch;">
+      Search products, technical articles and buyer guides by product name, application or keyword.
+    </p>
+
+    <form id="search-form" class="search-form" role="search">
+      <label class="sr-only" for="q">Search products, knowledge and guides</label>
+      <input
+        class="search-input"
+        type="search"
+        id="q"
+        name="q"
+        aria-label="Search products, knowledge and guides"
+        placeholder={`Search ${totalProducts} SKUs and ${totalKnowledge} articles…`}
+        autocomplete="off"
+      />
+    </form>
+    <p class="muted small" id="search-hint">
+      Search by product name, OE reference, application or technical topic.
+    </p>
+
+    <div class="search-chips" role="group" aria-label="Filter by application">
+      {chips.map((chip) => (
+        <button
+          type="button"
+          class:list={['btn', chip.tag === 'all' ? 'btn-primary' : 'btn-ghost']}
+          data-search-tag={chip.tag}
+          aria-pressed={chip.tag === 'all' ? 'true' : 'false'}
+        >
+          {chip.label}
+        </button>
+      ))}
+    </div>
+
+    <div id="results" class="search-results" aria-live="polite">
+      <h2 class="mt-0">Popular starting points</h2>
+      <ul>
+        {popularLinks.map((link) => (
+          <li><a href={link.href}>{link.label}</a></li>
+        ))}
+      </ul>
+
+      <h2>Knowledge series</h2>
+      <ul>
+        {seriesList.map((series) => (
+          <li>
+            <a href={`/knowledge/${series.pillar.data.slug}/`}>{series.title}</a>
+            {' — '}{series.clusters.length + 1} articles
+          </li>
+        ))}
+      </ul>
+    </div>
+  </main>
+</BaseLayout>
+
+<script>
+  type EntryType = 'product' | 'knowledge' | 'guide' | 'category' | 'page';
+
+  interface SearchEntry {
+    url: string;
+    title: string;
+    desc: string;
+    type: EntryType;
+    tags: string[];
+  }
+
+  const typeLabels: Record<EntryType, string> = {
+    product: 'Product',
+    knowledge: 'Article',
+    guide: 'Guide',
+    category: 'Category',
+    page: 'Page',
+  };
+
+  const input = document.getElementById('q') as HTMLInputElement | null;
+  const form = document.getElementById('search-form') as HTMLFormElement | null;
+  const results = document.getElementById('results') as HTMLDivElement | null;
+  const chipButtons = Array.from(
+    document.querySelectorAll<HTMLButtonElement>('[data-search-tag]'),
+  );
+  const validTags = new Set(chipButtons.map((button) => button.dataset.searchTag ?? 'all'));
+
+  if (input && form && results) {
+    const initialMarkup = results.innerHTML;
+    let activeTag = 'all';
+    let indexPromise: Promise<SearchEntry[]> | undefined;
+    let debounceTimer: ReturnType<typeof setTimeout> | undefined;
+    let requestId = 0;
+
+    function setActiveTag(tag: string): void {
+      activeTag = validTags.has(tag) ? tag : 'all';
+      for (const button of chipButtons) {
+        const isActive = button.dataset.searchTag === activeTag;
+        button.setAttribute('aria-pressed', String(isActive));
+        button.classList.toggle('btn-primary', isActive);
+        button.classList.toggle('btn-ghost', !isActive);
+      }
+    }
+
+    function tokenize(value: string): string[] {
+      return value
+        .toLowerCase()
+        .normalize('NFKC')
+        .replace(/[^\p{L}\p{N}]+/gu, ' ')
+        .trim()
+        .split(/\s+/)
+        .filter(Boolean);
+    }
+
+    function scoreEntry(entry: SearchEntry, tokens: string[]): number | null {
+      if (tokens.length === 0) return 0;
+
+      const title = entry.title.toLowerCase();
+      const desc = entry.desc.toLowerCase();
+      const tags = entry.tags.map((tag) => tag.toLowerCase());
+      let score = 0;
+
+      for (const token of tokens) {
+        let matched = false;
+        if (title.includes(token)) {
+          score += 3;
+          matched = true;
+        }
+        if (tags.some((tag) => tag.includes(token))) {
+          score += 2;
+          matched = true;
+        }
+        if (desc.includes(token)) {
+          score += 1;
+          matched = true;
+        }
+        if (!matched) return null;
+      }
+
+      return score;
+    }
+
+    function syncUrl(query: string, tag: string): void {
+      const next = new URL(window.location.href);
+      if (query) next.searchParams.set('q', query);
+      else next.searchParams.delete('q');
+      if (tag !== 'all') next.searchParams.set('tag', tag);
+      else next.searchParams.delete('tag');
+      window.history.replaceState(null, '', `${next.pathname}${next.search}${next.hash}`);
+    }
+
+    function loadIndex(): Promise<SearchEntry[]> {
+      if (!indexPromise) {
+        indexPromise = fetch('/search-index.json')
+          .then((response) => {
+            if (!response.ok) throw new Error(`Search index returned ${response.status}.`);
+            return response.json();
+          })
+          .then((data: unknown) => {
+            if (!Array.isArray(data)) throw new Error('Search index has an invalid format.');
+            return data as SearchEntry[];
+          })
+          .catch((error: unknown) => {
+            indexPromise = undefined;
+            throw error;
+          });
+      }
+      return indexPromise;
+    }
+
+    function showError(): void {
+      const message = document.createElement('p');
+      message.className = 'notice';
+      message.textContent =
+        'Search is temporarily unavailable. Browse the knowledge base or product catalogue instead.';
+      results.replaceChildren(message);
+    }
+
+    function showEmptyResults(): void {
+      const message = document.createElement('p');
+      message.className = 'notice';
+      message.append(document.createTextNode('No results matched your search. Browse '));
+
+      const knowledgeLink = document.createElement('a');
+      knowledgeLink.href = '/knowledge/';
+      knowledgeLink.textContent = 'the knowledge base';
+      message.append(knowledgeLink, document.createTextNode(' or '));
+
+      const productsLink = document.createElement('a');
+      productsLink.href = '/products/';
+      productsLink.textContent = 'the product catalogue';
+      message.append(productsLink, document.createTextNode('.'));
+
+      results.replaceChildren(message);
+    }
+
+    function renderResults(matches: SearchEntry[], query: string, tag: string): void {
+      if (matches.length === 0) {
+        showEmptyResults();
+        return;
+      }
+
+      const visible = matches.slice(0, 30);
+      const tagLabel = chipButtons.find((button) => button.dataset.searchTag === tag)?.textContent?.trim();
+      const summaryParts = [
+        `${matches.length} result${matches.length === 1 ? '' : 's'}`,
+      ];
+      if (query) summaryParts.push(`for “${query}”`);
+      if (tag !== 'all' && tagLabel) summaryParts.push(`in ${tagLabel}`);
+
+      const summary = document.createElement('p');
+      summary.className = 'muted small';
+      summary.textContent = summaryParts.join(' ');
+
+      const list = document.createElement('div');
+      list.className = 'stack';
+
+      for (const entry of visible) {
+        const link = document.createElement('a');
+        link.className = 'card card--link';
+        link.href = entry.url;
+
+        const badge = document.createElement('span');
+        badge.className = 'badge badge--reference';
+        badge.textContent = typeLabels[entry.type] ?? 'Page';
+        badge.style.marginBottom = '0.45rem';
+
+        const title = document.createElement('strong');
+        title.style.color = 'var(--navy-800)';
+        title.style.display = 'block';
+        title.textContent = entry.title;
+
+        const desc = document.createElement('span');
+        desc.className = 'muted small';
+        desc.style.display = 'block';
+        desc.style.marginTop = '0.3rem';
+        desc.textContent = entry.desc;
+
+        link.append(badge, title, desc);
+        list.append(link);
+      }
+
+      results.replaceChildren(summary, list);
+
+      if (matches.length > 30) {
+        const limitNotice = document.createElement('p');
+        limitNotice.className = 'muted small';
+        limitNotice.textContent =
+          'Showing the first 30 results. Refine your keyword or select an application to narrow the list.';
+        results.append(limitNotice);
+      }
+    }
+
+    async function runSearch(): Promise<void> {
+      const query = input.value.trim();
+      const tokens = tokenize(query);
+      const currentRequest = ++requestId;
+
+      if (!query && activeTag === 'all') {
+        results.innerHTML = initialMarkup;
+        syncUrl('', 'all');
+        return;
+      }
+
+      syncUrl(query, activeTag);
+
+      try {
+        const entries = await loadIndex();
+        if (currentRequest !== requestId) return;
+
+        const matches = entries
+          .filter((entry) => activeTag === 'all' || entry.tags.includes(activeTag))
+          .map((entry) => ({ entry, score: scoreEntry(entry, tokens) }))
+          .filter((item): item is { entry: SearchEntry; score: number } => item.score !== null)
+          .sort(
+            (a, b) => b.score - a.score || a.entry.title.localeCompare(b.entry.title),
+          )
+          .map((item) => item.entry);
+
+        renderResults(matches, query, activeTag);
+      } catch {
+        if (currentRequest === requestId) showError();
+      }
+    }
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      void runSearch();
+    });
+
+    input.addEventListener('input', () => {
+      if (debounceTimer) clearTimeout(debounceTimer);
+      debounceTimer = setTimeout(() => {
+        void runSearch();
+      }, 150);
+    });
+
+    for (const button of chipButtons) {
+      button.addEventListener('click', () => {
+        setActiveTag(button.dataset.searchTag ?? 'all');
+        void runSearch();
+      });
+    }
+
+    const params = new URLSearchParams(window.location.search);
+    const initialQuery = params.get('q')?.trim() ?? '';
+    const initialTag = (params.get('tag') ?? 'all').toLowerCase();
+    setActiveTag(initialTag);
+    input.value = initialQuery;
+
+    if (initialQuery || activeTag !== 'all') {
+      void runSearch();
+    }
+  }
+</script>
+
+<style>
+  .search-form { margin-top: 1.5rem; }
+  .search-input {
+    width: 100%;
+    padding: 0.72rem 0.95rem;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    background: var(--surface);
+    color: var(--ink);
+    font: inherit;
+  }
+  .search-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0 1.5rem;
+  }
+  .search-chips .btn { padding: 0.45rem 0.9rem; font-size: 0.88rem; }
+  .search-results { margin-top: 1.75rem; }
+  .search-results h2 { font-size: 1.25rem; margin-top: 1.75rem; }
+  .search-results h2:first-child { margin-top: 0; }
+</style>

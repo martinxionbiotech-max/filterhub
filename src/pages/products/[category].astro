@@ -2,11 +2,13 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import StatusBadge from '../../components/StatusBadge.astro';
 import { categories, type Category } from '../../data/categories';
+import { categoryKnowledge } from '../../data/category-knowledge';
 import { guides } from '../../data/guides';
 import { categoryGuides } from '../../data/link-map';
 import { site } from '../../data/site';
 import { productsByCategory, skuSlug, codeFromSlug } from '../../data/products';
 import { pillarForCategory, isAutomotiveCategory } from '../../data/pillars';
+import { getKnowledgeEntries } from '../../lib/knowledge';
 
 export function getStaticPaths() {
   return categories.map((c) => ({ params: { category: c.slug }, props: { category: c } }));
@@ -18,6 +20,14 @@ const skus = productsByCategory(code);
 const relatedGuides = (categoryGuides[category.slug] ?? [])
   .map((slug) => guides.find((g) => g.slug === slug))
   .filter(Boolean);
+const knowledgeBySlug = new Map(
+  (await getKnowledgeEntries()).map((entry) => [entry.data.slug, entry]),
+);
+const relatedKnowledge = (categoryKnowledge[category.slug] ?? []).map((slug) => {
+  const entry = knowledgeBySlug.get(slug);
+  if (!entry) throw new Error(`Knowledge article "${slug}" was not found.`);
+  return entry;
+});
 const pillar = pillarForCategory(category.slug);
 const isAutomotive = isAutomotiveCategory(category.slug);
 const breadcrumbs = [
@@ -255,6 +265,18 @@ const catImage = categoryImages[category.slug];
       <a href={`${site.dataSubsiteUrl}/products/${category.slug}/`} rel="noopener" target="_blank">data subsite</a>{' '}
       rather than estimated.
     </p>
+
+    <section class="section">
+      <h2>Technical background</h2>
+      <p class="muted">Before selecting a {category.name} model, these two articles cover the decision criteria buyers most often miss.</p>
+      <ul>
+        {relatedKnowledge.map((entry) => (
+          <li>
+            <a href={`/knowledge/${entry.data.slug}/`}>{entry.data.title}</a> — {entry.data.description}
+          </li>
+        ))}
+      </ul>
+    </section>
 
     {/* Phase 5 · quotation CTA (matched to product-page intent) */}
     <section class="section">

@@ -57,6 +57,7 @@ export const nav = [
   { label: 'OEM & Wholesale', href: '/pillars/oem-wholesale/' },
   { label: 'Manufacturers', href: '/pillars/qinghe-huiying/' },
   { label: 'Contact', href: '/contact/' },
+  { label: 'Search', href: '/search/' },
 ];
 
 export const complianceLinks = [
