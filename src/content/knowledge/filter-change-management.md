@@ -139,6 +139,10 @@ Retained samples are not a complete archive. They can change over time, they may
 
 The buyer should define which samples are retained for which change type and who may release them for comparison. A sample selected by the supplier after the change is weaker evidence than a sample retained during the original approval. The change record should state how the comparison sample was chosen.
 
+## The practical position
+
+The practical position is that change control begins with the buyer's own configuration discipline, not with a supplier promise to notify. We would divide the approved material and process list into performance-critical items and commercially visible items, then spend approval effort only where a change can alter fit, function or evidence. Requiring the same ceremony for carton print and filter media will be bypassed, and the bypass will eventually cover something that matters. "Same part number" is not evidence of equivalence. The buyer should be able to show the approved revision that every shipment is measured against.
+
 ## 14. What this page does not claim.
 
 This page is a change-control framework, not legal advice or a product-approval standard, and it does not establish that any supplier, material substitution or requalification plan is acceptable for a particular application. It does not guarantee that a supplier will disclose every change or that a sample test will detect every difference. The buyer remains responsible for defining the approved configuration, assessing the actual risk and verifying the affected product before release.

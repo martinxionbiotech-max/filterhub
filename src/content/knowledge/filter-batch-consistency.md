@@ -248,6 +248,10 @@ The review should ask:
 
 The plan should be documented and version-controlled. A verbal understanding is difficult to enforce and easy to lose when staff move.
 
+## The practical position
+
+In our view, a batch-consistency plan that samples only final dimensions is mostly a packaging check. We would put media identity, pleat and bond geometry, pressure behaviour and any integrity characteristic ahead of cosmetic inspection, because those are the variations a receiving check cannot see and a finished room cannot recover from. Sampling frequency should follow the consequence of drift, not the convenience of measurement. A supplier that can show trends for the characteristics that actually change performance is more credible than one that sends a thick certificate with every lot.
+
 ## 13. What this page does not claim.
 
 This page is a production-quality and procurement guide, not a sampling standard, test report or certification. It does not establish that a particular sampling plan, supplier or batch provides a stated level of assurance or that any filter meets a performance requirement. Acceptance quality limits, sample sizes, test methods and control rules must be selected for the specific product, defect consequences and applicable standards. Final batch release and supplier decisions remain the buyer's responsibility and should include independent verification where the risk justifies it.

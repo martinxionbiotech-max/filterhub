@@ -151,6 +151,10 @@ My judgment is that **the form factor should be selected before the final filter
 
 Where several buildings or air handlers use the same filter, standardizing the replacement envelope can reduce installation error. Standardization should not go so far as to force one geometry onto incompatible duties; it should ensure that a common housing and seal system is supported by approved models with the required performance. The [quality agreement guide](/knowledge/filter-quality-agreement/) can record the dimensions, construction and change-notification requirements.
 
+## The practical position
+
+The practical position is that form factor is a maintenance decision as much as an aerodynamic one. We would reject a geometry that improves clean pressure drop if it makes loaded removal, inspection or seal replacement awkward, because those burdens show up on every changeout rather than in the catalogue. Buyers should price the filter with the access and downtime it forces, not only the unit and freight. A housing that needs improvisation to accept a deeper pack is a design defect waiting for a maintenance shift. Fit, service and pressure belong in the same approval.
+
 ## 10. What this page does not claim.
 
 This page is a comparison framework, not a product selection specification. It does not state that any form factor is universally more efficient, longer lasting or suitable for a particular application. It does not claim that catalogue dimensions or classes establish installed performance. It is not a substitute for housing design, airflow measurement, project engineering or application-specific testing.

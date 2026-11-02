@@ -135,6 +135,10 @@ Other red flags include refusal to identify the production site, reluctance to e
 
 An automatic reject is appropriate when the supplier cannot meet a basic legal or control requirement and is unwilling to accept the buyer's verification terms. A hold is appropriate when the missing fact can be resolved. A proceed decision is appropriate when the evidence is sufficient for the next stage and the remaining questions are specific.
 
+## The practical position
+
+The practical position is that screening should eliminate suppliers, not merely rank them. We would record a product-specific proceed, hold or reject decision with the site and evidence behind it, and treat an unverifiable legal entity or production site as disqualifying for that purchase. A screen that ends with a shortlist but no reasons has not reduced risk; it has only moved the uncertainty into the RFQ. The best outcome is often a defensible no. A supplier that cannot explain who makes the product and where has not passed the first gate.
+
 ## 12. What this page does not claim.
 
 This page describes a pre-RFQ screening framework; it is not legal, financial or product-certification advice and does not guarantee that a supplier will perform as represented. It does not approve any named supplier, certificate or test result, and a complete screen does not replace a site audit, first-article inspection or production verification. The buyer remains responsible for confirming the actual legal entity, site, product, applicable standards and contractual terms for each purchase.

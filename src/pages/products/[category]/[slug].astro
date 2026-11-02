@@ -78,13 +78,9 @@ const productSchema = {
       value: `${s.spec_value}${s.unit ? ` ${s.unit}` : ''}`,
     })),
   ],
-  offers: {
-    '@type': 'AggregateOffer',
-    priceCurrency: 'USD',
-    availability: 'https://schema.org/InStock',
-    offerCount: 1,
-    // Price on quotation — no fabricated price. Omit lowPrice/highPrice.
-  },
+  // No `offers` node: nothing is priced on this site, and an AggregateOffer without
+  // lowPrice/highPrice is invalid schema markup, while availability: InStock would be
+  // an unsupported claim for made-to-order supply. A Product without offers is valid.
 };
 ---
 

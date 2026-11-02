@@ -134,6 +134,10 @@ The buyer should confirm the firm's scope, the inspector's competence for the pr
 
 The report should be retained with the shipment and the purchase record, not filed only in the supplier's quality folder. A later claim may need the inspection plan, the sample identity, the inspector's observations and the photographs, not just the final pass statement.
 
+## The practical position
+
+The practical position is that a claim file should be built around the shipment, not the supplier's certificate library. We would accept a document only when its product, site, lot and test conditions can be mapped to the goods; otherwise it is context, not evidence. Buyers should rehearse a claim before placing the order by asking which record would prove identity, condition and responsibility if the delivery failed. If that question cannot be answered, the documentation clause is decorative. A supplier that cannot support a dry run is unlikely to reconstruct the file during a dispute.
+
 ## 13. What this page does not claim.
 
 This page is a documentation and claims-planning framework, not legal, customs, tax or regulatory advice and not a substitute for advice on the applicable market rules. It does not establish that any certificate, test report, declaration, export document or claim is valid or sufficient for a particular product or destination. The buyer remains responsible for verifying the actual documents, the applicable requirements and the contractual rights with qualified advisers.

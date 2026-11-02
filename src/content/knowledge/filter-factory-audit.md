@@ -139,6 +139,10 @@ Corrective action should be specific. The supplier should state containment, roo
 
 The audit conclusion should state whether the site is approved, conditionally approved or not approved for the defined product and scope. Conditions should be measurable, such as completion of a traceability test, calibration of a specific instrument or submission of a change-control procedure. A general promise to improve is not a closure criterion.
 
+## The practical position
+
+The practical position is that an audit without the purchased product in scope is a supplier tour with better paperwork. We would audit the line that will run the buyer's part, follow an actual lot backward to materials and test records, and watch the reaction to a finding rather than score the reception room. A site can fail for this product and remain usable for another, so approval should be tied to the product family and process, not the company name. If the auditor cannot connect the checklist to the buyer's failure modes, the report grades presentation.
+
 ## 14. What this page does not claim.
 
 This page is an audit-planning framework, not a certification standard, legal opinion or substitute for a competent on-site audit of the actual factory. It does not establish that any named supplier, site, certificate or process is compliant, and an audit finding is not a determination of product conformity. The buyer and its qualified auditors remain responsible for the audit scope, evidence, conclusions and any approval decision based on the actual factory and purchase.

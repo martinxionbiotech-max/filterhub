@@ -479,3 +479,7 @@ For a manufacturer, this means that a credible performance comparison should exp
 For a buyer, it means asking for more than one number.
 
 The most useful dust holding capacity is not simply the largest value. It is the value that can be understood, compared under equivalent conditions, and connected to the operating requirements of the system.
+
+## What this page does not claim.
+
+This page is a decision framework, not a test report. It explains how the measurement works and how to interpret it; it does not publish measured performance for any specific filter, and it is not a substitute for a type test or a factory acceptance record. Numerical examples are illustrative of the measurement, not specifications for a product. Where a standard is named, the standard itself governs — this page summarises the logic, not the text.

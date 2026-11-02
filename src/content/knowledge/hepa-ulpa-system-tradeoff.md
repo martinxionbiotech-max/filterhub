@@ -163,6 +163,10 @@ Consistency across replacement batches matters as much as the first approval. A 
 
 The central judgment is this: **the extra class is worth paying for only when it reduces a relevant risk that the rest of the system can preserve.** If the bypass, airflow, housing or verification cannot support the upgrade, the project may be buying a label rather than a cleaner room.
 
+## The practical position
+
+In our view, ULPA is a system upgrade, not a filter upgrade. We would require the proposal to show the installed bypass, pressure margin, fan consequence and requalification path before accepting the higher class; without those, the buyer pays for protection the room cannot preserve. Conversely, refusing ULPA on unit price alone is equally shallow where process sensitivity justifies it. The decision belongs at the room boundary, not in the catalogue. A supplier should be able to state which risk the upgrade reduces and what evidence will prove that the installed system still delivers it.
+
 ## 10. What this page does not claim.
 
 This page is a system trade-off framework, not a filter selection specification or a cleanroom design guide. It does not state that HEPA or ULPA is the correct choice for any particular application. It does not claim that a catalogue class guarantees installed performance or a room classification. It is not a substitute for project-specific risk assessment, airflow design, testing or applicable standards.

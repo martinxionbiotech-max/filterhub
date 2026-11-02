@@ -143,6 +143,10 @@ Another shortcut is to treat the FAI report as a one-time customer deliverable r
 
 A good first article does not guarantee a good supplier. It is one piece of evidence in a chain. Its value is that it converts a general claim of capability into a specific, traceable approval against the product the buyer intends to receive.
 
+## The practical position
+
+The practical position is that a first article without production provenance is just a good sample. We would not release serial supply until the tool, line, material lots and settings behind the article are identified and the first routine output is checked against them. A supplier that cannot reproduce the article's conditions has demonstrated craft, not capability. Conditional approval should expire unless the missing production evidence arrives. The buyer's protection lies in making the approval transferable to the line, not in preserving a prized sample on a shelf.
+
 ## 14. What this page does not claim.
 
 This page is a first-article planning and review framework, not a product certification, legal opinion or substitute for testing by a competent laboratory. It does not establish that a particular filter, supplier, process or document set is conforming, and it does not replace the buyer's specification or applicable standards. The final approval decision must rest on the actual article, its production provenance and evidence appropriate to the intended product and market.

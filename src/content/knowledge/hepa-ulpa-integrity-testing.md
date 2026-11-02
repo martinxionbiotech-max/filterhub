@@ -238,6 +238,10 @@ The supplier's answers should be consistent with the report and the quality agre
 
 This questioning process also helps the buyer distinguish a supplier with controlled test evidence from one that is repeating marketing language. A technically strong supplier should be able to explain why a test was selected, where leaks typically occur and how a failed element is dispositioned. That explanation is not itself a test result, but it is evidence of a controlled process.
 
+## The practical position
+
+The practical position is that "leak tested" means nothing until the buyer names the test level and the record that closes acceptance. We would specify the factory element scan, installed filter test and system verification separately, with the accepting party identified for each. A supplier certificate should not waive the installed interface check, because the bypass path belongs to the assembly rather than the element alone. The test that matters is the one performed on the boundary the buyer controls. If the plan cannot say who signs off each boundary, it is not yet a verification plan.
+
 ## 16. What this page does not claim.
 
 This page is a technical procurement guide, not a test report, certification or substitute for the current text of EN 1822, ISO 29463, IEST-RP-CC034, ISO 14644 or any regulatory guideline. It does not establish that a particular filter, housing, test method or installation meets a leak or efficiency requirement. Acceptance criteria and test procedures must be confirmed with the applicable standard and qualified testing professionals. Final product and installation acceptance remain the buyer's responsibility, supported by independent testing where the application risk requires it.

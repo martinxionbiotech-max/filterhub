@@ -395,3 +395,7 @@ For manufacturers, it means distinguishing laboratory test endpoints from recomm
 These distinctions make filter replacement more predictable and help avoid both unnecessary replacement and inappropriate extended operation.
 
 <p class="small"><em>Editorial note: The numerical example is illustrative and does not establish a recommended replacement threshold or service interval. Actual operating limits must be determined from the relevant filter specifications and system requirements.</em></p>
+
+## What this page does not claim.
+
+This page is a decision framework, not a test report. It explains how the measurement works and how to interpret it; it does not publish measured performance for any specific filter, and it is not a substitute for a type test or a factory acceptance record. Numerical examples are illustrative of the measurement, not specifications for a product. Where a standard is named, the standard itself governs — this page summarises the logic, not the text.

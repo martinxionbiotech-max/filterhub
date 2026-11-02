@@ -164,6 +164,10 @@ Spare filters should match the approved model, not merely the opening size. A sp
 
 My judgment is that **the terminal interface should be selected before the filter model is finalized.** Once the housing, grid and service method are known, the filter's frame, seal and dimensions can be matched to a real boundary. Starting with a filter and then looking for a compatible housing is how bypass and access problems begin.
 
+## The practical position
+
+The practical position is that terminal filtration should be bought as an installed interface, with the filter, housing, seal, access and test included in one responsibility. We would not accept a filter-only quotation for a critical room, because the failure that matters usually occurs where the parts meet. A terminal product that cannot be replaced and retested without improvisation is not maintainable, regardless of its class. The buyer should make the service procedure part of the award decision. Price comparisons that ignore the interface are comparing different scopes, not competing offers.
+
 ## 9. What this page does not claim.
 
 This page is a comparison framework, not a cleanroom design specification. It does not state that an FFU, terminal box or ceiling-grid filter will achieve a particular room class in any installation. It does not replace airflow design, structural review, electrical coordination, cleanroom validation or the manufacturer's installation instructions. It is not a recommendation of a specific terminal architecture without project-specific verification.

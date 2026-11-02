@@ -261,6 +261,10 @@ The quality response can fail even when the original product defect was simple. 
 
 These mistakes share a common pattern: the organisation treats the visible event as the whole problem. A failed batch is also a test of the supplier's containment, investigation and change-control system. The buyer's response should evaluate all three.
 
+## The practical position
+
+The practical position is that a replacement shipment is a supply remedy, not a corrective action. We would keep the next production release on hold until the supplier can explain the mechanism that produced the failure and show evidence that the mechanism has changed. A root cause stated as operator error is incomplete unless the process and inspection system that allowed it are also addressed. Closing a CAPA on promised future data simply moves the risk to the next delivery. The buyer should own the closure decision, not delegate it to the supplier's urgency.
+
 ## 14. What this page does not claim.
 
 This page is a quality-management and procurement guide, not a test report, legal opinion or certification. It does not establish that a particular nonconformance, corrective action or supplier response is adequate for any product or regulatory requirement. Root-cause conclusions, disposition decisions and supplier qualifications must be based on product-specific evidence and reviewed by qualified professionals. Final acceptance and escalation decisions remain the buyer's responsibility.

@@ -143,6 +143,10 @@ The same review should confirm the drawing and specification distribution list. 
 
 When a discrepancy is found, the buyer should record it and set a correction date. A tool that is at a different address, a drawing that has been revised without notice or a missing master sample is a control issue even if production is currently acceptable. Periodic confirmation turns the exit plan from a hopeful clause into a maintained state.
 
+## The practical position
+
+The practical position is that ownership without retrievability is a legal fiction. We would treat a tool, drawing or master sample as controlled only when the buyer can locate it, identify its revision and move it without relying on the supplier's goodwill. The agreement should address possession, access, maintenance and exit separately from title. We would also verify the asset register during routine reviews, because an exit clause first tested during a dispute is usually too late. A supplier that treats these checks as distrust has misunderstood the purpose: they make the commercial relationship transferable.
+
 ## 14. What this page does not claim.
 
 This page is a practical ownership and control framework, not legal advice under Chinese or any other law and not a substitute for a tailored contract reviewed by qualified counsel. It does not establish that any particular tool, drawing, patent, copyright, trade secret or contractual clause is valid or enforceable, nor does it guarantee that a supplier will return an asset. Ownership, access, transfer and enforcement depend on the actual agreement, evidence and applicable legal framework.

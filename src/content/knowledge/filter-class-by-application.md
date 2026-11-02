@@ -167,6 +167,10 @@ The [filter test standard selection guide](/knowledge/filter-test-standard-selec
 
 This evidence path is also the commercial path. A supplier cannot quote intelligently if the request lists only a class and a face size. The [RFQ page](/rfq/) is a useful place to state the application, contaminant, airflow, pressure budget, housing, test basis and required documentation together.
 
+## The practical position
+
+The practical position is that a filter class should be an output of the exposure assessment, never the first line of the schedule. We would ask the specifier to name the protected outcome and the failure consequence before accepting a grade; without those, a higher class is a way to avoid the design question. Suppliers should be allowed to propose a lower class only with the same exposure evidence, not with a price argument. The buyer should own that rationale and carry it into change review, because an unexplained class will be copied into the next project with no idea whether it still applies.
+
 ## 10. What this page does not claim.
 
 This page is a decision framework, not a substitute for project design or a formal risk assessment. It does not determine the filter class required by any particular building, cleanroom, healthcare space or industrial process. It does not claim that a catalogue class guarantees a room classification or that a lower class is always sufficient. It is not a recommendation of a specific product or a substitute for applicable codes, standards and professional engineering judgment.
