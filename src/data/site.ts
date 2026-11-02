@@ -1,10 +1,11 @@
 // Central site config — single source for brand/contact facts (kept consistent site-wide).
-// EEAT entity alignment (2026-10-30): brand "Huiying" · operating legal entity
+// EEAT entity alignment (2026-11-01): brand "China Filter Hub" (matches the domain) ·
+// operating legal entity
 // "Qinghe County Huiying Automotive Parts Co., Ltd." — the SAME entity as carfilterspro.com
 // (one legal body, two storefronts). Business-registration facts mirror carfilterspro.
 
 export const site = {
-  brand: 'Huiying',
+  brand: 'China Filter Hub',
   domain: 'chinafilterhub.com', // placeholder domain
   siteUrl: 'https://chinafilterhub.com',
   dataSubsiteUrl: 'https://data.chinafilterhub.com',
@@ -35,11 +36,12 @@ export const site = {
 
   // Brand ↔ legal-entity relationship — single unambiguous statement, mirror of carfilterspro.
   brandRelationship:
-    '"Huiying" is the brand name. The operating legal entity is Qinghe County Huiying Automotive Parts Co., Ltd.',
+    '"China Filter Hub" is the trade name of the filter manufacturer Qinghe County Huiying Automotive Parts Co., Ltd.',
 
-  tagline: 'China filter database — OE cross-references, specifications and sourcing data',
+  tagline:
+    'Filter manufacturer of automotive, HVAC, HEPA and cleanroom filters — OEM, wholesale and private label.',
   positioning:
-    'A product information and database hub for automotive, HVAC and cleanroom filters, operated by Qinghe County Huiying Automotive Parts Co., Ltd.',
+    'A filter manufacturer and product knowledge hub for automotive, HVAC, HEPA and cleanroom filtration, operated by Qinghe County Huiying Automotive Parts Co., Ltd.',
 
   // Honesty disclosure — rendered in the footer and referenced in schema.
   disclosure:
@@ -73,7 +75,7 @@ export const organizationSchema = {
   '@id': 'https://chinafilterhub.com/#organization',
   name: site.entity.legalName,
   legalName: site.entity.legalName,
-  alternateName: [site.brand, 'Huiying Automotive Parts'],
+  alternateName: [site.brand, 'Huiying', 'Huiying Automotive Parts'],
   url: site.siteUrl,
   foundingDate: site.entity.foundingDate,
   telephone: site.entity.phone,

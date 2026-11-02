@@ -5,6 +5,7 @@
 export interface Guide {
   slug: string;
   title: string;
+  metaTitle?: string;
   pillar: string;
   description: string;
   directAnswer: string;
@@ -53,6 +54,7 @@ export const guides: Guide[] = [
   {
     slug: 'hepa-cleanroom-sourcing',
     title: 'Sourcing HEPA/ULPA filters and cleanroom equipment: what to verify',
+    metaTitle: 'Sourcing HEPA/ULPA filters and cleanroom equipment',
     pillar: 'Selection',
     description:
       'How to match HEPA/ULPA efficiency class, seal type and FFU sizing to cleanroom requirements.',
@@ -86,6 +88,7 @@ export const guides: Guide[] = [
   {
     slug: 'filter-efficiency-grades',
     title: 'Filter efficiency grades: EN 1822, ISO 16890 and MERV compared',
+    metaTitle: 'Filter efficiency grades: EN 1822, ISO 16890, MERV',
     pillar: 'Standards',
     description:
       'A framework-level comparison of the efficiency scales used across the catalogue — EN 1822, ISO 16890 and MERV.',
@@ -150,6 +153,7 @@ export const guides: Guide[] = [
   {
     slug: 'filter-media-selection',
     title: 'Filter media types: needle-punched, synthetic, micro-glass and carbon',
+    metaTitle: 'Filter media types: needle-punched to micro-glass',
     pillar: 'Standards',
     description:
       'Choosing the raw media type for pre-filtration, HEPA and odour-control duty.',
@@ -182,6 +186,7 @@ export const guides: Guide[] = [
   {
     slug: 'cleanroom-filtration-solutions',
     title: 'Cleanroom filtration: FFU, laminar flow and contamination control',
+    metaTitle: 'Cleanroom filtration: FFU, laminar flow, control',
     pillar: 'Cleanroom',
     description:
       'How fan filter units, laminar-flow cabinets and pass-throughs combine into a cleanroom filtration solution.',
@@ -214,6 +219,7 @@ export const guides: Guide[] = [
   {
     slug: 'oem-procurement-process',
     title: 'Automotive filter OEM manufacturing guide: from RFQ to first article',
+    metaTitle: 'OEM filter manufacturing: RFQ to first article',
     pillar: 'OEM',
     description:
       'A framework-level walkthrough of sourcing filters under OEM or private-label terms.',
@@ -311,6 +317,7 @@ export const guides: Guide[] = [
   {
     slug: 'efficiency-vs-pressure-drop',
     title: 'Filtration efficiency vs pressure drop: why higher is not automatically better',
+    metaTitle: 'Efficiency vs pressure drop in air filters',
     pillar: 'Standards',
     description:
       'How to weigh filtration efficiency against pressure drop, dust-holding capacity and service life when comparing filters.',
@@ -343,6 +350,7 @@ export const guides: Guide[] = [
   {
     slug: 'filter-moq-lead-time',
     title: 'Automotive filter MOQ, lead time and pricing: what drives them',
+    metaTitle: 'Filter MOQ, lead time and pricing drivers',
     pillar: 'OEM',
     description:
       'How minimum order quantity, lead time and pricing are set for automotive filters, and what to state in an inquiry to get an accurate quote.',

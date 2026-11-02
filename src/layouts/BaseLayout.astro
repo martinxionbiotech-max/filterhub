@@ -25,6 +25,23 @@ function truncateDesc(text: string, max = 155): string {
 
 const metaDescription = truncateDesc(description);
 
+// Search results truncate around 60 characters. Append the brand only when the
+// combined title fits; otherwise keep the page title and, if it alone is still
+// too long, cut at a word boundary so nothing breaks mid-word.
+function buildTitle(text: string, brand: string): string {
+  // Parenthetical qualifiers ("(Lexus IS300/RX300, Toyota Highlander)") carry no
+  // search value and are the usual cause of an over-long <title> on product pages.
+  const trimmed = text.replace(/\s*\([^)]*\)\s*$/, '').trim() || text;
+  const withBrand = `${trimmed} — ${brand}`;
+  if (withBrand.length <= 60) return withBrand;
+  if (trimmed.length <= 60) return trimmed;
+  text = trimmed;
+  const cut = text.slice(0, 57);
+  const at = cut.lastIndexOf(' ');
+  return `${(at > 30 ? cut.slice(0, at) : cut).trimEnd()}…`;
+}
+
+
 const canonical = new URL(Astro.url.pathname, site.siteUrl).toString();
 const ogImage = `${site.siteUrl}/images/og-default.svg`;
 
@@ -71,11 +88,12 @@ const websiteSchema = {
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{title.length + site.brand.length + 3 <= 60 ? `${title} — ${site.brand}` : title}</title>
+    <title>{buildTitle(title, site.brand)}</title>
     <meta name="description" content={metaDescription} />
     <link rel="canonical" href={canonical} />
     <meta name="generator" content={Astro.generator} />
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={site.brand} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={metaDescription} />
     <meta property="og:url" content={canonical} />
