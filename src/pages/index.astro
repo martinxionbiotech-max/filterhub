@@ -6,6 +6,8 @@ import { categories } from '../data/categories';
 import { guides } from '../data/guides';
 import { pillars } from '../data/pillars';
 import { categoryCount, totalProducts, coveredCategories } from '../data/products';
+import { getSeriesList } from '../lib/knowledge';
+import { buildKnowledgeSeriesCards } from '../data/knowledge-series';
 
 const totalCategories = categories.length;
 const pillarByKey = Object.fromEntries(pillars.map((p) => [p.key, p]));
@@ -32,6 +34,13 @@ const featuredGuideSlugs = [
 const featuredGuides = featuredGuideSlugs
   .map((slug) => guides.find((g) => g.slug === slug))
   .filter((g): g is NonNullable<typeof g> => Boolean(g));
+
+const knowledgeSeries = await getSeriesList();
+const knowledgeSeriesCards = buildKnowledgeSeriesCards(knowledgeSeries);
+const knowledgeArticleCount = knowledgeSeries.reduce(
+  (total, series) => total + series.clusters.length + 1,
+  0,
+);
 ---
 
 <BaseLayout
@@ -185,6 +194,19 @@ const featuredGuides = featuredGuideSlugs
         <a class="card card--link" href="/guides/filter-efficiency-grades/"><strong style="color:var(--navy-800);">Filter efficiency grades compared</strong><span class="muted small" style="display:block;margin-top:0.25rem;">EN 1822 · ISO 16890 · MERV</span></a>
         <a class="card card--link" href="/guides/filter-media-selection/"><strong style="color:var(--navy-800);">Filter media types</strong><span class="muted small" style="display:block;margin-top:0.25rem;">Needle-punched · synthetic · micro-glass · carbon</span></a>
         <a class="card card--link" href="/guides/efficiency-vs-pressure-drop/"><strong style="color:var(--navy-800);">Efficiency vs pressure drop</strong><span class="muted small" style="display:block;margin-top:0.25rem;">Why higher is not automatically better</span></a>
+      </div>
+      <div class="section-head" style="margin-top:1.5rem;">
+        <h3 class="mt-0" style="font-size:1.1rem;">Deep-dive series</h3>
+        <p class="muted small"><a href="/knowledge/">All {knowledgeArticleCount} articles →</a></p>
+      </div>
+      <div class="grid grid--cards">
+        {knowledgeSeriesCards.map((series) => (
+          <a class="card card--link" href={series.href}>
+            <p class="eyebrow" style="margin:0 0 0.3rem;">{series.count} articles</p>
+            <strong style="color:var(--navy-800);">{series.title}</strong>
+            <span class="muted small" style="display:block;margin-top:0.25rem;">{series.description}</span>
+          </a>
+        ))}
       </div>
     </section>
 

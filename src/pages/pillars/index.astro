@@ -1,8 +1,11 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { pillars } from '../../data/pillars';
+import { getSeriesList } from '../../lib/knowledge';
+import { buildKnowledgeSeriesCards } from '../../data/knowledge-series';
 
 const breadcrumbs = [{ label: 'Pillars', href: '/pillars/' }];
+const knowledgeSeriesCards = buildKnowledgeSeriesCards(await getSeriesList());
 ---
 
 <BaseLayout
@@ -27,5 +30,19 @@ const breadcrumbs = [{ label: 'Pillars', href: '/pillars/' }];
         </a>
       ))}
     </div>
+
+    <section class="section" style="margin-top:2rem;">
+      <h2 class="mt-0">Technical knowledge base</h2>
+      <p class="muted" style="max-width:70ch;">Four series of in-depth technical articles that sit behind the commercial pillars — written for buyers and quality engineers rather than as marketing copy.</p>
+      <div class="grid grid--cards" style="margin-top:1rem;">
+        {knowledgeSeriesCards.map((series) => (
+          <a class="card card--link" href={series.href}>
+            <p class="eyebrow" style="margin:0 0 0.3rem;">{series.count} articles</p>
+            <strong style="color:var(--navy-800);">{series.title}</strong>
+            <span class="muted small" style="display:block;margin-top:0.25rem;">{series.description}</span>
+          </a>
+        ))}
+      </div>
+    </section>
   </main>
 </BaseLayout>

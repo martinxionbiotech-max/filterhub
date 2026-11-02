@@ -58,6 +58,7 @@ export interface Product {
   filter_media: FilterMedia[];
   application: Application[];
   moq: Moq;
+  url_slug?: string;
   subcategory?: string;
 }
 
