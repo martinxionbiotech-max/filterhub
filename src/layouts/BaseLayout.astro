@@ -71,7 +71,7 @@ const websiteSchema = {
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{title} — {site.brand}</title>
+    <title>{title.length + site.brand.length + 3 <= 60 ? `${title} — ${site.brand}` : title}</title>
     <meta name="description" content={metaDescription} />
     <link rel="canonical" href={canonical} />
     <meta name="generator" content={Astro.generator} />
