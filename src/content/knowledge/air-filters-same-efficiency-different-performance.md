@@ -1,6 +1,6 @@
 ---
 title: "Why Do Two Air Filters with the Same Efficiency Rating Perform Differently?"
-metaTitle: "Why Do Air Filters with the Same Efficiency Rating Perform Differently?"
+metaTitle: "Same Efficiency Rating, Different Filter Performance"
 description: "Two air filters with the same efficiency rating can have different pressure drops, dust holding capacities, and service lives. Learn what determines real-world filter performance."
 slug: "air-filters-same-efficiency-different-performance"
 keyword: "air filters with the same efficiency rating"

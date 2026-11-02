@@ -1,6 +1,6 @@
 ---
 title: "How to Evaluate Air Filter Performance: Efficiency, Pressure Drop, Dust Holding Capacity and Service Life"
-metaTitle: "How to Evaluate Air Filter Performance: Efficiency, Pressure Drop & Service Life"
+metaTitle: "How to Evaluate Air Filter Performance"
 description: "Learn how air filter efficiency, pressure drop, dust holding capacity, airflow velocity, and service life interact. A practical framework for evaluating filters under real operating conditions."
 slug: "air-filter-performance"
 keyword: "air filter performance"
