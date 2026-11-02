@@ -6,9 +6,10 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && node scripts/generate-markdown.mjs",
+    "build": "node scripts/check-lock-registry.mjs && astro build && node scripts/generate-markdown.mjs",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "check:lock": "node scripts/check-lock-registry.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.4",
