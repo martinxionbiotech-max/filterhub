@@ -426,3 +426,7 @@ The most useful pressure-drop specification is not the lowest number. It is the 
 <p class="small">The equations and numerical example above are simplified engineering illustrations. They should not be used as a substitute for a fan-system calculation or a filter manufacturer's verified test data.</p>
 
 <p class="small">The article intentionally does not assign a universal initial pressure-drop threshold, terminal pressure-drop limit, or replacement interval. Those values must be interpreted in relation to the specific filter, test method, airflow, and system requirements.</p>
+
+## What this page does not claim.
+
+This page is a decision framework, not a test report. It explains how the measurement works and how to interpret it; it does not publish measured performance for any specific filter, and it is not a substitute for a type test or a factory acceptance record. Numerical examples are illustrative of the measurement, not specifications for a product. Where a standard is named, the standard itself governs — this page summarises the logic, not the text.

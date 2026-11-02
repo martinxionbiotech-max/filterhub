@@ -667,3 +667,7 @@ For manufacturers, it means explaining the conditions behind service-life claims
 For facility operators, it means using actual operating records to avoid both premature replacement and excessive filter loading.
 
 Ultimately, the best filter is not necessarily the one that lasts the longest. It is the one that maintains the required filtration performance and airflow reliably, with an acceptable total operating cost throughout its useful life.
+
+## What this page does not claim.
+
+This page is a decision framework, not a test report. It explains how the measurement works and how to interpret it; it does not publish measured performance for any specific filter, and it is not a substitute for a type test or a factory acceptance record. Numerical examples are illustrative of the measurement, not specifications for a product. Where a standard is named, the standard itself governs — this page summarises the logic, not the text.

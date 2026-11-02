@@ -365,3 +365,7 @@ For manufacturers, it means explaining product differences through measurable pe
 For facility operators, it means evaluating the filter as part of the ventilation system rather than as an isolated consumable.
 
 The real difference between two equally rated filters is often not how they perform when they are clean, but how they behave as the system continues to operate.
+
+## What this page does not claim.
+
+This page is a decision framework, not a test report. It explains how the measurement works and how to interpret it; it does not publish measured performance for any specific filter, and it is not a substitute for a type test or a factory acceptance record. Numerical examples are illustrative of the measurement, not specifications for a product. Where a standard is named, the standard itself governs — this page summarises the logic, not the text.

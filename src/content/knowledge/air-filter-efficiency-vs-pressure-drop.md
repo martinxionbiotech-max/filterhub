@@ -473,3 +473,7 @@ For buyers, this means comparing complete performance rather than isolated speci
 For manufacturers, it means demonstrating the engineering relationship between filtration efficiency, pressure drop, and dust-loading behaviour.
 
 That is a more meaningful basis for product differentiation than competing over a single headline number.
+
+## What this page does not claim.
+
+This page is a decision framework, not a test report. It explains how the measurement works and how to interpret it; it does not publish measured performance for any specific filter, and it is not a substitute for a type test or a factory acceptance record. Numerical examples are illustrative of the measurement, not specifications for a product. Where a standard is named, the standard itself governs — this page summarises the logic, not the text.

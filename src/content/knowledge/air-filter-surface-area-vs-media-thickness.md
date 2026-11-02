@@ -491,3 +491,7 @@ That is a more meaningful engineering goal than simply increasing media thicknes
 For buyers, it provides a better basis for comparing products.
 
 For manufacturers, it creates a clearer direction for improving filter construction and demonstrating real performance advantages.
+
+## What this page does not claim.
+
+This page is a decision framework, not a test report. It explains how the measurement works and how to interpret it; it does not publish measured performance for any specific filter, and it is not a substitute for a type test or a factory acceptance record. Numerical examples are illustrative of the measurement, not specifications for a product. Where a standard is named, the standard itself governs — this page summarises the logic, not the text.

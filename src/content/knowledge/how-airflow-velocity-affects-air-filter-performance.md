@@ -545,3 +545,7 @@ For buyers, this means asking suppliers to explain the relationship between airf
 For manufacturers, it means testing and presenting products in a way that allows those relationships to be understood.
 
 A filter that performs well at the intended airflow is more valuable than one that looks impressive only under a different laboratory condition.
+
+## What this page does not claim.
+
+This page is a decision framework, not a test report. It explains how the measurement works and how to interpret it; it does not publish measured performance for any specific filter, and it is not a substitute for a type test or a factory acceptance record. Numerical examples are illustrative of the measurement, not specifications for a product. Where a standard is named, the standard itself governs — this page summarises the logic, not the text.

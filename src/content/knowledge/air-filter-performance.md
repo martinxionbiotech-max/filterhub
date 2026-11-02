@@ -754,3 +754,7 @@ And for anyone comparing air filters, it changes the question from "Which filter
 Once that performance case is defined, the next question is evidential: how a buyer verifies the claimed performance through standards, reports, samples and production batches. That procurement and quality-control workflow is covered in the [filter quality and verification series](/knowledge/filter-quality-verification/).
 
 <p class="small"><em>Editorial note: The article is designed as a technical decision-making guide, not a standards document. Before publishing specific numerical performance claims, the supporting test method and operating conditions should be identified.</em></p>
+
+## What this page does not claim.
+
+This page is a decision framework, not a test report. It explains how the measurement works and how to interpret it; it does not publish measured performance for any specific filter, and it is not a substitute for a type test or a factory acceptance record. Numerical examples are illustrative of the measurement, not specifications for a product. Where a standard is named, the standard itself governs — this page summarises the logic, not the text.
