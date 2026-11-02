@@ -8,6 +8,8 @@ order: 7
 isPillar: false
 pillarSlug: "air-filter-performance"
 published: 2026-11-01
+series: air-filter-performance
+seriesTitle: Air filter performance
 ---
 
 When buyers compare air filters, media thickness is often treated as an indicator of quality.

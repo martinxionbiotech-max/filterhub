@@ -8,6 +8,8 @@ order: 2
 isPillar: false
 pillarSlug: "air-filter-performance"
 published: 2026-11-01
+series: air-filter-performance
+seriesTitle: Air filter performance
 ---
 
 When purchasing an air filter, buyers can easily compare dimensions, efficiency ratings, and unit prices.

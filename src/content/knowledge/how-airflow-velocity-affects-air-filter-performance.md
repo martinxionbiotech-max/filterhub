@@ -8,6 +8,8 @@ order: 6
 isPillar: false
 pillarSlug: "air-filter-performance"
 published: 2026-11-01
+series: air-filter-performance
+seriesTitle: Air filter performance
 ---
 
 An air filter is often evaluated using a set of specifications: filtration efficiency, initial pressure drop, dust holding capacity, and nominal dimensions.

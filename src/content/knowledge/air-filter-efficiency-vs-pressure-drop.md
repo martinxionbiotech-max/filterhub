@@ -8,6 +8,8 @@ order: 5
 isPillar: false
 pillarSlug: "air-filter-performance"
 published: 2026-11-01
+series: air-filter-performance
+seriesTitle: Air filter performance
 ---
 
 When selecting an air filter, buyers often face two seemingly conflicting requirements:

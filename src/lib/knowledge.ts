@@ -2,6 +2,13 @@ import { getCollection, type CollectionEntry } from 'astro:content';
 
 export type KnowledgeEntry = CollectionEntry<'knowledge'>;
 
+export interface KnowledgeSeries {
+  slug: string;
+  title: string;
+  pillar: KnowledgeEntry;
+  clusters: KnowledgeEntry[];
+}
+
 export const knowledgeCategorySlugs = [
   'hvac-filters',
   'pocket-filters',
@@ -22,6 +29,45 @@ export async function getKnowledgeEntries(): Promise<KnowledgeEntry[]> {
   return entries.sort((a, b) => a.data.order - b.data.order);
 }
 
+export async function getSeriesList(): Promise<KnowledgeSeries[]> {
+  const entries = await getKnowledgeEntries();
+  const grouped = new Map<string, KnowledgeEntry[]>();
+
+  for (const entry of entries) {
+    const seriesEntries = grouped.get(entry.data.series) ?? [];
+    seriesEntries.push(entry);
+    grouped.set(entry.data.series, seriesEntries);
+  }
+
+  const seriesList = Array.from(grouped.entries()).map(([slug, seriesEntries]) => {
+    const pillars = seriesEntries.filter((entry) => entry.data.isPillar);
+    if (pillars.length !== 1) {
+      throw new Error(`Knowledge series "${slug}" must contain exactly one pillar article.`);
+    }
+
+    const title = seriesEntries[0].data.seriesTitle;
+    const inconsistentTitle = seriesEntries.find((entry) => entry.data.seriesTitle !== title);
+    if (inconsistentTitle) {
+      throw new Error(
+        `Knowledge series "${slug}" has inconsistent seriesTitle values: "${title}" and "${inconsistentTitle.data.seriesTitle}".`,
+      );
+    }
+
+    return {
+      slug,
+      title,
+      pillar: pillars[0],
+      clusters: seriesEntries
+        .filter((entry) => !entry.data.isPillar)
+        .sort((a, b) => a.data.order - b.data.order),
+    };
+  });
+
+  return seriesList.sort(
+    (a, b) => a.pillar.data.order - b.pillar.data.order || a.title.localeCompare(b.title),
+  );
+}
+
 export function countWords(markdown: string): number {
   return markdown
     .replace(/^---[\s\S]*?\n---\n/, '')
@@ -39,6 +85,6 @@ export function readingMinutes(markdown: string): number {
 }
 
 export function entryEyebrow(entry: KnowledgeEntry): string {
-  if (entry.data.isPillar) return 'Pillar';
-  return `Cluster ${entry.data.order} · Part ${entry.data.order} of the Air Filter Performance series`;
+  if (entry.data.isPillar) return `${entry.data.seriesTitle} · Pillar`;
+  return `Part ${entry.data.order} of ${entry.data.seriesTitle}`;
 }

@@ -8,6 +8,8 @@ order: 4
 isPillar: false
 pillarSlug: "air-filter-performance"
 published: 2026-11-01
+series: air-filter-performance
+seriesTitle: Air filter performance
 ---
 
 When buyers compare air filters, dust holding capacity often appears to be one of the easiest specifications to understand. A filter that retains more dust should theoretically last longer. If Filter A holds more dust than Filter B, it may seem reasonable to conclude that Filter A is the better choice.

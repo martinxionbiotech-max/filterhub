@@ -8,6 +8,8 @@ order: 8
 isPillar: false
 pillarSlug: "air-filter-performance"
 published: 2026-11-01
+series: air-filter-performance
+seriesTitle: Air filter performance
 ---
 
 How long should an air filter last?

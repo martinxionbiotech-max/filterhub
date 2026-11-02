@@ -8,6 +8,8 @@ order: 0
 isPillar: true
 pillarSlug: "air-filter-performance"
 published: 2026-11-01
+series: air-filter-performance
+seriesTitle: Air filter performance
 ---
 
 When comparing air filters, efficiency is usually the first specification buyers examine.
@@ -748,5 +750,7 @@ For facility operators, it creates a practical basis for improving energy manage
 And for anyone comparing air filters, it changes the question from "Which filter has the highest rating?" to a much more useful one:
 
 "Which filter delivers the required air quality most reliably and economically under the conditions in which it will actually operate?"
+
+Once that performance case is defined, the next question is evidential: how a buyer verifies the claimed performance through standards, reports, samples and production batches. That procurement and quality-control workflow is covered in the [filter quality and verification series](/knowledge/filter-quality-verification/).
 
 <p class="small"><em>Editorial note: The article is designed as a technical decision-making guide, not a standards document. Before publishing specific numerical performance claims, the supporting test method and operating conditions should be identified.</em></p>
