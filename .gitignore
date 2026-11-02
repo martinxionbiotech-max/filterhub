@@ -11,3 +11,6 @@ dist/
 
 # Python
 __pycache__/
+
+# Ignore a node_modules symlink too (a trailing-slash rule only matches directories)
+node_modules
