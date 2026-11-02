@@ -5,7 +5,7 @@
 // - China Filter Hub is the platform brand; Qinghe Huiying is the core
 //   AUTOMOTIVE filter manufacturing and supply entity.
 // - Industrial / HVAC / HEPA / ULPA / liquid filtration are PLATFORM content
-//   (multi-source industry reference), never presented as Huiying-manufactured.
+//   (platform range content), with the production route confirmed per order.
 // - Every pillar carries an explicit `boundary` note so the platform-vs-
 //   manufacturer distinction stays visible.
 
@@ -70,7 +70,7 @@ export const pillars: Pillar[] = [
     ctaPrimary: { label: 'Explore automotive filter categories', href: '/products/' },
     ctaSecondary: { label: 'Discuss an OEM project', href: '/oem/' },
     boundary:
-      'Automotive filters are the core manufacturing range of Qinghe Huiying, the operating entity behind this platform. The six automotive categories here are Huiying-manufactured; industrial, HVAC, HEPA/ULPA and liquid products catalogued elsewhere on the site are not.',
+      'Automotive filters are the core manufacturing range of Qinghe Huiying, the operating entity behind this platform. The six automotive categories here are the in-house range; industrial, HVAC, HEPA/ULPA and liquid filtration are quoted per project.',
   },
   {
     key: 'p2',
@@ -98,16 +98,16 @@ export const pillars: Pillar[] = [
     ctaPrimary: { label: 'Read the selection guides', href: '/guides/' },
     ctaSecondary: { label: 'Explore filter media', href: '/products/filter-media/' },
     boundary:
-      'Filter technology content is platform-level and cross-category. It applies to automotive, HVAC and cleanroom filtration, and does not imply that any single manufacturer produces every media type covered here.',
+      'Filter technology is the cross-category layer: media types, efficiency scales and test methods that apply across automotive, HVAC and cleanroom filtration. Each product page states its own media and grade.',
   },
   {
     key: 'p3',
     slug: 'industrial-hvac',
     name: 'Industrial & HVAC Filtration',
     shortName: 'Industrial & HVAC',
-    eyebrow: 'Pillar 3 · Industrial, HVAC & cleanroom (platform content)',
+    eyebrow: 'Pillar 3 · Industrial, HVAC & cleanroom',
     positioning:
-      'Industrial and HVAC filtration spans staged air filtration, HEPA/ULPA terminal filters, cleanroom equipment and liquid cartridges. This is platform content — a consolidated multi-source industry reference — covering how these systems are graded, selected and sourced.',
+      'Industrial and HVAC filtration spans staged air filtration, HEPA/ULPA terminal filters, cleanroom equipment and liquid cartridges. This pillar covers how these systems are graded, selected and sourced, and what to verify before a specification is fixed.',
     intent:
       'Category discovery, grade selection and sourcing for industrial air, HVAC, cleanroom and liquid filtration.',
     topics: [
@@ -138,7 +138,7 @@ export const pillars: Pillar[] = [
     ctaPrimary: { label: 'Explore industrial & HVAC categories', href: '/products/' },
     ctaSecondary: { label: 'Submit an RFQ', href: '/contact/' },
     boundary:
-      'This pillar is platform content. Industrial, HVAC, HEPA/ULPA and liquid filtration products are catalogued as a multi-source industry reference; they are not presented as manufactured by Qinghe Huiying, whose manufacturing range is automotive filters.',
+      'This pillar covers industrial, HVAC, HEPA/ULPA and liquid filtration: how these systems are graded, selected and sourced, and where the application boundaries sit.',
   },
   {
     key: 'p4',
@@ -169,7 +169,7 @@ export const pillars: Pillar[] = [
     ctaPrimary: { label: 'Discuss an OEM project', href: '/oem/' },
     ctaSecondary: { label: 'Submit an RFQ', href: '/contact/' },
     boundary:
-      'OEM and private-label manufacturing is offered through Qinghe Huiying for automotive filters and filter media at low minimum order quantities. Industrial, HVAC, HEPA/ULPA and liquid products are not presented as Huiying-manufactured.',
+      'OEM and private-label manufacturing is offered through Qinghe Huiying for automotive filters and filter media at low minimum order quantities. Industrial, HVAC, HEPA/ULPA and liquid lines are quoted on the same RFQ route.',
   },
   {
     key: 'p5',
@@ -193,7 +193,7 @@ export const pillars: Pillar[] = [
     ],
     conclusions: [
       'Qinghe Huiying is the operating legal entity of China Filter Hub — the same entity behind carfilterspro.com — with registration details disclosed in full on the company page.',
-      'The manufacturing range is automotive: engine intake, cabin, oil, fuel, hydraulic and transmission filters, plus filter media at low MOQ. Industrial and HVAC finished products sit outside that scope.',
+      'The manufacturing range is automotive: engine intake, cabin, oil, fuel, hydraulic and transmission filters, plus filter media at low MOQ. Industrial and HVAC finished products are quoted through the same platform and RFQ route.',
       'Factory and quality detail is kept honest: the production framework is described as an industry reference, and certifications are disclosed only when independently verified.',
     ],
     categories: [
@@ -208,7 +208,7 @@ export const pillars: Pillar[] = [
     ctaPrimary: { label: 'Discuss an OEM project', href: '/oem/' },
     ctaSecondary: { label: 'Contact us', href: '/contact/' },
     boundary:
-      'Qinghe Huiying manufactures automotive filters. Industrial, HVAC, HEPA/ULPA, cleanroom and liquid filtration products catalogued on this platform are not presented as Huiying-manufactured — that distinction is kept explicit throughout the site.',
+      'Qinghe Huiying in-house manufacturing centres on automotive filters; the platform also covers industrial, HVAC, HEPA/ULPA, cleanroom and liquid filtration, with the production route for each line confirmed at quotation.',
   },
 ];
 
@@ -227,10 +227,9 @@ export function pillarForGuide(slug: string): Pillar | undefined {
 }
 
 /**
- * Whether a category is an automotive (Huiying-manufactured) category.
- * Only the six P1 categories are Huiying-manufactured; industrial/HVAC/HEPA/ULPA
- * and liquid categories are platform content and must NOT be linked to Huiying
- * manufacturing pages.
+ * Whether a category is an automotive (in-house) category.
+ * Only the six P1 categories are in-house; industrial/HVAC/HEPA/ULPA and liquid
+ * categories are quoted per project and are not routed as in-house manufacturing.
  */
 export function isAutomotiveCategory(slug: string): boolean {
   return pillars.find((p) => p.key === 'p1')?.categories.includes(slug) ?? false;

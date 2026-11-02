@@ -69,7 +69,7 @@ export const guideSkus: Record<string, string[]> = {
  * Huiying manufacturing pages.
  */
 export const guideCommercialLinks: Record<string, { label: string; href: string }[]> = {
-  // P1 — automotive filters (Huiying-manufactured)
+  // P1 — automotive filters (in-house)
   'air-filter-selection': [
     { label: 'Discuss an OEM project', href: '/oem/' },
     { label: 'Qinghe Huiying manufacturing', href: '/company/' },
@@ -95,7 +95,7 @@ export const guideCommercialLinks: Record<string, { label: string; href: string 
     { label: 'Qinghe Huiying manufacturing', href: '/company/' },
     { label: 'Submit an RFQ', href: '/rfq/' },
   ],
-  // P2 — filter technology (platform content, not Huiying-manufactured)
+  // P2 — filter technology (platform content)
   'filter-efficiency-grades': [
     { label: 'Explore filter media', href: '/products/filter-media/' },
     { label: 'Submit an RFQ', href: '/rfq/' },
@@ -108,7 +108,7 @@ export const guideCommercialLinks: Record<string, { label: string; href: string 
     { label: 'Explore filter media', href: '/products/filter-media/' },
     { label: 'Submit an RFQ', href: '/rfq/' },
   ],
-  // P3 — industrial / HVAC (platform content, not Huiying-manufactured)
+  // P3 — industrial / HVAC (platform content)
   'hepa-cleanroom-sourcing': [
     { label: 'Explore HEPA / ULPA filters', href: '/products/hepa-filters/' },
     { label: 'Submit an RFQ', href: '/rfq/' },
