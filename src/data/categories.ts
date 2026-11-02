@@ -29,7 +29,7 @@ export const categories: Category[] = [
     nameZh: '空气滤清器',
     grades: 'ISO 5011',
     subcategories: ['Panel', 'Round', 'Heavy-Duty', 'PowerCore', 'Air Compressor', 'GT Intake'],
-    summary: 'Engine intake air filters in panel, round and heavy-duty forms, plus PowerCore, air-compressor and gas-turbine stages.',
+    summary: 'Engine intake air filters in panel, round and heavy-duty forms, cross-referenced by OE number for trucks, plant and off-highway equipment.',
     positioning:
       'Engine intake air filters sit upstream of the combustion chamber, shielding cylinders, pistons and rings from abrasive dust. They run in a high-velocity, high-dust airflow across on-road trucks, off-highway machinery, agricultural equipment and compressors, so capacity and intake-restriction control matter as much as raw efficiency.',
     directAnswer:
@@ -55,7 +55,7 @@ export const categories: Category[] = [
     nameZh: '空调滤清器',
     grades: 'ISO 16890',
     subcategories: [],
-    summary: 'Cabin air filters for passenger and commercial vehicles.',
+    summary: 'Cabin air filters for passenger cars and commercial cabs — particulate and activated-carbon versions, matched by OE number to the housing and airflow path.',
     positioning:
       'Cabin air filters clean the air entering the vehicle interior, protecting occupants from dust, pollen and particulates. They work in a low-velocity HVAC airflow inside a compact automotive cartridge, where fitment by year and trim is the dominant failure mode.',
     directAnswer:
@@ -81,7 +81,7 @@ export const categories: Category[] = [
     nameZh: '机油滤清器',
     grades: '—',
     subcategories: [],
-    summary: 'Engine and equipment oil filters.',
+    summary: 'Spin-on, cartridge and element oil filters for passenger, commercial and off-highway engines — media grade, bypass valve and burst-pressure criteria.',
     positioning:
       'Oil filters remove contaminants from lubricating oil to protect the engine or equipment oil circuit. They operate under hot-oil flow with a bypass valve and anti-drain-back valve, so thread, canister and gasket fitment are as important as media micron rating.',
     directAnswer:
@@ -107,7 +107,7 @@ export const categories: Category[] = [
     nameZh: '燃油滤清器',
     grades: '—',
     subcategories: ['Diesel', 'Petrol', 'Urea'],
-    summary: 'Diesel and petrol fuel filters, incl. urea.',
+    summary: 'Fuel filters for diesel and petrol systems, including water-separating and common-rail types — rating, water separation and change-interval logic.',
     positioning:
       'Fuel filters remove water and particulate from fuel before the injection system. Diesel duty in heavy trucks and commercial vehicles dominates the catalogue and typically requires a water-separation specification in addition to particle retention.',
     directAnswer:
@@ -133,7 +133,7 @@ export const categories: Category[] = [
     nameZh: '液压滤清器',
     grades: 'ISO 4406',
     subcategories: [],
-    summary: 'Hydraulic circuit filters for heavy equipment and industrial systems.',
+    summary: 'Hydraulic filters and return-line elements for mobile and industrial circuits — micron rating, beta ratio and ISO 4406 cleanliness targets explained.',
     positioning:
       'Hydraulic filters protect pumps, valves and actuators by removing particles from the hydraulic oil circuit. Selection turns on system pressure, flow rate and the cleanliness target of the circuit — excavators, loaders and industrial systems all impose different duty cycles.',
     directAnswer:
@@ -159,7 +159,7 @@ export const categories: Category[] = [
     nameZh: '变速箱滤清器',
     grades: '—',
     subcategories: [],
-    summary: 'Automatic transmission filters.',
+    summary: 'Transmission oil filters in pan and external forms for automatic and CVT units — media, gasket interface and service-interval considerations for buyers.',
     positioning:
       'Transmission filters remove wear debris from transmission fluid to protect the valve body and clutches. They are OE-cross-referenced, and the key procurement risk is matching the exact transmission model — pan-mounted and external forms are not interchangeable.',
     directAnswer:
@@ -185,7 +185,7 @@ export const categories: Category[] = [
     nameZh: 'HVAC 过滤器',
     grades: 'EN 779 / ISO 16890',
     subcategories: ['Pre (G1–G4)', 'Medium (M5–F9)', 'V-Bank'],
-    summary: 'HVAC air filters — pre, medium and V-bank stages.',
+    summary: 'HVAC panel, pre and fine filters from G3 to F9, with pocket and V-bank options — staged filtration, pressure drop and changeout planning for air handling.',
     positioning:
       'HVAC filters protect air-handling equipment and occupants by staged particle removal, from coarse pre-filtration through fine filtration. They run continuously in AHU systems where pressure drop translates directly into fan energy, so initial and final resistance are procurement-relevant.',
     directAnswer:
@@ -211,7 +211,7 @@ export const categories: Category[] = [
     nameZh: 'HEPA/ULPA 高效过滤器',
     grades: 'EN 1822',
     subcategories: ['H10–H12 (EPA)', 'H13–H14 (HEPA)', 'U15–U17 (ULPA)'],
-    summary: 'HEPA and ULPA filters — H10 through U17 for cleanrooms and critical environments.',
+    summary: 'HEPA and ULPA filters from H13 to U17 in mini-pleat, gel-seal and terminal-box forms — efficiency class, leak testing and housing interface.',
     positioning:
       'HEPA and ULPA filters sit at the terminal end of the air chain in cleanrooms, operating rooms and critical manufacturing. They run on the back of a pre-filter chain, so the efficiency class must be matched to the cleanroom ISO target rather than selected for its own sake.',
     directAnswer:
@@ -237,7 +237,7 @@ export const categories: Category[] = [
     nameZh: '活性炭过滤器',
     grades: '—',
     subcategories: ['Panel', 'Pleated', 'Pocket', 'V-Bank'],
-    summary: 'Activated carbon filters for odour and chemical-vapour removal.',
+    summary: 'Activated-carbon panel, bag and cylinder filters for odour, gas and VOC control — carbon type, dwell time and where molecular filtration stops working.',
     positioning:
       'Activated carbon filters adsorb gaseous odours and chemical vapours that particulate filters cannot capture. They complement rather than replace particulate stages, and appear across panel, pleated, pocket and V-bank forms for commercial HVAC and industrial fume duty.',
     directAnswer:
@@ -263,7 +263,7 @@ export const categories: Category[] = [
     nameZh: '袋式过滤器',
     grades: 'EN 779 / ISO 16890',
     subcategories: [],
-    summary: 'Pocket and bag filters for high dust-holding AHU stages.',
+    summary: 'Pocket and bag filters in synthetic and micro-glass media — pocket count, airflow per pocket and dust holding for HVAC and industrial air handling.',
     positioning:
       'Pocket filters provide high dust-holding capacity through extended media pockets, serving AHU main filtration where a compact frame must hold a large media surface area. Bag count and face dimensions are set by the AHU frame.',
     directAnswer:
@@ -289,7 +289,7 @@ export const categories: Category[] = [
     nameZh: '滤材介质',
     grades: '—',
     subcategories: ['Needle-Punched', 'Synthetic Fibre', 'Micro-Glass', 'Activated Carbon'],
-    summary: 'Filter media — needle-punched, synthetic fibre, micro-glass and activated carbon.',
+    summary: 'Filter media in roll and sheet form: needle-punched, synthetic, micro-glass and activated carbon — grammage, efficiency class and converting options.',
     positioning:
       'Filter media is the raw filtration material supplied as rolls or made-to-order media for filter manufacturers and integrators. The supplier serves pre-filtration, HEPA and odour-control grades at low minimum order quantity, from prototyping to production.',
     directAnswer:
@@ -315,7 +315,7 @@ export const categories: Category[] = [
     nameZh: '液体过滤滤芯',
     grades: 'micron rating',
     subcategories: ['Membrane (PP/PVDF/PTFE)', 'Metal (SS304/SS316L/Ti)'],
-    summary: 'Liquid filter cartridges — membrane and metal.',
+    summary: 'Liquid filter cartridges in PP, PVDF and PTFE membrane — micron rating, pleat construction and housing compatibility for process and water duty.',
     positioning:
       'Liquid filter cartridges remove particles or separate phases from process liquids, using membrane (PP/PVDF/PTFE) or metal (SS304/SS316L/Ti) media. Fluid chemistry, temperature and chemical compatibility decide the media grade before micron rating is even considered.',
     directAnswer:
@@ -341,7 +341,7 @@ export const categories: Category[] = [
     nameZh: '洁净室设备',
     grades: 'Class 100',
     subcategories: ['FFU', 'Laminar Flow', 'Biosafety Cabinet', 'Air Shower', 'Pass Box'],
-    summary: 'Cleanroom equipment — FFU, laminar flow, biosafety cabinets, air showers and pass boxes.',
+    summary: 'Cleanroom FFUs, laminar-flow benches, biosafety cabinets, air showers and pass boxes — airflow pattern, filtration stage and installation requirements.',
     positioning:
       'Cleanroom equipment maintains the controlled airflow and contamination control required for ISO-classified cleanrooms. Fan filter units generate ceiling-down laminar airflow, while biosafety cabinets, air showers and pass boxes handle the entry, handling and transfer of materials and personnel.',
     directAnswer:

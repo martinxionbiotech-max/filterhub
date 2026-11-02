@@ -30,6 +30,53 @@ def slug(s):
     return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
 
 
+KNOWLEDGE_DIR = os.path.join(ROOT, "src", "content", "knowledge")
+
+
+def _fm(path):
+    """Minimal YAML front-matter reader (flat string/number/bool keys only)."""
+    text = open(path, encoding="utf-8").read()
+    if not text.startswith("---"):
+        return {}
+    block = text.split("---", 2)[1]
+    data = {}
+    for line in block.splitlines():
+        m = re.match(r'^([A-Za-z_]+):\s*(.*)$', line)
+        if not m:
+            continue
+        key, raw = m.group(1), m.group(2).strip().strip('"').strip("'")
+        if raw.lower() in ("true", "false"):
+            data[key] = raw.lower() == "true"
+        elif re.fullmatch(r"-?\d+", raw or ""):
+            data[key] = int(raw)
+        else:
+            data[key] = raw
+    return data
+
+
+def knowledge_entries():
+    """Knowledge articles grouped by series, pillar first, clusters by order."""
+    if not os.path.isdir(KNOWLEDGE_DIR):
+        return []
+    series = {}
+    for name in sorted(os.listdir(KNOWLEDGE_DIR)):
+        if not name.endswith(".md"):
+            continue
+        fm = _fm(os.path.join(KNOWLEDGE_DIR, name))
+        if not fm.get("slug"):
+            continue
+        s = fm.get("series") or "uncategorised"
+        series.setdefault(s, {"title": fm.get("seriesTitle") or s, "items": []})
+        series[s]["items"].append(fm)
+    ordered = []
+    for s, group in series.items():
+        items = sorted(group["items"], key=lambda x: (0 if x.get("isPillar") else 1, x.get("order", 0)))
+        ordered.append((group["title"], items))
+    ordered.sort(key=lambda x: x[1][0].get("order", 0))
+    return ordered
+
+
+
 # --- Five-pillar architecture (mirror of src/data/pillars.ts) ----------------
 PILLARS = [
     ("p1", "Automotive Filters", "automotive-filters"),
@@ -135,7 +182,7 @@ def main():
 
     # --- Main site llms.txt ---
     lines = [
-        "# China Filter Hub (Huiying)",
+        "# China Filter Hub",
         "",
         f"> Main site: {SITE} (placeholder domain chinafilterhub.com)",
         f"> Data subsite: {DATA_SITE} (placeholder domain)",
@@ -169,6 +216,14 @@ def main():
             lines.append(f"- [{title}]({SITE}/guides/{slug_}/)")
         lines.append("")
 
+    lines += ["", "## Knowledge base — deep-dive technical series", ""]
+    for series_title, items in knowledge_entries():
+        lines.append(f"### {series_title}")
+        for fm in items:
+            label = "Pillar" if fm.get("isPillar") else f"Part {fm.get('order')}"
+            desc = (fm.get("description") or "").strip()
+            lines.append(f"- [{label}: {fm.get('title')}]({SITE}/knowledge/{fm.get('slug')}/) — {desc}")
+        lines.append("")
     lines += ["## Commercial & company pages", ""]
     for label, href in STATIC_PAGES:
         lines.append(f"- [{label}]({SITE}{href})")
