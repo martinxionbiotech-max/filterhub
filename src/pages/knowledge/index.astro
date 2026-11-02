@@ -9,6 +9,8 @@ const seriesIntros: Record<string, string> = {
     'A framework for comparing efficiency, pressure drop, dust loading, airflow and service life before an air filter is selected.',
   'filter-quality-verification':
     'A procurement and quality-engineering workflow for standards, test reports, samples, production batches and corrective action.',
+  'oem-supplier-risk':
+    'A control sequence for screening suppliers, auditing factories and governing tooling, production, change, commercial and documentation risk.',
 };
 
 const clusterCount = seriesList.reduce((total, series) => total + series.clusters.length, 0);
@@ -18,7 +20,7 @@ const breadcrumbs = [{ label: 'Knowledge', href: '/knowledge/' }];
 
 <BaseLayout
   title="Filter Knowledge Base"
-  description="Technical procurement guides for air filter performance, test standards, sample validation, batch consistency and supplier quality management."
+  description="Technical procurement guides for air filter performance, supplier screening, factory audits, first-article approval and batch consistency."
   breadcrumbs={breadcrumbs}
 >
   <main id="main" class="wrap knowledge-index">
@@ -30,9 +32,10 @@ const breadcrumbs = [{ label: 'Knowledge', href: '/knowledge/' }];
       <p class="eyebrow">Technical knowledge base</p>
       <h1>Filter knowledge for buyers and engineers</h1>
       <p class="lede">
-        Filter selection and filter verification are separate decisions. This library covers the
-        performance relationships that determine lifecycle value, and the evidence a buyer should
-        require before approving a supplier, sample or production batch.
+        Filter selection, supplier qualification and filter verification are separate decisions. This
+        library covers the performance relationships that determine lifecycle value, the evidence a buyer
+        should require before approving a supplier, sample or production batch, and the controls that keep
+        that approval intact after production starts.
       </p>
       <p class="muted small">
         {seriesList.length} series · {seriesList.length} pillars · {clusterCount} in-depth guides
