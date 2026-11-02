@@ -47,7 +47,22 @@ def ref(oe, brand=None, equipment_type=None, status="catalog-confirmed"):
     return {"oe_number": oe, "brand": brand, "equipment_type": equipment_type, "data_status": status}
 
 
+UNIT_ALIASES = {
+    "um": "μm",
+    "um2": "μm²",
+    "CMH": "m³/h",
+    "cmh": "m³/h",
+    "m3/h": "m³/h",
+    "inch/mm": "inch / mm",
+    "g/m2": "g/m²",
+}
+
+
 def spec(key, value, unit=None, status="verified"):
+    # Normalise unit aliases at the single point where spec rows are created, so a
+    # regeneration cannot reintroduce 'um' / 'CMH' style variants.
+    if unit is not None:
+        unit = UNIT_ALIASES.get(unit, unit)
     return {"spec_key": key, "spec_value": value, "unit": unit, "data_status": status}
 
 
