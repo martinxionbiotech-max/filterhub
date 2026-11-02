@@ -1,6 +1,6 @@
 ---
 title: "Why Filter Surface Area Matters More Than Media Thickness"
-metaTitle: "Why Air Filter Surface Area Matters More Than Media Thickness"
+metaTitle: "Air Filter Surface Area vs Media Thickness"
 description: "Learn why effective filter media area, pleat design and airflow distribution often matter more than media thickness when evaluating air filter efficiency, pressure drop and service life."
 slug: "air-filter-surface-area-vs-media-thickness"
 keyword: "air filter surface area"
