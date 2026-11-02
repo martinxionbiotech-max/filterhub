@@ -51,6 +51,7 @@ export const nav = [
   { label: 'Automotive Filters', href: '/pillars/automotive-filters/' },
   { label: 'Industrial Filtration', href: '/pillars/industrial-hvac/' },
   { label: 'Technical Resources', href: '/pillars/filter-technology/' },
+  { label: 'Knowledge', href: '/knowledge/' },
   { label: 'OEM & Wholesale', href: '/pillars/oem-wholesale/' },
   { label: 'Manufacturers', href: '/pillars/qinghe-huiying/' },
   { label: 'Contact', href: '/contact/' },
